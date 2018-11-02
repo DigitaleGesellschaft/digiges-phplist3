@@ -183,8 +183,9 @@ msgid "Start a new campaign"
 msgstr "Začni nov projekt"
 
 #: public_html/lists/admin/send.php:101
+#, fuzzy
 msgid "Choose an existing draft campaign to work on"
-msgstr ""
+msgstr "Izberi osnutek sporočila, ki ga želiš urediti"
 
 #: public_html/lists/admin/send.php:102
 msgid "Draft campaigns"
@@ -1727,8 +1728,9 @@ msgid "How to get help"
 msgstr "Kako do pomoči"
 
 #: public_html/lists/admin/community.php:11
+#, fuzzy
 msgid "Contribute"
-msgstr ""
+msgstr "Contributors"
 
 #: public_html/lists/admin/community.php:16
 msgid "phpList is Open Source software"
@@ -4854,9 +4856,9 @@ msgid "Processing has been suspended by your ISP, please try again later"
 msgstr "Obdelavo je prekinil vaš ISP. Poizkusite kasneje."
 
 #: public_html/lists/admin/actions/processqueue.php:537
-#, php-format
+#, fuzzy, php-format
 msgid "Sending in batches of %s messages"
-msgstr ""
+msgstr "Pošiljanje v paketih od %d sporočil"
 
 #: public_html/lists/admin/actions/processqueue.php:543
 #, php-format
@@ -4866,9 +4868,9 @@ msgid ""
 msgstr ""
 
 #: public_html/lists/admin/actions/processqueue.php:547
-#, php-format
+#, fuzzy, php-format
 msgid "Sending in batches of %s emails"
-msgstr ""
+msgstr "Pošiljanje v paketih od %d e-naslovov"
 
 #: public_html/lists/admin/actions/processqueue.php:550
 #, php-format
@@ -6223,16 +6225,18 @@ msgid "Export"
 msgstr "Izvozi"
 
 #: public_html/lists/admin/about.php:4
+#, fuzzy
 msgid "About"
-msgstr ""
+msgstr "O"
 
 #: public_html/lists/admin/about.php:7
 msgid "Announcements"
 msgstr ""
 
 #: public_html/lists/admin/about.php:12
+#, fuzzy
 msgid "Version"
-msgstr ""
+msgstr "verzija"
 
 #: public_html/lists/admin/about.php:21
 msgid "Legal"
@@ -7254,8 +7258,9 @@ msgid "Add a User"
 msgstr "Dodaj uporabnika"
 
 #: public_html/lists/admin/users.php:415
+#, fuzzy
 msgid "subscriber"
-msgstr ""
+msgstr "uporabniki"
 
 #: public_html/lists/admin/users.php:461 public_html/lists/admin/uclicks.php:65
 msgid "msgs"
@@ -7516,8 +7521,9 @@ msgid "Get some help"
 msgstr ""
 
 #: public_html/lists/admin/index.php:519
+#, fuzzy
 msgid "Download the latest version"
-msgstr ""
+msgstr "Prenesi novo verzijo"
 
 #: public_html/lists/admin/index.php:517
 #, php-format

@@ -13,7 +13,7 @@ if (!defined('PHPLISTINIT')) {
 
 //# don't remove spaces
 if (!defined('STRUCTUREVERSION')) {
-    define('STRUCTUREVERSION',"3.3.3");
+    define('STRUCTUREVERSION',"3.3.4");
 }
 
 $DBstructuser = array( // order of tables is essential for smooth upgrade
@@ -249,7 +249,7 @@ $DBstructphplist = array(
         'id'      => array('integer not null primary key auto_increment', 'ID'),
         'date'    => array('datetime', 'Date received'),
         'header'  => array('text', 'Header of bounce'),
-        'data'    => array('blob', 'The bounce'),
+        'data'    => array('mediumblob', 'The bounce'),
         'status'  => array('varchar(255)', 'Status of this bounce'),
         'comment' => array('text', 'System Comment'),
         'index_1' => array('dateindex (date)', ''),
@@ -359,11 +359,11 @@ $DBstructphplist = array(
     ),
     'urlcache' => array(
         'id'           => array('integer not null primary key auto_increment', 'ID'),
-        'url'          => array('varchar(255) not null', ''),
+        'url'          => array('varchar(2083) not null', ''),
         'lastmodified' => array('integer', ''),
         'added'        => array('datetime', ''),
         'content'      => array('longblob', ''),
-        'index_1'      => array('urlindex (url)', ''),
+        'index_1'      => array('urlindex (url(255))', ''),
     ),
     //"gchartcache" => array(
     //"url" => array("text not null",""),
@@ -376,12 +376,13 @@ $DBstructphplist = array(
 
     //# keep it in for now, but could be dropped at some point
     //# once all dependencies have been removed
+    // tables that have unique indexes on hash values :  linktrack_forward, bounceregex
     'linktrack' => array(
         'linkid'      => array('integer not null primary key auto_increment', 'Link ID'),
         'messageid'   => array('integer not null', 'Message ID'),
         'userid'      => array('integer not null', 'subscriber ID'),
         'url'         => array('varchar(255)', 'URL to log'),
-        'forward'     => array('text', 'URL to forward to'),
+        'forward'     => array('varchar(255)', 'URL to forward to'),
         'firstclick'  => array('datetime', 'When first clicked'),
         'latestclick' => array('timestamp', 'When last clicked'),
         'clicked'     => array('integer default 0', 'Number of clicks'),
@@ -425,14 +426,15 @@ $DBstructphplist = array(
     ),
     'linktrack_forward' => array(
         'id'   => array('integer not null primary key auto_increment', 'forward ID'),
-        'url'  => array('varchar(255)', 'URL to log'),
+        'url'  => array('varchar(2083)', 'URL to log'),
+        'urlhash'     => array('char(32)', 'hash value of URL'),
         'uuid' => array('varchar(36) default ""', 'UUID'),
         //        "forward" => array("text","URL to forward to"),
         'personalise' => array('tinyint default 0', 'Forward adding the UID?'),
-        'index_1'     => array('urlindex (url)', ''),
+        'index_1'     => array('urlindex (url(255))', ''),
         //        "index_2" => array("urlforwardindex (url,forward(255))",""),
         //        'unique_1' => array('fwdunique (forward (500))','Forward should be unique'),
-        'unique_1' => array('urlunique (url)', 'URL should be unique'),
+        'unique_1' => array('urlunique (urlhash)', 'URL should be unique'),
         'index_2'  => array('uuididx (uuid)', 'sys:index'),
     ),
     'linktrack_userclick' => array(
@@ -468,14 +470,15 @@ $DBstructphplist = array(
     //    ),
     'bounceregex' => array(
         'id'        => array('integer not null primary key auto_increment', 'ID'),
-        'regex'     => array('varchar(255)', 'Regex'),
+        'regex'     => array('varchar(2083)', 'Regex'),
+        'regexhash'   => array('char(32)', 'hash value of regex'),
         'action'    => array('varchar(255)', 'Action on rule'),
         'listorder' => array('integer default 0', ''),
         'admin'     => array('integer', ''),
         'comment'   => array('text', ''),
         'status'    => array('varchar(255)', ''),
         'count'     => array('integer default 0', 'Count of matching bounces on this rule'),
-        'unique_1'  => array('regex (regex)', ''),
+        'unique_1'  => array('regex (regexhash)', ''),
     ),
     'bounceregex_bounce' => array(
         'regex'       => array('integer not null', 'Related regex'),

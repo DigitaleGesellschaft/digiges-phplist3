@@ -48,15 +48,15 @@ if (!empty($_POST['selected']) && is_array($_POST['selected'])) {
         if ($lc_name == '') {
             Fatal_Error($GLOBALS['I18N']->get('Name cannot be empty:')." $lc_name");
         }
-        Sql_Query("select * from {$tables['attribute']} where tablename = \"$lc_name\"");
-        if (Sql_Affected_Rows()) {
-            Fatal_Error($GLOBALS['I18N']->get('Name is not unique enough'));
-        }
+        $lc_name = getNewAttributeTablename($lc_name);
 
         $typeValue = 'select';
-        if($lc_name ==='termsofservice'){
+        if($lc_name === 'termsofservice'){
             $typeValue = 'checkbox';
             $name.= getConfig('domain');
+        }
+        if($lc_name === 'subscriberisanadult'){
+            $typeValue= 'checkbox';
         }
 
         $query = sprintf('insert into %s (name,type,required,tablename) values("%s","%s",%d,"%s")',

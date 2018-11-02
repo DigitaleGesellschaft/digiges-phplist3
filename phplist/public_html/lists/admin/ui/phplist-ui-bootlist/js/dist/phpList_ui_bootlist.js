@@ -1984,7 +1984,68 @@
 
 
 }));
-;var myfunction = function() {
+;var applyJqueryUiTabMigration = function() {
+        $('.tabbed').each(function(){
+            if ( !$(this).find('ul:first').hasClass('nav-tabs')) {
+                $(this).find('ul:first').addClass('nav nav-tabs');
+                $(this).find('ul.nav-tabs').attr('role','tablist');
+                $(this).find('ul.nav-tabs li').attr('role','presentation');
+                $(this).find('ul.nav-tabs li a').attr({ 'role':'tab', 'data-toggle':'tab' });
+                $(this).find('div[id]').not('.tabbed ul div').wrapAll('<div class="tab-content"/>');
+                $(this).find('.tab-content div[id]').addClass('tab-pane');
+                $(this).find('.tab-pane').attr('role','tabpanel');
+                $(this).find('ul.nav-tabs li a:first').tab('show');
+            }
+        });
+
+        // Hash links and keep state to have valid identifiers
+        var linkMap = [];
+        $('.tabbed > ul > li > a').each(function () {
+            currentLink = this.getAttribute("href");
+
+            if (currentLink.substr(0, 2) === "./") {
+                hash = btoa(currentLink).replace(/=/g, "").replace(/\//, "");
+                linkMap[hash] = this.href;
+                this.href = "#" + hash;
+                this.setAttribute("jqueryui-ajaxify-migrate", "true");
+            }
+        });
+        if ( $('.tabbed ul.nav-tabs li').length == 0 ){
+            $('.tabbed .tab-content .tab-pane').css({'display':'block'});
+        }
+        $('[jqueryui-ajaxify-migrate="true"]').click(function(e) {
+            var tabDom = $('[jqueryui-ajaxify-migrate="true"]').closest(".tabbed").find(".tab-content");
+            hash = this.getAttribute("href").replace("#", "");
+            urlToLoad = linkMap[hash];
+            existingDomElement = $("#"+hash);
+            if(existingDomElement.html() == undefined) {
+                $(tabDom).append(
+                    $('<div/>')
+                        .attr("id", hash)
+                        .attr("role", "tabpanel")
+                        .append("<span/>")
+                        .html("Loading...")
+                );
+            } else {
+                existingDomElement.html("Loading...");
+            }
+            $("#" + hash).addClass("tab-pane content well jquery-ui-tab-migration");
+            $('.tabbed').tab();
+            var $link = $('li.active a[data-toggle="tab"]');
+            $link.parent().removeClass('active');
+            $("a[href='#"+hash+"']").tab('show');
+            $.get(urlToLoad).done(function(data) {
+                $("#"+hash).html(data);
+                applyCustomFormatting();
+            });
+        });
+    }
+;
+
+
+
+
+var applyCustomFormatting = function() {
 
 	/* script to center radio and checkbox column th in spage */
 	if ($('body').hasClass('spage')){
@@ -2004,12 +2065,11 @@
     $('body.list .rows .listingelement span.view').css({ 'width':'auto','float':'none','margin-left':'10px'});
     
     /*fix Bounce Details (?page=bounce&id=xx) */
-    $('body.bounce .content div.content').css({'min-height':'60px'}).addClass('well').removeClass('content'); 
-    $('body.bounce .content div').not('.fleft,.fleft div').addClass('col-sm-12');
-	$('body.bounce .content div.fleft div.well').css({'margin-left':'-15px','margin-right':'-15px'});
-	$('body.bounce .content div.fleft:first-child').addClass('col-sm-1').removeClass('fleft'); 
-	$('body.bounce .content div.fleft:nth-child(2)').addClass('col-sm-4 col-sm-offset-1').removeClass('fleft'); 
-	$('body.bounce .content div.fleft:nth-child(3)').addClass('col-sm-5 col-sm-offset-1').removeClass('fleft'); 
+    $('body.bounce .content div.content').css({'min-height':'45px','padding':'10px 20px 10px 10px'}).addClass('well').removeClass('content'); 
+		$('body.bounce .content div.fleft:first-child').css({'margin-left':'-15px','margin-right':'15px'}).addClass('col-sm-1').removeClass('fleft'); 
+		$('body.bounce .content div.fleft:nth-child(2)').css({'margin-left':'-15px','margin-right':'	15px'}).addClass('col-sm-5').removeClass('fleft'); 
+		$('body.bounce .content div.fleft:nth-child(3)').css({'margin-left':'-15px'}).addClass('col-sm-6').removeClass('fleft'); 
+		$('body.bounce .content div.clear').addClass('clearfix');
 
 /* subscribe page */
 $('body.fixed .required').addClass('text-danger');
@@ -2033,7 +2093,7 @@ $('body.fixed li.list').each(function(){
 
 /* BUTTONS */
     $('button, #prev.prevtab, #next.nexttab').addClass('btn');
-    $('.submit, input[type=submit]').not('p.submit,body.import2 div.submit').addClass('btn btn-primary');
+    $('.submit, input[type=submit], #generatetextversion a.ajaxable').not('p.submit,body.import2 div.submit').addClass('btn btn-primary');
     $('button[type=submit]').addClass('btn-primary');
     $('.button').not('#wrapp > p.button.pull-right, form.spageEdit >.button.pull-right').addClass('btn btn-default');
     $('table .button').addClass('btn-xs');
@@ -2044,7 +2104,6 @@ $('body.fixed li.list').each(function(){
     $('ul.reconcile').addClass('list-unstyled');
     $('.btn-primary.btn-default').removeClass('btn-default');
     $('a.confirm').not('.dropButton a.confirm').addClass('btn btn-default');
-    $('a.resourceslink').addClass('btn btn-link');
     $('#initialisecontinue').addClass('btn-lg');
 
 /* PAGINATION */
@@ -2229,12 +2288,14 @@ $('body.fixed li.list').each(function(){
     $('.home .view-log span.listingname a.listingname').prepend('<span aria-hidden="true" class="glyphicon glyphicon-list-alt"/>').removeClass('listingname');
     /*buttons*/
     $('.home span.listingname a').addClass('btn btn-xs btn-info');
-	$('.listingelement a.del, .listingelement a.button, .listingelement a.opendialog, .listingelement a.confirm, .listingelement a.ajaxable, body.mclicks .listingelement  a, body.mviews .listingelement a, body.uclicks .listingelement a, .configEdit a').addClass('btn btn-xs btn-primary');
-    $('span.edit a, .edit-list a, .configEdit a').html('<span aria-hidden="true" class="glyphicon glyphicon-edit"/>');
+	$('.listingelement a.del, .listingelement a.button, .listingelement a.opendialog, .listingelement a.confirm, .listingelement a.ajaxable, body.mclicks .listingelement  a, body.mviews .listingelement a, body.uclicks .listingelement a, .configEdit a.ajaxable').addClass('btn btn-xs btn-primary');
+    $('span.edit a, .edit-list a, .configEdit a.ajaxable').html('<span aria-hidden="true" class="glyphicon glyphicon-edit"/>');
+    $('span.copy a, .copy-list a, .configCopy a').html('<span aria-hidden="true" class="glyphicon glyphicon-duplicate"/>');
     $('.send-list a').html('<span aria-hidden="true" class="glyphicon glyphicon-send"/>');
     $('.add_member a').html('<span aria-hidden="true" class="glyphicon glyphicon-plus"/>'); 
     $('span.viewusers a').html('<span aria-hidden="true" class="glyphicon glyphicon-user"/>');
     $('span.delete a, a.del, a[title=Del]').html('<span aria-hidden="true" class="glyphicon glyphicon-trash"/>');
+    $('span.resettemplate a, a.reset, a[title=reset]').html('<span aria-hidden="true" class="glyphicon glyphicon-repeat"/>');
     $('span.view a, a.opendialog span.view').html('<span aria-hidden="true" class="glyphicon glyphicon-eye-open"/>');
     $('span.marksent a').html('<span aria-hidden="true" class="glyphicon glyphicon-ok"/>');
     $('span.resend a').html('<span aria-hidden="true" class="glyphicon glyphicon-repeat"/>');
@@ -2265,7 +2326,8 @@ $('body.fixed li.list').each(function(){
     });
 
 /* tables*/
-	$('body.userhistory #subscription .content, body.statsoverview .content, body.domainstats .content,body.dbcheck .content,body.bouncerules .content,body.plugins .content,body.eventlog .content').first().addClass('table-responsive');
+
+    $('body.userhistory #subscription .content, body.statsoverview .content, body.domainstats .content,body.dbcheck .content,body.bouncerules .content,body.plugins .content,body.eventlog .content').first().addClass('table-responsive');
     $('table').not('table.table').attr('border',null);
     $('.listingelement table,body.dbcheck table, table.spageeditListing').not('table.table').addClass('table-condensed');
     $('table.spageeditListing tr:first-child,table.attributeSet tr:first-child').addClass('info');
@@ -2278,6 +2340,7 @@ $('body.fixed li.list').each(function(){
 		$(this).css({'background-color':bgcolor});
     });
     $('table').not('.home table, table.loginPassUpdate, table.table').addClass('table');
+    $(".jquery-ui-tab-migration table").parent().addClass("table-responsive");
         
 /* news widget */
     $('#newsfeed ul').addClass('well list-unstyled');
@@ -2295,17 +2358,18 @@ $('body.fixed li.list').each(function(){
 } /* ---> END MYFUNCION */
 
 
-/* fire myfunction on: */
+/* fire applyCustomFormatting on: */
 $( window ).load(function(){
-    if ( $('body').hasClass('invisible') ){ myfunction();}
- });
+    if ( $('body').hasClass('invisible') ){ applyCustomFormatting(); applyJqueryUiTabMigration();}
+});
 
-$('#dialog').not('body.templates #dialog').on('shown.bs.modal', myfunction);
+$('#dialog').not('body.templates #dialog').on('shown.bs.modal', applyCustomFormatting);
 
 $( document ).ajaxComplete(function() {
-	if ( !$('table').hasClass('table') && !$('.clearfix').hasClass('break') ){
-		myfunction();
-	}
+    if ( !$('table').hasClass('table') && !$('.clearfix').hasClass('break') ){
+        applyCustomFormatting();
+        applyJqueryUiTabMigration();
+    }
 });
 
 
@@ -2339,13 +2403,13 @@ function initialiseTranslation(text) {
 /********* progressbar ***********/
 
 $.fn.progressbar = function(ac){
-    if ( $('body').hasClass('invisible') ){ myfunction(); }
+    if ( $('body').hasClass('invisible') ){ applyJqueryUiTabMigration(); applyCustomFormatting(); }
     $('.progress').show();
     if (ac == 'destroy'){ $('.progress').hide(); }
 }
 
 $.fn.updateProgress = function() {
-    if ( $('body').hasClass('invisible') ){ myfunction(); }
+    if ( $('body').hasClass('invisible') ){ applyJqueryUiTabMigration(); applyCustomFormatting(); }
     $('.progress').show();
   if ($.isNumeric(arguments[0])) {
     var total = parseInt(arguments[1]);
@@ -2416,6 +2480,24 @@ $(document).ready(function(){
 		if(window.location.href.indexOf("id=list_categories") > -1)
 			location.reload();
 	});
+
+	/* Back to top */
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 50) {
+			$('#back-to-top').fadeIn();
+		} else {
+			$('#back-to-top').fadeOut();
+		}
+	});
+	$('#back-to-top').click(function () {
+		$('#back-to-top').tooltip('hide');
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});    
+		$('#back-to-top').tooltip('show');
+
 	
 }); /* <-- end document.ready */
 ;/*!
@@ -4738,7 +4820,7 @@ $(document).ready(function() {
 	});
 	
 	$('#login-form').submit(function(){
-			if ($('input[type=text].form-control').val().length < 4 || $('input[type=password].form-control').val().length < 2 ) {
+			if ($('input[type=text].form-control').val().length < 1 || $('input[type=password].form-control').val().length < 2 ) {
 				alert('Please enter your credentials');
 				return false;
 			}

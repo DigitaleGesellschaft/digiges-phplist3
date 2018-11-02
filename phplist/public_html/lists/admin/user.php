@@ -270,26 +270,26 @@ if (isset($delete) && $delete && $access != 'view') {
     // delete the index in delete
     $_SESSION['action_result'] = s('Deleting').' '.s('Subscriber').' '.s('ID')." $delete ..\n";
     if ($require_login && !isSuperUser()) {
-        // If the user does not permission to permanently delete, delete 
+        // If the user does not permission to permanently delete, delete
         // subscriptoins instead
 
         // Get all lists subscriber is a member of
         $lists = Sql_query("
-            SELECT 
-                listid 
-            FROM 
-                {$tables['listuser']},{$tables['list']} 
-            WHERE 
-                userid = ".$delete." 
-                AND $tables[listuser].listid = $tables[list].id 
-                $subselect 
+            SELECT
+                listid
+            FROM
+                {$tables['listuser']},{$tables['list']}
+            WHERE
+                userid = ".$delete."
+                AND $tables[listuser].listid = $tables[list].id
+                $subselect
         ");
         while ($lst = Sql_fetch_array($lists)) {
             Sql_query("
-                DELETE FROM 
-                    {$tables['listuser']} 
-                WHERE 
-                    userid = $delete 
+                DELETE FROM
+                    {$tables['listuser']}
+                WHERE
+                    userid = $delete
                     AND listid = $lst[0]
             ");
         }
@@ -326,14 +326,14 @@ if ($id) {
     }
 
     echo '<div class="actions">';
-    echo '&nbsp;&nbsp;'.PageLinkButton("userhistory&amp;id=$id", s('History'));
-    echo '&nbsp;&nbsp;'.PageLinkButton("exportuserdata&amp;id=$id", s('Download subscriber data'));
-    echo 
-        '<a 
+    echo PageLinkButton("exportuserdata&amp;id=$id", s('Download subscriber data'));
+    if (!isBlackListed($user['email'])) {
+        echo
+            '<a 
             class="confirm btn btn-default" 
-            href="'.getConfig('preferencesurl')."&amp;uid=".$user['uniqid'].'">'.
-                s('Preferences page').'
-        </a>';
+            href="' . getConfig('preferencesurl') . "&amp;uid=" . $user['uniqid'] . '">' .
+            s('Preferences page') . '</a>';
+    }
 
     // Trigger hook to add additional buttons from plugins
     if (!empty($GLOBALS['config']['plugins']) && is_array($GLOBALS['config']['plugins'])) {
@@ -424,8 +424,13 @@ foreach ($struct as $key => $val) {
     } else {
         if (!strpos($key, '_')) {
             if (strpos($a, 'sys') !== false) {
-                $userdetailsHTML .= sprintf('<tr><td class="dataname">%s</td><td>%s</td></tr>',
-                    s($b), stripslashes($user[$key]));
+                if ($key === 'modified' || $key === 'entered' || $key === 'passwordchanged') {
+                    $userdetailsHTML .= sprintf('<tr><td class="dataname">%s</td><td>%s</td></tr>',
+                        s($b), stripslashes(formatDateTime($user[$key])));
+                } else {
+                    $userdetailsHTML .= sprintf('<tr><td class="dataname">%s</td><td>%s</td></tr>',
+                        s($b), stripslashes($user[$key]));
+                }
             } elseif ($val[1]) {
                 $userdetailsHTML .= sprintf('<tr><td class="dataname">%s</td><td><input type="text" name="%s" value="%s" size="30" /></td></tr>'."\n",
                     s($val[1]), $key, htmlspecialchars(stripslashes($user[$key])));
@@ -471,7 +476,7 @@ if (empty($GLOBALS['config']['hide_user_attributes']) && !defined('HIDE_USER_ATT
         } elseif ($row['type'] == 'textarea') {
             $userdetailsHTML .= sprintf('
            <tr><td valign="top" class="dataname">%s</td><td><textarea name="attribute[%d]" rows="10" cols="40" class="wrap virtual">%s</textarea></td>
-           </tr>', stripslashes($row['name']), $row['id'], htmlspecialchars(stripslashes($row['value'])));
+           </tr>', stripslashes($row['name']), $row['id'], str_replace(array('>', '<'), array('&gt;', '&lt;'), stripslashes($row['value'])));
         } elseif ($row['type'] == 'avatar') {
             $userdetailsHTML .= sprintf('<tr><td valign="top" class="dataname">%s</td><td>',
                 stripslashes($row['name']));
@@ -487,7 +492,7 @@ if (empty($GLOBALS['config']['hide_user_attributes']) && !defined('HIDE_USER_ATT
                     stripslashes($row['name']), UserAttributeValueSelect($id, $row['id']));
             } else {
                 $userdetailsHTML .= sprintf('<tr><td class="dataname">%s</td><td><input class="attributeinput" type="text" name="attribute[%d]" value="%s" size="30" /></td></tr>'."\n",
-                    $row['name'], $row['id'], htmlspecialchars(stripslashes($row['value'])));
+                    $row['name'], $row['id'], str_replace('"', '&#x22;', stripslashes($row['value'])));
             }
         }
     }
@@ -528,8 +533,11 @@ $mailinglistsHTML .= '</table>';
 
 echo '<div class="tabbed">';
 echo '<ul>';
-echo '<li><a href="#details">'.ucfirst(s('Details')).'</a></li>';
-echo '<li><a href="#lists">'.ucfirst(s('Lists')).'</a></li>';
+echo '<li><a href="#details">'.s('Details').'</a></li>';
+echo '<li><a href="#lists">'.s('Lists').'</a></li>';
+echo '<li><a href="./?page=pageaction&action=campaigns&ajaxed=true&id='.$id .addCsrfGetToken().'">'.s('Campaigns').'</a></li>';
+echo '<li><a href="./?page=pageaction&action=bounces&ajaxed=true&id='.$id .addCsrfGetToken().'">'.s('Bounces').'</a></li>';
+echo '<li><a href="./?page=pageaction&action=subscription&ajaxed=true&id='.$id .addCsrfGetToken().'">'.s('Subscription').'</a></li>';
 
 echo '</ul>';
 
@@ -540,5 +548,11 @@ $p = new UIPanel('', $mailinglistsHTML);
 echo '<div id="lists">'.$p->display().'</div>';
 
 echo '</div>'; //# end of tabbed
+
+if (isset($_GET['unblacklist'])) {
+    $unblacklist = sprintf('%d', $_GET['unblacklist']);
+    unBlackList($unblacklist);
+    Redirect('user&id='.$unblacklist);
+}
 
 echo '</form>';

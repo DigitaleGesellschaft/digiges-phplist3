@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-17 21:37+0000\n"
-"PO-Revision-Date: 2017-06-30 09:38+0000\n"
-"Last-Translator: Michal <Black23@gmail.com>\n"
+"PO-Revision-Date: 2018-09-09 14:52+0000\n"
+"Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1498815488.000000\n"
+"X-POOTLE-MTIME: 1536504770.000000\n"
 
 #: public_html/lists/lt.php:220
 msgid ""
@@ -79,7 +79,8 @@ msgstr "Rychlé odhlášení nastaveno, důvod nepožadován "
 msgid ""
 "When testing the phpList forward functionality, you need to be logged in as "
 "an administrator."
-msgstr "Pokud testujete funkci přeposlání, musíte být přihlášeni jako správce."
+msgstr ""
+"Pokud chcete otestovat funkci přeposlání, musíte být přihlášeni jako správce."
 
 #: public_html/lists/index.php:1110 public_html/lists/index.php:1121
 msgid "Message Forwarded"
@@ -105,7 +106,7 @@ msgstr "Požadavek na přeposlání od uživatele s neplatným ID: %s"
 #: public_html/lists/admin/initlanguages.php:8
 #: public_html/lists/admin/readtestmail.php:29
 msgid "This page can only be called from the commandline"
-msgstr "Tato stránka může být volána pouze z příkazové řádky"
+msgstr "Tato stránka smí být volána z příkazové řádky"
 
 #: public_html/lists/admin/runcommand.php:12
 #: public_html/lists/admin/pageaction.php:16
@@ -239,7 +240,7 @@ msgstr "Vaše verze"
 
 #: public_html/lists/admin/home.php:13
 msgid "phplist version"
-msgstr "<a href=http://www.phplist.com>phpList</a> verze"
+msgstr "<a href=\"http://www.phplist.com\">phpList</a> verze"
 
 #: public_html/lists/admin/home.php:14 public_html/lists/admin/home.php:390
 #: public_html/lists/admin/initialise.php:251
@@ -4787,9 +4788,9 @@ msgstr "Dát unikátní ID %d odběratelům, bude trochu trvat"
 
 #: public_html/lists/admin/actions/processqueue.php:94
 #: public_html/lists/admin/actions/processqueue.php:95
-#, php-format
+#, fuzzy, php-format
 msgid "Giving a UUID to %d subscribers, this may take a while"
-msgstr ""
+msgstr "Dát unikátní ID %d odběratelům, bude trochu trvat"
 
 #: public_html/lists/admin/actions/processqueue.php:104
 #, php-format
@@ -7645,8 +7646,9 @@ msgid "Get some help"
 msgstr ""
 
 #: public_html/lists/admin/index.php:519
+#, fuzzy
 msgid "Download the latest version"
-msgstr ""
+msgstr "Stáhnout novou verzi."
 
 #: public_html/lists/admin/index.php:517
 #, php-format

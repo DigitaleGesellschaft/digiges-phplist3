@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-17 21:38+0000\n"
-"PO-Revision-Date: 2018-05-12 11:52+0000\n"
+"PO-Revision-Date: 2018-05-28 09:19+0000\n"
 "Last-Translator: samtuke <mail@samtuke.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-Poedit-SearchPath-0: public_html\n"
 "X-Poedit-Basepath: /home/michiel/svn/phplist/translate/phplist\n"
-"X-POOTLE-MTIME: 1526125957.000000\n"
+"X-POOTLE-MTIME: 1527499146.000000\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;get;s\n"
 
 #: public_html/lists/lt.php:220
@@ -2709,7 +2709,7 @@ msgstr "No"
 
 #: public_html/lists/admin/configure.php:177
 msgid "edit this value"
-msgstr "edit this value"
+msgstr "Edit this value"
 
 #: public_html/lists/admin/configure.php:178
 #: public_html/lists/admin/spage.php:73 public_html/lists/admin/spage.php:74
@@ -3487,7 +3487,7 @@ msgstr "Back to attributes"
 
 #: public_html/lists/admin/editattributes.php:45
 msgid "add new"
-msgstr "add new"
+msgstr "Add new"
 
 #: public_html/lists/admin/editattributes.php:49
 msgid "Are you sure you want to delete all values?"
@@ -6889,7 +6889,7 @@ msgstr "authoritative list"
 
 #: public_html/lists/admin/attributes.php:402
 msgid "edit values"
-msgstr "edit values"
+msgstr "Edit values"
 
 #: public_html/lists/admin/attributes.php:406
 #: public_html/lists/admin/attributes.php:436
@@ -7890,7 +7890,7 @@ msgstr "Change admin password"
 
 #: public_html/lists/admin/setup.php:52
 msgid "Verify Settings"
-msgstr "Verify settings"
+msgstr "Review settings"
 
 #: public_html/lists/admin/setup.php:65
 msgid "Configure attributes"
@@ -9432,7 +9432,7 @@ msgstr "Import subscribers"
 
 #: public_html/databasestructure.php:234
 msgid "pagetitlehover:import"
-msgstr "Import subscribers into the database"
+msgstr "Import subscribers"
 
 #: public_html/databasestructure.php:235
 msgid "pagetitle:export"

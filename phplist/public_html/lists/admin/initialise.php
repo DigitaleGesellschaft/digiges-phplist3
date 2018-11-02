@@ -3,7 +3,6 @@
 require_once dirname(__FILE__).'/accesscheck.php';
 
 include dirname(__FILE__).'/structure.php';
-@ob_end_flush();
 
 function output($message)
 {
@@ -50,6 +49,7 @@ if ($force) {
     Redirect('initialise&firstinstall=1');
     exit;
 }
+@ob_end_flush();
 
 if (empty($_SESSION['hasconf']) && !empty($_REQUEST['firstinstall']) && (empty($_REQUEST['adminemail']) || strlen($_REQUEST['adminpassword']) < 8)) {
     echo '<noscript>';
@@ -204,7 +204,7 @@ if ($success) {
         SaveConfig('organisation_name', strip_tags($_REQUEST['adminemail']), 1);
     }
     // add a draft campaign for invite plugin
-    addInviteCampaign();
+    addInviteCampaign(1);
     // add a testlist
     $info = s('List for testing');
     $result = Sql_query("insert into {$tables['list']} (name,description,entered,active,owner) values(\"test\",\"$info\",now(),0,1)");

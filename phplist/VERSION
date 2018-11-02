@@ -1,6 +1,2 @@
-# file that keeps track of the latest tag in cvs and the corresponding version
-# this automates publishing a new version, when it's tagged
-# if you don't understand this, don't worry. You don't need this file
-VERSION=3.3.1
-DEVVERSION=3.3.2
-
+VERSION=3.3.4
+BUILDDATE=2018 09 11 15:39

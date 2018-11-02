@@ -670,7 +670,13 @@ if (isset($_POST['subscribe']) && is_email($_POST['email']) && $listsok && $allt
             echo $strPreferencesNotificationSent;
         }
     } else {
-        echo '<h3>'.$strEmailFailed.'</h3>';
+        $isThisBlacklisted = isBlackListed($email);
+        if ($isThisBlacklisted) {
+            echo '<p class="information">'.$GLOBALS['strYouAreBlacklisted'].'</p>';
+        } else {
+            echo '<h3>'.$strEmailFailed.'</h3>';
+        }
+
     }
     echo '<p class="information">'.$PoweredBy.'</p>';
     echo $subscribepagedata['footer'];
@@ -1046,7 +1052,7 @@ function ListAttributes($attributes, $attributedata, $htmlchoice = 0, $userid = 
                     $output[$attr['id']] .= sprintf('</td><td class="attributeinput">
             <input type="text" name="%s"  class="attributeinput" size="%d" value="%s" id="'.$fieldname.'" />', $fieldname,
                         $textlinewidth,
-                        $_POST[$fieldname] ? htmlspecialchars(stripslashes($_POST[$fieldname])) : ($data[$attr['id']] ? $data[$attr['id']] : $attr['default_value']));
+                        $_POST[$fieldname] ? str_replace('"', '&#x22;', stripslashes($_POST[$fieldname])) : ($data[$attr['id']] ? $data[$attr['id']] : $attr['default_value']));
                     if ($attr['required']) {
                         $output[$attr['id']] .= sprintf('<script language="Javascript" type="text/javascript">addFieldToCheck("%s","%s");</script>',
                             $fieldname, $attr['name']);
@@ -1059,7 +1065,7 @@ function ListAttributes($attributes, $attributedata, $htmlchoice = 0, $userid = 
                     $output[$attr['id']] .= sprintf('<tr><td class="attributeinput" colspan="2">
             <textarea name="%s" rows="%d"  class="attributeinput" cols="%d" wrap="virtual" id="'.$fieldname.'">%s</textarea>',
                         $fieldname, $textarearows, $textareacols,
-                        $_POST[$fieldname] ? htmlspecialchars(stripslashes($_POST[$fieldname])) : ($data[$attr['id']] ? htmlspecialchars(stripslashes($data[$attr['id']])) : $attr['default_value']));
+                        $_POST[$fieldname] ? str_replace(array('>', '<'), array('&gt;', '&lt;'),stripslashes($_POST[$fieldname])) : ($data[$attr['id']] ? str_replace(array('>', '<'), array('&gt;', '&lt;'),stripslashes($data[$attr['id']])) : $attr['default_value']));
                     if ($attr['required']) {
                         $output[$attr['id']] .= sprintf('<script language="Javascript" type="text/javascript">addFieldToCheck("%s","%s");</script>',
                             $fieldname, $attr['name']);

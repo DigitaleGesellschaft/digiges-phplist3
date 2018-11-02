@@ -2,9 +2,9 @@
 
 /*
  * plugin for phpList to provide the FCKeditor in the compose campaign page
- * 
+ *
  * works with the FCKeditor version 2.6.8
- * 
+ *
  */
 
 
@@ -16,7 +16,7 @@ class fckphplist extends phplistPlugin {
   public $authors = 'Michiel Dethmers';
   public $enabled = 1;
   public $description = 'The original WYSIWYG editor for phpList';
-  
+
   public $settings = array(
     "fckeditor_width" => array (
       'value' => 600,
@@ -52,8 +52,8 @@ class fckphplist extends phplistPlugin {
     ),
   );
 
-  function fckphplist() {
-    parent::phplistplugin();
+  function __construct() {
+    parent::__construct();
     $this->coderoot = dirname(__FILE__).'/fckphplist/';
   }
 
@@ -61,7 +61,7 @@ class fckphplist extends phplistPlugin {
     return array(
     );
   }
-  
+
     public function dependencyCheck()
     {
       return array(
@@ -70,7 +70,7 @@ class fckphplist extends phplistPlugin {
         'No other editor enabled' => empty($GLOBALS["editorplugin"]) || $GLOBALS["editorplugin"] == "fckphplist",
       );
     }
-   
+
   function editor($fieldname,$content) {
     if (!is_file($this->coderoot.'/fckeditor/fckeditor.php')) {
       return '<textarea name="'.$fieldname.'">'.htmlspecialchars($content).'</textarea>';

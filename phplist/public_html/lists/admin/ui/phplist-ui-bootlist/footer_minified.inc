@@ -5,20 +5,26 @@
 								<?php  include 'communityfeed.php'; ?>
 		    </div>
 <?php } ?>
-	    </div> <!-- end #content -->
+	    </div> <!-- end #Wrapp -->
 	        <div id="footer">
 	            <div class="version pull-left">
 	                <a target="_blank" href="https://phplist.com">&copy; phpList ltd.</a> - v<?php echo VERSION?>               
 	            </div>
 	            <div class="ressources pull-right">
-                    <a target="_blank" href="./?page=community">Help</a>&nbsp;  | 
+                    <a target="_blank" href="./?page=about">About</a>&nbsp;  | 
+                        <a target="_blank" href="./?page=community">Help</a>&nbsp;  | 
 	                <a target="_blank" href="https://resources.phplist.com">Resources</a>&nbsp;  |  
 	                <a target="_blank" href="http://twitter.com/phplist">Twitter</a>
 	            </div>
 	        </div>
-	</div> <!-- end #container .row-->
+	</div> <!-- end #content-->
 
-</div> <!-- end .container-fluid-->
+</div> <!-- end #container-->
+<a id="back-to-top" href="#" class="btn btn-info btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+</div> <!-- end .container-fluid -->
+
+
 <script type="text/javascript" src="ui/phplist-ui-bootlist/js/jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="js/phplistapp.js"></script>
 <script type="text/javascript" src="ui/phplist-ui-bootlist/js/dist/phpList_ui_bootlist.min.js"></script>
@@ -26,7 +32,7 @@
 /* do not remove this from here */
 $(document).ready(function(){
     if ( $('body').hasClass('invisible') ){
-        myfunction();
+        applyCustomFormatting(); applyJqueryUiTabMigration();
     }
 	$('#edit_list_categories input.form-control').tagsinput('refresh');
 

@@ -4807,9 +4807,9 @@ msgstr "Assegnazione di ID univoco a %d utenti, potrebbe richiedere del tempo"
 
 #: public_html/lists/admin/actions/processqueue.php:94
 #: public_html/lists/admin/actions/processqueue.php:95
-#, php-format
+#, fuzzy, php-format
 msgid "Giving a UUID to %d subscribers, this may take a while"
-msgstr ""
+msgstr "Assegnazione di ID univoco a %d utenti, potrebbe richiedere del tempo"
 
 #: public_html/lists/admin/actions/processqueue.php:104
 #, php-format
@@ -7742,8 +7742,9 @@ msgid "Get some help"
 msgstr ""
 
 #: public_html/lists/admin/index.php:519
+#, fuzzy
 msgid "Download the latest version"
-msgstr ""
+msgstr "Scarica la nuova versione"
 
 #: public_html/lists/admin/index.php:517
 #, php-format

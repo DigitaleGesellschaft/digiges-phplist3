@@ -68,6 +68,9 @@ if ($download) {
     header('Content-type: text/csv');
     ob_start();
 }
+echo '<p class="pull-left">'.PageLinkButton('statsoverview&id='.$id,
+            s('Campaign statistics')).'</p>';
+
 if (empty($start)) {
     echo '<p class="pull-right">'.PageLinkButton('mviews&dl=true&id='.$id.'&start='.$start,
             s('Download as CSV file')).'</p><div class="clearfix"></div>';
@@ -89,8 +92,6 @@ echo '<table class="mviewsDetails table table-bordered"><tr><td>' .
 '<div class="six columns col-sm-4 col-lg-3"><b>'.s('Sent').': </b>'.formatDateTime($messagedata['sent']).'</div>'.
 '</td></tr></table>';
 
-echo '<p class="pull-right">'.PageLinkButton('statsoverview&id='.$id,
-            s('Campaign statistics')).'</p><div class="clearfix"></div>';
 
 if ($download) {
     header('Content-disposition:  attachment; filename="phpList Message open statistics for '.$messagedata['subject'].'.csv"');
@@ -211,7 +212,7 @@ while ($row = Sql_Fetch_Array($req)) {
         $element = shortenTextDisplay($row['email'], 35);
         $separator = '<br/>';
     }
-    $ls->addElement($element, PageUrl2('userhistory&amp;id='.$row['userid']));
+    $ls->addElement($element, PageUrl2('user&amp;id='.$row['userid']));
     $ls->addColumn($element, s('Sent'), formatDateTime($row['sent'], 1));
     $ls->addColumn($element, s('Response time'), secs2time($row['responsetime']));
 
