@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: phpList 2.11.X\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-17 21:39+0000\n"
-"PO-Revision-Date: 2017-12-28 22:15+0000\n"
-"Last-Translator: w3host <w3host@w3host.hu>\n"
+"POT-Creation-Date: 2018-09-17 16:55+0000\n"
+"PO-Revision-Date: 2018-09-11 19:07+0000\n"
+"Last-Translator: samtuke <mail@samtuke.com>\n"
 "Language-Team: phpList <info@phplist.com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: public_html\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Basepath: /home/michiel/svn/phplist/translate/phplist\n"
-"X-POOTLE-MTIME: 1514499301.000000\n"
+"X-POOTLE-MTIME: 1536692857.000000\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;get;s\n"
 
 #: public_html/lists/lt.php:220
@@ -2718,7 +2718,7 @@ msgstr "Igen"
 #: public_html/lists/admin/bouncerule.php:40
 #: public_html/lists/admin/admin.php:196 public_html/lists/admin/admin.php:215
 msgid "No"
-msgstr "S.sz."
+msgstr "Nem"
 
 #: public_html/lists/admin/configure.php:177
 msgid "edit this value"
@@ -6918,6 +6918,7 @@ msgid "Made subscriber %d to receive text"
 msgstr "Az összes felhasználó bejelölése szöveges üzenet fogadásához"
 
 #: public_html/lists/admin/bounce.php:93
+#, php-format
 #, fuzzy, php-format
 msgid "Deleted subscriber %d"
 msgstr "feliratkozó törlése"
