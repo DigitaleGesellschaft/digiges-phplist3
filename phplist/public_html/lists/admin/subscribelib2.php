@@ -398,7 +398,6 @@ if (isset($_POST['subscribe']) && is_email($_POST['email']) && $listsok && $allt
         }
     }
 
-    echo '<p class="information">'.$PoweredBy.'</p>';
     echo $subscribepagedata['footer'];
     //  exit;
     // Instead of exiting here, we return 2. So in lists/index.php
@@ -672,7 +671,6 @@ if (isset($_POST['subscribe']) && is_email($_POST['email']) && $listsok && $allt
     } else {
         echo '<h3>'.$strEmailFailed.'</h3>';
     }
-    echo '<p class="information">'.$PoweredBy.'</p>';
     echo $subscribepagedata['footer'];
     // exit;
     // Instead of exiting here, we return 3. So in lists/index.php

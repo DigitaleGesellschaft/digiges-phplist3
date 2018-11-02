@@ -475,12 +475,6 @@ function constructSystemMail($message, $subject = '')
         $htmlcontent = str_replace('[CONTENT]', $htmlmessage, $htmltemplate);
         $htmlcontent = str_replace('[SUBJECT]', $subject, $htmlcontent);
         $htmlcontent = str_replace('[FOOTER]', '', $htmlcontent);
-        if (!EMAILTEXTCREDITS) {
-            $phpListPowered = preg_replace('/src=".*power-phplist.png"/', 'src="powerphplist.png"',
-                $GLOBALS['PoweredByImage']);
-        } else {
-            $phpListPowered = $GLOBALS['PoweredByText'];
-        }
         if (strpos($htmlcontent, '[SIGNATURE]')) {
             $htmlcontent = str_replace('[SIGNATURE]', $phpListPowered, $htmlcontent);
         } elseif (strpos($htmlcontent, '</body>')) {
@@ -758,7 +752,7 @@ function previewTemplate($id, $adminid = 0, $text = '', $footer = '')
         $template = str_ireplace('[SIGNATURE]',
             '<img src="?page=image&amp;id='.$poweredImageId.'" width="70" height="30" />', $template);
     } else {
-        $template = str_ireplace('[SIGNATURE]', $GLOBALS['PoweredByText'], $template);
+        $template = str_ireplace('[SIGNATURE]', '', $template);
     }
     $template = preg_replace("/\[[A-Z\. ]+\]/", '', $template);
     $template = str_ireplace('<form', '< form', $template);

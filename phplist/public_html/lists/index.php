@@ -373,7 +373,6 @@ if ($login_required && empty($_SESSION['userloggedin']) && !$canlogin) {
             }
             , 'mailto:'.getConfig('admin_address')).
         '">'.s('Contact the administrator').'</a></p>';
-    echo $PoweredBy;
     echo $pagedata['footer'];
 }
 
@@ -411,7 +410,7 @@ function LoginPage($id, $userid, $email = '', $msg = '')
     if (SHOW_UNSUBSCRIBELINK) {
         $html .= '<p><a href="'.getConfig('unsubscribeurl').'&id='.$id.'">'.$GLOBALS['strUnsubscribe'].'</a></p>';
     }
-    $html .= '</form>'.$GLOBALS['PoweredBy'];
+    $html .= '</form>';
     $html .= $GLOBALS['pagedata']['footer'];
 
     return $html;
@@ -443,7 +442,7 @@ function sendPersonalLocationPage($id)
     if (SHOW_UNSUBSCRIBELINK) {
         $html .= '<p><a href="'.getConfig('unsubscribeurl').'&id='.$id.'">'.$GLOBALS['strUnsubscribe'].'</a></p>';
     }
-    $html .= '</form>'.$GLOBALS['PoweredBy'];
+    $html .= '</form>';
     $html .= $GLOBALS['pagedata']['footer'];
 
     return $html;
@@ -542,7 +541,6 @@ function checkEmail()
         $html .= ' &nbsp;&nbsp; <a href="'.getConfig('unsubscribeurl').'&id='.$id.'">'.$GLOBALS['strUnsubscribe'].'</a>';
     }
     $html.='</form>';
-    $html .= $GLOBALS['PoweredBy'];
     $html .= $GLOBALS['pagedata']['footer'];
 
     return $html;
@@ -693,7 +691,6 @@ function checkGroup(name,value)
         $html .= ' &nbsp;&nbsp; <a href="'.getConfig('unsubscribeurl').'&id='.$id.'">'.$GLOBALS['strUnsubscribe'].'</a>';
     }
 	$html .='</form>';
-    $html .= $GLOBALS['PoweredBy'];
     $html .= $GLOBALS['pagedata']['footer'];
     unset($_SESSION['subscriberConfirmed']);
 
@@ -771,7 +768,6 @@ function confirmPage($id)
     $res .= $GLOBALS['pagedata']['header'];
     $res .= '<h3>'.$info.'</h3>';
     $res .= $html;
-    $res .= '<p>'.$GLOBALS['PoweredBy'].'</p>';
     $res .= $GLOBALS['pagedata']['footer'];
 
     return $res;
@@ -927,7 +923,7 @@ function unsubscribePage($id)
         //if ($blacklistRequest) {
         //$res .= '<h3>'.$GLOBALS["strYouAreBlacklisted"] ."</h3>";
         //}
-        $res .= $GLOBALS['PoweredBy'].'</p>';
+        $res .= '</p>';
         $res .= $GLOBALS['pagedata']['footer'];
 
         return $res;
@@ -945,7 +941,6 @@ function unsubscribePage($id)
 
     if (!$email) {
         $res .= '<input type="submit" name="unsubscribe" value="'.$GLOBALS['strContinue'].'"></form>';
-        $res .= $GLOBALS['PoweredBy'];
         $res .= $GLOBALS['pagedata']['footer'];
 
         return $res;
@@ -995,7 +990,6 @@ function unsubscribePage($id)
         $res .= '<p><input type=submit name="unsubscribe" value="'.$GLOBALS['strUnsubscribe'].'"></p>';
     }
     $res .= '</form>';
-    $res .= '<p>'.$GLOBALS['PoweredBy'].'</p>';
     $res .= $GLOBALS['pagedata']['footer'];
 
     return $res;
@@ -1233,7 +1227,6 @@ function forwardPage($id)
             $res .= '<div class="error missing">'.$info.'</div>';
         }
         $res .= $form;
-        $res .= '<p>'.$GLOBALS['PoweredBy'].'</p>';
         $res .= $GLOBALS['pagedata']['footer'];
     }
 //## END MICHIEL

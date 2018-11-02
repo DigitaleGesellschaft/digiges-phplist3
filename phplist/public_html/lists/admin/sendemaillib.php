@@ -209,7 +209,6 @@ function sendEmail($messageid, $email, $hash, $htmlpref = 0, $rssitems = array()
 
     // make sure there are no newlines, otherwise they get turned into <br/>s
     $html['forwardform'] = ''; //sprintf('<form method="get" action="%s" name="forwardform" class="forwardform"><input type="hidden" name="uid" value="%s" /><input type="hidden" name="mid" value="%d" /><input type="hidden" name="p" value="forward" /><input type=text name="email" value="" class="forwardinput" /><input name="Send" type="submit" value="%s" class="forwardsubmit"/></form>',$url,$hash,$messageid,$GLOBALS['strForward']);
-    $text['signature'] = "\n\n-- powered by phpList, www.phplist.com --\n\n";
     $url = getConfig('preferencesurl');
     $sep = strpos($url, '?') === false ? '?' : '&';
     $html['preferences'] = sprintf('<a href="%s%suid=%s">%s</a>', $url, htmlspecialchars($sep), $hash, $strThisLink);
@@ -244,24 +243,8 @@ function sendEmail($messageid, $email, $hash, $htmlpref = 0, $rssitems = array()
         $html['footer'] = $text['footer'];
     }
 
-    /*
-      We request you retain the signature below in your emails including the links.
-      This not only gives respect to the large amount of time given freely
-      by the developers  but also helps build interest, traffic and use of
-      phpList, which is beneficial to it's future development.
-
-      You can configure how the credits are added to your pages and emails in your
-      config file.
-
-      Michiel Dethmers, phpList Ltd 2003 - 2013
-    */
-    if (!EMAILTEXTCREDITS) {
-        $html['signature'] = $PoweredByImage; //'<div align="center" id="signature"><a href="https://www.phplist.com"><img src="powerphplist.png" width=88 height=31 title="Powered by PHPlist" alt="Powered by PHPlist" border="0" /></a></div>';
-        // oops, accidentally became spyware, never intended that, so take it out again :-)
-        $html['signature'] = preg_replace('/src=".*power-phplist.png"/', 'src="powerphplist.png"', $html['signature']);
-    } else {
-        $html['signature'] = $PoweredByText;
-    }
+$html['signature'] = '';
+$text['signature'] = '';
 //  $content = $cached[$messageid]["htmlcontent"];
 
     if (VERBOSE && $getspeedstats) {

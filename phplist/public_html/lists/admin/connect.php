@@ -281,23 +281,23 @@ if (DEVVERSION) {
     $v = VERSION;
 }
 if (REGISTER) {
-    $PoweredByImage = '<p class="poweredby" style="text-align:center"><a href="https://www.phplist.com/poweredby?utm_source=pl'.$v.'&amp;utm_medium=poweredhostedimg&amp;utm_campaign=phpList" title="visit the phpList website" ><img src="'.PHPLIST_POWEREDBY_URLROOT.'/'.$v.'/power-phplist.png" title="powered by phpList version '.$v.', &copy; phpList ltd" alt="powered by phpList '.$v.', &copy; phpList ltd" border="0" /></a></p>';
+    $PoweredByImage = '';
 } else {
-    $PoweredByImage = '<p class="poweredby" style="text-align:center"><a href="https://www.phplist.com/poweredby?utm_source=pl'.$v.'&amp;utm_medium=poweredlocalimg&amp;utm_campaign=phpList" title="visit the phpList website"><img src="images/power-phplist.png" title="powered by phpList version '.$v.', &copy; phpList ltd" alt="powered by phpList '.$v.', &copy; phpList ltd" border="0"/></a></p>';
+    $PoweredByImage = '';
 }
-$PoweredByText = '<div style="clear: both; font-family: arial, verdana, sans-serif; font-size: 8px; font-variant: small-caps; font-weight: normal; padding: 2px; padding-left:10px;padding-top:20px;">powered by <a href="https://www.phplist.com/poweredby?utm_source=download'.$v.'&amp;utm_medium=poweredtxt&amp;utm_campaign=phpList" target="_blank" title="powered by phpList version '.$v.', &copy; phpList ltd">phpList</a></div>';
+$PoweredByText = '';
 
 if (!TEST && REGISTER) {
     if (!PAGETEXTCREDITS) {
-        $PoweredBy = $PoweredByImage;
+        $PoweredBy = '';
     } else {
-        $PoweredBy = $PoweredByText;
+        $PoweredBy = '';
     }
 } else {
     if (!PAGETEXTCREDITS) {
-        $PoweredBy = $PoweredByImage;
+        $PoweredBy = '';
     } else {
-        $PoweredBy = $PoweredByText;
+        $PoweredBy = ''; 
     }
 }
 // some other configuration variables, which need less tweaking

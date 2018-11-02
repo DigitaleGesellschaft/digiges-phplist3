@@ -677,9 +677,9 @@ if (!TEST && REGISTER && defined('VERSION')) {
     } else {
         $v = VERSION;
     }
-    $PoweredBy = '<p align="left"><a href="https://www.phplist.com"><img src="'.PHPLIST_POWEREDBY_URLROOT.'/' . $v . '/power-phplist.png" width="88" height="31" title="powered by phplist" alt="powered by phplist" border="0" /></a></p>';
+    $PoweredBy = '';
 } else {
-    $PoweredBy = '<center><a href="https://www.phplist.com"><img src="images/power-phplist.png" width="88" height="31" title="powered by phplist" alt="powered by phplist" border="0" /></a></center>';
+    $PoweredBy = '';
 }
 
 if (!function_exists('getconfig')) {
