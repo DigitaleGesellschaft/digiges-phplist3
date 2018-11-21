@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-17 21:43+0000\n"
-"PO-Revision-Date: 2017-11-22 09:15+0000\n"
-"Last-Translator: Anxhelo <an_xhelo@hotmail.com>\n"
+"PO-Revision-Date: 2018-10-20 12:19+0000\n"
+"Last-Translator: Kristina <kristina.qejvanaj@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
@@ -12,13 +12,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1511342136.000000\n"
+"X-POOTLE-MTIME: 1540037992.000000\n"
 
 #: public_html/lists/lt.php:220
 msgid ""
 "Profile links in test campaigns only work when you are logged in as an "
 "administrator."
 msgstr ""
+"Lidhjet e profilit në fushatat e testimit funksionojnë vetëm kur hyni si "
+"administrator."
 
 #: public_html/lists/index.php:642
 #, php-format
@@ -117,11 +119,11 @@ msgstr "Dështoi"
 
 #: public_html/lists/admin/runcommand.php:18
 msgid "Invalid command"
-msgstr ""
+msgstr "komanda e pavlefshme"
 
 #: public_html/lists/admin/runcommand.php:22
 msgid "Command result"
-msgstr ""
+msgstr "Rezultati i komandës"
 
 #: public_html/lists/admin/listbounces.php:17
 #: public_html/lists/admin/listbounces.php:31
@@ -149,12 +151,12 @@ msgstr "U kthye në"
 
 #: public_html/lists/admin/listbounces.php:107
 msgid "Subscriber address"
-msgstr ""
+msgstr "Adresa e abonentit"
 
 #: public_html/lists/admin/listbounces.php:108
 #: public_html/lists/admin/actions/listbounces.php:56
 msgid "Total bounces"
-msgstr ""
+msgstr "Gjithsej kthehet "
 
 #: public_html/lists/admin/send.php:85
 msgid "All draft campaigns deleted"
@@ -187,7 +189,7 @@ msgstr "Zgjidhni një mesazh të papërfunduar ekzistues për të punuar"
 
 #: public_html/lists/admin/send.php:102
 msgid "Draft campaigns"
-msgstr ""
+msgstr "Fushatat draft"
 
 #: public_html/lists/admin/send.php:110 public_html/lists/admin/message.php:106
 msgid "entered"
@@ -582,7 +584,7 @@ msgstr "Struktura e Bazës së të Dhënave"
 
 #: public_html/lists/admin/dbcheck.php:14
 msgid "Table"
-msgstr ""
+msgstr "tavolinë"
 
 #: public_html/lists/admin/dbcheck.php:21
 msgid "real name"
@@ -663,7 +665,7 @@ msgstr "mesazhet/hr"
 
 #: public_html/lists/admin/connect.php:135
 msgid "Theme for phpList"
-msgstr ""
+msgstr "Tema për phpList"
 
 #: public_html/lists/admin/connect.php:214
 #: public_html/lists/admin/connect.php:235
@@ -1031,6 +1033,10 @@ msgid ""
 "configuration.php#ini.allow-url-fopen\">URL-aware fopen wrappers</a> needs "
 "to be enabled. This is required to allow installation from a remote URL"
 msgstr ""
+"Opsioni i PHP për <a href=\""
+"http://php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen\"> "
+"Mbështjellësit e fopenit me lidhje URL </a> duhet të aktivizohen. Kjo "
+"kërkohet për të lejuar instalimin nga URL-ja e largët."
 
 #: public_html/lists/admin/plugins.php:171
 msgid ""
@@ -1324,6 +1330,8 @@ msgid ""
 "Make sure you are updated with new security and feature release "
 "announcements (fewer than one message per month)"
 msgstr ""
+"Sigurohuni që të përditësoheni me njoftime të reja të sigurisë dhe "
+"njoftimeve për funksionim (më pak se një mesazh në muaj)"
 
 #: public_html/lists/admin/lib.php:2015
 msgid "Subscribe"
@@ -1336,6 +1344,8 @@ msgstr "Mos u abonohu"
 #: public_html/lists/admin/lib.php:2192
 msgid "Please wait, your request is being processed. Do not refresh this page."
 msgstr ""
+"Ju lutëm prisni , kerkesa juaj është duke u proceduar. Mos e ringarko këtë "
+"faqe."
 
 #: public_html/lists/admin/lib.php:2194
 msgid "Still loading"
@@ -1346,10 +1356,12 @@ msgid ""
 "It may seem to take a while, but there is a lot of data to crunch<br/>if you "
 "have a lot of subscribers and campaigns"
 msgstr ""
+"Mund të duket një kohë e gjatë, por ka shumë të dhëna për t'u përplasur <br/>"
+" nëse ke shumë abonentë dhe fushata"
 
 #: public_html/lists/admin/lib.php:2196
 msgid "It should be soon now, your page content is almost here."
-msgstr ""
+msgstr "Duhet të jetë së shpejti, përmbajtja juaj e faqes është pothuajse këtu."
 
 #: public_html/lists/admin/lib.php:2197
 msgid ""
@@ -1360,24 +1372,29 @@ msgstr ""
 #: public_html/lists/admin/lib.php:2198
 msgid "Still loading, please be patient, your page content will show shortly."
 msgstr ""
+"Kjo duket se zgjat më shumë se sa pritej, duket sikur ka shumë të dhëna për "
+"të punuar."
 
 #: public_html/lists/admin/lib.php:2199
 msgid "It will really be soon now until the page will display."
-msgstr ""
+msgstr "Do të jetë vërtetë shpejt nga tani deri sa faqja do të shfaqet"
 
 #: public_html/lists/admin/lib.php:2200
 msgid "Still loading, please wait"
-msgstr ""
+msgstr "Akoma duke u ngarkuar , ju lutëm prisni."
 
 #: public_html/lists/admin/lib.php:2201
 msgid ""
 "The loading has been just over seven minutes. We can wait just a little "
 "longer."
 msgstr ""
+"Ngarkesa ka qenë pak më shumë se shtatë minuta. Mund të presim pak më shumë."
 
 #: public_html/lists/admin/lib.php:2202
 msgid "If the page does not load soon, please report this in the user forums."
 msgstr ""
+"Nëse faqja nuk ngarkohet se shpejti, ju lutem raportoni këtë në forumet e "
+"përdoruesit."
 
 #: public_html/lists/admin/statsoverview.php:32
 #: public_html/lists/admin/statsoverview.php:44
@@ -1823,7 +1840,7 @@ msgstr ""
 
 #: public_html/lists/admin/community.php:54
 msgid "phpList Hosted"
-msgstr ""
+msgstr "phpList i hostuar"
 
 #: public_html/lists/admin/processbounces.php:14
 #: public_html/lists/admin/actions/processqueue.php:8
@@ -4811,9 +4828,9 @@ msgstr "Duke u dhënë një ID unike %d abonentëve, kjo mund të marrë pak koh
 
 #: public_html/lists/admin/actions/processqueue.php:94
 #: public_html/lists/admin/actions/processqueue.php:95
-#, php-format
+#, fuzzy, php-format
 msgid "Giving a UUID to %d subscribers, this may take a while"
-msgstr ""
+msgstr "Duke u dhënë një ID unike %d abonentëve, kjo mund të marrë pak kohë"
 
 #: public_html/lists/admin/actions/processqueue.php:104
 #, php-format
@@ -7725,8 +7742,9 @@ msgid "Get some help"
 msgstr ""
 
 #: public_html/lists/admin/index.php:519
+#, fuzzy
 msgid "Download the latest version"
-msgstr ""
+msgstr "Shkarkoni versionin e ri"
 
 #: public_html/lists/admin/index.php:517
 #, php-format

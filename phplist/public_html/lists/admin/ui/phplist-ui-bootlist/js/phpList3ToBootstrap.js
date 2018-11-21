@@ -216,6 +216,8 @@ $('body.fixed li.list').each(function(){
         $('.accordion .panel-default:first h3 .panel-heading').attr('aria-expanded','true');
         $('.accordion .panel-default div').not('.accordion .panel-default div div, .accordion .panel-heading').addClass('panel-collapse collapse');
         $('.accordion .panel-default:first .panel-collapse').addClass(' in ');
+        $('.allexpanded .panel-default .panel-collapse').addClass(' in');
+        $('.allexpanded .panel-default h3 .panel-heading').attr('aria-expanded:true');
         $('.accordion .panel-default .panel-collapse').wrapInner('<div class="panel-body"/>').attr({ 'role':'tabpanel', 'id':function(i) { 
         	return 'collapse'+(i+1); },'aria-labelledby':function(i) { return 'heading'+(i+1); } });
 	    }
@@ -331,13 +333,6 @@ $('body.fixed li.list').each(function(){
     /*yes/no icons */
     $('span.yes').addClass('glyphicon glyphicon-ok text-success').empty();
     $('span.no').addClass('glyphicon glyphicon-ban-circle text-danger').empty();
-
-   /* modals */
-    $('.opendialog').each(function(k,val){
-        var value = $(this).attr('href');
-        $(this).attr({ 'data-target':'#mymodal'+k, 'data-toggle':'modal', 'href':value + '&embed=yes&omitall=yes'});
-        $('#footer').append('<div class="modal fade" id="mymodal'+k+'" tabindex="-1" role="dialog" aria-labelledby="mymodalLabel" aria-hidden="true"><div class="modal-dialog modal-lg"><button type="button" class="close externo" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button><div class="modal-content well col-lg-12"></div></div></div>');
-    });
 
 /* tables*/
 

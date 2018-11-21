@@ -3,104 +3,113 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-17 21:38+0000\n"
-"PO-Revision-Date: 2012-05-18 18:49+0200\n"
-"Last-Translator: Kostas <kostas@creativecollective.gr>\n"
+"PO-Revision-Date: 2018-11-10 10:52+0000\n"
+"Last-Translator: Kristina <kristina.qejvanaj@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n !=1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
 "X-Poedit-SearchPath-0: public_html\n"
 "X-Poedit-Basepath: /home/michiel/svn/phplist/translate/phplist\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;get;s\n"
+"X-POOTLE-MTIME: 1541847156.000000\n"
 
 #: public_html/lists/lt.php:220
 msgid ""
 "Profile links in test campaigns only work when you are logged in as an "
 "administrator."
 msgstr ""
+"Οι σύνδεσμοι προφίλ στις δοκιμαστικές καμπάνιες λειτουργούν μόνο όταν είστε "
+"συνδεδεμένοι ως διαχειριστές."
 
 #: public_html/lists/index.php:642
 #, php-format
 msgid "You are logged in as administrator (%s) of this phpList system"
-msgstr ""
+msgstr "Έχετε συνδεθεί ως διαχειριστής (% s) αυτού του συστήματος phpList"
 
 #: public_html/lists/index.php:644
 msgid ""
 "You are therefore offered the following choice, which your subscribers will "
 "not see when they load this page."
 msgstr ""
+"Σας προσφέρεται η ακόλουθη επιλογή, με την οποία οι συνδρομητές δεν θα "
+"βλέπουν όταν προβάλουν τη σελίδα αυτή."
 
 #: public_html/lists/index.php:645
 msgid "Go back to admin area"
-msgstr ""
+msgstr "Πήγαινε πίσω στη περιοχή του διαχειριστή."
 
 #: public_html/lists/index.php:646
 msgid "Please choose"
-msgstr ""
+msgstr "Παρακαλώ επιλέξτε"
 
 #: public_html/lists/index.php:646
 msgid "Make this subscriber confirmed immediately"
-msgstr ""
+msgstr "Κάντε αυτό το συνδρομητή να επιβεβαιώνεται αμέσως"
 
 #: public_html/lists/index.php:647
 msgid "Send this subscriber a request for confirmation email"
-msgstr ""
+msgstr "Αποστολή ηλεκτρονικού μηνύματος επιβεβαίωσης προς αυτόν τον συνδρομητή."
 
 #: public_html/lists/index.php:718
 msgid ""
 "Subscriber removed from Blacklist for manual confirmation of subscription"
 msgstr ""
+"Ο συνδρομητής αφαιρέθηκε από την λίστα κακόβουλων για χειροκίνητη "
+"επιβεβαίωση της εγγραφής"
 
 #: public_html/lists/index.php:736
 msgid "Subscriber has been removed from blacklist"
-msgstr ""
+msgstr "Ο συνδομητής αφαιρέθηκε από τη λίστα κακόβουλων"
 
 #: public_html/lists/index.php:826
 msgid "Forwarded receiver requested blacklist"
-msgstr ""
+msgstr "Ο προωθούμενος δέκτης ζήτησε μαύρη λίστα"
 
 #: public_html/lists/index.php:834
 msgid "\"Jump off\" used by subscriber, reason not requested"
-msgstr ""
+msgstr "\"Μετάβαση\" που χρησιμοποιείται από συνδρομητή, ο λόγος δεν ζητήθηκε"
 
 #: public_html/lists/index.php:836
 msgid "\"Jump off\" set, reason not requested"
-msgstr ""
+msgstr "Έγγραφο \"Μετάβαση εκτός\", λόγος που δεν ζητήθηκε"
 
 #: public_html/lists/index.php:1023
 msgid ""
 "When testing the phpList forward functionality, you need to be logged in as "
 "an administrator."
 msgstr ""
+"Κατά τη δοκιμή της λειτουργίας phpList forward, πρέπει να είστε συνδεδεμένοι "
+"ως διαχειριστής."
 
 #: public_html/lists/index.php:1110 public_html/lists/index.php:1121
 msgid "Message Forwarded"
-msgstr ""
+msgstr "Μήνυμα προωθημένο"
 
 #: public_html/lists/index.php:1111
 #, php-format
 msgid "%s has forwarded message %d to %s"
-msgstr ""
+msgstr "Το% s έχει προωθήσει το μήνυμα% d στο% s"
 
 #: public_html/lists/index.php:1122
 #, php-format
 msgid "%s tried forwarding message %d to %s but failed"
-msgstr ""
+msgstr "% s προσπάθησε το μήνυμα προώθησης% d στο% s αλλά απέτυχε"
 
 #: public_html/lists/index.php:1138
 #, php-format
 msgid "Forward request from invalid user ID: %s"
-msgstr ""
+msgstr "Προώθηση αίτησης από άκυρο αναγνωριστικό χρήστη:% s"
 
 #: public_html/lists/admin/runcommand.php:8
 #: public_html/lists/admin/processbounces.php:9
 #: public_html/lists/admin/initlanguages.php:8
 #: public_html/lists/admin/readtestmail.php:29
 msgid "This page can only be called from the commandline"
-msgstr ""
+msgstr "Αυτή η σελίδα μπορεί να καλείται μόνο από την γραμμή εντολών"
 
 #: public_html/lists/admin/runcommand.php:12
 #: public_html/lists/admin/pageaction.php:16
@@ -110,15 +119,15 @@ msgstr ""
 #: public_html/lists/admin/tests/sendpage.php:34
 #: public_html/lists/admin/tests/sendpage.php:42
 msgid "Failed"
-msgstr ""
+msgstr "απέτυχε"
 
 #: public_html/lists/admin/runcommand.php:18
 msgid "Invalid command"
-msgstr ""
+msgstr "Μη έγκυρη εντολή"
 
 #: public_html/lists/admin/runcommand.php:22
 msgid "Command result"
-msgstr ""
+msgstr "Αποτέλεσμα εντολής"
 
 #: public_html/lists/admin/listbounces.php:17
 #: public_html/lists/admin/listbounces.php:31
@@ -129,69 +138,69 @@ msgstr ""
 #: public_html/lists/admin/editlist.php:20
 #: public_html/lists/admin/editlist.php:41
 msgid "You do not have enough privileges to view this page"
-msgstr ""
+msgstr "Δεν έχετε αρκετά δικαιώματα για να δείτε αυτή τη σελίδα"
 
 #: public_html/lists/admin/listbounces.php:64
 msgid "Select another list"
-msgstr ""
+msgstr "Επιλέξτε μια άλλη λίστα"
 
 #: public_html/lists/admin/listbounces.php:76
 #, php-format
 msgid "%d bounces to list %s"
-msgstr ""
+msgstr "Το% d αναπηδά στη λίστα% s"
 
 #: public_html/lists/admin/listbounces.php:96
 msgid "Bounces on"
-msgstr ""
+msgstr "Αναπηδά"
 
 #: public_html/lists/admin/listbounces.php:107
 msgid "Subscriber address"
-msgstr ""
+msgstr "Διεύθυνση συνδρομητή"
 
 #: public_html/lists/admin/listbounces.php:108
 #: public_html/lists/admin/actions/listbounces.php:56
 msgid "Total bounces"
-msgstr ""
+msgstr "Το σύνολο αναπηδά"
 
 #: public_html/lists/admin/send.php:85
 msgid "All draft campaigns deleted"
-msgstr ""
+msgstr "Όλα τα σχέδια καμπάνιας διαγράφηκαν"
 
 #: public_html/lists/admin/send.php:86
 msgid "campaigns deleted"
-msgstr ""
+msgstr "Όλα τα σχέδια καμπάνιας διαγράφηκαν"
 
 #: public_html/lists/admin/send.php:90
 msgid "campaign deleted"
-msgstr ""
+msgstr "η καμπάνια διαγράφεται"
 
 #: public_html/lists/admin/send.php:91
 msgid "Campaign deleted"
-msgstr ""
+msgstr "η καμπάνια διαγράφεται"
 
 #: public_html/lists/admin/send.php:99
 msgid "start a new message"
-msgstr ""
+msgstr "Ξεκινησε ενα νεο μηνυμα"
 
 #: public_html/lists/admin/send.php:100 public_html/lists/admin/messages.php:77
 msgid "Start a new campaign"
-msgstr ""
+msgstr "Ξεκινήστε μια νέα καμπάνια"
 
 #: public_html/lists/admin/send.php:101
 msgid "Choose an existing draft campaign to work on"
-msgstr ""
+msgstr "Επιλέξτε μια υπάρχουσα πρόχειρη καμπάνια για να εργαστείτε"
 
 #: public_html/lists/admin/send.php:102
 msgid "Draft campaigns"
-msgstr ""
+msgstr "σχέδια εκστρατειών"
 
 #: public_html/lists/admin/send.php:110 public_html/lists/admin/message.php:106
 msgid "entered"
-msgstr ""
+msgstr "εισήχθη"
 
 #: public_html/lists/admin/send.php:111
 msgid "age"
-msgstr ""
+msgstr "Ηλικία"
 
 #: public_html/lists/admin/send.php:113 public_html/lists/admin/spage.php:76
 #: public_html/lists/admin/send_core.php:949
@@ -200,301 +209,309 @@ msgstr ""
 #: public_html/lists/admin/bouncerules.php:111
 #: public_html/lists/admin/bouncerules.php:112
 msgid "del"
-msgstr ""
+msgstr "Βγαινει"
 
 #: public_html/lists/admin/send.php:115
 #: public_html/lists/admin/editattributes.php:50
 msgid "delete all"
-msgstr ""
+msgstr "διαγραφή όλων"
 
 #: public_html/lists/admin/send.php:144
 msgid "Please select the lists you want to send your campaign to"
-msgstr ""
+msgstr "πιλέξτε τις λίστες στις οποίες θέλετε να στείλετε την καμπάνια σας"
 
 #: public_html/lists/admin/send.php:151
 msgid "Please select the lists you want to exclude from this campaign"
-msgstr ""
+msgstr "Επιλέξτε τις λίστες που θέλετε να εξαιρέσετε από αυτήν την καμπάνια"
 
 #: public_html/lists/admin/send.php:157
 msgid ""
 "The campaign will go to users who are a member of the lists above,     "
 "unless they are a member of one of the lists you select here."
 msgstr ""
+"Η καμπάνια θα μεταβεί σε χρήστες που είναι μέλη των παραπάνω λιστών, εκτός "
+"αν είναι μέλος μιας από τις λίστες που επιλέγετε εδώ."
 
 #: public_html/lists/admin/home.php:11
 msgid "Your database is out of date, please make sure to upgrade"
-msgstr ""
+msgstr "Η βάση δεδομένων σας είναι παλιά, βεβαιωθείτε ότι έχετε αναβαθμίσει"
 
 #: public_html/lists/admin/home.php:12 public_html/lists/admin/home.php:73
 msgid "Your version"
-msgstr ""
+msgstr "Η έκδοση σας"
 
 #: public_html/lists/admin/home.php:13
 msgid "phplist version"
-msgstr ""
+msgstr "έκδοση phplist"
 
 #: public_html/lists/admin/home.php:14 public_html/lists/admin/home.php:390
 #: public_html/lists/admin/initialise.php:251
 #: public_html/lists/admin/upgrade.php:347
 msgid "Upgrade"
-msgstr ""
+msgstr "έκδοση phplist"
 
 #: public_html/lists/admin/home.php:19
 msgid "Database has not been initialised"
-msgstr ""
+msgstr "Η βάση δεδομένων δεν έχει αρχικοποιηθεί"
 
 #: public_html/lists/admin/home.php:20
 msgid "go to"
-msgstr ""
+msgstr "παω σε"
 
 #: public_html/lists/admin/home.php:21 public_html/lists/admin/setup.php:22
 msgid "Initialise Database"
-msgstr ""
+msgstr "παω σε"
 
 #: public_html/lists/admin/home.php:22
 msgid "to continue"
-msgstr ""
+msgstr "συνεχιζεται"
 
 #: public_html/lists/admin/home.php:70
 msgid "A new version of phpList is available!"
-msgstr ""
+msgstr "Μια νέα έκδοση του phpList είναι διαθέσιμη!"
 
 #: public_html/lists/admin/home.php:72
 msgid ""
 "The new version may have fixed security issues,<br/>so it is recommended to "
 "upgrade as soon as possible"
 msgstr ""
+"Η νέα έκδοση ενδέχεται να έχει σταθερά ζητήματα ασφαλείας, <br/> γι 'αυτό "
+"συνιστάται να αναβαθμίσετε το συντομότερο δυνατό"
 
 #: public_html/lists/admin/home.php:74
 msgid "Latest version"
-msgstr ""
+msgstr "Τελευταία έκδοση"
 
 #: public_html/lists/admin/home.php:75
 msgid "Read what has changed in the new version"
-msgstr ""
+msgstr "Διαβάστε τι έχει αλλάξει στη νέα έκδοση"
 
 #: public_html/lists/admin/home.php:75
 msgid "View what has changed"
-msgstr ""
+msgstr "Δείτε τι έχει αλλάξει"
 
 #: public_html/lists/admin/home.php:76
 msgid "Download the new version"
-msgstr ""
+msgstr "Κάντε λήψη της νέας έκδοσης"
 
 #: public_html/lists/admin/home.php:76
 msgid "Download"
-msgstr ""
+msgstr "Κατεβάστε"
 
 #: public_html/lists/admin/home.php:86 public_html/lists/admin/index.php:490
 msgid "Continue Configuration"
-msgstr ""
+msgstr "Συνεχίστε τη διαμόρφωση"
 
 #: public_html/lists/admin/home.php:89
 msgid "Continue the Configuration process of phpList"
-msgstr ""
+msgstr "Συνεχίστε την διαδικασία διαμόρφωσης του phpList"
 
 #: public_html/lists/admin/home.php:96
 #: public_html/lists/admin/importsimple.php:118
 msgid "Send a campaign"
-msgstr ""
+msgstr "Αποστολή καμπάνιας"
 
 #: public_html/lists/admin/home.php:99
 msgid "Start or continue a campaign"
-msgstr ""
+msgstr "Ξεκινήστε ή συνεχίστε μια καμπάνια"
 
 #: public_html/lists/admin/home.php:104
 msgid "Manage Campaigns"
-msgstr ""
+msgstr "Διαχείριση καμπανιών"
 
 #: public_html/lists/admin/home.php:107
 msgid "View current campaigns"
-msgstr ""
+msgstr "Προβολή τρέχων εκστρατειών"
 
 #: public_html/lists/admin/home.php:112
 msgid "Manage Subscribers"
-msgstr ""
+msgstr "Διαχείριση συνδρομητών"
 
 #: public_html/lists/admin/home.php:115
 msgid "Search, edit and add Subscribers"
-msgstr ""
+msgstr "Αναζήτηση, επεξεργασία και προσθήκη συνδρομητών"
 
 #: public_html/lists/admin/home.php:120 public_html/lists/admin/admin.php:267
 #: public_html/lists/admin/importadmin.php:340
 msgid "View Statistics"
-msgstr ""
+msgstr "Προβολή στατιστικών"
 
 #: public_html/lists/admin/home.php:123 public_html/lists/admin/message.php:97
 msgid "View statistics"
-msgstr ""
+msgstr "Προβολή στατιστικών"
 
 #: public_html/lists/admin/home.php:128
 msgid "Main"
-msgstr ""
+msgstr "Κύριο"
 
 #: public_html/lists/admin/home.php:138
 msgid "Manage Lists"
-msgstr ""
+msgstr "Διαχείριση λιστών"
 
 #: public_html/lists/admin/home.php:141
 msgid "View, edit and add lists, that your subscribers can sign up to"
 msgstr ""
+"Προβολή, επεξεργασία και προσθήκη χρηστών, των οποίων οι συνδρομητές μπορούν "
+"να εγγραφούν"
 
 #: public_html/lists/admin/home.php:147 public_html/lists/admin/import4.php:118
 msgid "users"
-msgstr ""
+msgstr "χρήστες"
 
 #: public_html/lists/admin/home.php:149
 msgid "List all Users"
-msgstr ""
+msgstr "Λίστα όλων των χρηστών"
 
 #: public_html/lists/admin/home.php:154 public_html/lists/admin/import1.php:240
 msgid "import"
-msgstr ""
+msgstr "εισαγωγή"
 
 #: public_html/lists/admin/home.php:156
 msgid "Import Users"
-msgstr ""
+msgstr "Εισαγωγή χρηστών"
 
 #: public_html/lists/admin/home.php:161
 msgid "export"
-msgstr ""
+msgstr "εξαγωγή"
 
 #: public_html/lists/admin/home.php:163
 msgid "Export Users"
-msgstr ""
+msgstr "Εξαγωγή χρηστών"
 
 #: public_html/lists/admin/home.php:168
 msgid "reconcileusers"
-msgstr ""
+msgstr "ανασυγκροτητές"
 
 #: public_html/lists/admin/home.php:171
 msgid "Reconcile the User Database"
-msgstr ""
+msgstr "Επανασυνδέστε τη βάση δεδομένων χρηστών"
 
 #: public_html/lists/admin/home.php:175
 msgid "List and user functions"
-msgstr ""
+msgstr "Λειτουργίες λίστας και χρήστη"
 
 #: public_html/lists/admin/home.php:184
 msgid "configure"
-msgstr ""
+msgstr "Διαμορφώστε"
 
 #: public_html/lists/admin/home.php:187 public_html/lists/admin/plugins.php:240
 msgid "Configure"
-msgstr ""
+msgstr "Διαμορφώστε"
 
 #: public_html/lists/admin/home.php:192
 msgid "attributes"
-msgstr ""
+msgstr "γνωρίσματα"
 
 #: public_html/lists/admin/home.php:195
 msgid "Configure Attributes"
-msgstr ""
+msgstr "Ρύθμιση ιδιοτήτων"
 
 #: public_html/lists/admin/home.php:203
 msgid "Control values for"
-msgstr ""
+msgstr "Έλεγχος τιμών για"
 
 #: public_html/lists/admin/home.php:211
 msgid "spage"
-msgstr ""
+msgstr "σφαίρα"
 
 #: public_html/lists/admin/home.php:214
 msgid "Configure Subscribe Pages"
-msgstr ""
+msgstr "Διαμόρφωση σελίδων εγγραφής"
 
 #: public_html/lists/admin/home.php:219
 msgid "Configuration Functions"
-msgstr ""
+msgstr "Λειτουργίες διαμόρφωσης"
 
 #: public_html/lists/admin/home.php:229
 msgid "admins"
-msgstr ""
+msgstr "διαχειριστές"
 
 #: public_html/lists/admin/home.php:232
 msgid "Add, edit and remove Administrators"
-msgstr ""
+msgstr "Προσθήκη, επεξεργασία και αφαίρεση διαχειριστών"
 
 #: public_html/lists/admin/home.php:237
 msgid "adminattributes"
-msgstr ""
+msgstr "admin χαρακτηριστικά"
 
 #: public_html/lists/admin/home.php:240
 msgid "Configure Attributes for administrators"
-msgstr ""
+msgstr "Ρύθμιση παραμέτρων για διαχειριστές"
 
 #: public_html/lists/admin/home.php:245
 msgid "Administrator Functions"
-msgstr ""
+msgstr "Λειτουργίες διαχειριστή"
 
 #: public_html/lists/admin/home.php:255 public_html/lists/admin/list.php:233
 #: public_html/lists/admin/list.php:303
 msgid "send"
-msgstr ""
+msgstr "αποστολή"
 
 #: public_html/lists/admin/home.php:257
 msgid "Send a Message"
-msgstr ""
+msgstr "Αποστολή μηνύματος"
 
 #: public_html/lists/admin/home.php:263
 msgid "preparesend"
-msgstr ""
+msgstr "προετοιμασία αποστολης"
 
 #: public_html/lists/admin/home.php:266
 msgid "Prepare a Message"
-msgstr ""
+msgstr "Προετοιμασία μηνύματος"
 
 #: public_html/lists/admin/home.php:271
 msgid "sendprepared"
-msgstr ""
+msgstr "αποστολής"
 
 #: public_html/lists/admin/home.php:274
 msgid "Send a Prepared Message"
-msgstr ""
+msgstr "Στειλε ενα προετοιμασμενο μηνυμα"
 
 #: public_html/lists/admin/home.php:280
 msgid "templates"
-msgstr ""
+msgstr "πρότυπα"
 
 #: public_html/lists/admin/home.php:283
 msgid "Configure Templates"
-msgstr ""
+msgstr "Ρυθμίστε τα πρότυπα"
 
 #: public_html/lists/admin/home.php:288 public_html/lists/admin/import3.php:162
 #: public_html/lists/admin/import3.php:388
 msgid "messages"
-msgstr ""
+msgstr "μηνύματα"
 
 #: public_html/lists/admin/home.php:291
 msgid "List all Messages"
-msgstr ""
+msgstr "Κατάλογος όλων των μηνυμάτων"
 
 #: public_html/lists/admin/home.php:296
 #: public_html/lists/admin/send_core.php:388
 msgid "processqueue"
-msgstr ""
+msgstr "ουρά επεξεργασίας"
 
 #: public_html/lists/admin/home.php:299
 msgid "Process the Message Queue"
-msgstr ""
+msgstr "Επεξεργασία της ουράς μηνυμάτων"
 
 #: public_html/lists/admin/home.php:302 public_html/lists/admin/connect.php:565
 msgid "warning"
-msgstr ""
+msgstr "προειδοποίηση"
 
 #: public_html/lists/admin/home.php:303
 msgid ""
 "You have set TEST in config.php to 1, so it will only show what would be sent"
 msgstr ""
+"Έχετε ορίσει το TEST στο config.php σε 1, οπότε θα δείξει μόνο τι θα "
+"αποσταλεί"
 
 #: public_html/lists/admin/home.php:308
 msgid "processbounces"
-msgstr ""
+msgstr "διεργασίες"
 
 #: public_html/lists/admin/home.php:311
 #: public_html/lists/admin/bouncemgt.php:15
 msgid "Process Bounces"
-msgstr ""
+msgstr "Η διαδικασία αναπηδά"
 
 #: public_html/lists/admin/home.php:316
 #: public_html/lists/admin/reconcileusers.php:215
@@ -504,32 +521,32 @@ msgstr ""
 #: public_html/lists/admin/bounces.php:89
 #: public_html/lists/admin/bounces.php:140
 msgid "bounces"
-msgstr ""
+msgstr "αναπηδά"
 
 #: public_html/lists/admin/home.php:318
 #: public_html/lists/admin/bouncemgt.php:11
 msgid "View Bounces"
-msgstr ""
+msgstr "Προβολή αναπηδήσεων"
 
 #: public_html/lists/admin/home.php:322
 msgid "Message Functions"
-msgstr ""
+msgstr "Λειτουργίες μηνυμάτων"
 
 #: public_html/lists/admin/home.php:371 public_html/lists/admin/about.php:134
 msgid "Plugins"
-msgstr ""
+msgstr "προσθηκη"
 
 #: public_html/lists/admin/home.php:381
 msgid "setup"
-msgstr ""
+msgstr "αρχιζω"
 
 #: public_html/lists/admin/home.php:383
 msgid "Setup "
-msgstr ""
+msgstr "στήνω"
 
 #: public_html/lists/admin/home.php:388
 msgid "upgrade"
-msgstr ""
+msgstr "αναβαθμίζω"
 
 #: public_html/lists/admin/home.php:395
 msgid "dbcheck"
@@ -537,86 +554,86 @@ msgstr ""
 
 #: public_html/lists/admin/home.php:398
 msgid "Check Database structure"
-msgstr ""
+msgstr "Ελέγξτε τη δομή βάσης δεδομένων"
 
 #: public_html/lists/admin/home.php:404
 msgid "eventlog"
-msgstr ""
+msgstr "αρχείο καταγραφής συμβάντων"
 
 #: public_html/lists/admin/home.php:407
 msgid "View the eventlog"
-msgstr ""
+msgstr "Δείτε το αρχείο συμβάντων"
 
 #: public_html/lists/admin/home.php:412
 msgid "admin"
-msgstr ""
+msgstr "διαχειριστής"
 
 #: public_html/lists/admin/home.php:415
 msgid "Change your details (e.g. password)"
-msgstr ""
+msgstr "Αλλάξτε τα στοιχεία σας (π.χ. κωδικός πρόσβασης)"
 
 #: public_html/lists/admin/home.php:419
 msgid "System Functions"
-msgstr ""
+msgstr "Λειτουργίες συστήματος"
 
 #: public_html/lists/admin/dbcheck.php:8
 msgid "Database structure check"
-msgstr ""
+msgstr "Έλεγχος δομής βάσης δεδομένων"
 
 #: public_html/lists/admin/dbcheck.php:13
 msgid "Database structure"
-msgstr ""
+msgstr "Δομή βάσης δεδομένων"
 
 #: public_html/lists/admin/dbcheck.php:14
 msgid "Table"
-msgstr ""
+msgstr "τραπεζι"
 
 #: public_html/lists/admin/dbcheck.php:21
 msgid "real name"
-msgstr ""
+msgstr "το αληθινο ονομα"
 
 #: public_html/lists/admin/dbcheck.php:51
 #: public_html/lists/admin/dbcheck.php:54
 msgid "exist"
-msgstr ""
+msgstr "υπάρχει"
 
 #: public_html/lists/admin/dbcheck.php:80
 #: public_html/lists/admin/dbcheck.php:83
 #: public_html/lists/admin/import3.php:380
 #: public_html/lists/admin/initialise.php:161
 msgid "ok"
-msgstr ""
+msgstr "Εντάξει"
 
 #: public_html/lists/admin/dbcheck.php:86
 msgid "index"
-msgstr ""
+msgstr "δείκτης"
 
 #: public_html/lists/admin/dbcheck.php:89
 msgid "unique"
-msgstr ""
+msgstr "μοναδικός"
 
 #: public_html/lists/admin/dbcheck.php:92
 msgid "category"
-msgstr ""
+msgstr "κατηγορία"
 
 #: public_html/lists/admin/dbcheck.php:95
 msgid "check"
-msgstr ""
+msgstr "έλεγχος"
 
 #: public_html/lists/admin/msgstatus.php:15
 #: public_html/lists/admin/actions/msgstatus.php:69
 msgid "requeue"
-msgstr ""
+msgstr "ζήτηση"
 
 #: public_html/lists/admin/msgstatus.php:19
 msgid "Stalled"
-msgstr ""
+msgstr "Σταματήθηκε"
 
 #: public_html/lists/admin/msgstatus.php:27
 #: public_html/lists/admin/actions/msgstatus.php:73
 #: public_html/lists/admin/actions/msgstatus.php:87
 msgid "still to process"
-msgstr ""
+msgstr "ακόμα να επεξεργαστεί"
 
 #: public_html/lists/admin/msgstatus.php:28
 #: public_html/lists/admin/actions/msgstatus.php:123
@@ -632,7 +649,7 @@ msgstr ""
 #: public_html/lists/admin/uclicks.php:133
 #: public_html/lists/admin/mviews.php:134 public_html/databasestructure.php:65
 msgid "sent"
-msgstr ""
+msgstr "στάλθηκε"
 
 #: public_html/lists/admin/msgstatus.php:30
 #: public_html/lists/admin/members.php:89
@@ -640,123 +657,123 @@ msgstr ""
 #: public_html/lists/admin/actions/msgstatus.php:124
 #: public_html/lists/admin/import3.php:159
 msgid "Processing"
-msgstr ""
+msgstr "Επεξεργασία"
 
 #: public_html/lists/admin/msgstatus.php:31
 #: public_html/lists/admin/actions/msgstatus.php:125
 #: public_html/lists/admin/actions/processqueue.php:272
 msgid "msgs/hr"
-msgstr ""
+msgstr "μηνύματα/ώρα"
 
 #: public_html/lists/admin/connect.php:135
 msgid "Theme for phpList"
-msgstr ""
+msgstr "Θέμα για το phpList"
 
 #: public_html/lists/admin/connect.php:214
 #: public_html/lists/admin/connect.php:235
 msgid "Invalid value for email address"
-msgstr ""
+msgstr "Μη έγκυρη τιμή για τη διεύθυνση ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/connect.php:461
 msgid "error"
-msgstr ""
+msgstr "λάθος"
 
 #: public_html/lists/admin/connect.php:519
 msgid "Too many errors, please login again"
-msgstr ""
+msgstr "Πάρα πολλά λάθη, συνδεθείτε ξανά"
 
 #: public_html/lists/admin/connect.php:529
 #: public_html/lists/admin/connect.php:534
 msgid "fatalerror"
-msgstr ""
+msgstr "μοιραίο λάθος"
 
 #: public_html/lists/admin/connect.php:555
 msgid "Documentation about this error"
-msgstr ""
+msgstr "Τεκμηρίωση σχετικά με αυτό το σφάλμα"
 
 #: public_html/lists/admin/connect.php:558
 #: public_html/lists/admin/plugins.php:232
 msgid "More information"
-msgstr ""
+msgstr "Περισσότερες πληροφορίες"
 
 #: public_html/lists/admin/connect.php:864
 msgid "Main Page"
-msgstr ""
+msgstr "Κύρια σελίδα"
 
 #: public_html/lists/admin/connect.php:865
 msgid "about"
-msgstr ""
+msgstr "σχετικά"
 
 #: public_html/lists/admin/connect.php:933
 msgid "In this section"
-msgstr ""
+msgstr "σε αυτή την ενότητα"
 
 #: public_html/lists/admin/connect.php:972
 msgid "Recently visited"
-msgstr ""
+msgstr "Πρόσφατες επισκέψεις"
 
 #: public_html/lists/admin/connect.php:1313
 msgid "All Lists"
-msgstr ""
+msgstr "Όλες οι λίστες"
 
 #: public_html/lists/admin/connect.php:1319
 msgid "All Public Lists"
-msgstr ""
+msgstr "Όλες οι δημόσιες λίστες"
 
 #: public_html/lists/admin/connect.php:1323
 #: public_html/lists/admin/import2.php:651 public_html/lists/admin/list.php:95
 #: public_html/lists/admin/list.php:99 public_html/lists/admin/list.php:341
 #: public_html/lists/admin/import3.php:43
 msgid "Add a list"
-msgstr ""
+msgstr "Προσθέστε μια λίστα"
 
 #: public_html/lists/admin/connect.php:1334
 #: public_html/lists/admin/list.php:135 public_html/lists/admin/list.php:145
 #: public_html/lists/admin/list.php:167 public_html/lists/admin/list.php:175
 msgid "Uncategorised"
-msgstr ""
+msgstr "Μη ταξινομημένα"
 
 #: public_html/lists/admin/connect.php:1351
 msgid "Public list"
-msgstr ""
+msgstr "Δημόσια λίστα"
 
 #: public_html/lists/admin/connect.php:1353
 msgid "Private list"
-msgstr ""
+msgstr "Ιδιωτικός κατάλογος"
 
 #: public_html/lists/admin/connect.php:1400
 #: public_html/lists/admin/connect.php:1403
 #: public_html/lists/admin/export.php:132
 msgid "Select all"
-msgstr ""
+msgstr "Επιλογή όλων"
 
 #: public_html/lists/admin/connect.php:1417
 msgid "There are no lists available"
-msgstr ""
+msgstr "Δεν υπάρχουν λίστες διαθέσιμες"
 
 #: public_html/lists/admin/connect.php:1674
 #: public_html/lists/admin/systemstats.php:13
 #: public_html/lists/admin/date.php:27
 msgid "January"
-msgstr ""
+msgstr "Ιανουάριος"
 
 #: public_html/lists/admin/connect.php:1675
 #: public_html/lists/admin/systemstats.php:14
 #: public_html/lists/admin/date.php:28
 msgid "February"
-msgstr ""
+msgstr "Φεβρουάριος"
 
 #: public_html/lists/admin/connect.php:1676
 #: public_html/lists/admin/systemstats.php:15
 #: public_html/lists/admin/date.php:29
 msgid "March"
-msgstr ""
+msgstr "Μάρτιος"
 
 #: public_html/lists/admin/connect.php:1677
 #: public_html/lists/admin/systemstats.php:16
 #: public_html/lists/admin/date.php:30
 msgid "April"
-msgstr ""
+msgstr "Απρίλιος"
 
 #: public_html/lists/admin/connect.php:1678
 #: public_html/lists/admin/connect.php:1693
@@ -764,54 +781,54 @@ msgstr ""
 #: public_html/lists/admin/systemstats.php:32
 #: public_html/lists/admin/date.php:31
 msgid "May"
-msgstr ""
+msgstr "Ενδέχεται"
 
 #: public_html/lists/admin/connect.php:1679
 #: public_html/lists/admin/systemstats.php:18
 #: public_html/lists/admin/date.php:32
 msgid "June"
-msgstr ""
+msgstr "Ιούνιος"
 
 #: public_html/lists/admin/connect.php:1680
 #: public_html/lists/admin/systemstats.php:19
 #: public_html/lists/admin/date.php:33
 msgid "July"
-msgstr ""
+msgstr "Ιούλιος"
 
 #: public_html/lists/admin/connect.php:1681
 #: public_html/lists/admin/systemstats.php:20
 #: public_html/lists/admin/date.php:34
 msgid "August"
-msgstr ""
+msgstr "Αύγουστος"
 
 #: public_html/lists/admin/connect.php:1682
 #: public_html/lists/admin/systemstats.php:21
 #: public_html/lists/admin/date.php:35
 msgid "September"
-msgstr ""
+msgstr "Σεπτέμβριος"
 
 #: public_html/lists/admin/connect.php:1683
 #: public_html/lists/admin/systemstats.php:22
 #: public_html/lists/admin/date.php:36
 msgid "October"
-msgstr ""
+msgstr "Οκτώβριος"
 
 #: public_html/lists/admin/connect.php:1684
 #: public_html/lists/admin/systemstats.php:23
 #: public_html/lists/admin/date.php:37
 msgid "November"
-msgstr ""
+msgstr "Νοέμβριος"
 
 #: public_html/lists/admin/connect.php:1685
 #: public_html/lists/admin/systemstats.php:24
 #: public_html/lists/admin/date.php:38
 msgid "December"
-msgstr ""
+msgstr "Δεκέμβριος"
 
 #: public_html/lists/admin/connect.php:1689
 #: public_html/lists/admin/systemstats.php:28
 msgid "Jan"
-msgstr ""
+msgstr "Ιανουάριος"
 
 #: public_html/lists/admin/connect.php:1690
 #: public_html/lists/admin/systemstats.php:29
@@ -853,35 +870,37 @@ msgstr ""
 msgid "Oct"
 msgstr ""
 
+# November
 #: public_html/lists/admin/connect.php:1699
 #: public_html/lists/admin/systemstats.php:38
 msgid "Nov"
-msgstr ""
+msgstr "Νοέμβριος"
 
+# December
 #: public_html/lists/admin/connect.php:1700
 #: public_html/lists/admin/systemstats.php:39
 msgid "Dec"
-msgstr ""
+msgstr "Δεκέμβριος"
 
 #: public_html/lists/admin/connect.php:2097
 msgid "years"
-msgstr ""
+msgstr "χρόνια"
 
 #: public_html/lists/admin/connect.php:2100
 msgid "days"
-msgstr ""
+msgstr "ημέρες"
 
 #: public_html/lists/admin/connect.php:2103
 msgid "hours"
-msgstr ""
+msgstr "ώρες"
 
 #: public_html/lists/admin/connect.php:2106
 msgid "mins"
-msgstr ""
+msgstr "λεπτά"
 
 #: public_html/lists/admin/connect.php:2109
 msgid "secs"
-msgstr ""
+msgstr "δευτερόλεπτα"
 
 #: public_html/lists/admin/connect.php:2117
 #: public_html/lists/admin/import4.php:177
@@ -889,43 +908,43 @@ msgstr ""
 #: public_html/lists/admin/attributes.php:365
 #: public_html/lists/admin/spageedit.php:331
 msgid "Attribute"
-msgstr ""
+msgstr "Χαρακτηριστικό"
 
 #: public_html/lists/admin/connect.php:2117
 msgid "Placeholder"
-msgstr ""
+msgstr "Θέση θέσης"
 
 #: public_html/lists/admin/connect.php:2197
 #, php-format
 msgid "Listing %d to %d of %d"
-msgstr ""
+msgstr "Καταχώρηση% d σε% d του% d"
 
 #: public_html/lists/admin/connect.php:2199
 #, php-format
 msgid "Listing %d to %d"
-msgstr ""
+msgstr "Καταχώρηση% d σε% d του% d"
 
 #: public_html/lists/admin/connect.php:2214
 msgid "First Page"
-msgstr ""
+msgstr "Πρώτη σελίδα"
 
 #: public_html/lists/admin/connect.php:2215
 #: public_html/lists/admin/inc/interfacelib.php:839
 msgid "Previous"
-msgstr ""
+msgstr "Προηγούμενος"
 
 #: public_html/lists/admin/connect.php:2217
 #: public_html/lists/admin/inc/interfacelib.php:880
 msgid "Next"
-msgstr ""
+msgstr "Επόμενο"
 
 #: public_html/lists/admin/connect.php:2219
 msgid "Last Page"
-msgstr ""
+msgstr "Τελευταία σελίδα"
 
 #: public_html/lists/admin/plugins.php:21
 msgid "The plugin "
-msgstr ""
+msgstr "Το plugin"
 
 #: public_html/lists/admin/plugins.php:28
 #: public_html/lists/admin/configure.php:71
@@ -934,46 +953,50 @@ msgstr ""
 #: public_html/lists/admin/spageedit.php:32
 msgid "Invalid security token, please reload the page and try again"
 msgstr ""
+"Μη έγκυρο διακριτικό ασφαλείας, επαναλάβετε τη φόρτωση της σελίδας και "
+"προσπαθήστε ξανά"
 
 #: public_html/lists/admin/plugins.php:38
 msgid "Invalid download URL, please reload the page and try again"
 msgstr ""
+"Μη έγκυρη διεύθυνση URL λήψης, επαναλάβετε τη φόρτωση της σελίδας και "
+"προσπαθήστε ξανά"
 
 #: public_html/lists/admin/plugins.php:46
 msgid "Fetching plugin"
-msgstr ""
+msgstr "Λήψη plugin"
 
 #: public_html/lists/admin/plugins.php:48
 msgid "Developer"
-msgstr ""
+msgstr "Προγραμματιστής"
 
 #: public_html/lists/admin/plugins.php:49
 msgid "Project"
-msgstr ""
+msgstr "Σχέδιο"
 
 #: public_html/lists/admin/plugins.php:54
 msgid "Unable to download plugin package, check your connection"
-msgstr ""
+msgstr "Δεν είναι δυνατή η λήψη του πακέτου προσθήκης, ελέγξτε τη σύνδεσή σας"
 
 #: public_html/lists/admin/plugins.php:59
 msgid "Installing plugin"
-msgstr ""
+msgstr "Εγκατάσταση plugin"
 
 #: public_html/lists/admin/plugins.php:111
 msgid "updating existing plugin"
-msgstr ""
+msgstr "ενημέρωση υπάρχουσας προσθήκης"
 
 #: public_html/lists/admin/plugins.php:118
 msgid "new plugin"
-msgstr ""
+msgstr "νέο πρόσθετο"
 
 #: public_html/lists/admin/plugins.php:144
 msgid "Plugin installed successfully"
-msgstr ""
+msgstr "Το προσάρτημα εγκαταστάθηκε με επιτυχία"
 
 #: public_html/lists/admin/plugins.php:146
 msgid "Error installing plugin"
-msgstr ""
+msgstr "Σφάλμα κατά την εγκατάσταση του plugin"
 
 #: public_html/lists/admin/plugins.php:149
 #: public_html/lists/admin/plugins.php:161
@@ -989,24 +1012,26 @@ msgstr ""
 #: public_html/lists/admin/import3.php:289 public_html/lists/admin/user.php:338
 #: public_html/lists/admin/initialise.php:83
 msgid "Continue"
-msgstr ""
+msgstr "Συνεχισε"
 
 #: public_html/lists/admin/plugins.php:154
 msgid "Plugin directory is not writable"
-msgstr ""
+msgstr "Ο κατάλογος πρόσθετων δεν είναι εγγράψιμος"
 
 #: public_html/lists/admin/plugins.php:157
 msgid "Invalid plugin package"
-msgstr ""
+msgstr "Μη έγκυρο πακέτο προσθήκης"
 
 #: public_html/lists/admin/plugins.php:160
 msgid "Plugin installation failed"
-msgstr ""
+msgstr "Η εγκατάσταση της προσθήκης απέτυχε"
 
 #: public_html/lists/admin/plugins.php:167
 msgid ""
 "The plugin root directory is not writable, please install plugins manually"
 msgstr ""
+"Ο ριζικός κατάλογος plugin δεν είναι εγγράψιμος, εγκαταστήστε τα πρόσθετα μη "
+"αυτόματα"
 
 #: public_html/lists/admin/plugins.php:169
 msgid ""
@@ -1014,86 +1039,94 @@ msgid ""
 "configuration.php#ini.allow-url-fopen\">URL-aware fopen wrappers</a> needs "
 "to be enabled. This is required to allow installation from a remote URL"
 msgstr ""
+"Θα πρέπει να ενεργοποιηθεί η επιλογή PHP για <a href=\""
+"http://php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen\"> "
+"ενημερωτικά περιηγητικά περιγράμματα </a>. Αυτό απαιτείται για να επιτρέψετε "
+"την εγκατάσταση από μια απομακρυσμένη διεύθυνση URL"
 
 #: public_html/lists/admin/plugins.php:171
 msgid ""
 "PHP has no <a href=\"http://php.net/zip\">Zip capability</a>. This is "
 "required to allow installation from a remote URL"
 msgstr ""
+"Η PHP δεν έχει <a href=\"http://php.net/zip\"> δυνατότητα Zip </a>. Αυτό "
+"απαιτείται για να επιτρέψετε την εγκατάσταση από μια απομακρυσμένη διεύθυνση "
+"URL"
 
 #: public_html/lists/admin/plugins.php:173
 msgid "Install a new plugin"
-msgstr ""
+msgstr "Εγκαταστήστε μια νέα προσθήκη"
 
 #: public_html/lists/admin/plugins.php:174
 msgid "Find plugins"
-msgstr ""
+msgstr "Βρείτε πρόσθετα"
 
 #: public_html/lists/admin/plugins.php:177
 msgid "Plugin package URL"
-msgstr ""
+msgstr "Διεύθυνση URL πακέτου προσθήκης"
 
 #: public_html/lists/admin/plugins.php:179
 msgid "Install plugin"
-msgstr ""
+msgstr "Εγκατάσταση πρόσθετου"
 
 #: public_html/lists/admin/plugins.php:183
 msgid "Installed plugins"
-msgstr ""
+msgstr "Εγκατεστημένα πρόσθετα"
 
 #: public_html/lists/admin/plugins.php:202
 msgid "name"
-msgstr ""
+msgstr "όνομα"
 
 #: public_html/lists/admin/plugins.php:204
 msgid "version"
-msgstr ""
+msgstr "εκδοχή"
 
 #: public_html/lists/admin/plugins.php:206
 msgid "description"
-msgstr ""
+msgstr "περιγραφή"
 
 #: public_html/lists/admin/plugins.php:210
 msgid "origin"
-msgstr ""
+msgstr "προέλευση"
 
 #: public_html/lists/admin/plugins.php:218
 msgid "installed"
-msgstr ""
+msgstr "εγκατασταθεί"
 
 #: public_html/lists/admin/plugins.php:223
 msgid "installation Url"
-msgstr ""
+msgstr "url εγκατάστασης"
 
 #: public_html/lists/admin/plugins.php:228
 msgid "developer"
-msgstr ""
+msgstr "προγραμματιστή"
 
 #: public_html/lists/admin/plugins.php:233
 msgid "Documentation Page"
-msgstr ""
+msgstr "Σελίδα τεκμηρίωσης"
 
 #: public_html/lists/admin/plugins.php:241
 msgid "settings"
-msgstr ""
+msgstr "ρυθμίσεις"
 
 #: public_html/lists/admin/plugins.php:245
 #: public_html/lists/admin/plugins.php:250
 msgid "enabled"
-msgstr ""
+msgstr "ενεργοποιημένo"
 
 #: public_html/lists/admin/plugins.php:246
 #: public_html/lists/admin/bouncerules.php:102
 msgid "action"
-msgstr ""
+msgstr "δράση"
 
+# initialize
 #: public_html/lists/admin/plugins.php:256
 msgid "initialise"
-msgstr ""
+msgstr "κάνω αρχικοποίηση"
 
 #: public_html/lists/admin/plugins.php:258
 msgid "Initialise"
-msgstr ""
+msgstr "Αρχικοποιήστε"
 
 #: public_html/lists/admin/plugins.php:264
 #: public_html/lists/admin/plugins.php:265
@@ -1103,130 +1136,136 @@ msgstr ""
 #: public_html/lists/admin/editattributes.php:206
 #: public_html/lists/admin/bouncerules.php:117
 #: public_html/lists/admin/bounces.php:100
-#, fuzzy
 msgid "delete"
-msgstr "Διαγραφή"
+msgstr "διαγράφω"
 
 #: public_html/lists/admin/plugins.php:265
 msgid "delete this plugin"
-msgstr ""
+msgstr "διαγράψτε αυτό το πρόσθετο"
 
 #: public_html/lists/admin/plugins.php:268
 msgid "Dependency check"
-msgstr ""
+msgstr "Έλεγχος εξάρτησης"
 
 #: public_html/lists/admin/plugins.php:271
 #, php-format
 msgid "Plugin can not be enabled, because \"%s\" is enabled."
 msgstr ""
+"Δεν είναι δυνατή η ενεργοποίηση της προσθήκης, επειδή είναι ενεργοποιημένη η "
+"επιλογή \"% s\"."
 
 #: public_html/lists/admin/plugins.php:274
 msgid "Plugin can not be enabled."
-msgstr ""
+msgstr "Δεν είναι δυνατή η ενεργοποίηση της προσθήκης."
 
 #: public_html/lists/admin/plugins.php:274
 #, php-format
 msgid "Failure on system requirement <strong>%s</strong>"
-msgstr ""
+msgstr "Αποτυχία στην απαίτηση συστήματος <strong>% s </ strong>"
 
 #: public_html/lists/admin/plugins.php:282
 msgid "update this plugin"
-msgstr ""
+msgstr "ενημερώστε αυτήν την προσθήκη"
 
 #: public_html/lists/admin/plugins.php:282
 #: public_html/lists/admin/plugins.php:283
 msgid "update"
-msgstr ""
+msgstr "ενημέρωση"
 
 #: public_html/lists/admin/plugins.php:286
 msgid "details"
-msgstr ""
+msgstr "Λεπτομέριες"
 
 #: public_html/lists/admin/lib.php:25
 msgid "delete subscriber"
-msgstr ""
+msgstr "διαγραφή συνδρομητή"
 
+# unconfirmed subscriber
 #: public_html/lists/admin/lib.php:26
 msgid "unconfirm subscriber"
-msgstr ""
+msgstr "μη επιβεβαιωμένου συνδρομητή"
 
 #: public_html/lists/admin/lib.php:27
 msgid "blacklist subscriber"
-msgstr ""
+msgstr "συνδρομητής μαύρης λίστας"
 
 #: public_html/lists/admin/lib.php:28
 msgid "blacklist email address"
-msgstr ""
+msgstr "μαύρη λίστα διεύθυνσης ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/lib.php:29
 msgid "delete subscriber and bounce"
-msgstr ""
+msgstr "να διαγράψει τον συνδρομητή και να αναπηδήσει"
 
 #: public_html/lists/admin/lib.php:30
 msgid "unconfirm subscriber and delete bounce"
-msgstr ""
+msgstr "να επιβεβαιώσετε τον συνδρομητή και να διαγράψετε την αναπήδηση"
 
 #: public_html/lists/admin/lib.php:31
 msgid "blacklist subscriber and delete bounce"
-msgstr ""
+msgstr "συνδρομητή μαύρης λίστας και διαγραφή αναπήδησης"
 
 #: public_html/lists/admin/lib.php:32
 msgid "blacklist email address and delete bounce"
-msgstr ""
+msgstr "μαύρη λίστα ηλεκτρονικού ταχυδρομείου και διαγράψτε την αναπήδηση"
 
 #: public_html/lists/admin/lib.php:33
 msgid "delete bounce"
-msgstr ""
+msgstr "διαγραφή αναπήδησης"
 
 #: public_html/lists/admin/lib.php:78
 msgid "Unnamed List"
-msgstr ""
+msgstr "Ανώνυμη λίστα"
 
 #: public_html/lists/admin/lib.php:375
 msgid "Hello"
-msgstr ""
+msgstr "Γεια σας"
 
 #: public_html/lists/admin/lib.php:376
 msgid "You have requested a new password for phpList."
-msgstr ""
+msgstr "Ζητήσατε έναν νέο κωδικό πρόσβασης για το phpList."
 
 #: public_html/lists/admin/lib.php:377
 msgid "To enter a new one, please visit the following link:"
-msgstr ""
+msgstr "Για να εισάγετε ένα νέο, επισκεφθείτε τον ακόλουθο σύνδεσμο:"
 
 #: public_html/lists/admin/lib.php:379
 msgid ""
 "You have 24 hours left to change your password. After that, your token won't "
 "be valid."
 msgstr ""
+"Έχετε αφήσει 24 ώρες για να αλλάξετε τον κωδικό πρόσβασής σας. Μετά από "
+"αυτό, το διακριτικό σας δεν θα είναι έγκυρο."
 
 #: public_html/lists/admin/lib.php:381 public_html/lists/admin/login.php:102
 msgid "New password"
-msgstr ""
+msgstr "Νέος κωδικός πρόσβασης"
 
 #: public_html/lists/admin/lib.php:385
 msgid ""
 "A password change token has been sent to the corresponding email address."
 msgstr ""
+"Το διακριτικό αλλαγής κωδικού έχει σταλεί στην αντίστοιχη διεύθυνση "
+"ηλεκτρονικού ταχυδρομείου."
 
 #: public_html/lists/admin/lib.php:387
 msgid "Error sending password change token"
-msgstr ""
+msgstr "Σφάλμα κατά την αποστολή του στοιχείου αλλαγής κωδικού πρόσβασης"
 
 #: public_html/lists/admin/lib.php:668
 #: public_html/lists/admin/actions/msgstatus.php:81
 #: public_html/lists/admin/bounces.php:152
 #: public_html/lists/admin/bounces.php:170
 msgid "Unknown"
-msgstr ""
+msgstr "άγνωστος"
 
 #: public_html/lists/admin/lib.php:679
 msgid "very little time"
-msgstr ""
+msgstr "πολύς λίγος χρόνος"
 
 #: public_html/lists/admin/lib.php:736
 msgid "This is the Newsletter Subject"
-msgstr ""
+msgstr "Αυτό είναι το θέμα του ενημερωτικού δελτίου"
 
 #: public_html/lists/admin/lib.php:907 public_html/lists/admin/lib.php:911
 #, php-format
@@ -1234,122 +1273,142 @@ msgid ""
 "A process for this page is already running and it was still alive %d seconds "
 "ago"
 msgstr ""
+"Η διαδικασία για αυτήν τη σελίδα εκτελείται ήδη και ήταν ακόμα ζωντανή% d "
+"δευτερόλεπτα"
 
 #: public_html/lists/admin/lib.php:913
 msgid ""
 "Running commandline, quitting. We'll find out what to do in the next run."
 msgstr ""
+"Λειτουργία γραμμής εντολών, εγκατάλειψη. Θα μάθουμε τι να κάνουμε στην "
+"επόμενη εκτέλεση."
 
 #: public_html/lists/admin/lib.php:916
 msgid "Sleeping for 20 seconds, aborting will quit"
-msgstr ""
+msgstr "Κοιμισμένος  για 20 δευτερόλεπτα, η διακοπή θα σταματήσει"
 
 #: public_html/lists/admin/lib.php:924
 msgid ""
 "We have been waiting too long, I guess the other process is still going ok"
 msgstr ""
+"Περιμένουμε πολύ καιρό, υποθέτω ότι η άλλη διαδικασία είναι ακόμα εντάξει"
 
 #: public_html/lists/admin/lib.php:1719 public_html/lists/admin/lib.php:1724
 msgid "Error, incorrect session token"
-msgstr ""
+msgstr "Σφάλμα, εσφαλμένο σύμβολο περιόδου σύνδεσης"
 
 #: public_html/lists/admin/lib.php:1980
 msgid "Remote queue processing has been activated successfully"
-msgstr ""
+msgstr "Η επεξεργασία απομακρυσμένης ουράς ενεργοποιήθηκε με επιτυχία"
 
 #: public_html/lists/admin/lib.php:1981
 #: public_html/lists/admin/send_core.php:390
 msgid "view progress"
-msgstr ""
+msgstr "προβολή της προόδου"
 
 #: public_html/lists/admin/lib.php:1983 public_html/lists/admin/lib.php:1994
 msgid "Error activating remote queue processing"
-msgstr ""
+msgstr "Σφάλμα ενεργοποίησης της επεξεργασίας απομακρυσμένης ουράς"
 
 #: public_html/lists/admin/lib.php:1985
 msgid "The API key is incorrect"
-msgstr ""
+msgstr "Το κλειδί API είναι εσφαλμένο"
 
 #: public_html/lists/admin/lib.php:1987
 msgid "The phpList.com server is unable to reach your phpList installation"
 msgstr ""
+"Ο διακομιστής phpList.com δεν μπορεί να φτάσει στην εγκατάσταση του phpList"
 
 #: public_html/lists/admin/lib.php:1989
 msgid "Unknown error"
-msgstr ""
+msgstr "Άγνωστο σφάλμα"
 
 #: public_html/lists/admin/lib.php:1991
 #: public_html/lists/admin/processqueue.php:99
 msgid "Change settings"
-msgstr ""
+msgstr "Αλλάξτε τις ρυθμίσεις"
 
 #: public_html/lists/admin/lib.php:1992 public_html/lists/admin/lib.php:1995
 msgid "Run queue locally"
-msgstr ""
+msgstr "Εκτελέστε ουρά σε τοπικό επίπεδο"
 
 #: public_html/lists/admin/lib.php:2008
 msgid "Sign up to receive news and updates about phpList "
-msgstr ""
+msgstr "Εγγραφείτε για να λαμβάνετε νέα και ενημερώσεις σχετικά με το phpList"
 
 #: public_html/lists/admin/lib.php:2009
 msgid ""
 "Make sure you are updated with new security and feature release "
 "announcements (fewer than one message per month)"
 msgstr ""
+"Βεβαιωθείτε ότι έχετε ενημερωθεί με νέες ανακοινώσεις απελευθέρωσης "
+"ασφαλείας και χαρακτηριστικών (λιγότερα από ένα μηνύματα ανά μήνα)"
 
 #: public_html/lists/admin/lib.php:2015
 msgid "Subscribe"
-msgstr ""
+msgstr "Εγγραφείτε"
 
 #: public_html/lists/admin/lib.php:2015
 msgid "Do not subscribe"
-msgstr ""
+msgstr "Μην εγγραφείτε"
 
 #: public_html/lists/admin/lib.php:2192
 msgid "Please wait, your request is being processed. Do not refresh this page."
 msgstr ""
+"Παρακαλώ περιμένετε, το αίτημά σας είναι υπό επεξεργασία. Μην ανανεώσετε "
+"αυτήν τη σελίδα."
 
 #: public_html/lists/admin/lib.php:2194
 msgid "Still loading"
-msgstr ""
+msgstr "Ακόμα φορτώνει"
 
 #: public_html/lists/admin/lib.php:2195
 msgid ""
 "It may seem to take a while, but there is a lot of data to crunch<br/>if you "
 "have a lot of subscribers and campaigns"
 msgstr ""
+"Μπορεί να φαίνεται να διαρκέσει λίγο, αλλά υπάρχουν πολλά δεδομένα για κρίση "
+"<br/> αν έχετε πολλούς συνδρομητές και καμπάνιες"
 
 #: public_html/lists/admin/lib.php:2196
 msgid "It should be soon now, your page content is almost here."
 msgstr ""
+"Θα πρέπει σύντομα τωρα , το περιεχόμενο της σελίδας σας είναι σχεδόν εδώ."
 
 #: public_html/lists/admin/lib.php:2197
 msgid ""
 "This seems to take longer than expected, looks like there is a lot of data "
 "to work on."
 msgstr ""
+"Αυτό φαίνεται να διαρκεί περισσότερο από το αναμενόμενο, μοιάζει με πολλά "
+"δεδομένα για να εργαστείτε."
 
 #: public_html/lists/admin/lib.php:2198
 msgid "Still loading, please be patient, your page content will show shortly."
 msgstr ""
+"Ακόμα φόρτωση, παρακαλούμε να είστε υπομονετικοί, το περιεχόμενο της σελίδας "
+"σας θα εμφανιστεί σύντομα."
 
 #: public_html/lists/admin/lib.php:2199
 msgid "It will really be soon now until the page will display."
-msgstr ""
+msgstr "Θα είναι πολύ σύντομα μέχρι να εμφανιστεί η σελίδα."
 
 #: public_html/lists/admin/lib.php:2200
 msgid "Still loading, please wait"
-msgstr ""
+msgstr "Ακόμα σε φόρτωση, παρακαλώ περιμένετε"
 
 #: public_html/lists/admin/lib.php:2201
 msgid ""
 "The loading has been just over seven minutes. We can wait just a little "
 "longer."
 msgstr ""
+"Η φόρτωση ήταν μόνο επτά λεπτά. Μπορούμε να περιμένουμε λίγο περισσότερο."
 
 #: public_html/lists/admin/lib.php:2202
 msgid "If the page does not load soon, please report this in the user forums."
 msgstr ""
+"Εάν η σελίδα δεν φορτώνει σύντομα, παρακαλούμε αναφέρετε αυτή τη σελίδα στα "
+"φόρουμ των χρηστών."
 
 #: public_html/lists/admin/statsoverview.php:32
 #: public_html/lists/admin/statsoverview.php:44
@@ -1365,19 +1424,19 @@ msgstr ""
 #: public_html/lists/admin/uclicks.php:26 public_html/lists/admin/mviews.php:27
 #: public_html/lists/admin/mviews.php:40
 msgid "You do not have access to this page"
-msgstr ""
+msgstr "Δεν έχετε πρόσβαση σε αυτήν τη σελίδα"
 
 #: public_html/lists/admin/statsoverview.php:80
 msgid "View all campaigns"
-msgstr ""
+msgstr "Προβολή όλων των καμπανιών"
 
 #: public_html/lists/admin/statsoverview.php:86
 msgid "Campaign not found"
-msgstr ""
+msgstr "Η καμπάνια δεν βρέθηκε"
 
 #: public_html/lists/admin/statsoverview.php:91
 msgid "Campaign statistics"
-msgstr ""
+msgstr "Στατιστικά καμπάνιας"
 
 #: public_html/lists/admin/statsoverview.php:97
 #: public_html/lists/admin/messages.php:11
@@ -1393,96 +1452,100 @@ msgstr ""
 #: public_html/lists/admin/spageedit.php:291
 #: public_html/lists/admin/mviews.php:69
 msgid "Subject"
-msgstr ""
+msgstr "θέμα"
 
 #: public_html/lists/admin/statsoverview.php:101
 msgid "Date entered"
-msgstr ""
+msgstr "Ημερομηνία εισαγωγής"
 
 #: public_html/lists/admin/statsoverview.php:105
 #: public_html/lists/admin/mclicks.php:71
 msgid "Date sent"
-msgstr ""
+msgstr "Ημερομηνία αποστολής"
 
 #: public_html/lists/admin/statsoverview.php:109
 #: public_html/databasestructure.php:71
 msgid "Sent as HTML"
-msgstr ""
+msgstr "Αποστολή ως HTML"
 
 #: public_html/lists/admin/statsoverview.php:113
 #: public_html/databasestructure.php:70
 msgid "Sent as text"
-msgstr ""
+msgstr "Στέλλεται ως κείμενο"
 
 #: public_html/lists/admin/statsoverview.php:136
 #: public_html/lists/admin/messages.php:422
 #: public_html/lists/admin/mclicks.php:74
 msgid "Bounced"
-msgstr ""
+msgstr "Αναπήδησε"
 
 #: public_html/lists/admin/statsoverview.php:143
 #: public_html/lists/admin/statsoverview.php:148
 msgid "Opened"
-msgstr ""
+msgstr "Ανοιχτηκε"
 
 #: public_html/lists/admin/statsoverview.php:154
 #: public_html/lists/admin/statsoverview.php:159
 msgid "Clicked"
-msgstr ""
+msgstr "Κάνοντας κλικ"
 
 #: public_html/lists/admin/statsoverview.php:165
 msgid "Forwarded"
-msgstr ""
+msgstr "Προωθήθηκε"
 
 #: public_html/lists/admin/sendemaillib.php:52
 #, php-format
 msgid "Sending message %d with subject %s to %s"
-msgstr ""
+msgstr "Αποστολή μηνύματος% d με θέμα% s σε% s"
 
+# sending text only to
 #: public_html/lists/admin/sendemaillib.php:830
 msgid "sendingtextonlyto"
-msgstr ""
+msgstr "στέλνοντας μόνο κείμενο σε"
 
 #: public_html/lists/admin/sendemaillib.php:1020
 #, php-format
 msgid "Error sending message %d (%d/%d) to %s (%s) "
-msgstr ""
+msgstr "Σφάλμα κατά την αποστολή του μηνύματος% d (% d /% d) στο% s (% s)"
 
 #: public_html/lists/admin/sendemaillib.php:1037
 #, php-format
 msgid "Size of HTML email: %s "
-msgstr ""
+msgstr "Μέγεθος του ηλεκτρονικού ταχυδρομείου HTML:% s"
 
 #: public_html/lists/admin/sendemaillib.php:1041
 #, php-format
 msgid "Size of Text email: %s "
-msgstr ""
+msgstr "Μέγεθος email κειμένου:% s"
 
 #: public_html/lists/admin/sendemaillib.php:1047
 #, php-format
 msgid "Message too large (%s is over %s), suspending"
-msgstr ""
+msgstr "Το μήνυμα είναι πολύ μεγάλο (% s είναι πάνω από% s), αναστέλλοντας"
 
 #: public_html/lists/admin/sendemaillib.php:1049
 msgid ""
 "Warning: the final message exceeds the sending limit, this campaign will "
 "fail sending. Reduce the size by removing attachments or images"
 msgstr ""
+"Προειδοποίηση: το τελικό μήνυμα υπερβαίνει το όριο αποστολής, αυτή η "
+"καμπάνια θα αποτύχει στην αποστολή. Μειώστε το μέγεθος αφαιρώντας συνημμένα "
+"ή εικόνες"
 
 #: public_html/lists/admin/sendemaillib.php:1053
 #, php-format
 msgid "Campaign %d suspended. Message too large"
-msgstr ""
+msgstr "Η καμπάνια% d έχει τεθεί σε αναστολή. Το μήνυμα είναι πολύ μεγάλο"
 
 #: public_html/lists/admin/sendemaillib.php:1055
 #, php-format
 msgid "Campaign %d suspended, message too large"
-msgstr ""
+msgstr "Η καμπάνια% d έχει τεθεί σε αναστολή. Το μήνυμα είναι πολύ μεγάλο"
 
 #: public_html/lists/admin/sendemaillib.php:1093
 #, php-format
 msgid "Insufficient memory to add attachment to campaign %d %d - %d"
-msgstr ""
+msgstr "Ανεπαρκής μνήμη για προσθήκη συνημμένου σε καμπάνια% d% d -% d"
 
 #: public_html/lists/admin/sendemaillib.php:1136
 #, php-format
@@ -1490,21 +1553,23 @@ msgid ""
 "Error, when trying to send campaign %d the attachment (%s) could not be "
 "copied to the repository. Check for permissions."
 msgstr ""
+"Σφάλμα, όταν προσπαθήσατε να στείλετε την καμπάνια% d, το συνημμένο (% s) "
+"δεν μπόρεσε να αντιγραφεί στο αποθετήριο. Ελέγξτε για δικαιώματα."
 
 #: public_html/lists/admin/sendemaillib.php:1138
 #: public_html/lists/admin/sendemaillib.php:1153
 msgid "phpList system error"
-msgstr ""
+msgstr "phpList σφάλμα συστήματος"
 
 #: public_html/lists/admin/sendemaillib.php:1143
 #, php-format
 msgid "failed to open attachment (%s) to add to campaign %d"
-msgstr ""
+msgstr "απέτυχε να ανοίξει το συνημμένο (% s) για προσθήκη στην καμπάνια% d"
 
 #: public_html/lists/admin/sendemaillib.php:1150
 #, php-format
 msgid "Attachment %s does not exist"
-msgstr ""
+msgstr "Το προσάρτημα% s δεν υπάρχει"
 
 #: public_html/lists/admin/sendemaillib.php:1151
 #, php-format
@@ -1512,72 +1577,76 @@ msgid ""
 "Error, when trying to send campaign %d the attachment (%s) could not be "
 "found in the repository"
 msgstr ""
+"Σφάλμα, όταν προσπαθήσατε να στείλετε την καμπάνια% d το συνημμένο (% s) δεν "
+"βρέθηκε στο αποθετήριο"
 
 #: public_html/lists/admin/sendemaillib.php:1172
 #: public_html/lists/admin/sendemaillib.php:1174
 #, php-format
 msgid "Campaign %d suspended for too many errors with attachments"
-msgstr ""
+msgstr "Η καμπάνια% d έχει ανασταλεί για πάρα πολλά σφάλματα με συνημμένα"
 
 #: public_html/lists/admin/import4.php:4 public_html/lists/admin/import2.php:5
 #: public_html/lists/admin/import1.php:7 public_html/lists/admin/import3.php:16
 #: public_html/lists/admin/importsimple.php:9
 #: public_html/lists/admin/import.php:4
 msgid "import is not available"
-msgstr ""
+msgstr "η εισαγωγή δεν είναι διαθέσιμη"
 
 #: public_html/lists/admin/import4.php:48
 #: public_html/lists/admin/import2.php:650
 #: public_html/lists/admin/import3.php:42
 msgid "No lists available"
-msgstr ""
+msgstr "Δεν υπάρχουν διαθέσιμες λίστες"
 
 #: public_html/lists/admin/import4.php:48
 msgid "add_list"
-msgstr ""
+msgstr "προσθέστε τη λίστα"
 
 #: public_html/lists/admin/import4.php:59
 msgid "Please enter details of the remote Server"
-msgstr ""
+msgstr "Καταχωρίστε λεπτομέρειες για τον απομακρυσμένο διακομιστή"
 
 #: public_html/lists/admin/import4.php:62
 msgid "Server:"
-msgstr ""
+msgstr "διακομιστής:"
 
 #: public_html/lists/admin/import4.php:63
 #: public_html/lists/admin/editattributes.php:137
 #: public_html/lists/admin/userhistory.php:52
 #: public_html/lists/admin/bounces.php:172
 msgid "user"
-msgstr ""
+msgstr "χρήστης"
 
 #: public_html/lists/admin/import4.php:64
 msgid "Password:"
-msgstr ""
+msgstr "Κωδικός:"
 
 #: public_html/lists/admin/import4.php:65
 msgid "Database Name:"
-msgstr ""
+msgstr "Όνομα βάσης δεδομένων:"
 
 #: public_html/lists/admin/import4.php:66
 msgid "Table prefix:"
-msgstr ""
+msgstr "Πρόθεμα πίνακα:"
 
 #: public_html/lists/admin/import4.php:67
 msgid "Usertable prefix:"
-msgstr ""
+msgstr "Πρόθεμα χρήστη:"
 
 #: public_html/lists/admin/import4.php:73
 msgid "select_lists"
-msgstr ""
+msgstr "επιλέξτε λίστες"
 
 #: public_html/lists/admin/import4.php:83
 msgid "Copy lists from remote server (lists are matched by name)"
 msgstr ""
+"Αντιγραφή λιστών από απομακρυσμένο διακομιστή (οι λίστες αντιστοιχίζονται με "
+"το όνομα)"
 
 #: public_html/lists/admin/import4.php:85
 msgid "Mark new users as HTML:"
-msgstr ""
+msgstr "Επισημάνετε τους νέους χρήστες ως HTML:"
 
 #: public_html/lists/admin/import4.php:86
 msgid ""
@@ -1585,50 +1654,53 @@ msgid ""
 "database will be replaced by the imported information. Users are matched by "
 "email."
 msgstr ""
+"Αν επιλέξετε \"Αντικατάσταση υπαρχόντων\", οι πληροφορίες για έναν χρήστη "
+"στη βάση δεδομένων θα αντικατασταθούν από τις εισαγόμενες πληροφορίες. Οι "
+"χρήστες αντιστοιχίζονται με ηλεκτρονικό ταχυδρομείο."
 
 #: public_html/lists/admin/import4.php:87
 msgid "Overwrite Existing:"
-msgstr ""
+msgstr "Αντικατάσταση υπαρχόντων:"
 
 #: public_html/lists/admin/import4.php:88
 msgid "continue"
-msgstr ""
+msgstr "Συνεχίστε"
 
 #: public_html/lists/admin/import4.php:97
 msgid "Making connection with remote database"
-msgstr ""
+msgstr "Δημιουργία σύνδεσης με απομακρυσμένη βάση δεδομένων"
 
 #: public_html/lists/admin/import4.php:101
 msgid "cannot connect to remote database"
-msgstr ""
+msgstr "δεν είναι δυνατή η σύνδεση σε απομακρυσμένη βάση δεδομένων"
 
 #: public_html/lists/admin/import4.php:113
 msgid "Getting data from "
-msgstr ""
+msgstr "Λήψη δεδομένων από"
 
 #: public_html/lists/admin/import4.php:116
 msgid "Remote version is"
-msgstr ""
+msgstr "Η απομακρυσμένη έκδοση είναι"
 
 #: public_html/lists/admin/import4.php:118
 #: public_html/lists/admin/import4.php:126
 msgid "Remote version has"
-msgstr ""
+msgstr "Η απομακρυσμένη έκδοση έχει"
 
 #: public_html/lists/admin/import4.php:120
 msgid "No users to copy, is the prefix correct?"
-msgstr ""
+msgstr "Δεν υπάρχει χρήστης για αντιγραφή, είναι σωστό το πρόθεμα;"
 
 #: public_html/lists/admin/import4.php:126
 #: public_html/lists/admin/actions/import1.php:217
 #: public_html/lists/admin/import3.php:510
 #: public_html/lists/admin/users.php:455
 msgid "lists"
-msgstr ""
+msgstr "λίστες"
 
 #: public_html/lists/admin/import4.php:129
 msgid "Copying lists"
-msgstr ""
+msgstr "Αντιγραφή λιστών"
 
 #: public_html/lists/admin/import4.php:144
 #: public_html/lists/admin/import4.php:153
@@ -1636,41 +1708,41 @@ msgstr ""
 #: public_html/lists/admin/actions/import1.php:217
 #: public_html/lists/admin/list.php:108 public_html/lists/admin/import3.php:510
 msgid "list"
-msgstr ""
+msgstr "λίστα"
 
 #: public_html/lists/admin/import4.php:144
 #: public_html/lists/admin/import4.php:177
 msgid "exists locally"
-msgstr ""
+msgstr "υπάρχει τοπικά"
 
 #: public_html/lists/admin/import4.php:153
 #: public_html/lists/admin/import4.php:186
 msgid "created locally"
-msgstr ""
+msgstr "δημιουργήθηκε τοπικά"
 
 #: public_html/lists/admin/import4.php:157
 msgid "Remote list"
-msgstr ""
+msgstr "Απομακρυσμένη λίστα"
 
 #: public_html/lists/admin/import4.php:157
 msgid "not created"
-msgstr ""
+msgstr "δεν δημιουργήθηκε"
 
 #: public_html/lists/admin/import4.php:162
 msgid "Copying attributes"
-msgstr ""
+msgstr "Αντιγραφή χαρακτηριστικών"
 
 #: public_html/lists/admin/import4.php:210
 msgid "Copying users"
-msgstr ""
+msgstr "Αντιγραφή χρηστών"
 
 #: public_html/lists/admin/import4.php:302
 msgid "Error, no mapped attribute for"
-msgstr ""
+msgstr "Σφάλμα, χωρίς χαρτογραφημένο χαρακτηριστικό για"
 
 #: public_html/lists/admin/import4.php:350
 msgid "Error, no local list defined for"
-msgstr ""
+msgstr "Σφάλμα, χωρίς χαρτογραφημένο χαρακτηριστικό για"
 
 #: public_html/lists/admin/import4.php:358
 #: public_html/lists/admin/reconcileusers.php:410
@@ -1686,51 +1758,56 @@ msgstr ""
 #: public_html/lists/admin/user.php:281 public_html/lists/admin/admins.php:35
 #: public_html/lists/admin/admin.php:132 public_html/lists/admin/users.php:240
 msgid "Done"
-msgstr ""
+msgstr "Ολοκληρώθηκε"
 
 #: public_html/lists/admin/import4.php:359
 msgid "new users"
-msgstr ""
+msgstr "νέοι χρήστες"
 
 #: public_html/lists/admin/import4.php:360
 msgid "and"
-msgstr ""
+msgstr "και"
 
 #: public_html/lists/admin/import4.php:361
 msgid "existing users"
-msgstr ""
+msgstr "υπάρχοντες χρήστες"
 
 #: public_html/lists/admin/community.php:9
 msgid "Open Source"
-msgstr ""
+msgstr "Ανοιχτή πηγή"
 
 #: public_html/lists/admin/community.php:10
 msgid "How to get help"
-msgstr ""
+msgstr "Πώς να λάβετε βοήθεια"
 
 #: public_html/lists/admin/community.php:11
 msgid "Contribute"
-msgstr ""
+msgstr "Συνεισφέρω"
 
 #: public_html/lists/admin/community.php:16
 msgid "phpList is Open Source software"
-msgstr ""
+msgstr "Το phpList είναι λογισμικό ανοιχτού κώδικα"
 
 #: public_html/lists/admin/community.php:17
 msgid ""
 "The concept behind Open Source is collaboration. An organised network of "
 "many contributors where the whole is greater than the sum of its parts."
 msgstr ""
+"Η ιδέα πίσω από το Open Source είναι η συνεργασία. Ένα οργανωμένο δίκτυο "
+"πολλών συντελεστών, όπου το σύνολο είναι μεγαλύτερο από το άθροισμα των "
+"τμημάτων του."
 
 #: public_html/lists/admin/community.php:18
 msgid ""
 "If you are interested to know more about Open Source, you can visit the "
 "links below"
 msgstr ""
+"Εάν ενδιαφέρεστε να μάθετε περισσότερα για το Open Source, μπορείτε να "
+"επισκεφθείτε τους παρακάτω συνδέσμους"
 
 #: public_html/lists/admin/community.php:28
 msgid "Get help with phpList"
-msgstr ""
+msgstr "Λάβετε βοήθεια με το phpList"
 
 #: public_html/lists/admin/community.php:29
 msgid ""
@@ -1738,22 +1815,25 @@ msgid ""
 "including free help from communnity members, and professional advice and "
 "consulting from experts"
 msgstr ""
+"Μια ποικιλία επιλογών υποστήριξης είναι διαθέσιμες για αυτόν τον εξυπηρετητή "
+"phpList, συμπεριλαμβανομένης δωρεάν βοήθειας από τα μέλη της κοινότητας, "
+"καθώς και επαγγελματικές συμβουλές και συμβουλές από εμπειρογνώμονες"
 
 #: public_html/lists/admin/community.php:33
 msgid "Support community"
-msgstr ""
+msgstr "Κοινότητα υποστήριξης"
 
 #: public_html/lists/admin/community.php:34
 msgid "Support forum"
-msgstr ""
+msgstr "Φόρουμ υποστήριξης"
 
 #: public_html/lists/admin/community.php:35
 msgid "Independent professional support"
-msgstr ""
+msgstr "Ανεξάρτητη επαγγελματική υποστήριξη"
 
 #: public_html/lists/admin/community.php:40
 msgid "Contribute to phpList"
-msgstr ""
+msgstr "Συμβάλλετε στο phpList"
 
 #: public_html/lists/admin/community.php:41
 msgid ""
@@ -1761,195 +1841,207 @@ msgid ""
 "Help phpList to serve your needs more effectively by applying your skills "
 "and resources."
 msgstr ""
+"phpList είναι μια κοινοτική προσπάθεια & mdash; οι συνεισφορές σας "
+"τροφοδοτούν το έργο. Βοηθήστε το phpList να εξυπηρετήσει τις ανάγκες σας πιο "
+"αποτελεσματικά εφαρμόζοντας τις δεξιότητες και τους πόρους σας."
 
 #: public_html/lists/admin/community.php:44
 msgid "Developer community"
-msgstr ""
+msgstr "Κοινότητα προγραμματιστών"
 
 #: public_html/lists/admin/community.php:45
 msgid "Developer resources &amp; documentation"
-msgstr ""
+msgstr "Πόροι προγραμματιστών & amp; τεκμηρίωση"
 
 #: public_html/lists/admin/community.php:46
 msgid "Documentation coordination"
-msgstr ""
+msgstr "Συντονισμός τεκμηρίωσης"
 
 #: public_html/lists/admin/community.php:47
 msgid "Translation platform"
-msgstr ""
+msgstr "Πλατφόρμα μετάφρασης"
 
 #: public_html/lists/admin/community.php:48
 msgid "Donate to support phpList development"
-msgstr ""
+msgstr "Δωρεά για την υποστήριξη της ανάπτυξης του phpList"
 
 #: public_html/lists/admin/community.php:54
 msgid "phpList Hosted"
-msgstr ""
+msgstr "phpList φιλοξενείται"
 
 #: public_html/lists/admin/processbounces.php:14
 #: public_html/lists/admin/actions/processqueue.php:8
 msgid "Remote processing of the queue is now handled with a processing secret"
 msgstr ""
+"Η απομακρυσμένη επεξεργασία της ουράς επεξεργάζεται πλέον ένα μυστικό "
+"επεξεργασίας"
 
 #: public_html/lists/admin/processbounces.php:23
 #: public_html/lists/admin/actions/processqueue.php:17
 #: public_html/lists/admin/index.php:333
 msgid "Incorrect processing secret"
-msgstr ""
+msgstr "Λανθασμένο μυστικό επεξεργασίας"
 
 #: public_html/lists/admin/processbounces.php:56
 msgid "Bounce processing error"
-msgstr ""
+msgstr "Σφάλμα επεξεργασίας αναπήδησης"
 
 #: public_html/lists/admin/processbounces.php:58
 msgid "Bounce Processing info"
-msgstr ""
+msgstr "Στοιχεία επεξεργασίας αναπήδησης"
 
 #: public_html/lists/admin/processbounces.php:243
 msgid "system message bounced, user marked unconfirmed"
-msgstr ""
+msgstr "το μήνυμα συστήματος αναπήδησε, ο χρήστης σημείωσε ανεπιβεβαίωτη"
 
 #: public_html/lists/admin/processbounces.php:244
 msgid "Bounced system message"
-msgstr ""
+msgstr "Αναπήδηση μηνύματος συστήματος"
 
 #: public_html/lists/admin/processbounces.php:245
 msgid "User marked unconfirmed"
-msgstr ""
+msgstr "Ο χρήστης έχει επισημανθεί ανεπιβεβαίωτα"
 
 #: public_html/lists/admin/processbounces.php:246
 msgid "View Bounce"
-msgstr ""
+msgstr "Ο χρήστης έχει επισημανθεί ανεπιβεβαίωτα"
 
 #: public_html/lists/admin/processbounces.php:316
 msgid "system message bounced, but unknown user"
-msgstr ""
+msgstr "μήνυμα του συστήματος αναπήδησε, αλλά άγνωστος χρήστης"
 
 #: public_html/lists/admin/processbounces.php:359
 #: public_html/lists/admin/readtestmail.php:207
 msgid "Cannot create POP3 connection to"
-msgstr ""
+msgstr "Δεν είναι δυνατή η δημιουργία σύνδεσης POP3"
 
 #: public_html/lists/admin/processbounces.php:377
 #: public_html/lists/admin/readtestmail.php:225
 msgid "Cannot open mailbox file"
-msgstr ""
+msgstr "Δεν είναι δυνατό το άνοιγμα του αρχείου γραμματοκιβωτίου"
 
 #: public_html/lists/admin/processbounces.php:389
 #, php-format
 msgid "%d bounces to fetch from the mailbox"
-msgstr ""
+msgstr "Το% d αναπηδά για να φέρεται από το γραμματοκιβώτιο"
 
 #: public_html/lists/admin/processbounces.php:396
 #: public_html/lists/admin/readtestmail.php:240
 msgid "Please do not interrupt this process"
-msgstr ""
+msgstr "Σας παρακαλούμε να μην διακόψετε τη συγκεκριμένη διαδικασία"
 
 #: public_html/lists/admin/processbounces.php:397
 #, php-format
 msgid "%d bounces to process"
-msgstr ""
+msgstr "Το% d αναπηδά για επεξεργασία"
 
 #: public_html/lists/admin/processbounces.php:399
 #: public_html/lists/admin/processbounces.php:400
 #, php-format
 msgid "Processing first %d bounces"
-msgstr ""
+msgstr "Η επεξεργασία του πρώτου% d αναπηδά"
 
 #: public_html/lists/admin/processbounces.php:404
 msgid "Running in test mode, not deleting messages from mailbox"
 msgstr ""
+"Εκτελείται σε δοκιμαστική λειτουργία, χωρίς να διαγράφει μηνύματα από το "
+"γραμματοκιβώτιο"
 
 #: public_html/lists/admin/processbounces.php:406
 msgid "Processed messages will be deleted from mailbox"
-msgstr ""
+msgstr "Τα επεξεργασμένα μηνύματα θα διαγραφούν από το γραμματοκιβώτιο"
 
 #: public_html/lists/admin/processbounces.php:423
 #: public_html/lists/admin/processbounces.php:432
 #: public_html/lists/admin/readtestmail.php:265
 #: public_html/lists/admin/readtestmail.php:270
 msgid "Deleting message"
-msgstr ""
+msgstr "Διαγραφή μηνύματος"
 
 #: public_html/lists/admin/processbounces.php:427
 msgid "Not deleting processed message"
-msgstr ""
+msgstr "Δεν διαγράφεται το επεξεργασμένο μήνυμα"
 
 #: public_html/lists/admin/processbounces.php:436
 msgid "Not deleting unprocessed message"
-msgstr ""
+msgstr "Δεν διαγράφεται το μη επεξεργασμένο μήνυμα"
 
 #: public_html/lists/admin/processbounces.php:442
 #: public_html/lists/admin/readtestmail.php:277
 msgid "Closing mailbox, and purging messages"
-msgstr ""
+msgstr "Κλείσιμο γραμματοκιβωτίου και εκκαθάριση μηνυμάτων"
 
 #: public_html/lists/admin/processbounces.php:450
 #: public_html/lists/admin/readtestmail.php:292
 msgid "IMAP is not included in your PHP installation, cannot continue"
 msgstr ""
+"Το IMAP δεν περιλαμβάνεται στην εγκατάσταση της PHP σας, δεν μπορεί να "
+"συνεχιστεί"
 
 #: public_html/lists/admin/processbounces.php:451
 #: public_html/lists/admin/readtestmail.php:293
 msgid "Check out"
-msgstr ""
+msgstr "Ελέγξτε έξω"
 
 #: public_html/lists/admin/processbounces.php:458
 msgid "Bounce mechanism not properly configured"
-msgstr ""
+msgstr "Ο μηχανισμός αναπήδησης δεν έχει ρυθμιστεί σωστά"
 
 #: public_html/lists/admin/processbounces.php:468
 msgid "Force set, killing other send processes"
-msgstr ""
+msgstr "Ρύθμιση δύναμης, θανάτωση άλλων διαδικασιών αποστολής"
 
 #: public_html/lists/admin/processbounces.php:488
 msgid "bounce_protocol not supported"
-msgstr ""
+msgstr "το bounce_protocol δεν υποστηρίζεται"
 
 #: public_html/lists/admin/processbounces.php:494
 msgid "Download failed, exiting"
-msgstr ""
+msgstr "Η λήψη απέτυχε, εξερχόμενη"
 
 #: public_html/lists/admin/processbounces.php:507
 #, php-format
 msgid "%d bounces to reprocess"
-msgstr ""
+msgstr "% d αναστέλλει για επανεπεξεργασία"
 
 #: public_html/lists/admin/processbounces.php:511
 #: public_html/lists/admin/processbounces.php:523
 #, php-format
 msgid "%d out of %d processed"
-msgstr ""
+msgstr "% d από% d επεξεργασία"
 
 #: public_html/lists/admin/processbounces.php:525
 #, php-format
 msgid "%d bounces were re-processed and %d bounces were re-identified"
 msgstr ""
+"Οι αναπήδησεις% d επανεπεξεργάστηκαν και τα% d αναπήδησαν "
+"επαναπροσδιορίστηκαν"
 
 #: public_html/lists/admin/processbounces.php:530
 msgid "Processing bounces based on active bounce rules"
-msgstr ""
+msgstr "Η μεταποίηση αναπηδά με βάση τους ενεργούς κανόνες αναπήδησης"
 
 #: public_html/lists/admin/processbounces.php:544
 #, php-format
 msgid "processed %d out of %d bounces for advanced bounce rules"
-msgstr ""
+msgstr "επεξεργασία% d από% d αναπηδήσεις για προχωρημένους κανόνες αναπήδησης"
 
 #: public_html/lists/admin/processbounces.php:553
 #: public_html/lists/admin/actions/processqueue.php:995
 #: public_html/lists/admin/generatebouncerules.php:50
 msgid "Process Killed by other process"
-msgstr ""
+msgstr "Διαδικασία που έχει σκοτωθεί από άλλη διαδικασία"
 
+# Auto uncorfirmed
 #: public_html/lists/admin/processbounces.php:596
 #: public_html/lists/admin/processbounces.php:777
 msgid "Auto Unconfirmed"
-msgstr ""
+msgstr "Αυτόματη μη επιβεβαιωμένη"
 
 #: public_html/lists/admin/processbounces.php:597
 #: public_html/lists/admin/processbounces.php:620
 msgid "Subscriber auto unconfirmed for"
-msgstr ""
+msgstr "Ο χρήστης συνδρομητή δεν επιβεβαιώθηκε για"
 
 #: public_html/lists/admin/processbounces.php:597
 #: public_html/lists/admin/processbounces.php:620
@@ -1958,60 +2050,62 @@ msgstr ""
 #: public_html/lists/admin/processbounces.php:663
 #: public_html/lists/admin/processbounces.php:675
 msgid "bounce rule"
-msgstr ""
+msgstr "κανόνας αναπήδησης"
 
 #: public_html/lists/admin/processbounces.php:619
 msgid "Auto unconfirmed"
-msgstr ""
+msgstr "Αυτόματη μη επιβεβαιωμένη"
 
 #: public_html/lists/admin/processbounces.php:630
 msgid "Subscriber auto blacklisted  by bounce rule"
-msgstr ""
+msgstr "Ο συνδρομητής είναι μαύρος κατάλογος με τον κανόνα αναπήδησης"
 
 #: public_html/lists/admin/processbounces.php:634
 #: public_html/lists/admin/processbounces.php:648
 #: public_html/lists/admin/processbounces.php:662
 #: public_html/lists/admin/processbounces.php:674
 msgid "Auto Unsubscribed"
-msgstr ""
+msgstr "Αυτόματη κατάργηση εγγραφής"
 
 #: public_html/lists/admin/processbounces.php:635
 #: public_html/lists/admin/processbounces.php:649
 #: public_html/lists/admin/processbounces.php:675
 msgid "User auto unsubscribed for"
-msgstr ""
+msgstr "Αυτόματη κατάργηση εγγραφής χρήστη για"
 
 #: public_html/lists/admin/processbounces.php:644
 #, php-format
 msgid "Subscriber auto blacklisted by bounce rule %d"
-msgstr ""
+msgstr "Ο συνδρομητής αυτόματη λίστα με τον κανόνα αναπήδησης% d"
 
 #: public_html/lists/admin/processbounces.php:658
 #: public_html/lists/admin/processbounces.php:670
 #, php-format
 msgid "Email address auto blacklisted by bounce rule %d"
 msgstr ""
+"Η διεύθυνση ηλεκτρονικού ταχυδρομείου αυτόματη είναι μαύρη λίστα με τον "
+"κανόνα αναπήδησης% d"
 
 #: public_html/lists/admin/processbounces.php:663
 msgid "email auto unsubscribed for"
-msgstr ""
+msgstr "αυτόματη κατάργηση εγγραφής ηλεκτρονικού ταχυδρομείου για"
 
 #: public_html/lists/admin/processbounces.php:690
 msgid "bounces processed by advanced processing"
-msgstr ""
+msgstr "αναπηδά επεξεργασμένο με προηγμένη επεξεργασία"
 
 #: public_html/lists/admin/processbounces.php:691
 msgid "bounces were not matched by advanced processing rules"
-msgstr ""
+msgstr "αναπηδήσεις δεν συνοδεύονται από προηγμένη κανόνες επεξεργασίας"
 
 #: public_html/lists/admin/processbounces.php:695
 msgid "Identifying consecutive bounces"
-msgstr ""
+msgstr "Προσδιορισμός διαδοχικών αναπήρων"
 
 #: public_html/lists/admin/processbounces.php:705
 #: public_html/lists/admin/cron.php:58
 msgid "Nothing to do"
-msgstr ""
+msgstr "τίποτα να κάνει"
 
 #: public_html/lists/admin/processbounces.php:774
 #, php-format
@@ -2019,76 +2113,83 @@ msgid ""
 "User (url:%s) has consecutive bounces (%d) over threshold (%d), user marked "
 "unconfirmed"
 msgstr ""
+"Ο χρήστης (url:% s) έχει συνεχόμενα αναπήδηση (% d) πάνω από το όριο (% d), "
+"ο χρήστης έχει επισημανθεί ανεπιβεβαίωτα"
 
 #: public_html/lists/admin/processbounces.php:778
 #, php-format
 msgid "Subscriber auto unconfirmed for %d consecutive bounces"
 msgstr ""
+"Ο αυτόματος συνδρομητής δεν επιβεβαιώθηκε για% d συνεχόμενες αναπηδήσεις"
 
 #: public_html/lists/admin/processbounces.php:788
 #, php-format
 msgid "%d consecutive bounces, threshold reached, blacklisting subscriber"
-msgstr ""
+msgstr "% d συνεχόμενες αναλήψεις, κατώτατο όριο, συνδρομητής μαύρης λίστας"
 
 #: public_html/lists/admin/processbounces.php:789
 #, php-format
 msgid "%d consecutive bounces, threshold reached"
-msgstr ""
+msgstr "% d συνεχόμενες αναλήψεις, το κατώτατο όριο φτάνει"
 
 #: public_html/lists/admin/processbounces.php:801
 #, php-format
 msgid "processed %d out of %d subscribers"
-msgstr ""
+msgstr "επεξεργασία% d από% d συνδρομητές"
 
 #: public_html/lists/admin/processbounces.php:808
 #, php-format
 msgid "total of %d subscribers processed"
-msgstr ""
+msgstr "σύνολο% συνδρομητών που έχουν υποστεί επεξεργασία"
 
 #: public_html/lists/admin/processbounces.php:813
 msgid "Report of advanced bounce processing:"
-msgstr ""
+msgstr "Αναφορά της προηγμένης επεξεργασίας αναπήδησης:"
 
 #: public_html/lists/admin/processbounces.php:816
 msgid ""
 "Below are users who have been marked unconfirmed. The number in () is the "
 "number of consecutive bounces."
 msgstr ""
+"Παρακάτω είναι οι χρήστες που έχουν επισημανθεί ανεπιβεβαίωτα. Ο αριθμός στο "
+"() είναι ο αριθμός των διαδοχικών αναπήρων."
 
 #: public_html/lists/admin/processbounces.php:820
 msgid "Report:"
-msgstr ""
+msgstr "Αναφέρω:"
 
 #: public_html/lists/admin/reconcileusers.php:8
 #: public_html/lists/admin/massremove.php:8
 #: public_html/lists/admin/suppressionlist.php:5
 msgid "Sorry, this page can only be used by super admins"
 msgstr ""
+"Λυπούμαστε, αυτή η σελίδα μπορεί να χρησιμοποιηθεί μόνο από τους σούπερ "
+"δειαχριστες"
 
 #: public_html/lists/admin/reconcileusers.php:55
 msgid "Resending confirmation request to"
-msgstr ""
+msgstr "Επαναλάβετε την αίτηση επιβεβαίωσης"
 
 #: public_html/lists/admin/reconcileusers.php:106
 msgid "user found"
-msgstr ""
+msgstr "βρέθηκε χρήστης"
 
 #: public_html/lists/admin/reconcileusers.php:125
 msgid "no user found"
-msgstr ""
+msgstr "Δεν βρέθηκε χρήστης"
 
 #: public_html/lists/admin/reconcileusers.php:131
 msgid "unable to find original email"
-msgstr ""
+msgstr "αδυνατούν να βρουν αρχικό e-mail"
 
 #: public_html/lists/admin/reconcileusers.php:160
 msgid "Marking all subscribers confirmed"
-msgstr ""
+msgstr "Επισημάνθηκε η επισήμανση όλων των συνδρομητών"
 
 #: public_html/lists/admin/reconcileusers.php:163
 #, php-format
 msgid "Marking all subscribers on list %s confirmed"
-msgstr ""
+msgstr "Επισημάνθηκε η επισήμανση όλων των συνδρομητών"
 
 #: public_html/lists/admin/reconcileusers.php:170
 #: public_html/lists/admin/reconcileusers.php:176
@@ -2102,86 +2203,91 @@ msgstr ""
 #: public_html/lists/admin/reconcileusers.php:255
 #: public_html/lists/admin/reconcileusers.php:263
 msgid "subscribers apply"
-msgstr ""
+msgstr "οι συνδρομητές ισχύουν"
 
 #: public_html/lists/admin/reconcileusers.php:173
 msgid "Creating UniqID for all subscribers who do not have one"
-msgstr ""
+msgstr "Δημιουργία UniqID για όλους τους συνδρομητές που δεν έχουν ένα"
 
 #: public_html/lists/admin/reconcileusers.php:180
 msgid "Marking all subscribers to receive HTML"
-msgstr ""
+msgstr "Επισήμανση όλων των συνδρομητών για λήψη HTML"
 
 #: public_html/lists/admin/reconcileusers.php:186
 msgid "Marking all subscribers to receive text"
-msgstr ""
+msgstr "Σήμανση όλων των συνδρομητών για λήψη κειμένου"
 
 #: public_html/lists/admin/reconcileusers.php:192
 msgid "Deleting subscribers who are not on any list"
-msgstr ""
+msgstr "Διαγραφή συνδρομητών που δεν βρίσκονται σε καμία λίστα"
 
 #: public_html/lists/admin/reconcileusers.php:204
 msgid "Moving subscribers who are not on any list to"
-msgstr ""
+msgstr "Μετακίνηση συνδρομητών που δεν βρίσκονται σε καμία λίστα"
 
 #: public_html/lists/admin/reconcileusers.php:215
 msgid "Deleting subscribers with more than"
-msgstr ""
+msgstr "Διαγραφή συνδρομητών με περισσότερες από"
 
 #: public_html/lists/admin/reconcileusers.php:225
 msgid "Blacklisting subscribers with more than"
-msgstr ""
+msgstr "Μαύρη λίστα συνδρομητών με περισσότερα από"
 
 #: public_html/lists/admin/reconcileusers.php:237
 msgid "Resending request for confirmation to subscribers who signed up after"
 msgstr ""
+"Επαναλάβετε την αίτηση επιβεβαίωσης σε συνδρομητές που έχουν εγγραφεί μετά"
 
 #: public_html/lists/admin/reconcileusers.php:237
 #: public_html/lists/admin/reconcileusers.php:249
 msgid "and before"
-msgstr ""
+msgstr "και πριν"
 
 #: public_html/lists/admin/reconcileusers.php:249
 msgid "Deleting unconfirmed subscribers who signed up after"
-msgstr ""
+msgstr "Διαγραφή μη επιβεβαιωμένων συνδρομητών που έχουν εγγραφεί μετά"
 
 #: public_html/lists/admin/reconcileusers.php:259
 msgid "Trying to merge duplicates"
-msgstr ""
+msgstr "Προσπάθεια συγχώνευσης διπλών"
 
 #: public_html/lists/admin/reconcileusers.php:288
 msgid "Don't know how to"
-msgstr ""
+msgstr "Δεν ξέρω πώς να"
 
 #: public_html/lists/admin/reconcileusers.php:303
 msgid "Trying to fix subscribers with an invalid email"
 msgstr ""
+"Προσπαθώντας να διορθώσετε τους συνδρομητές με μη έγκυρο μήνυμα ηλεκτρονικού "
+"ταχυδρομείου"
 
 #: public_html/lists/admin/reconcileusers.php:317
 #: public_html/lists/admin/reconcileusers.php:322
 #: public_html/lists/admin/import3.php:236
 msgid "User"
-msgstr ""
+msgstr "Χρήστης"
 
 #: public_html/lists/admin/reconcileusers.php:326
 msgid "subscribers fixed"
-msgstr ""
+msgstr "σταθερη συνδρομητές"
 
 #: public_html/lists/admin/reconcileusers.php:326
 msgid "subscribers could not be fixed"
-msgstr ""
+msgstr "οι συνδρομητές δεν μπόρεσαν να διορθωθούν"
 
 #: public_html/lists/admin/reconcileusers.php:330
 msgid "Marking subscribers with an invalid email as unconfirmed"
 msgstr ""
+"Επισήμανση των συνδρομητών με μη έγκυρο μήνυμα ηλεκτρονικού ταχυδρομείου ως "
+"μη επιβεβαιωμένο"
 
 #: public_html/lists/admin/reconcileusers.php:341
 msgid "subscribers updated"
-msgstr ""
+msgstr "οι συνδρομητές ενημερώθηκαν"
 
 #: public_html/lists/admin/reconcileusers.php:343
 msgid "Cleaning some user tables of invalid entries"
-msgstr ""
+msgstr "Καθαρισμός ορισμένων πινάκων χρηστών με μη έγκυρες καταχωρήσεις"
 
 #: public_html/lists/admin/reconcileusers.php:348
 #: public_html/lists/admin/reconcileusers.php:355
@@ -2189,45 +2295,45 @@ msgstr ""
 #: public_html/lists/admin/reconcileusers.php:369
 #: public_html/lists/admin/reconcileusers.php:376
 msgid "entries apply"
-msgstr ""
+msgstr "ισχύουν οι καταχωρίσεις"
 
 #: public_html/lists/admin/reconcileusers.php:395
 #: public_html/lists/admin/users.php:183 public_html/lists/admin/users.php:223
 msgid "Delete will delete user and all listmemberships"
-msgstr ""
+msgstr "Η διαγραφή θα διαγράψει το χρήστη και όλα τα μέλη του καταλόγου"
 
 #: public_html/lists/admin/reconcileusers.php:423
 #: public_html/lists/admin/members.php:277
 #: public_html/lists/admin/actions/mclicks.php:86
 #: public_html/lists/admin/users.php:414
 msgid "subscribers"
-msgstr ""
+msgstr "συνδρομητές"
 
 #: public_html/lists/admin/reconcileusers.php:424
 #: public_html/lists/admin/admins.php:76
 msgid "found"
-msgstr ""
+msgstr "βρέθηκαν"
 
 #: public_html/lists/admin/reconcileusers.php:424
 msgid "in the database"
-msgstr ""
+msgstr "στη βάση δεδομένων"
 
 #: public_html/lists/admin/reconcileusers.php:442
 msgid "-All-"
-msgstr ""
+msgstr "Ολα-"
 
 #: public_html/lists/admin/reconcileusers.php:456
 msgid "Mark all subscribers to receive HTML"
-msgstr ""
+msgstr "Σημειώστε όλους τους συνδρομητές να λαμβάνουν HTML"
 
 #: public_html/lists/admin/reconcileusers.php:458
 msgid "Mark all subscribers to receive text"
-msgstr ""
+msgstr "Σημειώστε όλους τους συνδρομητές για να λαμβάνετε κείμενο"
 
 #: public_html/lists/admin/reconcileusers.php:470
 #, php-format
 msgid "Mark all subscribers on list %s confirmed"
-msgstr ""
+msgstr "Επισημάνετε όλους τους συνδρομητές στη λίστα% s"
 
 #: public_html/lists/admin/reconcileusers.php:473
 #: public_html/lists/admin/reconcileusers.php:486
@@ -2235,98 +2341,109 @@ msgstr ""
 #: public_html/lists/admin/reconcileusers.php:519
 #: public_html/lists/admin/reconcileusers.php:565
 msgid "Click here"
-msgstr ""
+msgstr "Κάντε κλικ εδώ"
 
 #: public_html/lists/admin/reconcileusers.php:482
 #, php-format
 msgid "To move all subscribers who are not subscribed to any list to %s"
 msgstr ""
+"Για να μετακινήσετε όλους τους συνδρομητές που δεν έχουν εγγραφεί σε κάποια "
+"λίστα στο% s"
 
 #: public_html/lists/admin/reconcileusers.php:493
 msgid "To delete all subscribers with more than"
-msgstr ""
+msgstr "Για να διαγράψετε όλους τους συνδρομητές με περισσότερους από"
 
 #: public_html/lists/admin/reconcileusers.php:509
 msgid "To blacklist all subscribers with more than"
-msgstr ""
+msgstr "Για μαύρη λίστα όλων των συνδρομητών με περισσότερους από"
 
 #: public_html/lists/admin/reconcileusers.php:522
 msgid ""
 "Note: this will use the total count of bounces on a subscriber, not "
 "consecutive bounces"
 msgstr ""
+"Σημείωση: αυτό θα χρησιμοποιήσει τον συνολικό αριθμό αναπήρων σε έναν "
+"συνδρομητή, όχι διαδοχικά αναπηδήσεις"
 
 #: public_html/lists/admin/reconcileusers.php:528
 msgid "Delete subscribers who have an invalid email address"
 msgstr ""
+"Διαγράψτε τους συνδρομητές που έχουν μη έγκυρη διεύθυνση ηλεκτρονικού "
+"ταχυδρομείου"
 
 #: public_html/lists/admin/reconcileusers.php:554
 msgid ""
 "To delete subscribers who signed up and have not confirmed their subscription"
 msgstr ""
+"Για να διαγράψετε συνδρομητές που έχουν εγγραφεί και δεν έχουν επιβεβαιώσει "
+"τη συνδρομή τους"
 
 #: public_html/lists/admin/reconcileusers.php:556
 msgid "Date they signed up after"
-msgstr ""
+msgstr "Ημερομηνία που έχουν εγγραφεί μετά"
 
 #: public_html/lists/admin/reconcileusers.php:559
 msgid "Date they signed up before"
-msgstr ""
+msgstr "Ημερομηνία που έχουν εγγραφεί πριν"
 
 #: public_html/lists/admin/template.php:69
 msgid "No such template"
-msgstr ""
+msgstr "Δεν υπάρχει τέτοιο πρότυπο"
 
 #: public_html/lists/admin/template.php:81
 msgid "Images stored"
-msgstr ""
+msgstr "Οι αποθηκευμένες εικόνες"
 
 #: public_html/lists/admin/template.php:83
 msgid "No images found"
-msgstr ""
+msgstr "Δεν βρέθηκαν εικόνες"
 
 #: public_html/lists/admin/template.php:86
 msgid "Template saved and ready for use in campaigns"
-msgstr ""
+msgstr "Πρότυπο αποθηκευμένο και έτοιμο για χρήση σε καμπάνιες"
 
 #: public_html/lists/admin/template.php:104
 #: public_html/lists/admin/template.php:111
 msgid "Image"
-msgstr ""
+msgstr "Εικόνα"
 
 #: public_html/lists/admin/template.php:104
 msgid "\"not full URL"
-msgstr ""
+msgstr "\"δεν είναι πλήρης διεύθυνση URL"
 
 #: public_html/lists/admin/template.php:111
 msgid "does not exist"
-msgstr ""
+msgstr "δεν υπάρχει"
 
 #: public_html/lists/admin/template.php:124
 msgid "Not a full URL"
-msgstr ""
+msgstr "Δεν είναι πλήρης διεύθυνση URL"
 
 #: public_html/lists/admin/template.php:131
 msgid "No Title"
-msgstr ""
+msgstr "Χωρίς τίτλο"
 
 #: public_html/lists/admin/template.php:133
 msgid "Template does not contain the [CONTENT] placeholder"
-msgstr ""
+msgstr "Το πρότυπο δεν περιέχει το σύμβολο κράτησης θέσης [CONTENT]"
 
 #: public_html/lists/admin/template.php:153
 msgid "Template saved"
-msgstr ""
+msgstr "Το πρότυπο αποθηκεύτηκε"
 
 #: public_html/lists/admin/template.php:172
 msgid "Images"
-msgstr ""
+msgstr "Εικόνες"
 
 #: public_html/lists/admin/template.php:172
 msgid ""
 "Below is the list of images used in your template. If an image is currently "
 "unavailable, please upload it to the database."
 msgstr ""
+"Παρακάτω είναι η λίστα των εικόνων που χρησιμοποιούνται στο πρότυπό σας. Εάν "
+"μια εικόνα δεν είναι διαθέσιμη αυτήν τη στιγμή, μεταφορτώστε τη στη βάση "
+"δεδομένων."
 
 #: public_html/lists/admin/template.php:173
 msgid ""
@@ -2334,37 +2451,40 @@ msgid ""
 "to upload some. If you upload images, they will be included in the campaigns "
 "that use this template."
 msgstr ""
+"Αυτό περιλαμβάνει όλες τις εικόνες, επίσης πλήρως αναφερόμενες, έτσι "
+"μπορείτε να επιλέξετε να μην μεταφορτώσετε μερικά. Εάν ανεβάσετε εικόνες, θα "
+"συμπεριληφθούν στις καμπάνιες που χρησιμοποιούν αυτό το πρότυπο."
 
 #: public_html/lists/admin/template.php:184
 #: public_html/lists/admin/template.php:189
 msgid "Image name:"
-msgstr ""
+msgstr "Όνομα εικόνας:"
 
 #: public_html/lists/admin/template.php:184
 #: public_html/lists/admin/template.php:189
 #, php-format
 msgid "%d times used"
-msgstr ""
+msgstr "Χρησιμοποιήθηκε% d φορές"
 
 #: public_html/lists/admin/template.php:196
 msgid "Save Images"
-msgstr ""
+msgstr "Αποθήκευση εικόνων"
 
 #: public_html/lists/admin/template.php:202
 msgid "Template was successfully saved"
-msgstr ""
+msgstr "Το πρότυπο αποθηκεύτηκε με επιτυχία"
 
 #: public_html/lists/admin/template.php:212
 msgid "Some errors were found, template NOT saved!"
-msgstr ""
+msgstr "Εντοπίστηκαν ορισμένα σφάλματα, το πρότυπο ΔΕΝ αποθηκευτηκε!"
 
 #: public_html/lists/admin/template.php:223
 msgid "Sending test"
-msgstr ""
+msgstr "Αποστολή δοκιμής"
 
 #: public_html/lists/admin/template.php:227
 msgid "Sending test \"Request for confirmation\" to"
-msgstr ""
+msgstr "Αποστολή δοκιμής \"Αίτηση για επιβεβαίωση\" στο"
 
 #: public_html/lists/admin/template.php:229
 #: public_html/lists/admin/template.php:236
@@ -2372,71 +2492,76 @@ msgstr ""
 #: public_html/lists/admin/tests/sendpage.php:32
 #: public_html/lists/admin/tests/sendpage.php:40
 msgid "OK"
-msgstr ""
+msgstr "Εντάξει"
 
 #: public_html/lists/admin/template.php:231
 #: public_html/lists/admin/template.php:238
 #: public_html/lists/admin/template.php:245
 msgid "FAILED"
-msgstr ""
+msgstr "Εντάξει"
 
 #: public_html/lists/admin/template.php:234
 msgid "Sending test \"Welcome\" to"
-msgstr ""
+msgstr "Αποστολή δοκιμής \"Καλώς ορίσατε\" στο"
 
 #: public_html/lists/admin/template.php:241
 msgid "Sending test \"Unsubscribe confirmation\" to"
-msgstr ""
+msgstr "Αποστολή δοκιμής \"Διαγραφή επιβεβαίωσης\" στο"
 
 #: public_html/lists/admin/template.php:248
 msgid "Error sending test messages to"
-msgstr ""
+msgstr "Σφάλμα στην αποστολή δοκιμαστικών μηνυμάτων στο"
 
 #: public_html/lists/admin/template.php:253
 msgid "Sending a test from templates only works for the system template."
 msgstr ""
+"Η αποστολή δοκιμής από πρότυπα λειτουργεί μόνο για το πρότυπο συστήματος."
 
 #: public_html/lists/admin/template.php:254
 msgid ""
 "To test your template, go to campaigns and send a test campaign using the "
 "template."
 msgstr ""
+"Για να ελέγξετε το πρότυπό σας, μεταβείτε στις καμπάνιες και στείλτε μια "
+"δοκιμαστική καμπάνια χρησιμοποιώντας το πρότυπο."
 
 #: public_html/lists/admin/template.php:283
 msgid "List of Templates"
-msgstr ""
+msgstr "Λίστα προτύπων"
 
 #: public_html/lists/admin/template.php:291
 msgid "Title of this template"
-msgstr ""
+msgstr "Τίτλος αυτού του προτύπου"
 
 #: public_html/lists/admin/template.php:296
 msgid "Content of the template."
-msgstr ""
+msgstr "Περιεχόμενο του προτύπου."
 
 #: public_html/lists/admin/template.php:297
 msgid "The content should at least have <b>[CONTENT]</b> somewhere."
-msgstr ""
+msgstr "ο περιεχόμενο θα πρέπει τουλάχιστον να έχει <b> [CONTENT] </ b> κάπου."
 
 #: public_html/lists/admin/template.php:298
 msgid "You can upload a template file or paste the text in the box below"
 msgstr ""
+"Μπορείτε να ανεβάσετε ένα αρχείο προτύπου ή να επικολλήσετε το κείμενο στο "
+"παρακάτω πλαίσιο"
 
 #: public_html/lists/admin/template.php:301
 msgid "Template file."
-msgstr ""
+msgstr "Πρότυπο αρχείο."
 
 #: public_html/lists/admin/template.php:325
 msgid "Check that all links have a full URL"
-msgstr ""
+msgstr "Ελέγξτε ότι όλοι οι σύνδεσμοι έχουν πλήρη διεύθυνση URL"
 
 #: public_html/lists/admin/template.php:330
 msgid "Check that all images have a full URL"
-msgstr ""
+msgstr "Ελέγξτε ότι όλες οι εικόνες έχουν πλήρη διεύθυνση URL"
 
 #: public_html/lists/admin/template.php:338
 msgid "Check that all external images exist"
-msgstr ""
+msgstr "Ελέγξτε ότι υπάρχουν όλες οι εξωτερικές εικόνες"
 
 #: public_html/lists/admin/template.php:347
 #: public_html/lists/admin/adminattributes.php:5
@@ -2450,30 +2575,30 @@ msgstr ""
 #: public_html/lists/admin/bouncerules.php:125
 #: public_html/lists/admin/spageedit.php:409
 msgid "Save Changes"
-msgstr ""
+msgstr "Αποθήκευσε τις αλλαγές"
 
 #: public_html/lists/admin/template.php:356
 #: public_html/lists/admin/spageedit.php:302
 msgid "Send test message"
-msgstr ""
+msgstr "Στείλτε μήνυμα δοκιμής"
 
 #: public_html/lists/admin/template.php:356
 #: public_html/lists/admin/spageedit.php:302
 msgid "to email addresses"
-msgstr ""
+msgstr "σε διευθύνσεις ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/template.php:357
 #: public_html/lists/admin/send_core.php:995
 #: public_html/lists/admin/spageedit.php:303
 msgid "(comma separate addresses - all must be existing subscribers)"
-msgstr ""
+msgstr "(διαχωριστικές διευθύνσεις με κόμμα - όλοι πρέπει να είναι συνδρομητές)"
 
 #: public_html/lists/admin/template.php:358
 #: public_html/lists/admin/send_core.php:994
 #: public_html/lists/admin/send_core.php:1357
 #: public_html/lists/admin/spageedit.php:304
 msgid "Send Test"
-msgstr ""
+msgstr "Αποστολή δοκιμής"
 
 #: public_html/lists/admin/templates.php:8
 #: public_html/lists/admin/messages.php:147
@@ -2481,60 +2606,60 @@ msgstr ""
 #: public_html/lists/admin/user.php:271 public_html/lists/admin/admins.php:30
 #: public_html/lists/admin/admin.php:128
 msgid "Deleting"
-msgstr ""
+msgstr "Διαγραφή"
 
 #: public_html/lists/admin/templates.php:22
 msgid "No template have been defined"
-msgstr ""
+msgstr "Δεν έχει καθοριστεί πρότυπο"
 
 #: public_html/lists/admin/templates.php:28
 msgid "Existing templates"
-msgstr ""
+msgstr "Δεν έχει καθοριστεί πρότυπο"
 
 #: public_html/lists/admin/templates.php:37
 #: public_html/lists/admin/bounce.php:221
 msgid "ID"
-msgstr ""
+msgstr "ταυτότητα"
 
 #: public_html/lists/admin/templates.php:46
 msgid "Campaign Default"
-msgstr ""
+msgstr "Προεπιλογή καμπάνιας"
 
 #: public_html/lists/admin/templates.php:49
 msgid "System"
-msgstr ""
+msgstr "Σύστημα"
 
 #: public_html/lists/admin/templates.php:57
 msgid "Add new Template"
-msgstr ""
+msgstr "Προσθέστε νέο πρότυπο"
 
 #: public_html/lists/admin/templates.php:63
 msgid "Add default system template"
-msgstr ""
+msgstr "Προσθέστε το προεπιλεγμένο πρότυπο συστήματος"
 
 #: public_html/lists/admin/adminattributes.php:15
 #: public_html/lists/admin/defaults.php:49
 msgid "Name cannot be empty:"
-msgstr ""
+msgstr "Το όνομα δεν μπορεί να είναι άδειο:"
 
 #: public_html/lists/admin/adminattributes.php:19
 #: public_html/lists/admin/importadmin.php:85
 #: public_html/lists/admin/defaults.php:53
 msgid "Name is not unique enough"
-msgstr ""
+msgstr "Το όνομα δεν είναι αρκετά μοναδικό"
 
 #: public_html/lists/admin/adminattributes.php:82
 msgid "Existing attributes:"
-msgstr ""
+msgstr "Υπάρχοντα χαρακτηριστικά:"
 
 #: public_html/lists/admin/adminattributes.php:84
 #: public_html/lists/admin/attributes.php:358
 msgid "No Attributes have been defined yet"
-msgstr ""
+msgstr "Δεν έχουν οριστεί ακόμα Χαρακτηριστικά"
 
 #: public_html/lists/admin/adminattributes.php:93
 msgid "Attribute:"
-msgstr ""
+msgstr "Χαρακτηριστικό:"
 
 #: public_html/lists/admin/adminattributes.php:94
 #: public_html/lists/admin/members.php:320
@@ -2546,7 +2671,7 @@ msgstr "Διαγραφή"
 #: public_html/lists/admin/adminattributes.php:97
 #: public_html/lists/admin/adminattributes.php:130
 msgid "Name:"
-msgstr ""
+msgstr "όνομα"
 
 #: public_html/lists/admin/adminattributes.php:102
 #: public_html/lists/admin/adminattributes.php:134
@@ -2554,77 +2679,81 @@ msgstr ""
 #: public_html/lists/admin/attributes.php:429
 #: public_html/lists/admin/spageedit.php:334
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 #: public_html/lists/admin/adminattributes.php:107
 #: public_html/lists/admin/adminattributes.php:145
 msgid "Default Value:"
-msgstr ""
+msgstr "Προεπιλεγμένη τιμή:"
 
 #: public_html/lists/admin/adminattributes.php:113
 #: public_html/lists/admin/adminattributes.php:149
 msgid "Order of Listing:"
-msgstr ""
+msgstr "Διάταξη καταχώρισης:"
 
 #: public_html/lists/admin/adminattributes.php:116
 #: public_html/lists/admin/adminattributes.php:151
 msgid "Is this attribute required?:"
-msgstr ""
+msgstr "Απαιτείται αυτό το χαρακτηριστικό ;:"
 
 #: public_html/lists/admin/adminattributes.php:127
 msgid "Add a new Attribute:"
-msgstr ""
+msgstr "Προσθέστε ένα νέο χαρακτηριστικό:"
 
 #: public_html/lists/admin/configure.php:16
 msgid "The settings have been reset to the phpList default"
-msgstr ""
+msgstr "Οι ρυθμίσεις έχουν επαναφερθεί στην προεπιλεγμένη τιμή phpList"
 
 #: public_html/lists/admin/configure.php:25
 #: public_html/lists/admin/actions/configure.php:10
 msgid "invalid request"
-msgstr ""
+msgstr "Άκυρη αίτηση"
 
 #: public_html/lists/admin/configure.php:35
 msgid "Are you sure you want to reset the configuration to the default?"
 msgstr ""
+"Είστε βέβαιοι ότι θέλετε να επαναφέρετε τις παραμέτρους στις προεπιλογές;"
 
 #: public_html/lists/admin/configure.php:37
 msgid "Reset to default"
-msgstr ""
+msgstr "Επαναφορά στο προκαθορισμένο"
 
 #: public_html/lists/admin/configure.php:40
 msgid ""
 "You can edit all of the values in this page, and click the \"save changes\" "
 "button once to save all the changes you made."
 msgstr ""
+"Μπορείτε να επεξεργαστείτε όλες τις τιμές σε αυτήν τη σελίδα και να κάνετε "
+"κλικ στο κουμπί \"αποθήκευση αλλαγών\" μία φορά για να αποθηκεύσετε όλες τις "
+"αλλαγές που κάνατε."
 
 #: public_html/lists/admin/configure.php:49
 msgid "other"
-msgstr ""
+msgstr "άλλο"
 
 #: public_html/lists/admin/configure.php:87
 msgid "cannot be empty"
-msgstr ""
+msgstr "δεν μπορεί να είναι άδειο"
 
 #: public_html/lists/admin/configure.php:99
 #: public_html/lists/admin/user.php:263 public_html/lists/admin/admin.php:118
 #: public_html/lists/admin/editlist.php:93
 msgid "Changes saved"
-msgstr ""
+msgstr "οι αλλαγές αποθηκεύτηκαν"
 
 #: public_html/lists/admin/configure.php:102
 msgid "Changes not saved"
-msgstr ""
+msgstr "οι αλλαγές δεν αποθηκεύτηκαν"
 
 #: public_html/lists/admin/configure.php:112
 #: public_html/lists/admin/catlists.php:61
 msgid "Categories saved"
-msgstr ""
+msgstr "Οι κατηγορίες αποθηκεύτηκαν"
 
 #: public_html/lists/admin/configure.php:132
 #, php-format
 msgid "%s settings"
-msgstr ""
+msgstr "% s ρυθμίσεις"
 
 #: public_html/lists/admin/configure.php:145
 #: public_html/lists/admin/actions/configure.php:64
@@ -2632,7 +2761,7 @@ msgstr ""
 #: public_html/lists/admin/bouncerule.php:39
 #: public_html/lists/admin/admin.php:196 public_html/lists/admin/admin.php:214
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #: public_html/lists/admin/configure.php:147
 #: public_html/lists/admin/actions/configure.php:71
@@ -2640,70 +2769,78 @@ msgstr ""
 #: public_html/lists/admin/bouncerule.php:40
 #: public_html/lists/admin/admin.php:196 public_html/lists/admin/admin.php:215
 msgid "No"
-msgstr ""
+msgstr "Οχι"
 
 #: public_html/lists/admin/configure.php:177
 msgid "edit this value"
-msgstr ""
+msgstr "επεξεργαστείτε αυτήν την τιμή"
 
 #: public_html/lists/admin/configure.php:178
 #: public_html/lists/admin/spage.php:73 public_html/lists/admin/spage.php:74
 msgid "edit"
-msgstr ""
+msgstr "επεξεργασία"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:7
 #: public_html/lists/admin/editattributes.php:156
 #: public_html/lists/admin/editattributes.php:163
 #: public_html/lists/admin/admin.php:31 public_html/lists/admin/admin.php:38
 msgid "No Access"
-msgstr ""
+msgstr "Σφάλμα, το κλειδί API είναι εσφαλμένο"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:24
 msgid "Remote queue processing settings were saved successfully"
 msgstr ""
+"Οι ρυθμίσεις επεξεργασίας απομακρυσμένης ουράς αποθηκεύτηκαν με επιτυχία"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:33
 msgid "Error, the API key is incorrect"
-msgstr ""
+msgstr "Σφάλμα, το κλειδί API είναι εσφαλμένο"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:35
 msgid ""
 "Error, unable to connect to the phpList.com server for checking. Please "
 "verify that your webserver is able to connect to https://pqapi.phplist.com"
 msgstr ""
+"Σφάλμα, δεν είναι δυνατή η σύνδεση στο διακομιστή phpList.com για έλεγχο. "
+"Βεβαιωθείτε ότι ο διακομιστής σας είναι σε θέση να συνδεθεί στο "
+"https://pqapi.phplist.com"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:35
 #: public_html/lists/admin/hostedprocessqueuesetup.php:49
 msgid "Use local processing instead"
-msgstr ""
+msgstr "Χρησιμοποιήστε την τοπική επεξεργασία αντί"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:43
 msgid "Process the queue using the service from phpList.com"
-msgstr ""
+msgstr "Επεξεργαστείτε την ουρά χρησιμοποιώντας την υπηρεσία από το phpList.com"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:46
 msgid ""
 "This is only possible if your phpList installation is not behind a firewall"
 msgstr ""
+"Αυτό είναι δυνατό μόνο εάν η εγκατάσταση του phpList δεν βρίσκεται πίσω από "
+"ένα τείχος προστασίας"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:48
 msgid ""
 "Your PHP settings do not allow this functionality. Please set "
 "\"allow_url_fopen\" in your php.ini to be \"on\" to continue."
 msgstr ""
+"Οι ρυθμίσεις PHP σας δεν επιτρέπουν αυτή τη λειτουργία. Ρυθμίστε \""
+"enable_url_fopen\" στο php.ini για να είναι \"on\" για να συνεχίσετε."
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:61
 msgid "API key from phpList.com"
-msgstr ""
+msgstr "Κλειδί API από το phpList.com"
 
 #: public_html/lists/admin/hostedprocessqueuesetup.php:62
 msgid "Continue setup"
-msgstr ""
+msgstr "Συνέχεια ρύθμισης"
 
 #: public_html/lists/admin/massremove.php:26
 #: public_html/lists/admin/suppressionlist.php:23
 msgid "Blacklisted by"
-msgstr ""
+msgstr "Μαύρη λίστα από"
 
 #: public_html/lists/admin/massremove.php:46
 #, php-format
@@ -2711,6 +2848,9 @@ msgid ""
 "All done, %d emails processed<br/>%d emails blacklisted<br/>%d emails "
 "deleted<br/>%d emails not found"
 msgstr ""
+"Όλα έτοιμα,% d ηλεκτρονικά μηνύματα που επεξεργάζονται <br/>% d μηνύματα "
+"μαύρης λίστας <br/>% d μηνύματα ηλεκτρονικού ταχυδρομείου διαγραμμένα <br/>% "
+"d μηνύματα ηλεκτρονικού ταχυδρομείου δεν βρέθηκαν"
 
 #: public_html/lists/admin/massremove.php:48
 #, php-format
@@ -2718,22 +2858,27 @@ msgid ""
 "%d subscribers could not be deleted, because they have already received "
 "campaigns"
 msgstr ""
+"% d συνδρομητές δεν ήταν δυνατή η διαγραφή, επειδή έχουν ήδη λάβει καμπάνιες"
 
 #: public_html/lists/admin/massremove.php:49
 msgid "Remove more"
-msgstr ""
+msgstr "Αφαιρέστε περισσότερα"
 
 #: public_html/lists/admin/massremove.php:56
 msgid "Mass remove email addresses"
-msgstr ""
+msgstr "Μαζική αφαιρέσετε διευθύνσεις ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/massremove.php:58
 msgid "Check to also add the emails to the blacklist"
 msgstr ""
+"Επιλέξτε επίσης να προσθέσετε τα μηνύματα ηλεκτρονικού ταχυδρομείου στη "
+"μαύρη λίστα"
 
 #: public_html/lists/admin/massremove.php:61
 msgid "Paste the emails to remove in this box, and click continue"
 msgstr ""
+"Επικολλήστε τα μηνύματα ηλεκτρονικού ταχυδρομείου που θέλετε να καταργήσετε "
+"σε αυτό το πλαίσιο και κάντε κλικ στο κουμπί συνέχεια"
 
 #: public_html/lists/admin/subscribelib2.php:94
 msgid ""
@@ -2755,73 +2900,87 @@ msgid ""
 "     If there is an error, you will need to  add them manually.\n"
 "--------------------------------------------------------------------------------  "
 msgstr ""
+"------------------------------------------------- "
+"------------------------------ \\ nΑυτή είναι μια ειδοποίηση για πιθανή "
+"επίθεση spam στη σελίδα εγγραφής phplist. \\ NΤα δεδομένα που υποβλήθηκαν "
+"έχουν αντιγραφεί παρακάτω, ώστε να μπορείτε να ελέγξετε αν αυτό συνέβη. \\ "
+"NΤα δεδομένα που υποβλήθηκαν μετατράπηκαν σε χαρακτήρες που δεν είναι html, "
+"για λόγους ασφαλείας. \\ NΑν θέλετε να σταματήσετε να λαμβάνετε αυτό το "
+"μήνυμα, ορίστε \\ n\\ nορίστε (\"NOTIFY_SPAM\", 0); \\ n\\ nστο αρχείο "
+"ρυθμίσεων phplist. \\ n\\ nΑυτός ο συνδρομητής δεν έχει προστεθεί στη βάση "
+"δεδομένων. \\ nΕάν υπάρχει σφάλμα, θα πρέπει να τα προσθέσετε με μη αυτόματο "
+"τρόπο. \\ N-------------------------------------------------- "
+"------------------------------"
 
 #: public_html/lists/admin/subscribelib2.php:114
 msgid "phplist Spam blocked"
-msgstr ""
+msgstr "phplist Spam μπλοκαριστεί"
 
 #: public_html/lists/admin/subscribelib2.php:335
 msgid "Email is blacklisted, so request for confirmation has been sent."
 msgstr ""
+"Το ηλεκτρονικό ταχυδρομείο βρίσκεται στη μαύρη λίστα, επομένως έχει "
+"αποσταλεί αίτημα επιβεβαίωσης."
 
 #: public_html/lists/admin/subscribelib2.php:336
 msgid "If user confirms subscription, they will be removed from the blacklist."
 msgstr ""
+"Εάν ο χρήστης επιβεβαιώσει τη συνδρομή, θα καταργηθεί από τη μαύρη λίστα."
 
 #: public_html/lists/admin/msgbounces.php:10
 msgid "Choose a message"
-msgstr ""
+msgstr "Επιλέξτε ένα μήνυμα"
 
 #: public_html/lists/admin/msgbounces.php:12
 #: public_html/lists/admin/eventlog.php:111
 #: public_html/lists/admin/userclicks.php:229
 msgid "message"
-msgstr ""
+msgstr "μήνυμα"
 
 #: public_html/lists/admin/msgbounces.php:14
 #: public_html/databasestructure.php:49
 msgid "subject"
-msgstr ""
+msgstr "θέμα"
 
 #: public_html/lists/admin/msgbounces.php:15
 msgid "# bounced"
-msgstr ""
+msgstr "# αναπήδησε"
 
 #: public_html/lists/admin/msgbounces.php:31
 #, php-format
 msgid "Listing %s to %s"
-msgstr ""
+msgstr "Καταχώρηση% s σε% s"
 
 #: public_html/lists/admin/msgbounces.php:33
 msgid " Total"
-msgstr ""
+msgstr "Σύνολο"
 
 #: public_html/lists/admin/msgbounces.php:73
 #: public_html/lists/admin/usercheck.php:23
 msgid "email"
-msgstr ""
+msgstr "Ηλεκτρονικό μήνυμα"
 
 #: public_html/lists/admin/msgbounces.php:74
 msgid "# bounces"
-msgstr ""
+msgstr "αναπηδά"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"
-msgstr ""
+msgstr "Προσθέστε έναν χρήστη"
 
 #: public_html/lists/admin/members.php:58
 #: public_html/lists/admin/members.php:179
 #: public_html/lists/admin/defaults.php:98
 msgid "Add"
-msgstr ""
+msgstr "Προσθέστε"
 
 #: public_html/lists/admin/members.php:65
 msgid "Members of"
-msgstr ""
+msgstr "Μέλη του"
 
 #: public_html/lists/admin/members.php:67
 msgid "edit list details"
-msgstr ""
+msgstr "επεξεργασία λεπτομερειών λίστας"
 
 #: public_html/lists/admin/members.php:68
 #: public_html/lists/admin/members.php:80
@@ -2829,26 +2988,26 @@ msgstr ""
 #: public_html/lists/admin/userclicks.php:117
 #: public_html/lists/admin/userclicks.php:147
 msgid "Download subscribers"
-msgstr ""
+msgstr "Λήψη συνδρομητών"
 
 #: public_html/lists/admin/members.php:69
 msgid "Import Subscribers to this list"
-msgstr ""
+msgstr "Εισαγωγή συνδρομητών σε αυτήν τη λίστα"
 
 #: public_html/lists/admin/members.php:103
 #: public_html/lists/admin/members.php:148
 msgid "subscribers were moved to"
-msgstr ""
+msgstr "οι συνδρομητές μετακινήθηκαν σε"
 
 #: public_html/lists/admin/members.php:112
 #: public_html/lists/admin/members.php:157
 msgid "subscribers were copied to"
-msgstr ""
+msgstr "οι συνδρομητές αντιγράφηκαν σε"
 
 #: public_html/lists/admin/members.php:123
 #: public_html/lists/admin/members.php:161
 msgid "subscribers were deleted from this list"
-msgstr ""
+msgstr "οι συνδρομητές διαγράφηκαν από αυτην την λιστα"
 
 #: public_html/lists/admin/members.php:170
 msgid ""
@@ -2856,96 +3015,104 @@ msgid ""
 "to all subscribers in your system. There may be more subscribers in your "
 "system than are members of your lists."
 msgstr ""
+"Η \"λίστα όλων των συνδρομητών\" δεν είναι μια πραγματική λίστα, αλλά σας "
+"δίνει πρόσβαση σε όλους τους συνδρομητές του συστήματός σας. Μπορεί να "
+"υπάρχουν περισσότεροι συνδρομητές στο σύστημά σας από ότι είναι μέλη των "
+"λιστών σας."
 
 #: public_html/lists/admin/members.php:177
 msgid "Users found, click add to add this user"
 msgstr ""
+"Βρέθηκαν χρήστες, κάντε κλικ στο κουμπί προσθήκη για να προσθέσετε αυτόν το "
+"χρήστη"
 
 #: public_html/lists/admin/members.php:185
 msgid "No user found with that email"
-msgstr ""
+msgstr "Δεν βρέθηκε χρήστης με αυτό το μήνυμα ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/members.php:202
 msgid "add user"
-msgstr ""
+msgstr "πρόσθεσε χρήστη"
 
 #: public_html/lists/admin/members.php:212
 msgid "Inserting user"
-msgstr ""
+msgstr "Εισαγωγή χρήστη"
 
 #: public_html/lists/admin/members.php:241
 #: public_html/lists/admin/users.php:260
 msgid "User added"
-msgstr ""
+msgstr "Προστέθηκε χρήστης"
 
 #: public_html/lists/admin/members.php:247
 #, php-format
 msgid "Removing %d from this list "
-msgstr ""
+msgstr "Κατάργηση% d από αυτήν τη λίστα"
 
 #: public_html/lists/admin/members.php:269
 #, php-format
 msgid "Listing subscriber %d to %d"
-msgstr ""
+msgstr "Καταχωρίστε τον συνδρομητή% d στο% d"
 
 #: public_html/lists/admin/members.php:272
 msgid "Listing subscriber 1 to 50"
-msgstr ""
+msgstr "Καταχώριση συνδρομητή 1 έως 50"
 
 #: public_html/lists/admin/members.php:289
 #: public_html/lists/admin/actions/domainstats.php:61
 #: public_html/lists/admin/actions/domainstats.php:142
 msgid "confirmed"
-msgstr ""
+msgstr "επιβεβαιωμένος"
 
 #: public_html/lists/admin/members.php:290
 #: public_html/lists/admin/actions/domainstats.php:69
 #: public_html/lists/admin/actions/domainstats.php:150
 msgid "unconfirmed"
-msgstr ""
+msgstr "επιβεβαιωμένος"
 
 #: public_html/lists/admin/members.php:301
 #, php-format
 msgid "%d subscribers"
-msgstr ""
+msgstr "% d συνδρομητές"
 
 #: public_html/lists/admin/members.php:307
 msgid "Tag all users in this page"
-msgstr ""
+msgstr "Επισημάνετε όλους τους χρήστες σε αυτήν τη σελίδα"
 
 #: public_html/lists/admin/members.php:312 public_html/lists/admin/list.php:223
 #: public_html/lists/admin/list.php:273
 msgid "Members"
-msgstr ""
+msgstr "Μέλη"
 
 #: public_html/lists/admin/members.php:327
 #: public_html/lists/admin/bouncerules.php:107
 msgid "tag"
-msgstr ""
+msgstr "ετικέτα"
 
 #: public_html/lists/admin/members.php:363
 msgid "Actions"
-msgstr ""
+msgstr "Ενέργειες"
 
 #: public_html/lists/admin/members.php:367
 msgid "What to do with \"Tagged\" users"
-msgstr ""
+msgstr "Τι να κάνετε με τους \"χρήστες\" με ετικέτα"
 
 #: public_html/lists/admin/members.php:368
 msgid ""
 "This will only process the users in this page that have the \"Tag\" checkbox "
 "checked"
 msgstr ""
+"Αυτό θα επεξεργαστεί μόνο τους χρήστες αυτής της σελίδας που έχουν επιλεγεί "
+"το πλαίσιο ελέγχου \"Ετικέτα\""
 
 #: public_html/lists/admin/members.php:373
 #: public_html/lists/admin/members.php:422
 msgid "from this list"
-msgstr ""
+msgstr "από αυτήν τη λίστα"
 
 #: public_html/lists/admin/members.php:389
 #: public_html/lists/admin/members.php:430
 msgid "Move"
-msgstr ""
+msgstr "Κίνηση"
 
 #: public_html/lists/admin/members.php:389
 #: public_html/lists/admin/members.php:399
@@ -2955,120 +3122,125 @@ msgstr ""
 #: public_html/lists/admin/actions/processqueue.php:494
 #: public_html/lists/admin/actions/processqueue.php:1133
 msgid "to"
-msgstr ""
+msgstr "σε"
 
 #: public_html/lists/admin/members.php:399
 #: public_html/lists/admin/members.php:440
 msgid "Copy"
-msgstr ""
+msgstr "Αντιγράφω"
 
 #: public_html/lists/admin/members.php:408
 #: public_html/lists/admin/members.php:449
 msgid "Nothing"
-msgstr ""
+msgstr "Τίποτα"
 
 #: public_html/lists/admin/members.php:414
 msgid "What to do with all subscribers"
-msgstr ""
+msgstr "Τίποτα"
 
 #: public_html/lists/admin/members.php:415
 msgid ""
 "This will process all subscribers on this list, confirmed and unconfirmed"
 msgstr ""
+"Αυτό θα επεξεργαστεί όλους τους συνδρομητές σε αυτήν τη λίστα, "
+"επιβεβαιωμένους και μη επιβεβαιωμένους"
 
 #: public_html/lists/admin/members.php:456
 msgid "do it"
-msgstr ""
+msgstr "Κάνε το"
 
 #: public_html/lists/admin/spage.php:43
-#, fuzzy
 msgid "Deleted"
-msgstr "Διαγραφή"
+msgstr "Διαγράφηκε"
 
 #: public_html/lists/admin/spage.php:47
 msgid "subscribe pages"
-msgstr ""
+msgstr "εγγραφείτε στις σελίδες"
 
 #: public_html/lists/admin/spage.php:53
 msgid "title"
-msgstr ""
+msgstr "τίτλος"
 
 #: public_html/lists/admin/spage.php:55
 msgid "owner"
-msgstr ""
+msgstr "ιδιοκτήτης"
 
 #: public_html/lists/admin/spage.php:61
 #: public_html/lists/admin/editattributes.php:213
 #: public_html/lists/admin/spageedit.php:203
 msgid "default"
-msgstr ""
+msgstr "Προκαθορισμένο"
 
 #: public_html/lists/admin/spage.php:68 public_html/lists/admin/spage.php:72
 #: public_html/lists/admin/messages.php:83
 #: public_html/lists/admin/bouncerules.php:66
 #: public_html/lists/admin/bouncerules.php:71
 msgid "active"
-msgstr ""
+msgstr "ενεργός"
 
 #: public_html/lists/admin/spage.php:72
 msgid "not active"
-msgstr ""
+msgstr "ανενεργός"
 
 #: public_html/lists/admin/spage.php:77 public_html/lists/admin/spage.php:78
 #: public_html/lists/admin/userhistory.php:89
 #: public_html/lists/admin/userhistory.php:113
 msgid "view"
-msgstr ""
+msgstr "θέα"
 
 #: public_html/lists/admin/spage.php:81
 msgid "Add a new subscribe page"
-msgstr ""
+msgstr "Προσθέστε μια νέα σελίδα εγγραφής"
 
 #: public_html/lists/admin/login.php:5
 msgid "default login is"
-msgstr ""
+msgstr "η προεπιλεγμένη σύνδεση είναι"
 
 #: public_html/lists/admin/login.php:5
 msgid "with password"
-msgstr ""
+msgstr "με κωδικό πρόσβασης"
 
 #: public_html/lists/admin/login.php:33
 msgid "In order to login, you need to enable cookies in your browser"
 msgstr ""
+"Για να συνδεθείτε, θα πρέπει να ενεργοποιήσετε τα cookies στο πρόγραμμα "
+"περιήγησής σας"
 
 #: public_html/lists/admin/login.php:42
 msgid "Forgot password"
-msgstr ""
+msgstr "Ξεχάσατε τον κωδικό"
 
 #: public_html/lists/admin/login.php:43
 msgid "Enter your email address"
-msgstr ""
+msgstr "Εισάγετε την διεύθυνση ηλεκρονικού ταχυδρομείου σας"
 
 #: public_html/lists/admin/login.php:44
 msgid "Send password"
-msgstr ""
+msgstr "Αποστολή κωδικού πρόσβασης"
 
 #: public_html/lists/admin/login.php:76
 msgid "Your password was changed succesfully"
-msgstr ""
+msgstr "Ο κωδικός πρόσβασής σας άλλαξε με επιτυχία"
 
 #: public_html/lists/admin/login.php:82
 msgid "The passwords you entered are not the same."
-msgstr ""
+msgstr "Οι κωδικοί πρόσβασης που εισάγετε δεν είναι οι ίδιοι."
 
 #: public_html/lists/admin/login.php:95
 msgid "You have requested a password update"
-msgstr ""
+msgstr "Ζητήσατε ενημέρωση κωδικού πρόσβασης"
 
 #: public_html/lists/admin/login.php:104
 msgid "Confirm password"
-msgstr ""
+msgstr "Επιβεβαίωση Κωδικού"
 
 #: public_html/lists/admin/login.php:111
 msgid ""
 "Unknown token or time expired (More than 24 hrs. passed since the "
 "notification email was sent)"
 msgstr ""
+"Άγνωστο διακριτικό ή ώρα λήξης (Πέρασαν περισσότερες από 24 ώρες από την "
+"αποστολή του μηνύματος ηλεκτρονικού ταχυδρομείου ειδοποίησης)"
 
 #: public_html/lists/admin/login.php:122
 #: public_html/lists/admin/attributes.php:374
@@ -3077,14 +3249,14 @@ msgstr ""
 #: public_html/lists/admin/catlists.php:80 public_html/databasestructure.php:2
 #: public_html/databasestructure.php:33 public_html/databasestructure.php:143
 msgid "Name"
-msgstr ""
+msgstr "όνομα"
 
 #: public_html/lists/admin/login.php:124
 #: public_html/lists/admin/import3.php:237
 #: public_html/lists/admin/admin.php:193 public_html/lists/admin/admin.php:202
 #: public_html/databasestructure.php:24 public_html/databasestructure.php:138
 msgid "Password"
-msgstr ""
+msgstr "Κωδικός πρόσβασης"
 
 #: public_html/lists/admin/suppressionlist.php:26
 #, php-format
@@ -3092,61 +3264,66 @@ msgid ""
 "All done, %d emails processed, %d emails marked unconfirmed, %d emails "
 "blacklisted<br/>"
 msgstr ""
+"Όλα έτοιμα,% d ηλεκτρονικά μηνύματα που επεξεργάστηκαν,% d μηνύματα "
+"ηλεκτρονικού ταχυδρομείου σημειώθηκαν ανεπιβεβαίωτα,% d ηλεκτρονικά "
+"ταχυδρομεία μαύρα σε λίστα <br/>"
 
 #: public_html/lists/admin/suppressionlist.php:28
 msgid "Add more"
-msgstr ""
+msgstr "Πρόσθεσε περισσότερα"
 
 #: public_html/lists/admin/suppressionlist.php:35
 msgid "Manage suppression list"
-msgstr ""
+msgstr "Διαχείριση καταλόγου καταστολής"
 
 #: public_html/lists/admin/suppressionlist.php:36
 msgid "Make suppression permanent"
-msgstr ""
+msgstr "Καταστήστε την καταστολή μόνιμη"
 
 #: public_html/lists/admin/suppressionlist.php:38
 msgid "Paste the emails to mark unconfirmed in this box, and click continue"
 msgstr ""
+"Επικολλήστε τα μηνύματα ηλεκτρονικού ταχυδρομείου για να τα μαρκάρετε ως "
+"ανεπιβεβαίωτα σε αυτό το πλαίσιο, και κάντε κλικ για να συνεχίσετε"
 
 #: public_html/lists/admin/tests.php:7
 msgid "phplist test suite"
-msgstr ""
+msgstr "phplist δοκιμή σουίτα"
 
 #: public_html/lists/admin/tests.php:40
 msgid "Test passed"
-msgstr ""
+msgstr "Η δοκιμή πέρασε"
 
 #: public_html/lists/admin/tests.php:42
 msgid "Test failed"
-msgstr ""
+msgstr "Η δοκιμή απέτυχε"
 
 #: public_html/lists/admin/tests.php:47
 msgid "Tests available"
-msgstr ""
+msgstr "Διαθέσιμες δοκιμές"
 
 #: public_html/lists/admin/tests.php:52
 msgid "Purpose"
-msgstr ""
+msgstr "Σκοπός"
 
 #: public_html/lists/admin/messages.php:10
 #: public_html/lists/admin/users.php:323
 msgid "Sort by"
-msgstr ""
+msgstr "Ταξινόμηση κατά"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/messages.php:13
 #: public_html/lists/admin/messages.php:15
 #: public_html/lists/admin/messages.php:17
 msgid "Ascending"
-msgstr ""
+msgstr "Αύξουσα"
 
 #: public_html/lists/admin/messages.php:12
 #: public_html/lists/admin/messages.php:14
 #: public_html/lists/admin/messages.php:16
 #: public_html/lists/admin/messages.php:18
 msgid "Descending"
-msgstr ""
+msgstr "Φθίνων"
 
 #: public_html/lists/admin/messages.php:13
 #: public_html/lists/admin/messages.php:14
@@ -3159,12 +3336,12 @@ msgstr ""
 #: public_html/databasestructure.php:45 public_html/databasestructure.php:56
 #: public_html/databasestructure.php:85 public_html/databasestructure.php:100
 msgid "Entered"
-msgstr ""
+msgstr "Εισήλθε"
 
 #: public_html/lists/admin/messages.php:15
 #: public_html/lists/admin/messages.php:16
 msgid "Embargo"
-msgstr ""
+msgstr "Απαγόρευση"
 
 #: public_html/lists/admin/messages.php:17
 #: public_html/lists/admin/messages.php:18
@@ -3174,25 +3351,25 @@ msgstr ""
 #: public_html/lists/admin/userclicks.php:142
 #: public_html/lists/admin/mviews.php:71
 msgid "Sent"
-msgstr ""
+msgstr "Απεσταλμένα"
 
 #: public_html/lists/admin/messages.php:84
 msgid "draft"
-msgstr ""
+msgstr "προσχέδιο"
 
 #: public_html/lists/admin/messages.php:87
 msgid "static"
-msgstr ""
+msgstr "στατικός"
 
 #: public_html/lists/admin/messages.php:130
 #: public_html/lists/admin/admins.php:105 public_html/lists/admin/users.php:326
 #: public_html/lists/admin/users.php:395
 msgid "Go"
-msgstr ""
+msgstr "Πήγαινε"
 
 #: public_html/lists/admin/messages.php:130
 msgid "Clear"
-msgstr ""
+msgstr "Καθαρός"
 
 #: public_html/lists/admin/messages.php:152
 #: public_html/lists/admin/messages.php:191
@@ -3202,11 +3379,11 @@ msgstr ""
 #: public_html/lists/admin/initialise.php:120
 #: public_html/lists/admin/initialise.php:163
 msgid "failed"
-msgstr ""
+msgstr "απέτυχε"
 
 #: public_html/lists/admin/messages.php:163
 msgid "Requeuing"
-msgstr ""
+msgstr "Επαναλάβετε"
 
 #: public_html/lists/admin/messages.php:183
 #: public_html/lists/admin/send_core.php:1301
@@ -3215,6 +3392,8 @@ msgid ""
 "This campaign is scheduled to stop sending in the past. No mails will be "
 "sent."
 msgstr ""
+"Αυτή η καμπάνια έχει προγραμματιστεί να σταματήσει την αποστολή στο "
+"παρελθόν. Δεν θα σταλούν μηνύματα ηλεκτρονικού ταχυδρομείου."
 
 #: public_html/lists/admin/messages.php:185
 #: public_html/lists/admin/send_core.php:373
@@ -3222,52 +3401,52 @@ msgstr ""
 #: public_html/lists/admin/send_core.php:1302
 #: public_html/lists/admin/message.php:59
 msgid "Review Scheduling"
-msgstr ""
+msgstr "Ανασκόπηση Προγραμματισμού"
 
 #: public_html/lists/admin/messages.php:199
 msgid "Suspending"
-msgstr ""
+msgstr "Ανασταλτικός"
 
 #: public_html/lists/admin/messages.php:214
 msgid "Marking as sent "
-msgstr ""
+msgstr "Σήμανση ως αποστολή"
 
 #: public_html/lists/admin/messages.php:230
 msgid "Suspending all"
-msgstr ""
+msgstr "Αναστολή όλων"
 
 #: public_html/lists/admin/messages.php:242
 msgid "Marking all as sent "
-msgstr ""
+msgstr "Σημειώνοντας όλα όπως έχουν σταλεί"
 
 #: public_html/lists/admin/messages.php:346
 #: public_html/lists/admin/messages.php:349
 #: public_html/lists/admin/userhistory.php:147
 msgid "Campaigns"
-msgstr ""
+msgstr "εκστρατεία"
 
 #: public_html/lists/admin/messages.php:396
 #: public_html/lists/admin/bouncerule.php:69
 #: public_html/lists/admin/userclicks.php:243
 #: public_html/lists/admin/bounce.php:223 public_html/databasestructure.php:63
 msgid "Status"
-msgstr ""
+msgstr "Κατάσταση"
 
 #: public_html/lists/admin/messages.php:415
 msgid "Viewed"
-msgstr ""
+msgstr "Προβολή"
 
 #: public_html/lists/admin/messages.php:416
 msgid "Unique Views"
-msgstr ""
+msgstr "Μοναδικές προβολές"
 
 #: public_html/lists/admin/messages.php:419
 msgid "Total Clicks"
-msgstr ""
+msgstr "Συνολικά κλικ"
 
 #: public_html/lists/admin/messages.php:438
 msgid "Time to send"
-msgstr ""
+msgstr "Ώρα για αποστολή"
 
 #: public_html/lists/admin/messages.php:470
 #: public_html/lists/admin/actions/domainstats.php:85
@@ -3278,7 +3457,7 @@ msgstr ""
 #: public_html/lists/admin/uclicks.php:153
 #: public_html/lists/admin/uclicks.php:155
 msgid "total"
-msgstr ""
+msgstr "σύνολο"
 
 #: public_html/lists/admin/messages.php:470
 #: public_html/lists/admin/send_core.php:836
@@ -3286,7 +3465,7 @@ msgstr ""
 #: public_html/lists/admin/userclicks.php:252
 #: public_html/lists/admin/mclicks.php:135
 msgid "text"
-msgstr ""
+msgstr "κείμενο"
 
 #: public_html/lists/admin/messages.php:470
 #: public_html/lists/admin/send_core.php:833
@@ -3297,160 +3476,167 @@ msgstr "html"
 
 #: public_html/lists/admin/messages.php:479
 msgid "PDF"
-msgstr ""
+msgstr "PDF"
 
 #: public_html/lists/admin/messages.php:480
 msgid "both"
-msgstr ""
+msgstr "και τα δύο"
 
 #: public_html/lists/admin/messages.php:495
 msgid "Suspend"
-msgstr ""
+msgstr "Αναστέλλω"
 
 #: public_html/lists/admin/messages.php:497
 #: public_html/lists/admin/messages.php:498
 #: public_html/lists/admin/actions/msgstatus.php:70
 msgid "Requeue"
-msgstr ""
+msgstr "Επανάσταση"
 
 #: public_html/lists/admin/messages.php:500
 #: public_html/lists/admin/messages.php:501
 msgid "View"
-msgstr ""
+msgstr "Θέα"
 
 #: public_html/lists/admin/messages.php:505
 msgid "statistics"
-msgstr ""
+msgstr "στατιστική"
 
 #: public_html/lists/admin/messages.php:505
 #: public_html/lists/admin/subscriberstats.php:7
 #: public_html/lists/admin/message.php:97
 msgid "Statistics"
-msgstr ""
+msgstr "Στατιστική"
 
 #: public_html/lists/admin/messages.php:510
 msgid "Mark&nbsp;sent"
-msgstr ""
+msgstr "Έγινε αποστολή μηνύματος & nbsp;"
 
 #: public_html/lists/admin/messages.php:510
 msgid "Mark sent"
-msgstr ""
+msgstr "Το σήμα απεστάλη"
 
 #: public_html/lists/admin/messages.php:511
 #: public_html/lists/admin/messages.php:512
 #: public_html/lists/admin/messages.php:522
 #: public_html/lists/admin/messages.php:523
 msgid "Edit"
-msgstr ""
+msgstr "Επεξεργασία"
 
 #: public_html/lists/admin/messages.php:517
 msgid "Are you sure you want to delete this campaign?"
-msgstr ""
+msgstr "Επεξεργασία"
 
 #: public_html/lists/admin/messages.php:519
 msgid "delete this campaign"
-msgstr ""
+msgstr "διαγράψτε αυτήν την καμπάνια"
 
 #: public_html/lists/admin/messages.php:529
 #: public_html/lists/admin/bouncerule.php:64
 #: public_html/lists/admin/bounce.php:155
 #: public_html/lists/admin/bouncerules.php:134
 msgid "Action"
-msgstr ""
+msgstr "Δράση"
 
 #: public_html/lists/admin/messages.php:537
 msgid "Suspend All"
-msgstr ""
+msgstr "Αναστολή όλων"
 
 #: public_html/lists/admin/messages.php:538
 msgid "Mark All Sent"
-msgstr ""
+msgstr "Σημειώστε όλα αποστέλλονται"
 
 #: public_html/lists/admin/editattributes.php:8
 msgid "No such attribute:"
-msgstr ""
+msgstr "διαγράψτε αυτήν την καμπάνια"
 
 #: public_html/lists/admin/editattributes.php:30
 msgid "This datatype does not have editable values"
-msgstr ""
+msgstr "Αυτός ο τύπος δεδομένων δεν έχει επεξεργάσιμες τιμές"
 
 #: public_html/lists/admin/editattributes.php:42
 msgid "Back to attributes"
-msgstr ""
+msgstr "Επιστροφή στις ιδιότητες"
 
 #: public_html/lists/admin/editattributes.php:45
 msgid "add new"
-msgstr ""
+msgstr "προσθέστε νέo"
 
 #: public_html/lists/admin/editattributes.php:49
 msgid "Are you sure you want to delete all values?"
-msgstr ""
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε όλες τις τιμές;"
 
 #: public_html/lists/admin/editattributes.php:51
 #: public_html/lists/admin/eventlog.php:86
 #: public_html/lists/admin/bounces.php:115
 msgid "Delete all"
-msgstr ""
+msgstr "Διαγραφή όλων"
 
 #: public_html/lists/admin/editattributes.php:91
 msgid "Alternatively you can replace all values with another one:"
-msgstr ""
+msgstr "Εναλλακτικά, μπορείτε να αντικαταστήσετε οποιαδήποτε τιμή με άλλη:"
 
 #: public_html/lists/admin/editattributes.php:92
 msgid "Replace with"
-msgstr ""
+msgstr "Αντικατέστησε με"
 
 #: public_html/lists/admin/editattributes.php:103
 msgid "Delete and replace"
-msgstr ""
+msgstr "Διαγράψτε και αντικαταστήστε"
 
 #: public_html/lists/admin/editattributes.php:132
 msgid "Cannot delete"
-msgstr ""
+msgstr "Δεν είναι δυνατή η διαγραφή"
 
 #: public_html/lists/admin/editattributes.php:134
 msgid ""
 "The following subscriber(s) are dependent on this value<br />Update the "
 "subscriber profiles to not use this attribute value and try again"
 msgstr ""
+"Οι ακόλουθοι συνδρομητές εξαρτώνται από αυτήν την τιμή <br /> Ενημερώστε τα "
+"προφίλ συνδρομητών για να μην χρησιμοποιήσετε αυτήν την τιμή χαρακτηριστικού "
+"και δοκιμάστε ξανά"
 
 #: public_html/lists/admin/editattributes.php:140
 msgid "* Too many to list, total dependencies:"
-msgstr ""
+msgstr "* Πάρα πολλά στη λίστα, συνολικές εξαρτήσεις:"
 
 #: public_html/lists/admin/editattributes.php:176
 msgid "* Too many errors, quitting"
-msgstr ""
+msgstr "* Πολλά λάθη, κλείνοντας"
 
 #: public_html/lists/admin/editattributes.php:188
 #: public_html/lists/admin/editattributes.php:191
 msgid "Add new"
-msgstr ""
+msgstr "Προσθέστε νέο"
 
 #: public_html/lists/admin/editattributes.php:188
 msgid "one per line"
-msgstr ""
+msgstr "ένα ανά γραμμή"
 
 #: public_html/lists/admin/editattributes.php:202
 #: public_html/lists/admin/editattributes.php:217
 msgid "Change order"
-msgstr ""
+msgstr "Αλλαζω παραγγελεία"
 
 #: public_html/lists/admin/logout.php:17
 msgid ""
 "You have been logged out, because the session token of your request was "
 "incorrect"
 msgstr ""
+"Έχετε αποσυνδεθεί, επειδή το αναγνωριστικό περιόδου σύνδεσης του αιτήματός "
+"σας ήταν εσφαλμένο"
 
 #: public_html/lists/admin/logout.php:21
 msgid ""
 "You have been logged out for security purposes, because there were too many "
 "errors in your session"
 msgstr ""
+"Έχετε αποσυνδεθεί για λόγους ασφαλείας, επειδή υπήρξαν πάρα πολλά λάθη στη "
+"συνεδρία σας"
 
 #: public_html/lists/admin/converttoutf8.php:37
 msgid "Converting to UTF-8 requires sufficient diskspace on your system."
-msgstr ""
+msgstr "Η μετατροπή σε UTF-8 απαιτεί επαρκή χώρο στο δίσκο στο σύστημά σας."
 
 #: public_html/lists/admin/converttoutf8.php:38
 #, php-format
@@ -3458,122 +3644,138 @@ msgid ""
 "The maximum table size in your system is %s and space available on the root "
 "filesystem is %s, which means %s is required."
 msgstr ""
+"Το μέγιστο μέγεθος πίνακα στο σύστημά σας είναι% s και ο διαθέσιμος χώρος "
+"στο ριζικό σύστημα αρχείων είναι% s, πράγμα που σημαίνει ότι απαιτείται% s."
 
 #: public_html/lists/admin/converttoutf8.php:40
 msgid ""
 "This is not a problem if your Database server is on a different filesystem. "
 "Click the button to continue."
 msgstr ""
+"Αυτό δεν είναι ένα πρόβλημα εάν ο διακομιστής βάσης δεδομένων σας βρίσκεται "
+"σε διαφορετικό σύστημα αρχείων. Κάντε κλικ στο κουμπί για να συνεχίσετε."
 
 #: public_html/lists/admin/converttoutf8.php:42
 msgid "Otherwise, free up some diskspace and try again"
-msgstr ""
+msgstr "Διαφορετικά, ελευθερώστε λίγο χώρο στο δίσκο και δοκιμάστε ξανά"
 
 #: public_html/lists/admin/converttoutf8.php:43
 msgid "Confirm UTF8 conversion"
-msgstr ""
+msgstr "Επιβεβαιώστε τη μετατροπή UTF8"
 
 #: public_html/lists/admin/converttoutf8.php:50
 #: public_html/lists/admin/converttoutf8.php:55
 msgid "Converting DB to use UTF-8, please wait"
-msgstr ""
+msgstr "Μετατροπή DB για χρήση του UTF-8, παρακαλώ περιμένετε"
 
 #: public_html/lists/admin/converttoutf8.php:74
 #: public_html/lists/admin/upgrade.php:152
 msgid "Upgrading the database to use UTF-8, please wait"
 msgstr ""
+"Αναβαθμίζοντας τη βάση δεδομένων για να χρησιμοποιήσετε το UTF-8, περιμένετε"
 
 #: public_html/lists/admin/converttoutf8.php:77
 #: public_html/lists/admin/converttoutf8.php:79
 #: public_html/lists/admin/upgrade.php:155
 msgid "Upgrading table "
-msgstr ""
+msgstr "Αναβάθμιση πίνακα"
 
 #: public_html/lists/admin/converttoutf8.php:85
 #: public_html/lists/admin/converttoutf8.php:87
 #: public_html/lists/admin/upgrade.php:161
 msgid "Upgrading column "
-msgstr ""
+msgstr "Αναβαθμίζοντας τη στήλη"
 
 #: public_html/lists/admin/converttoutf8.php:92
 #: public_html/lists/admin/upgrade.php:166
 msgid "upgrade to UTF-8, done"
-msgstr ""
+msgstr "αναβάθμιση σε UTF-8, ολοκληρώθηκε"
 
 #: public_html/lists/admin/converttoutf8.php:95
 msgid "Unable to determine the name of the database to convert"
 msgstr ""
+"Δεν είναι δυνατός ο προσδιορισμός του ονόματος της βάσης δεδομένων για "
+"μετατροπή"
 
 #: public_html/lists/admin/converttoutf8.php:98
 #: public_html/lists/admin/converttoutf8.php:99
 msgid "The DB was already converted to UTF-8 on"
-msgstr ""
+msgstr "Η DB είχε ήδη μετατραπεί σε UTF-8"
 
 #: public_html/lists/admin/converttoutf8.php:102
 msgid "All Done"
-msgstr ""
+msgstr "Όλα έτοιμα"
 
 #: public_html/lists/admin/send_core.php:60
 msgid "Unable to create campaign, did you forget to upgrade the database?"
 msgstr ""
+"Δεν ήταν δυνατή η δημιουργία καμπάνιας, ξεχάσατε την αναβάθμιση της βάσης "
+"δεδομένων;"
 
 #: public_html/lists/admin/send_core.php:115
 #: public_html/lists/admin/index.php:728 public_html/lists/admin/index.php:748
 msgid "Access Denied"
-msgstr ""
+msgstr "Δεν επιτρέπεται η πρόσβαση"
 
 #: public_html/lists/admin/send_core.php:123
 #: public_html/lists/admin/send_core.php:1339
 msgid "Send Campaign"
-msgstr ""
+msgstr "Αποστολή καμπάνιας"
 
 #: public_html/lists/admin/send_core.php:154
 msgid ""
 "You should not paste the results of a test message back into the editor<br/"
 ">This will break the click-track statistics, and overload the server."
 msgstr ""
+"Δεν πρέπει να επικολλήσετε τα αποτελέσματα ενός δοκιμαστικού μηνύματος πίσω "
+"στον επεξεργαστή <br/> Αυτό θα σπάσει τα στατιστικά στοιχεία κλικ και θα "
+"φορτώσει υπερβολικά το διακομιστή."
 
 #: public_html/lists/admin/send_core.php:199
 msgid ""
 "Warning: You indicated the content was not HTML, but there were  some HTML  "
 "tags in it. This  may  cause  errors"
 msgstr ""
+"Προειδοποίηση: Έχετε υποδείξει ότι το περιεχόμενο δεν ήταν HTML, αλλά "
+"υπήρχαν κάποιες ετικέτες HTML σε αυτό. Αυτό μπορεί να προκαλέσει σφάλματα"
 
 #: public_html/lists/admin/send_core.php:243
 msgid ""
 "You are trying to send a remote URL, but PEAR::HTTP_Request or CURL is not "
 "available, so this will fail"
 msgstr ""
+"Προσπαθείτε να στείλετε μια απομακρυσμένη διεύθυνση URL, αλλά το PEAR :: "
+"HTTP_Request ή CURL δεν είναι διαθέσιμο, επομένως αυτό θα αποτύχει"
 
 #: public_html/lists/admin/send_core.php:283
 msgid "Mime Type is longer than 255 characters, this is trouble"
-msgstr ""
+msgstr "Το Mime Type είναι μεγαλύτερο από 255 χαρακτήρες, αυτό είναι πρόβλημα"
 
 #: public_html/lists/admin/send_core.php:318
 #, php-format
 msgid "Attachment %d succesfully added"
-msgstr ""
+msgstr "Το προσάρτημα% d προστέθηκε με επιτυχία"
 
 #: public_html/lists/admin/send_core.php:320
 #, php-format
 msgid "Adding attachment %d failed"
-msgstr ""
+msgstr "Η προσθήκη του συνημμένου% d απέτυχε"
 
 #: public_html/lists/admin/send_core.php:323
 msgid "Uploaded file not properly received, empty file"
-msgstr ""
+msgstr "Το φορτωμένο αρχείο δεν ελήφθη σωστά, άδειο αρχείο"
 
 #: public_html/lists/admin/send_core.php:335
 msgid "Adding attachment"
-msgstr ""
+msgstr "Προσθήκη συνημμένου"
 
 #: public_html/lists/admin/send_core.php:348
 msgid "Campaign saved as draft"
-msgstr ""
+msgstr "Η καμπάνια αποθηκεύτηκε ως σχέδιο"
 
 #: public_html/lists/admin/send_core.php:354
 msgid "Campaign added"
-msgstr ""
+msgstr "Προστέθηκε καμπάνια"
 
 #: public_html/lists/admin/send_core.php:371
 #: public_html/lists/admin/send_core.php:1295
@@ -3581,203 +3783,213 @@ msgid ""
 "This campaign is scheduled to stop sending before the embargo time. No mails "
 "will be sent."
 msgstr ""
+"Αυτή η καμπάνια έχει προγραμματιστεί να σταματήσει να στέλνει πριν από το "
+"εμπάργκο. Δεν θα αποσταλεί μήνυμα ηλεκτρονικού ταχυδρομείου."
 
 #: public_html/lists/admin/send_core.php:381
 msgid "Campaign queued"
-msgstr ""
+msgstr "Η καμπάνια ήταν σε αναμονή"
 
 #: public_html/lists/admin/send_core.php:399
 msgid "Sorry, you used invalid characters in the Subject field."
-msgstr ""
+msgstr "Λυπούμαστε, χρησιμοποιήσατε μη έγκυρους χαρακτήρες στο πεδίο Θέμα."
 
 #: public_html/lists/admin/send_core.php:401
 msgid "Sorry, you used invalid characters in the From field."
-msgstr ""
+msgstr "Λυπούμαστε, χρησιμοποιήσατε μη έγκυρους χαρακτήρες στο πεδίο Από."
 
 #: public_html/lists/admin/send_core.php:403
 msgid "Please enter a from line."
-msgstr ""
+msgstr "Εισαγάγετε ένα από τη γραμμή."
 
 #: public_html/lists/admin/send_core.php:405
 msgid "Please enter a message"
-msgstr ""
+msgstr "Εισαγάγετε ένα μήνυμα"
 
 #: public_html/lists/admin/send_core.php:407
 msgid "Please enter a subject"
-msgstr ""
+msgstr "Εισαγάγετε ένα θέμα"
 
 #: public_html/lists/admin/send_core.php:409
 msgid "Error: you can use an attribute in one rule only"
 msgstr ""
+"Σφάλμα: μπορείτε να χρησιμοποιήσετε ένα χαρακτηριστικό μόνο σε έναν κανόνα"
 
 #: public_html/lists/admin/send_core.php:411
 msgid "Please select the list(s) to send the campaign to"
 msgstr ""
+"Σφάλμα: μπορείτε να χρησιμοποιήσετε ένα χαρακτηριστικό μόνο σε έναν κανόνα"
 
 #: public_html/lists/admin/send_core.php:443
 #, php-format
 msgid "You can send a test mail once every %d seconds"
 msgstr ""
+"Μπορείτε να στείλετε ένα ταχυδρομείο δοκιμής μία φορά κάθε% d δευτερόλεπτα"
 
 #: public_html/lists/admin/send_core.php:446
 msgid "Sending test mails is currently not available"
-msgstr ""
+msgstr "Η αποστολή δοκιμαστικών μηνυμάτων δεν είναι προς το παρόν διαθέσιμη"
 
 #: public_html/lists/admin/send_core.php:451
 msgid "No target email addresses listed for testing."
 msgstr ""
+"Δεν υπάρχουν διευθύνσεις ηλεκτρονικού ταχυδρομείου προορισμού που "
+"παρατίθενται για έλεγχο."
 
 #: public_html/lists/admin/send_core.php:468
 #, php-format
 msgid "There is a maximum of %d test emails allowed"
 msgstr ""
+"Υπάρχει μέγιστο ποσοστό% d δοκιμαστικών μηνυμάτων ηλεκτρονικού ταχυδρομείου "
+"που επιτρέπονται"
 
 #: public_html/lists/admin/send_core.php:499
 msgid "Sent test mail to"
-msgstr ""
+msgstr "Έστειλε το ταχυδρομείο δοκιμής στο"
 
 #: public_html/lists/admin/send_core.php:503
 msgid "success"
-msgstr ""
+msgstr "επιτυχία"
 
 #: public_html/lists/admin/send_core.php:510
 msgid "Email address not found to send test message."
 msgstr ""
+"Η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν βρέθηκε να στέλνει μήνυμα δοκιμής."
 
 #: public_html/lists/admin/send_core.php:512
 msgid "add"
-msgstr ""
+msgstr "προσθέστε"
 
 #: public_html/lists/admin/send_core.php:538
 msgid "Removed Attachment "
-msgstr ""
+msgstr "Αφαίρεση προσάρτησης"
 
 #: public_html/lists/admin/send_core.php:560
 #: public_html/lists/admin/send_core.php:584
 #: public_html/lists/admin/send_core.php:708
 msgid "Content"
-msgstr ""
+msgstr "περιεχόμενο"
 
 #: public_html/lists/admin/send_core.php:563
 msgid "Text"
-msgstr ""
+msgstr "κείμενο"
 
 #: public_html/lists/admin/send_core.php:567
 msgid "Forward"
-msgstr ""
+msgstr "προώθηση"
 
 #: public_html/lists/admin/send_core.php:570
 msgid "Format"
-msgstr ""
+msgstr "μορφή"
 
 #: public_html/lists/admin/send_core.php:573
 msgid "Attach"
-msgstr ""
+msgstr "Συνδέω"
 
 #: public_html/lists/admin/send_core.php:576
 msgid "Scheduling"
-msgstr ""
+msgstr "Χρονοδρομολόγηση"
 
 #: public_html/lists/admin/send_core.php:578
 #: public_html/lists/admin/list.php:195 public_html/lists/admin/list.php:206
 #: public_html/lists/admin/user.php:505
 msgid "Lists"
-msgstr ""
+msgstr "Λίστες"
 
 #: public_html/lists/admin/send_core.php:606
 msgid "Finish"
-msgstr ""
+msgstr "Τέλος"
 
 #: public_html/lists/admin/send_core.php:650
 msgid "What is prepare a message"
-msgstr ""
+msgstr "Τι είναι η προετοιμασία ενός μηνύματος"
 
 #: public_html/lists/admin/send_core.php:697
 msgid "Campaign subject"
-msgstr ""
+msgstr "Θέμα καμπάνιας"
 
 #: public_html/lists/admin/send_core.php:700
 msgid "From Line"
-msgstr ""
+msgstr "Από τη Γραμμή"
 
 #: public_html/lists/admin/send_core.php:709
 msgid "Send a Webpage"
-msgstr ""
+msgstr "Αποστολή ιστοσελίδας"
 
 #: public_html/lists/admin/send_core.php:710
 #: public_html/lists/admin/send_core.php:877
 #: public_html/lists/admin/send_core.php:878
 msgid "Compose Message"
-msgstr ""
+msgstr "Συντάξτε  μήνυμα"
 
 #: public_html/lists/admin/send_core.php:721
 msgid "Send a Webpage - URL"
-msgstr ""
+msgstr "Αποστολή ιστοσελίδας - διεύθυνση URL"
 
 #: public_html/lists/admin/send_core.php:741
 #, php-format
 msgid "phpList operates in the time zone \"%s\""
-msgstr ""
+msgstr "Το phpList λειτουργεί στη ζώνη ώρας \"% s\""
 
 #: public_html/lists/admin/send_core.php:744
 msgid "Dates and times are relative to the Server Time"
-msgstr ""
+msgstr "Οι ημερομηνίες και οι ώρες είναι σχετικές με τον Χρόνο διακομιστή"
 
 #: public_html/lists/admin/send_core.php:744
 msgid "Current Server Time is"
-msgstr ""
+msgstr "Ο τρέχων Χρόνος διακομιστή είναι"
 
 #: public_html/lists/admin/send_core.php:748
 msgid "Embargoed Until"
-msgstr ""
+msgstr "Απαγόρευση μέχρι"
 
 #: public_html/lists/admin/send_core.php:750
 #: public_html/lists/admin/message.php:125
 msgid "Stop sending after"
-msgstr ""
+msgstr "Διακοπή μετά την αποστολή"
 
 #: public_html/lists/admin/send_core.php:757
 msgid "Repeat campaign every"
-msgstr ""
+msgstr "Επαναλάβετε κάθε καμπάνια"
 
 #: public_html/lists/admin/send_core.php:763
 msgid "no repetition"
-msgstr ""
+msgstr "καμία επανάληψη"
 
 #: public_html/lists/admin/send_core.php:768
 #: public_html/lists/admin/send_core.php:809
 msgid "hour"
-msgstr ""
+msgstr "ώρα"
 
 #: public_html/lists/admin/send_core.php:773
 #: public_html/lists/admin/send_core.php:814
 msgid "day"
-msgstr ""
+msgstr "ημέρα"
 
 #: public_html/lists/admin/send_core.php:778
 #: public_html/lists/admin/send_core.php:819
 msgid "week"
-msgstr ""
+msgstr "εβδομάδα"
 
 #: public_html/lists/admin/send_core.php:783
 msgid "fortnight"
-msgstr ""
+msgstr "δεκαπενθήμερο"
 
 #: public_html/lists/admin/send_core.php:789
 msgid "four weeks"
-msgstr ""
+msgstr "τέσσερις εβδομάδες"
 
 #: public_html/lists/admin/send_core.php:791
 msgid "Repeat Until"
-msgstr ""
+msgstr "Επαναλάβετε μέχρι"
 
 #: public_html/lists/admin/send_core.php:798
 msgid "Requeue every"
-msgstr ""
+msgstr "Επαναλάβετε κάθε φορά"
 
 #: public_html/lists/admin/send_core.php:804
 msgid "do not requeue"
-msgstr ""
+msgstr "μην απαιτείτε"
 
 #: public_html/lists/admin/send_core.php:822
 msgid "Requeue Until"
@@ -3785,32 +3997,32 @@ msgstr ""
 
 #: public_html/lists/admin/send_core.php:832
 msgid "Send as"
-msgstr ""
+msgstr "Αποστολή ως"
 
 #: public_html/lists/admin/send_core.php:862
 msgid "Use Template"
-msgstr ""
+msgstr "Χρησιμοποιήστε το πρότυπο"
 
 #: public_html/lists/admin/send_core.php:863
 msgid "select one"
-msgstr ""
+msgstr "επιλέξτε ένα"
 
 #: public_html/lists/admin/send_core.php:864
 msgid "No template"
-msgstr ""
+msgstr "Δεν υπάρχει πρότυπο"
 
 #: public_html/lists/admin/send_core.php:905
 msgid "Plain text version of message"
-msgstr ""
+msgstr "Απλή έκδοση κειμένου του μηνύματος"
 
 #: public_html/lists/admin/send_core.php:907
 msgid "generate from HTML"
-msgstr ""
+msgstr "Δημιουργία από την HTML"
 
 #: public_html/lists/admin/send_core.php:913
 #: public_html/lists/admin/spageedit.php:220
 msgid "Footer"
-msgstr ""
+msgstr "Υποσέλιδο"
 
 #: public_html/lists/admin/send_core.php:915
 msgid "forwardfooter"
@@ -3818,27 +4030,27 @@ msgstr ""
 
 #: public_html/lists/admin/send_core.php:922
 msgid "Add attachments to your campaign"
-msgstr ""
+msgstr "Προσθέστε συνημμένα στην καμπάνια σας"
 
 #: public_html/lists/admin/send_core.php:924
 msgid "The upload has the following limits set by the server"
-msgstr ""
+msgstr "Η μεταφόρτωση έχει τα ακόλουθα όρια που ορίζονται από το διακομιστή"
 
 #: public_html/lists/admin/send_core.php:925
 msgid "Maximum size of total data being sent to the server"
-msgstr ""
+msgstr "Μέγιστο μέγεθος συνολικών δεδομένων που αποστέλλονται στο διακομιστή"
 
 #: public_html/lists/admin/send_core.php:926
 msgid "Maximum size of each individual file"
-msgstr ""
+msgstr "Μέγιστο μέγεθος κάθε μεμονωμένου αρχείου"
 
 #: public_html/lists/admin/send_core.php:935
 msgid "Current Attachments"
-msgstr ""
+msgstr "Τρέχοντα συνημμένα"
 
 #: public_html/lists/admin/send_core.php:939
 msgid "filename"
-msgstr ""
+msgstr "όνομα αρχείου"
 
 #: public_html/lists/admin/send_core.php:940
 #: public_html/lists/admin/users.php:324
@@ -3847,281 +4059,297 @@ msgstr ""
 
 #: public_html/lists/admin/send_core.php:941
 msgid "size"
-msgstr ""
+msgstr "Μέγεθος"
 
 #: public_html/lists/admin/send_core.php:945
 #: public_html/lists/admin/send_core.php:947
 #: public_html/databasestructure.php:93
 msgid "file"
-msgstr ""
+msgstr "αρχείο"
 
 #: public_html/lists/admin/send_core.php:952
 msgid "Delete checked"
-msgstr ""
+msgstr "Διαγράψτε το στοιχείο ελέγχου"
 
 #: public_html/lists/admin/send_core.php:956
 msgid ""
 "The total size of attachments is very large. Sending this campaign may fail "
 "due to resource limits."
 msgstr ""
+"Το συνολικό μέγεθος των συνημμένων είναι πολύ μεγάλο. Η αποστολή αυτής της "
+"καμπάνιας ενδέχεται να αποτύχει λόγω των ορίων πόρων."
 
 #: public_html/lists/admin/send_core.php:961
 msgid "New Attachment"
-msgstr ""
+msgstr "Νέο συνημμένο"
 
 #: public_html/lists/admin/send_core.php:961
 msgid "Add (and save)"
-msgstr ""
+msgstr "Προσθέστε (και αποθήκευση)"
 
 #: public_html/lists/admin/send_core.php:964
 msgid "or"
-msgstr ""
+msgstr "ή"
 
 #: public_html/lists/admin/send_core.php:964
 msgid "Path to file on server"
-msgstr ""
+msgstr "Διαδρομή για αρχειοθέτηση στο διακομιστή"
 
 #: public_html/lists/admin/send_core.php:968
 msgid "Description of attachment"
-msgstr ""
+msgstr "Περιγραφή της προσάρτησης"
 
 #: public_html/lists/admin/send_core.php:994
 msgid "to email address(es)"
-msgstr ""
+msgstr "σε διεύθυνση ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/send_core.php:1009
 msgid "email to alert when sending of this message starts"
 msgstr ""
+"μήνυμα ηλεκτρονικού ταχυδρομείου για την προειδοποίηση κατά την αποστολή του "
+"μηνύματος"
 
 #: public_html/lists/admin/send_core.php:1010
 #: public_html/lists/admin/send_core.php:1012
 msgid "separate multiple with a comma"
-msgstr ""
+msgstr "διαχωρίστε το πολλαπλάσιο με κόμμα"
 
 #: public_html/lists/admin/send_core.php:1011
 msgid "email to alert when sending of this message has finished"
 msgstr ""
+"μήνυμα ηλεκτρονικού ταχυδρομείου για την ειδοποίηση όταν έχει ολοκληρωθεί η "
+"αποστολή του μηνύματος"
 
 #: public_html/lists/admin/send_core.php:1018
 msgid "add Google Analytics tracking code"
-msgstr ""
+msgstr "προσθέστε τον κώδικα παρακολούθησης του Google Analytics"
 
 #: public_html/lists/admin/send_core.php:1028
 msgid "Reset click statistics"
-msgstr ""
+msgstr "Επαναφορά στατιστικών κλικ"
 
 #: public_html/lists/admin/send_core.php:1038
 msgid "This is a test campaign"
-msgstr ""
+msgstr "Αυτή είναι μια δοκιμαστική καμπάνια"
 
 #: public_html/lists/admin/send_core.php:1045
 msgid "Estimated size of HTML email"
-msgstr ""
+msgstr "Εκτιμώμενο μέγεθος ηλεκτρονικού ταχυδρομείου HTML"
 
 #: public_html/lists/admin/send_core.php:1048
 msgid "Estimated size of text email"
-msgstr ""
+msgstr "Εκτιμώμενο μέγεθος ηλεκτρονικού ταχυδρομείου κειμένου"
 
 #: public_html/lists/admin/send_core.php:1096
 msgid "Estimated size of mailout"
-msgstr ""
+msgstr "Εκτιμώμενο μέγεθος αλληλογραφίας"
 
 #: public_html/lists/admin/send_core.php:1101
 #, php-format
 msgid ""
 "About %d users to receive HTML and %s users to receive text version of email"
 msgstr ""
+"Περίπου% d χρήστες να λαμβάνουν HTML και% s χρήστες για να λάβετε την έκδοση "
+"κειμένου του ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/send_core.php:1253
 msgid "subject missing"
-msgstr ""
+msgstr "θέμα που λείπει"
 
 #: public_html/lists/admin/send_core.php:1262
 msgid "message content missing"
-msgstr ""
+msgstr "λείπει περιεχόμενο μηνυμάτων"
 
 #: public_html/lists/admin/send_core.php:1271
 msgid "Incorrect URL for sending"
-msgstr ""
+msgstr "Λανθασμένη διεύθυνση URL για αποστολή"
 
 #: public_html/lists/admin/send_core.php:1280
 msgid "From missing"
-msgstr ""
+msgstr "Από έλλειψη"
 
 #: public_html/lists/admin/send_core.php:1309
 msgid "destination lists missing"
-msgstr ""
+msgstr "λίστες προορισμών λείπουν"
 
 #: public_html/lists/admin/send_core.php:1315
 msgid "Content contains click track links."
-msgstr ""
+msgstr "Το περιεχόμενο περιέχει συνδέσμους διαδρομής κλικ."
 
 #: public_html/lists/admin/send_core.php:1334
 msgid "Place Campaign in Queue for Sending"
-msgstr ""
+msgstr "Τοποθετήστε την καμπάνια στην ουρά για αποστολή"
 
 #: public_html/lists/admin/send_core.php:1338
 msgid ""
 "Some required information is missing. The send button will be enabled when "
 "this is resolved."
 msgstr ""
+"Απαιτούνται κάποιες απαιτούμενες πληροφορίες. Το κουμπί αποστολής θα "
+"ενεργοποιηθεί όταν αυτό επιλυθεί."
 
 #: public_html/lists/admin/send_core.php:1344
 msgid "Save as draft"
-msgstr ""
+msgstr "Αποθηκεύστε ως σχέδιο"
 
 #: public_html/lists/admin/send_core.php:1346
 msgid "Save and continue editing"
-msgstr ""
+msgstr "Αποθηκεύστε και συνεχίστε την επεξεργασία"
 
 #: public_html/lists/admin/send_core.php:1351
 msgid "Campaign Title"
-msgstr ""
+msgstr "Τίτλος καμπάνιας"
 
 #: public_html/lists/admin/send_core.php:1354
 msgid "Meta data"
-msgstr ""
+msgstr "Μέτα δεδομένα"
 
 #: public_html/lists/admin/usercheck.php:7
 msgid "Existing subscribers"
-msgstr ""
+msgstr "Υπάρχοντες συνδρομητές"
 
 #: public_html/lists/admin/usercheck.php:8
 msgid "Non existing subscribers "
-msgstr ""
+msgstr "Μη υπάρχοντες συνδρομητές"
 
 #: public_html/lists/admin/usercheck.php:24
 msgid "key"
-msgstr ""
+msgstr "κλειδί"
 
 #: public_html/lists/admin/usercheck.php:41
 msgid "What is the type of information you want to check"
-msgstr ""
+msgstr "Ποιο είναι το είδος των πληροφοριών που θέλετε να ελέγξετε"
 
 #: public_html/lists/admin/usercheck.php:42
 #: public_html/lists/admin/users.php:384 public_html/databasestructure.php:28
 #: public_html/databasestructure.php:29
 msgid "Foreign Key"
-msgstr ""
+msgstr "Ξένο κλειδί"
 
 #: public_html/lists/admin/usercheck.php:43
 #: public_html/lists/admin/users.php:381 public_html/databasestructure.php:12
 #: public_html/databasestructure.php:87 public_html/databasestructure.php:89
 #: public_html/databasestructure.php:134
 msgid "Email"
-msgstr ""
+msgstr "Ηλεκτρονικη διευθυνση"
 
 #: public_html/lists/admin/usercheck.php:44
 msgid "Paste the values to check in this box, one per line"
-msgstr ""
+msgstr "Επικολλήστε τις τιμές για να επιλέξετε αυτό το πλαίσιο, ένα ανά γραμμ"
 
 #: public_html/lists/admin/message.php:7
 msgid "Please select a message to display"
-msgstr ""
+msgstr "Επιλέξτε ένα μήνυμα που θα εμφανιστεί"
 
 #: public_html/lists/admin/message.php:51
 msgid "campaign requeued"
-msgstr ""
+msgstr "εκστρατεία που απαιτείται"
 
 #: public_html/lists/admin/message.php:71
 msgid "No such campaign"
-msgstr ""
+msgstr "Δεν υπάρχει τέτοια καμπάνια"
 
 #: public_html/lists/admin/message.php:84
 msgid "Edit this message"
-msgstr ""
+msgstr "Επεξεργαστείτε αυτό το μήνυμα"
 
 #: public_html/lists/admin/message.php:91
 msgid ""
 "Editing an active or finished campaign will place it back in the draft "
 "queue, continue?"
 msgstr ""
+"Η επεξεργασία μιας ενεργής ή ολοκληρωμένης καμπάνιας θα την τοποθετήσει ξανά "
+"στην ουρά πρότασης, θα συνεχιστεί;"
 
 #: public_html/lists/admin/message.php:93
 msgid "Edit campaign"
-msgstr ""
+msgstr "Επεξεργασία καμπάνιας"
 
 #: public_html/lists/admin/message.php:107
 msgid "fromfield"
-msgstr ""
+msgstr "από το πεδίο"
 
 #: public_html/lists/admin/message.php:108
 msgid "HTML content"
-msgstr ""
+msgstr "Περιεχόμενο HTML"
 
 #: public_html/lists/admin/message.php:109
 msgid "Text content"
-msgstr ""
+msgstr "Περιεχόμενο κειμένου"
 
 #: public_html/lists/admin/message.php:110
 msgid "footer"
-msgstr ""
+msgstr "υποσέλιδο"
 
 #: public_html/lists/admin/message.php:122
 msgid "Embargoed until"
-msgstr ""
+msgstr "Απαγόρευσε μέχρι"
 
 #: public_html/lists/admin/message.php:128
 msgid "Repeating"
-msgstr ""
+msgstr "Επανάληψη"
 
 #: public_html/lists/admin/message.php:129
 #: public_html/lists/admin/message.php:134
 #, php-format
 msgid "every %s until %s"
-msgstr ""
+msgstr "κάθε% s έως% s"
 
 #: public_html/lists/admin/message.php:133
 msgid "Requeueing"
-msgstr ""
+msgstr "Επανεκκίνηση"
 
 #: public_html/lists/admin/message.php:145
 msgid "Attachments for this campaign"
-msgstr ""
+msgstr "Συνημμένα για αυτήν την καμπάνια"
 
 #: public_html/lists/admin/message.php:150
 msgid "No attachments"
-msgstr ""
+msgstr "Δεν υπάρχουν συνημμένα"
 
 #: public_html/lists/admin/message.php:153
 #: public_html/databasestructure.php:113
 msgid "Filename"
-msgstr ""
+msgstr "Όνομα αρχείου"
 
 #: public_html/lists/admin/message.php:154
 msgid "Size"
-msgstr ""
+msgstr "Μέγεθος"
 
 #: public_html/lists/admin/message.php:156
 #: public_html/databasestructure.php:112
 msgid "Mime Type"
-msgstr ""
+msgstr "Τύπος Mime"
 
 #: public_html/lists/admin/message.php:157 public_html/databasestructure.php:34
 #: public_html/databasestructure.php:96
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #: public_html/lists/admin/message.php:164
 msgid ""
 "This campaign will be sent to subscribers who are member of the following "
 "lists"
 msgstr ""
+"Αυτή η καμπάνια θα σταλεί στους συνδρομητές που είναι μέλη των παρακάτω "
+"λιστών"
 
 #: public_html/lists/admin/message.php:166
 msgid ""
 "This campaign has been sent to subscribers who are members of the following "
 "lists"
 msgstr ""
+"Αυτή η καμπάνια έχει σταλεί στους συνδρομητές που είναι μέλη των παρακάτω "
+"λιστών"
 
 #: public_html/lists/admin/message.php:173
 msgid "None yet"
-msgstr ""
+msgstr "Κανένας ακόμα"
 
 #: public_html/lists/admin/message.php:179 public_html/lists/admin/list.php:224
 #: public_html/lists/admin/list.php:267 public_html/lists/admin/list.php:274
 msgid "View Members"
-msgstr ""
+msgstr "Προβολή μελών"
 
 #: public_html/lists/admin/message.php:184
 msgid "Except when they were also member of these lists"
@@ -4129,55 +4357,55 @@ msgstr ""
 
 #: public_html/lists/admin/message.php:197
 msgid "Send this campaign to another list"
-msgstr ""
+msgstr "Στείλτε αυτήν την καμπάνια σε μια άλλη λίστα"
 
 #: public_html/lists/admin/message.php:214
 msgid "Resend"
-msgstr ""
+msgstr "Επανάληψη αποστολής"
 
 #: public_html/lists/admin/actions/listbounces.php:48
 msgid "Choose a list"
-msgstr ""
+msgstr "Επιλέξτε μια λίστα"
 
 #: public_html/lists/admin/actions/listbounces.php:61
 msgid "None found"
-msgstr ""
+msgstr "Κανένα δεν βρέθηκε"
 
 #: public_html/lists/admin/actions/msgstatus.php:48
 #: public_html/lists/admin/actions/processqueue.php:1331
 msgid "unknown"
-msgstr ""
+msgstr "άγνωστος"
 
 #: public_html/lists/admin/actions/msgstatus.php:62
 #, php-format
 msgid "%s left until embargo"
-msgstr ""
+msgstr "Το% s έμεινε μέχρι το εμπάργκο"
 
 #: public_html/lists/admin/actions/msgstatus.php:102
 msgid "limit reached"
-msgstr ""
+msgstr "όριο έφτασε"
 
 #: public_html/lists/admin/actions/msgstatus.php:108
 #, php-format
 msgid "next batch of %s in %s"
-msgstr ""
+msgstr "επόμενη παρτίδα% s στο% s"
 
 #: public_html/lists/admin/actions/msgstatus.php:112
 msgid "Waiting"
-msgstr ""
+msgstr "επόμενη παρτίδα% s στο% s"
 
 #: public_html/lists/admin/actions/msgstatus.php:114
 msgid "Send the queue"
-msgstr ""
+msgstr "Στείλτε την ουρά"
 
 #: public_html/lists/admin/actions/msgstatus.php:116
 msgid "Check status"
-msgstr ""
+msgstr "Ελέγξετε την κατάσταση"
 
 #: public_html/lists/admin/actions/plugins.php:38
 #, php-format
 msgid "Failed to enable plugin (%s), dependencies failed"
-msgstr ""
+msgstr "Αποτυχία ενεργοποίησης της προσθήκης (% s), οι εξαρτήσεις απέτυχαν"
 
 #: public_html/lists/admin/actions/statsoverview.php:63
 #: public_html/lists/admin/actions/mclicks.php:103
@@ -4186,25 +4414,25 @@ msgstr ""
 #: public_html/lists/admin/uclicks.php:76
 #: public_html/lists/admin/uclicks.php:86 public_html/lists/admin/mviews.php:63
 msgid "Download as CSV file"
-msgstr ""
+msgstr "Κάντε λήψη ως αρχείο CSV"
 
 #: public_html/lists/admin/actions/statsoverview.php:90
 msgid "There are currently no campaigns to view"
-msgstr ""
+msgstr "Δεν υπάρχουν προς το παρόν καμπάνιες για προβολή"
 
 #: public_html/lists/admin/actions/statsoverview.php:116
 #: public_html/lists/admin/bounces.php:161
 msgid "Campaign"
-msgstr ""
+msgstr "καμπάνια"
 
 #: public_html/lists/admin/actions/statsoverview.php:120
 #: public_html/lists/admin/users.php:475
 msgid "bncs"
-msgstr ""
+msgstr "bncs"
 
 #: public_html/lists/admin/actions/statsoverview.php:121
 msgid "fwds"
-msgstr ""
+msgstr "fwds"
 
 #: public_html/lists/admin/actions/statsoverview.php:122
 #: public_html/lists/admin/actions/statsoverview.php:143
@@ -4241,148 +4469,154 @@ msgstr ""
 
 #: public_html/lists/admin/actions/reconcileusers.php:6
 msgid "Deleting subscribers with an invalid email"
-msgstr ""
+msgstr "Διαγραφή συνδρομητών με μη έγκυρο μήνυμα ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/actions/reconcileusers.php:18
 msgid "subscribers deleted"
-msgstr ""
+msgstr "οι συνδρομητές διαγράφηκαν"
 
 #: public_html/lists/admin/actions/configure.php:27
 msgid "Editing"
-msgstr ""
+msgstr "Επεξεργασία"
 
 #: public_html/lists/admin/actions/configure.php:75
 msgid "Please upload an image file, PNG or JPG."
-msgstr ""
+msgstr "Ανεβάστε ένα αρχείο εικόνας, PNG ή JPG."
 
 #: public_html/lists/admin/actions/configure.php:92
 msgid "Don't know how to handle type "
-msgstr ""
+msgstr "Δεν ξέρω πώς να χειρίστω τον τύπο"
 
 #: public_html/lists/admin/actions/configure.php:98
 msgid "save changes"
-msgstr ""
+msgstr "αποθήκευσε τις αλλαγές"
 
 #: public_html/lists/admin/actions/configure.php:104
 msgid "undo"
-msgstr ""
+msgstr "αναίρεση"
 
 #: public_html/lists/admin/actions/configure.php:117
 msgid "editing cancelled"
-msgstr ""
+msgstr "η επεξεργασία ακυρώθηκε"
 
 #: public_html/lists/admin/actions/mergeduplicatelists.php:4
 msgid "Merging lists"
-msgstr ""
+msgstr "Συγχώνευση λιστών"
 
 #: public_html/lists/admin/actions/mergeduplicatelists.php:7
 #, php-format
 msgid "List name: \"%s\", duplicates: %d"
-msgstr ""
+msgstr "Όνομα λίστας: \"% s\", διπλότυπα:% d"
 
 #: public_html/lists/admin/actions/mergeduplicatelists.php:10
 #, php-format
 msgid "First list: %d"
-msgstr ""
+msgstr "Πρώτη λίστα:% d"
 
 #: public_html/lists/admin/actions/mergeduplicatelists.php:15
 #, php-format
 msgid "%d subscribers moved"
-msgstr ""
+msgstr "% d συνδρομητές μετακινήθηκαν"
 
 #: public_html/lists/admin/actions/mergeduplicatelists.php:18
 #, php-format
 msgid "%d campaigns moved"
-msgstr ""
+msgstr "Οι καμπάνιες% d μετακινήθηκαν"
 
 #: public_html/lists/admin/actions/mergeduplicatelists.php:26
 #: public_html/lists/admin/actions/export.php:201
 #: public_html/lists/admin/actions/processqueue.php:337
 msgid "All done"
-msgstr ""
+msgstr "Ολα τελείωσαν"
 
 #: public_html/lists/admin/actions/import2.php:10
 #: public_html/lists/admin/import2.php:182
 msgid "Reading emails from file ... "
-msgstr ""
+msgstr "Ανάγνωση μηνυμάτων ηλεκτρονικού ταχυδρομείου από αρχείο ..."
 
 #: public_html/lists/admin/actions/import2.php:29
 #: public_html/lists/admin/import2.php:220
 #, php-format
 msgid "ok, %d lines"
-msgstr ""
+msgstr "ok,% d γραμμές"
 
 #: public_html/lists/admin/actions/import2.php:98
 #: public_html/lists/admin/import2.php:527
 #: public_html/lists/admin/importadmin.php:134
 msgid "Record has no email"
-msgstr ""
+msgstr "Η εγγραφή δεν έχει ηλεκτρονικό ταχυδρομείο"
 
 #: public_html/lists/admin/actions/import2.php:101
 #: public_html/lists/admin/import2.php:530
 #: public_html/lists/admin/importadmin.php:136
 msgid "Invalid Email"
-msgstr ""
+msgstr "Ακυρη διεύθυνση ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/actions/import2.php:151
 #: public_html/lists/admin/import2.php:577
 msgid "clear value"
-msgstr ""
+msgstr "σαφή αξία"
 
 #: public_html/lists/admin/actions/import2.php:161
 #: public_html/lists/admin/import2.php:587
 msgid "New Attribute"
-msgstr ""
+msgstr "Νέο χαρακτηριστικό"
 
 #: public_html/lists/admin/actions/import2.php:164
 #: public_html/lists/admin/import2.php:590
 msgid "Skip value"
-msgstr ""
+msgstr "Παράλειψη τιμής"
 
 #: public_html/lists/admin/actions/import2.php:231
 #: public_html/lists/admin/actions/import2.php:243
 #: public_html/lists/admin/actions/import2.php:245
 msgid "duplicate"
-msgstr ""
+msgstr "αντίγραφο"
 
 #: public_html/lists/admin/actions/import2.php:243
 #: public_html/lists/admin/actions/import2.php:279
 msgid "Duplicate Email"
-msgstr ""
+msgstr "Διπλότυπο μήνυμα ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/actions/import2.php:243
 msgid " user imported as "
-msgstr ""
+msgstr "ο χρήστης εισήχθη ως"
 
 #: public_html/lists/admin/actions/import2.php:500
 msgid ""
 "All the emails already exist in the database and are member of the lists"
 msgstr ""
+"Όλα τα μηνύματα ηλεκτρονικού ταχυδρομείου υπάρχουν ήδη στη βάση δεδομένων "
+"και είναι μέλη των λιστών"
 
 #: public_html/lists/admin/actions/import2.php:502
 #, php-format
 msgid "%d emails succesfully imported to the database and added to %d lists."
 msgstr ""
+"% d ηλεκτρονικά ταχυδρομεία που εισήχθησαν με επιτυχία στη βάση δεδομένων "
+"και προστέθηκαν στις λίστες% d."
 
 #: public_html/lists/admin/actions/import2.php:504
 #, php-format
 msgid "%d emails subscribed to the lists"
-msgstr ""
+msgstr "% d ηλεκτρονικά ταχυδρομεία που έχουν εγγραφεί στις λίστες"
 
 #: public_html/lists/admin/actions/import2.php:506
 #: public_html/lists/admin/actions/import1.php:222
 #, php-format
 msgid "%d emails already existed in the database"
-msgstr ""
+msgstr "% d μηνύματα ηλεκτρονικού ταχυδρομείου υπήρχαν ήδη στη βάση δεδομένων"
 
 #: public_html/lists/admin/actions/import2.php:510
 #, php-format
 msgid "%d Invalid Emails found."
-msgstr ""
+msgstr "% d βρέθηκαν μη έγκυρα μηνύματα ηλεκτρονικού ταχυδρομείου."
 
 #: public_html/lists/admin/actions/import2.php:512
 msgid "These records were added, but the email has been made up from "
 msgstr ""
+"Αυτά τα αρχεία προστέθηκαν, αλλά το ηλεκτρονικό ταχυδρομείο έχει "
+"κατασκευαστεί από"
 
 #: public_html/lists/admin/actions/import2.php:514
 #: public_html/lists/admin/import3.php:526
@@ -4390,16 +4624,18 @@ msgid ""
 "These records were deleted. Check your source and reimport the data. "
 "Duplicates will be identified."
 msgstr ""
+"Αυτά τα αρχεία προστέθηκαν, αλλά το ηλεκτρονικό ταχυδρομείο έχει "
+"κατασκευαστεί από"
 
 #: public_html/lists/admin/actions/import2.php:518
 #, php-format
 msgid "%d duplicate emails found."
-msgstr ""
+msgstr "Έχουν βρεθεί% d διπλότυπα μηνύματα ηλεκτρονικού ταχυδρομείου."
 
 #: public_html/lists/admin/actions/import2.php:521
 #, php-format
 msgid "Subscriber data was updated for %d subscribers"
-msgstr ""
+msgstr "Τα δεδομένα συνδρομητή ενημερώθηκαν για τους% d συνδρομητές"
 
 #: public_html/lists/admin/actions/import2.php:524
 #, php-format
@@ -4414,7 +4650,7 @@ msgstr ""
 #: public_html/lists/admin/actions/import2.php:532
 #: public_html/lists/admin/importsimple.php:129
 msgid "phplist Import Results"
-msgstr ""
+msgstr "phplist Εισαγωγή αποτελεσμάτων"
 
 #: public_html/lists/admin/actions/import2.php:543
 #: public_html/lists/admin/actions/import1.php:234
@@ -4422,37 +4658,37 @@ msgstr ""
 #: public_html/lists/admin/import3.php:533
 #: public_html/lists/admin/importsimple.php:119
 msgid "Import some more emails"
-msgstr ""
+msgstr "Εισαγωγή κάποιων ακόμα μηνυμάτων ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/actions/viewtemplate.php:5
 #: public_html/lists/admin/viewtemplate.php:27
 msgid "Sample Newsletter Content"
-msgstr ""
+msgstr "Δείγμα περιεχομένου ενημερωτικού δελτίου"
 
 #: public_html/lists/admin/actions/import1.php:9
 msgid "File not found"
-msgstr ""
+msgstr "Το αρχείο δεν βρέθηκε"
 
 #: public_html/lists/admin/actions/import1.php:114
 msgid "Import of existing subscriber"
-msgstr ""
+msgstr "Εισαγωγή υπαρχόντων συνδρομητών"
 
 #: public_html/lists/admin/actions/import1.php:140
 msgid "Import of new subscriber"
-msgstr ""
+msgstr "Εισαγωγή νέου συνδρομητή"
 
 #: public_html/lists/admin/actions/import1.php:193
 #: public_html/lists/admin/user.php:252
 msgid "No data changed"
-msgstr ""
+msgstr "Δεν άλλαξαν δεδομένα"
 
 #: public_html/lists/admin/actions/import1.php:201
 msgid "List subscriptions:"
-msgstr ""
+msgstr "Λίστα συνδρομών:"
 
 #: public_html/lists/admin/actions/import1.php:203
 msgid "Was subscribed to:"
-msgstr ""
+msgstr "Εγγραφή σε:"
 
 #: public_html/lists/admin/actions/import1.php:206
 msgid "Is now subscribed to:"
@@ -4489,16 +4725,17 @@ msgstr ""
 #: public_html/lists/admin/actions/import1.php:225
 msgid "All the emails already exist in the database."
 msgstr ""
+"Όλα τα μηνύματα ηλεκτρονικού ταχυδρομείου υπάρχουν ήδη στη βάση δεδομένων."
 
 #: public_html/lists/admin/actions/import1.php:227
 #: public_html/lists/admin/import3.php:517
 msgid "succesfully imported to the database and added to"
-msgstr ""
+msgstr "το ηλεκτρονικό ταχυδρομείο ήταν"
 
 #: public_html/lists/admin/actions/import1.php:227
 #: public_html/lists/admin/import3.php:517
 msgid "subscribed to the"
-msgstr ""
+msgstr "εγγραφεί στο"
 
 #: public_html/lists/admin/actions/import1.php:230
 #, php-format
@@ -4506,11 +4743,13 @@ msgid ""
 "%d emails were found on the do-not-send-list and have not been added to the "
 "lists"
 msgstr ""
+"% d μηνύματα ηλεκτρονικού ταχυδρομείου βρέθηκαν στη λίστα do-not-send και "
+"δεν έχουν προστεθεί στις λίστες"
 
 #: public_html/lists/admin/actions/user.php:19
 #, php-format
 msgid "Manually blacklisted by %s"
-msgstr ""
+msgstr "Μη αυτόματα μαύρη λίστα από το% s"
 
 #: public_html/lists/admin/actions/updatetranslation.php:12
 #: public_html/lists/admin/updatetranslation.php:19
@@ -4518,59 +4757,61 @@ msgid ""
 "Unable to fetch list of languages, please check your network or try again "
 "later"
 msgstr ""
+"Δεν είναι δυνατή η λήψη λίστας γλωσσών, ελέγξτε το δίκτυό σας ή δοκιμάστε "
+"ξανά αργότερα"
 
 #: public_html/lists/admin/actions/updatetranslation.php:29
 #, php-format
 msgid "updated %d language terms"
-msgstr ""
+msgstr "ενημερωμένους όρους γλώσσας% d"
 
 #: public_html/lists/admin/actions/updatetranslation.php:31
 msgid "Network error updating language, please try again later"
-msgstr ""
+msgstr "Σφάλμα δικτύου που ενημερώνει τη γλώσσα, δοκιμάστε ξανά αργότερα"
 
 #: public_html/lists/admin/actions/export.php:14
 #: public_html/lists/admin/export.php:31
 msgid "That is not your list"
-msgstr ""
+msgstr "Αυτός δεν είναι ο κατάλογός σας"
 
 #: public_html/lists/admin/actions/export.php:64
 #, php-format
 msgid "phpList Export on %s from %s to %s (%s).csv"
-msgstr ""
+msgstr "phpList Εξαγωγή σε% s από% s σε% s (% s) .csv"
 
 #: public_html/lists/admin/actions/export.php:66
 #, php-format
 msgid "phpList Export from %s to %s (%s).csv"
-msgstr ""
+msgstr "phpList Εξαγωγή από% s σε% s (% s) .csv"
 
 #: public_html/lists/admin/actions/export.php:151
 msgid "List Membership"
-msgstr ""
+msgstr "Λίστα μελών"
 
 #: public_html/lists/admin/actions/mclicks.php:56
 #: public_html/lists/admin/actions/mviews.php:69
 msgid "There are currently no messages to view"
-msgstr ""
+msgstr "Δεν υπάρχουν προς το παρόν μηνύματα προς προβολή"
 
 #: public_html/lists/admin/actions/mclicks.php:58
 #: public_html/lists/admin/actions/mviews.php:72
 msgid "Available Messages"
-msgstr ""
+msgstr "Διαθέσιμα μηνύματα"
 
 #: public_html/lists/admin/actions/mclicks.php:69
 #: public_html/lists/admin/mclicks.php:66
 msgid "N/A"
-msgstr ""
+msgstr "N / A"
 
 #: public_html/lists/admin/actions/mclicks.php:84
 msgid "links"
-msgstr ""
+msgstr "συνδέσεις"
 
 #: public_html/lists/admin/actions/mclicks.php:87
 #: public_html/lists/admin/mclicks.php:130
 #: public_html/lists/admin/mclicks.php:152
 msgid "clickrate"
-msgstr ""
+msgstr "κλικ ρυθμό"
 
 #: public_html/lists/admin/actions/mclicks.php:89
 #: public_html/lists/admin/userclicks.php:248
@@ -4582,37 +4823,37 @@ msgstr ""
 #: public_html/lists/admin/uclicks.php:139
 #: public_html/lists/admin/uclicks.php:153
 msgid "clicks"
-msgstr ""
+msgstr "κλικ"
 
 #: public_html/lists/admin/actions/addemail.php:14
 msgid "That is not a valid email address"
-msgstr ""
+msgstr "Αυτή δεν είναι μια έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/actions/addemail.php:19
 #, php-format
 msgid "Added by %s"
-msgstr ""
+msgstr "Προστέθηκε από το% s"
 
 #: public_html/lists/admin/actions/addemail.php:19
 msgid "Added with add-email on test"
-msgstr ""
+msgstr "Προστέθηκε με δοκιμαστική προσθήκη email"
 
 #: public_html/lists/admin/actions/addemail.php:20
 msgid "Email address added"
-msgstr ""
+msgstr "Προστέθηκε διεύθυνση ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/actions/addemail.php:26
 msgid "Adding email address failed, try again later"
-msgstr ""
+msgstr "Η προσθήκη της διεύθυνσης email απέτυχε, δοκιμάστε ξανά αργότερα"
 
 #: public_html/lists/admin/actions/domainstats.php:49
 msgid "Top 50 domains with more than 5 subscribers"
-msgstr ""
+msgstr "Top 50 τομείς με περισσότερους από 5 συνδρομητές"
 
 #: public_html/lists/admin/actions/domainstats.php:77
 #: public_html/lists/admin/actions/domainstats.php:157
 msgid "blacklisted"
-msgstr ""
+msgstr "μαύρη λίστα"
 
 #: public_html/lists/admin/actions/domainstats.php:95
 msgid ""
@@ -4640,42 +4881,46 @@ msgstr ""
 #: public_html/lists/admin/actions/processqueue.php:59
 msgid "The system is in maintenance mode, stopping. Try again later."
 msgstr ""
+"Το σύστημα είναι σε λειτουργία συντήρησης, σταματώντας. Δοκιμάστε ξανά "
+"αργότερα."
 
 #: public_html/lists/admin/actions/processqueue.php:60
 msgid "In maintenance mode, try again later."
-msgstr ""
+msgstr "Στη λειτουργία συντήρησης, δοκιμάστε ξανά αργότερα."
 
 #: public_html/lists/admin/actions/processqueue.php:84
 #, php-format
 msgid "Giving a Unique ID to %d subscribers, this may take a while"
 msgstr ""
+"Παρέχοντας ένα μοναδικό αναγνωριστικό στους% d συνδρομητές, αυτό μπορεί να "
+"διαρκέσει λίγο"
 
 #: public_html/lists/admin/actions/processqueue.php:94
 #: public_html/lists/admin/actions/processqueue.php:95
 #, php-format
 msgid "Giving a UUID to %d subscribers, this may take a while"
-msgstr ""
+msgstr "Παρέχοντας ένα UUID στους% d συνδρομητές, αυτό μπορεί να διαρκέσει λίγο"
 
 #: public_html/lists/admin/actions/processqueue.php:104
 #, php-format
 msgid "Giving a UUID to %d campaigns"
-msgstr ""
+msgstr "Δίνοντας UUID σε% d καμπάνιες"
 
 #: public_html/lists/admin/actions/processqueue.php:129
 msgid "The following restrictions have been set by your ISP:"
-msgstr ""
+msgstr "Οι ακόλουθοι περιορισμοί έχουν καθοριστεί από τον ISP σας:"
 
 #: public_html/lists/admin/actions/processqueue.php:196
 msgid "Maximum time for queue processing"
-msgstr ""
+msgstr "Μέγιστος χρόνος επεξεργασίας ουράς"
 
 #: public_html/lists/admin/actions/processqueue.php:254
 msgid "Script stage"
-msgstr ""
+msgstr "Στάδιο δέσμης ενεργειών"
 
 #: public_html/lists/admin/actions/processqueue.php:259
 msgid "Finished, Nothing to do"
-msgstr ""
+msgstr "Τελειωμένο, Τίποτα δεν κάνει"
 
 #: public_html/lists/admin/actions/processqueue.php:267
 msgid "Calculating"
@@ -4698,81 +4943,84 @@ msgstr ""
 #: public_html/lists/admin/actions/processqueue.php:279
 #, php-format
 msgid "%d failed (will retry later)"
-msgstr ""
+msgstr "Το% d απέτυχε (θα προσπαθήσει αργότερα)"
 
 #: public_html/lists/admin/actions/processqueue.php:286
 #, php-format
 msgid "%d emails unconfirmed (not sent)"
-msgstr ""
+msgstr "% d μηνύματα ηλεκτρονικού ταχυδρομείου ανεπιβεβαίωτα (δεν έχουν σταλεί)"
 
 #: public_html/lists/admin/actions/processqueue.php:300
 msgid "Warning: script never reached stage 5"
-msgstr ""
+msgstr "Προειδοποίηση: το σενάριο δεν έφτασε ποτέ στο στάδιο 5"
 
 #: public_html/lists/admin/actions/processqueue.php:300
 msgid "This may be caused by a too slow or too busy server"
-msgstr ""
+msgstr "Αυτό μπορεί να οφείλεται σε πολύ αργό ή πολύ απασχολημένο διακομιστή"
 
 #: public_html/lists/admin/actions/processqueue.php:306
 msgid "Less than batch size were sent, so reloading imminently"
 msgstr ""
+"Λιγότερο από το μέγεθος παρτίδας έχουν σταλεί, έτσι ώστε να φορτώνονται "
+"αμέσως"
 
 #: public_html/lists/admin/actions/processqueue.php:312
 #, php-format
 msgid "Waiting for %d seconds before reloading"
-msgstr ""
+msgstr "Αναμονή για% d δευτερόλεπτα πριν από την επαναφόρτωση"
 
 #: public_html/lists/admin/actions/processqueue.php:334
 msgid "Finished, All done"
-msgstr ""
+msgstr "Τελειωμένο, όλα έτοιμα"
 
 #: public_html/lists/admin/actions/processqueue.php:340
 msgid "Script finished, but not all messages have been sent yet."
-msgstr ""
+msgstr "Το σενάριο ολοκληρώθηκε, αλλά δεν έχουν σταλεί όλα τα μηνύματα."
 
 #: public_html/lists/admin/actions/processqueue.php:363
 msgid "Message queue processing errors"
-msgstr ""
+msgstr "Σφάλματα επεξεργασίας ουράς μηνυμάτων"
 
 #: public_html/lists/admin/actions/processqueue.php:365
 msgid "Message queue processing report"
-msgstr ""
+msgstr "Αναφορά επεξεργασίας ουράς μηνυμάτων"
 
 #: public_html/lists/admin/actions/processqueue.php:368
 msgid "Finished this run"
-msgstr ""
+msgstr "Τελειώσατε αυτό το τρέξιμο"
 
 #: public_html/lists/admin/actions/processqueue.php:388
 msgid "The following events occured while processing the message queue:"
 msgstr ""
+"Παρουσιάστηκαν τα ακόλουθα συμβάντα κατά την επεξεργασία της ουράς μηνυμάτων:"
 
 #: public_html/lists/admin/actions/processqueue.php:389
 msgid "To stop receiving these reports read:"
-msgstr ""
+msgstr "Για να σταματήσετε να λαμβάνετε αυτές τις αναφορές διαβάστε:"
 
 #: public_html/lists/admin/actions/processqueue.php:492
 #: public_html/lists/admin/actions/processqueue.php:494
 msgid "(test)"
-msgstr ""
+msgstr "(δοκιμή)"
 
 #: public_html/lists/admin/actions/processqueue.php:492
 #: public_html/lists/admin/actions/processqueue.php:494
 msgid "Would have sent"
-msgstr ""
+msgstr "Θα έστειλε"
 
 #: public_html/lists/admin/actions/processqueue.php:508
 msgid "Started"
-msgstr ""
+msgstr "Ξεκίνησε"
 
 #: public_html/lists/admin/actions/processqueue.php:510
 msgid "Time now "
-msgstr ""
+msgstr "Ώρα τώρα"
 
 #: public_html/lists/admin/actions/processqueue.php:519
 #: public_html/lists/admin/actions/processqueue.php:520
 #, php-format
 msgid "Processing blocked by plugin %s"
-msgstr ""
+msgstr "Η επεξεργασία μπλοκαρίστηκε από το plugin% s"
 
 #: public_html/lists/admin/actions/processqueue.php:530
 msgid "Processing has been suspended by your ISP, please try again later"
@@ -4801,14 +5049,17 @@ msgid ""
 "In the last %s seconds more emails were sent (%s) than is currently allowed "
 "per batch (%s)"
 msgstr ""
+"Στα τελευταία τελευταία δευτερόλεπτα% s αποστέλλονται περισσότερα μηνύματα "
+"ηλεκτρονικού ταχυδρομείου (% s) από ό, τι επιτρέπεται επί του παρόντος ανά "
+"παρτίδα (% s)"
 
 #: public_html/lists/admin/actions/processqueue.php:564
 msgid "Sent in last run"
-msgstr ""
+msgstr "Στέλλεται στο τελευταίο δρομολόγιο"
 
 #: public_html/lists/admin/actions/processqueue.php:565
 msgid "Skipped in last run"
-msgstr ""
+msgstr "Παράλειψη τελευταίας εκτέλεσης"
 
 #: public_html/lists/admin/actions/processqueue.php:612
 msgid "Processing has started,"
@@ -4833,25 +5084,29 @@ msgstr ""
 
 #: public_html/lists/admin/actions/processqueue.php:621
 msgid "This may take a while"
-msgstr ""
+msgstr "Αυτό μπορεί να πάρει λίγο χρόνο"
 
 #: public_html/lists/admin/actions/processqueue.php:623
 msgid "Report of processing will be sent by email"
-msgstr ""
+msgstr "Η αναφορά επεξεργασίας θα αποσταλεί μέσω ηλεκτρονικού ταχυδρομείου"
 
 #: public_html/lists/admin/actions/processqueue.php:653
 #, php-format
 msgid "Maximum for campaign %d is %d"
-msgstr ""
+msgstr "Η μέγιστη τιμή για την καμπάνια% d είναι% d"
 
 #: public_html/lists/admin/actions/processqueue.php:687
 #, php-format
 msgid "sending of this campaign will stop, if it is still going in %s"
 msgstr ""
+"η αποστολή αυτής της καμπάνιας θα σταματήσει, αν εξακολουθεί να υπάρχει στο% "
+"s"
 
 #: public_html/lists/admin/actions/processqueue.php:702
 msgid "Error loading message, please check the eventlog for details"
 msgstr ""
+"Παρουσιάστηκε σφάλμα κατά τη φόρτωση του μηνύματος, ελέγξτε το eventlog για "
+"λεπτομέρειες"
 
 #: public_html/lists/admin/actions/processqueue.php:719
 msgid "Campaign started"
