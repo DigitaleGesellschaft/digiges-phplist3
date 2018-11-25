@@ -8,7 +8,7 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.3.4");
+define("VERSION","3.3.5");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
