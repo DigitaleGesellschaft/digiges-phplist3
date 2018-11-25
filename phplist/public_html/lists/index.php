@@ -343,7 +343,7 @@ if ($login_required && empty($_SESSION['userloggedin']) && !$canlogin) {
         while ($row = Sql_Fetch_Array($req)) {
             $intro = Sql_Fetch_Row_Query(sprintf('select data from %s where id = %d and name = "intro"',
                 $tables['subscribepage_data'], $row['id']));
-            echo $intro[0];
+            echo stripslashes($intro[0]);
             if (SHOW_SUBSCRIBELINK) {
                 printf('<p><a href="'.getConfig('subscribeurl').'&id=%d">%s</a></p>', $row['id'],
                     strip_tags(stripslashes($row['title'])));
@@ -372,7 +372,7 @@ if ($login_required && empty($_SESSION['userloggedin']) && !$canlogin) {
                 return '&#'.ord($m[0]).';';
             }
             , 'mailto:'.getConfig('admin_address')).
-        '">'.s('Contact the administrator').'</a></p>';
+        '">'.$GLOBALS['strContactAdmin'].'</a></p>';
     echo $pagedata['footer'];
 }
 
@@ -479,7 +479,7 @@ function checkform()
     if ($GLOBALS['pagedata']['emaildoubleentry'] == 'yes') {
         $html .= '
   if (! compareEmail()) {
-    alert("Email addresses you entered do not match");
+    alert("' .str_replace('"', '\"', $GLOBALS['strEmailsNoMatch']).'");
 
     return false;
   }';
@@ -487,7 +487,7 @@ function checkform()
 
     $html .= '
   if (! checkEmail()) {
-    alert("Email addresses you entered is not valid");
+    alert("' .str_replace('"', '\"', $GLOBALS['strEmailNotValid']).'");
 
     return false;
   }';
@@ -724,7 +724,7 @@ function confirmPage($id)
         while ($row = Sql_fetch_array($req)) {
             array_push($subscriptions, $row['id']);
             $lists .= "\n *".stripslashes($row['name']);
-            $html .= '<li class="list">'.stripslashes($row['name']).'<div class="listdescription">'.stripslashes($row['description']).'</div></li>';
+            $html .= '<li class="list"><b>'.stripslashes($row['name']).'</b><div class="listdescription">'.stripslashes($row['description']).'</div></li>';
         }
         $html .= '</ul>';
         if ($blacklisted) {
@@ -754,7 +754,7 @@ function confirmPage($id)
                 addSubscriberStatistics('confirmation', 1);
             }
         } else {
-            $html = $GLOBALS['strAlreadyConfirmed'];
+            $html .= $GLOBALS['strAlreadyConfirmed'];
         }
         $_SESSION['subscriberConfirmed'][$userdata['email']] = time();
         $info = $GLOBALS['strConfirmInfo'];

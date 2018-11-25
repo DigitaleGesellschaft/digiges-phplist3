@@ -93,7 +93,7 @@ span.glyphicon{margin:5px}
 .btn.disabled{opacity:0.2}
 .tab-content ul.list-unstyled li{margin-bottom:15px}
 .form-control{max-width: 100% !important}
-.jumbotron{ padding:20px}
+.jumbotron, .container .jumbotron, .container-fluid .jumbotron{ padding:20px}
 select.form-control,input.form-control{display:inline-block;width:auto}
 label,.form-control,.btn{margin:5px;margin-left:0}
 .toggle-group label,.toggle-group span{margin:0} 
@@ -186,6 +186,19 @@ div.segment .clearfix{margin:20px 0 !important}
 .sendTest input{margin:5px 0}
 body.messages table.messagesendstats{ width: 49%; float: left; margin-left: 1%;}
 .modal-content .openhelpimage{padding-top:0}
+#generatetextversion{border:0; padding:0;width:auto;margin-right:0px}
+/* plugin error message on finish tab of send campaign*/
+#sendmessageform #addtoqueue .missing{ 
+	h1,h2,h3,h4,h5,h6{display:inline;font-weight:bold;font-size:inherit}
+	p{margin-top:0}
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
 
 
 /* # header *******************/
@@ -196,6 +209,9 @@ h4.page-header:first-letter{ text-transform:uppercase }
 
 @media screen and (max-width:767px){
 	h4.page-header{margin-top:10px;}
+	body.messages table.messagesendstats {
+    width: 100%;
+	}
 }
 
 
@@ -268,8 +284,10 @@ body.login {
 body.home table.listing *{white-space:normal}
 body.home td.listingname {width:200px}
 body.home td.listingelement{padding-right:20px;padding-left:20px}
-body.home .btn.btn-info{font-size:14px;display:block;padding:15px 5px;font-family:"Source Sans Pro";color:rgb(255, 255, 255);}
-body.home .btn.btn-info span{display:block;font-size:40px;margin-right:0}
+body.home .btn.btn-info:not(.back-to-top){
+	font-size:14px;display:block;padding:15px 5px;font-family:"Source Sans Pro";color:rgb(255, 255, 255);
+	span{display:block;font-size:40px;margin-right:0}
+} 
 body.home .custom-attribute .btn.btn-info span{font-size:25px}
 body.home .custom-attribute td.listingname{padding-left:40px} 
 body.dashboard h2 span.glyphicon {vertical-align:bottom}
@@ -359,6 +377,7 @@ form.spageEdit {
 body.fixed #header.navbar {margin-bottom: 0;}
 body.fixed h1#logo {margin: 0.3em 0 0.4em 0;}
 body.fixed .content h3{margin-top:0;line-height:1.2}
+body.fixed .content form{margin-bottom:15px}
 body.fixed .content .jumbotron{margin-bottom: 15px} 
 body.fixed .content .jumbotron td {padding:0px 20px}
 body.fixed .content .jumbotron tbody{border:10px solid #EEE}
@@ -376,8 +395,8 @@ body.fixed .form-group input[type="checkbox"] + .btn-group .btn-default.active{b
 body.fixed .content .listdescription{display: inline-block; margin:10px;}
 body.fixed .well{padding-bottom:0}
 body.fixed .content>br{display:none}
-body.fixed .content>p{text-align:right}
-body.fixed .content .poweredby{margin-top:30px}
+body.fixed .content>p{margin-top:0px}
+body.fixed .content .poweredby{margin-top:15px}
 
 @media screen and (max-width:767px){
 	body.fixed .well{padding:19px;padding-bottom:0}
@@ -389,8 +408,8 @@ body.fixed .content .poweredby{margin-top:30px}
 	body.fixed .content .table td:first-child{border-top-width:1px;width:100% }
 }
 
-/* fix border-radius on /lists/admin/?page=eventlog */
-body.eventlog .btn-group .dropdown-toggle:not(:first-child){
+/* fix border-radius on dropdown buttons */
+.dropButton.btn-group .dropdown-toggle:not(:first-child){
 	border-top-left-radius:5px !important;
 	border-bottom-left-radius:5px !important;
 }

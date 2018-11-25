@@ -240,9 +240,9 @@ function SaveConfig($item, $value, $editable = 1, $ignore_errors = 0)
             include 'class.image.inc';
             $image = new imageUpload();
             $imageId = $image->uploadImage($item, 0);
-            if ($imageId) {
+#            if ($imageId) {
                 $value = $imageId;
-            }
+#            }
             //# we only use the image type for the logo
             flushLogoCache();
     }
@@ -615,7 +615,11 @@ $GLOBALS['pagecategories'] = array(
     //# category title => array(
     // toplink => page to link top menu to
     // pages => pages in this category
-
+    'dashboard'   => array(
+        'toplink'=> 'home',
+        'pages'  => array(),
+        'menulinks' => array(),
+    ),
     'subscribers' => array(
         'toplink' => 'list',
         'pages'   => array(
@@ -635,22 +639,21 @@ $GLOBALS['pagecategories'] = array(
             'suppressionlist',
             'reconcileusers',
             'usercheck',
-            'userhistory',
             'user',
             'adduser',
+            'attributes',
+
         ),
         'menulinks' => array(
             'users',
-            'adduser',
             'usermgt',
+            'attributes',
             'list',
             'import',
             'export',
             'listbounces',
-            //       'massremove',
             'suppressionlist',
             'reconcileusers',
-            //       'usercheck',
         ),
 
     ),
@@ -735,7 +738,6 @@ $GLOBALS['pagecategories'] = array(
             'admin',
             'importadmin',
             'adminattributes',
-            'attributes',
             'editattributes',
             'defaults',
             'bouncerules',
@@ -746,7 +748,6 @@ $GLOBALS['pagecategories'] = array(
             'setup',
             'configure',
             'plugins',
-            'attributes',
             'spage',
             'admins',
             'importadmin',
@@ -756,22 +757,22 @@ $GLOBALS['pagecategories'] = array(
             'catlists',
         ),
     ),
-    'info' => array(
-        'toplink' => 'about',
-        'pages'   => array(
-            'about',
-            'community',
-            'home',
+    //'info' => array(
+        //'toplink' => 'about',
+        //'pages'   => array(
+            //'about',
+            //'community',
+            //'home',
             //   'translate',
-            'vote',
-        ),
-        'menulinks' => array(
-            'about',
-            'community',
+            //'vote',
+        //),
+        //'menulinks' => array(
+           // 'about',
+            //'community',
             //    'translate',
-            'home',
-        ),
-    ),
+            //'home',
+        //),
+    //),
 
     //'plugins' => array(
     //'toplink' => 'plugins',
@@ -2115,11 +2116,11 @@ function listPlaceHolders()
 {
     $html = '<table border="1"><tr><td><strong>'.s('Attribute').'</strong></td><td><strong>'.s('Placeholder').'</strong></td></tr>';
     $req = Sql_query('
-    select 
-        name 
-    from 
-        '.$GLOBALS['tables']['attribute'].' 
-    order by 
+    select
+        name
+    from
+        '.$GLOBALS['tables']['attribute'].'
+    order by
         listorder
     ');
     while ($row = Sql_Fetch_Row($req)) {

@@ -1473,12 +1473,16 @@ function addSubscriberStatistics($item, $amount, $list = 0)
     }
 }
 
+
 /**
  * Insert a draft campaign for use with the Invite plugin
+ * @param null|int $forcedOwnerId
+ * @return bool|mysqli_result
+ * @throws Exception
  * @todo Make the campaign content translatable
  * @todo Add Campaign Meta Title to clarify purpose of this draft
  */
-function addInviteCampaign() {
+function addInviteCampaign($forcedOwnerId = null) {
 
     $message =
 '<p>Hi [FIRST NAME%%there], remember us? You first signed up for our email newsletter on&nbsp;[ENTERED] &ndash; please click here to confirm you&#39;re happy to continue receiving our messages:</p>
@@ -1496,7 +1500,11 @@ function addInviteCampaign() {
     $inviteMessage = addslashes($message);
     $inviteMessageSubject = "Do you want to continue receiving our messages?";
     $uuid = uuid::generate(4);
-    $ownerid = $_SESSION['logindetails']['id'];
+    if ( $forcedOwnerId !== null) {
+        $ownerid = $forcedOwnerId;
+    } else {
+        $ownerid = $_SESSION['logindetails']['id'];
+    }
     $footer = sql_escape(getConfig('messagefooter'));
     $result = Sql_query("insert into {$GLOBALS['tables']['message']} (uuid,subject,message,entered, status, owner, footer, sendformat) values(\"$uuid\",\"$inviteMessageSubject\",\"$inviteMessage\",now(),\"draft\",\"$ownerid\",\"$footer\",\"invite\" )");
 
@@ -1655,7 +1663,7 @@ function resetMessageStatistics($messageid = 0)
             $messageid));
         Sql_Query(sprintf('delete from %s where messageid = %d', $GLOBALS['tables']['usermessage'], $messageid));
         Sql_Query(sprintf('delete from %s where messageid = %d', $GLOBALS['tables']['user_message_view'], $messageid));
-        Sql_Query(sprintf('update %s set viewed = 0 where messageid = %d', $GLOBALS['tables']['message'], $messageid));
+        Sql_Query(sprintf('update %s set viewed = 0 where id = %d', $GLOBALS['tables']['message'], $messageid));
     }
 }
 

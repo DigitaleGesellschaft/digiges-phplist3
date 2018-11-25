@@ -82,8 +82,15 @@
 <?php if (isset($removeButton)) echo $removeButton; ?>
 <?php echo $calculateButton ?>
 <?php if (isset($totalSubscribers)): ?>
+    <?php echo $exportCalculatedButton ?>
         <div class="note">
-    <?php echo s('%d subscribers will be selected', $totalSubscribers); ?>
+    <?php echo s('%d subscribers will be selected.', $totalSubscribers); ?>
+    <?php if ($totalSubscribers > count($subscribers)): echo s('First %d subscribers:', count($subscribers)); endif; ?>
+            <br/>
+    <?php foreach ($subscribers as $subscriber): ?>
+        <?= $subscriber['email']; ?>
+            <br/>
+    <?php endforeach; ?>
         </div>
 <?php endif; ?>
     </div>
@@ -102,3 +109,7 @@
     </div>
 <?php endif; ?>
 </div>
+<?php
+global $plugins;
+
+require $plugins['CommonPlugin']->coderoot . 'dialog_js.php';

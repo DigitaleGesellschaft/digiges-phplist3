@@ -192,16 +192,16 @@ function sendEmail($messageid, $email, $hash, $htmlpref = 0, $rssitems = array()
 
     $url = getConfig('subscribeurl');
     $sep = strpos($url, '?') === false ? '?' : '&';
-    $html['subscribe'] = sprintf('<a href="%s">%s</a>', $url, $strThisLink);
+    $html['subscribe'] = sprintf('<a href="%s">%s</a> ', $url, $strThisLink);
     $text['subscribe'] = sprintf('%s', $url);
-    $html['subscribeurl'] = sprintf('%s', $url);
-    $text['subscribeurl'] = sprintf('%s', $url);
+    $html['subscribeurl'] = sprintf('%s ', $url);
+    $text['subscribeurl'] = sprintf('%s ', $url);
     $url = getConfig('forwardurl');
     $sep = strpos($url, '?') === false ? '?' : '&';
-    $html['forward'] = sprintf('<a href="%s%suid=%s&amp;mid=%d">%s</a>', $url, htmlspecialchars($sep), $hash,
+    $html['forward'] = sprintf('<a href="%s%suid=%s&amp;mid=%d">%s</a> ', $url, htmlspecialchars($sep), $hash,
         $messageid, $strThisLink);
-    $text['forward'] = sprintf('%s%suid=%s&mid=%d', $url, $sep, $hash, $messageid);
-    $html['forwardurl'] = sprintf('%s%suid=%s&amp;mid=%d', $url, htmlspecialchars($sep), $hash, $messageid);
+    $text['forward'] = sprintf('%s%suid=%s&mid=%d ', $url, $sep, $hash, $messageid);
+    $html['forwardurl'] = sprintf('%s%suid=%s&amp;mid=%d ', $url, htmlspecialchars($sep), $hash, $messageid);
     $text['forwardurl'] = $text['forward'];
     $html['messageid'] = sprintf('%d', $messageid);
     $text['messageid'] = sprintf('%d', $messageid);
@@ -211,15 +211,15 @@ function sendEmail($messageid, $email, $hash, $htmlpref = 0, $rssitems = array()
     $html['forwardform'] = ''; //sprintf('<form method="get" action="%s" name="forwardform" class="forwardform"><input type="hidden" name="uid" value="%s" /><input type="hidden" name="mid" value="%d" /><input type="hidden" name="p" value="forward" /><input type=text name="email" value="" class="forwardinput" /><input name="Send" type="submit" value="%s" class="forwardsubmit"/></form>',$url,$hash,$messageid,$GLOBALS['strForward']);
     $url = getConfig('preferencesurl');
     $sep = strpos($url, '?') === false ? '?' : '&';
-    $html['preferences'] = sprintf('<a href="%s%suid=%s">%s</a>', $url, htmlspecialchars($sep), $hash, $strThisLink);
-    $text['preferences'] = sprintf('%s%suid=%s', $url, $sep, $hash);
-    $html['preferencesurl'] = sprintf('%s%suid=%s', $url, htmlspecialchars($sep), $hash);
-    $text['preferencesurl'] = sprintf('%s%suid=%s', $url, $sep, $hash);
+    $html['preferences'] = sprintf('<a href="%s%suid=%s">%s</a> ', $url, htmlspecialchars($sep), $hash, $strThisLink);
+    $text['preferences'] = sprintf('%s%suid=%s ', $url, $sep, $hash);
+    $html['preferencesurl'] = sprintf('%s%suid=%s ', $url, htmlspecialchars($sep), $hash);
+    $text['preferencesurl'] = sprintf('%s%suid=%s ', $url, $sep, $hash);
 
     $url = getConfig('confirmationurl');
     $sep = strpos($url, '?') === false ? '?' : '&';
-    $html['confirmationurl'] = sprintf('%s%suid=%s', $url, htmlspecialchars($sep), $hash);
-    $text['confirmationurl'] = sprintf('%s%suid=%s', $url, $sep, $hash);
+    $html['confirmationurl'] = sprintf('%s%suid=%s ', $url, htmlspecialchars($sep), $hash);
+    $text['confirmationurl'] = sprintf('%s%suid=%s ', $url, $sep, $hash);
 
     //historical, not sure it's still used
     $html['userid'] = $hash;
@@ -745,7 +745,7 @@ $text['signature'] = '';
     foreach ($GLOBALS['plugins'] as $pluginname => $plugin) {
         $plugin_attachments = $plugin->getMessageAttachment($messageid, $mail->Body);
         if (!empty($plugin_attachments[0]['content'])) {
-            foreach ($plugins_attachments as $plugin_attachment) {
+            foreach ($plugin_attachments as $plugin_attachment) {
                 $mail->add_attachment($plugin_attachment['content'],
                     basename($plugin_attachment['filename']),
                     $plugin_attachment['mimetype']);
@@ -1095,7 +1095,7 @@ function addAttachments($msgid, &$mail, $type)
 function createPDF($text)
 {
     if (!isset($GLOBALS['pdf_font'])) {
-        $GLOBALS['pdf_font'] = 'Arial';
+       $GLOBALS['pdf_font'] = 'Arial';
         $GLOBALS['pdf_fontsize'] = 12;
     }
     $pdf = new FPDF();
@@ -1246,13 +1246,13 @@ function clickTrackLinkId($messageid, $userid, $url, $link)
      * alter table phplist_linktrack_forward add index (url);
      * */
 
-        $exists = Sql_Fetch_Row_Query(sprintf('select id,uuid from %s where url = "%s"',
-            $GLOBALS['tables']['linktrack_forward'], sql_escape(substr($url, 0, 255))));
+        $exists = Sql_Fetch_Row_Query(sprintf('select id,uuid from %s where urlhash = "%s"',
+            $GLOBALS['tables']['linktrack_forward'], md5(sql_escape($url))));
         if (empty($exists[0])) {
             $personalise = preg_match('/uid=/', $link);
             $uuid = (string)Uuid::generate(4);
-            Sql_Query(sprintf('insert into %s set url = "%s", personalise = %d, uuid = "%s"',
-                $GLOBALS['tables']['linktrack_forward'], sql_escape($url), $personalise, $uuid));
+            Sql_Query(sprintf('insert into %s set url = "%s", urlhash = "%s", personalise = %d, uuid = "%s"',
+                $GLOBALS['tables']['linktrack_forward'], sql_escape($url), md5(sql_escape($url)), $personalise, $uuid));
             $fwdid = Sql_Insert_id();
             $fwduuid = $uuid;
         } elseif (empty($exists[1])) {
