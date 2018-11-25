@@ -205,8 +205,17 @@ $default_config = array(
     'list_categories' => array(
         'value'       => '',
         'description' => s('Categories for lists. Separate with commas.'),
+        'infoicon'    => true,
         'type'        => 'text',
         'allowempty'  => true,
+        'category'    => 'list-organisation',
+    ),
+
+    'displaycategories' => array(
+        'value'       => 0,
+        'description' => s('Display list categories on subscribe page'),
+        'type'        => 'boolean',
+        'allowempty'  => false,
         'category'    => 'list-organisation',
     ),
 

@@ -115,7 +115,8 @@ class Segment
      *
      * @throws SegmentPlugin_NoConditionsException if there are not any conditions
      *
-     * @return BitArray
+     * @return array [0] number of subscribers selected
+     *               [1] BitArray
      */
     public function loadSubscribers()
     {
@@ -126,15 +127,19 @@ class Segment
         }
         $highest = $this->dao->highestSubscriberId();
         $subscribers = BitArray::fromInteger($highest + 1);
+        $total = 0;
         $joins = $this->selectionQueryJoins();
 
         if (count($joins) > 0) {
-            foreach ($this->dao->subscribers($this->messageId, $joins, $this->combine) as $row) {
+            $subscriberIterator = $this->dao->subscribers($this->messageId, $joins, $this->combine);
+            $total = count($subscriberIterator);
+
+            foreach ($subscriberIterator as $row) {
                 $subscribers[(int) $row['id']] = 1;
             }
         }
 
-        return $subscribers;
+        return [$total, $subscribers];
     }
 
     /**
@@ -246,8 +251,8 @@ class Segment
 
         foreach ($this->conditions as $i => $c) {
             $field = $c['field'];
-            $condition = $this->conditionFactory->createCondition($field);
-            $joins[] = $condition->joinQuery($c['op'], isset($c['value']) ? $c['value'] : '');
+            $type = $this->conditionFactory->createConditionType($field, loadMessageData($this->messageId));
+            $joins[] = $type->joinQuery($c['op'], isset($c['value']) ? $c['value'] : '');
         }
 
         return $joins;

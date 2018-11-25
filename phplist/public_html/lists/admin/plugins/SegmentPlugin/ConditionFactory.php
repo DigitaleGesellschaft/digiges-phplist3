@@ -39,14 +39,14 @@ class SegmentPlugin_ConditionFactory
     }
 
     /**
-     * Create a condition object using a subscriber field or attribute.
+     * Create a condition type object using a subscriber field or attribute.
      * A field is treated as an attribute id if it is numeric, otherwise as a subscriber field.
      *
      * @param string $field attribute id or subscriber field
      *
      * @return SegmentPlugin_Condition
      */
-    public function createCondition($field)
+    public function createConditionType($field, $messageData)
     {
         if (ctype_digit($field)) {
             if (!isset($this->attributes[$field])) {
@@ -93,11 +93,15 @@ class SegmentPlugin_ConditionFactory
                 case 'uniqid':
                     $r = new SegmentPlugin_SubscriberConditionIdentity($field);
                     break;
+                case 'lists':
+                    $r = new SegmentPlugin_SubscriberConditionLists($field);
+                    break;
                 default:
                     throw new SegmentPlugin_ConditionException("unrecognised subscriber field $field");
             }
         }
         $r->dao = $this->dao;
+        $r->messageData = $messageData;
 
         return $r;
     }
@@ -125,6 +129,7 @@ class SegmentPlugin_ConditionFactory
             'email' => 'email address',
             'id' => 'subscriber id',
             'uniqid' => 'subscriber unique id',
+            'lists' => 'List membership',
         );
     }
 }
