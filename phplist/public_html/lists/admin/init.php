@@ -8,7 +8,7 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.3.7");
+define("VERSION","3.3.8");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
@@ -572,6 +572,10 @@ if (!defined('POPBEFORESMTP_DEBUG')) {
 }
 if (!defined('USERSPAGE_MAX')) {
     define('USERSPAGE_MAX', 1000);
+}
+// if false, it will disable the automatic updater.
+if (!defined ('ALLOW_UPDATER')){
+    define('ALLOW_UPDATER', true);
 }
 if (!isset($plugins_disabled) || !is_array($plugins_disabled)) {
     $plugins_disabled = array();

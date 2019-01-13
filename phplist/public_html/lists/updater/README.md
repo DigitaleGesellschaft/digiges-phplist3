@@ -37,6 +37,39 @@ The updater is currently performing the following steps. If one of those steps f
 16. Deauthenticate updater session
 17. Redirect to the phpList dashboard
 
+### Permissions
+
+The whole phpList directory and the files within it must be writable by the HTTP user under which your web server is running as. 
+If there is no match between the owner of your phpList files and the user under which your web server is running, you won’t be able to update. 
+The ownership can be changed in a Linux terminal using this command:
+
+<pre> chown -R user:group /path/to/phpList-directory </pre>
+
+For instance: 
+
+<pre> chown -R www-data:www-data /var/www/lists </pre>
+
+Change directory and file permissions:
+
+<pre> find . -type d -exec chmod 755 {} \; </pre>  
+<pre> find . -type f -exec chmod 644 {} \; </pre> 
+
+Permissions vary from host to host. To find the HTTP user check the Apache Server configuration files.
+You can view a file's ownership, permissions, and other important information with the ls command, using the -la option:
+
+<pre> ls -la file.php </pre>
+
+The default Apache user and group for some Linux distributions are:
+
+- Debian/Ubuntu: www-data
+- Arch Linux: http
+- Fedora/CentOS: apache
+- openSUSE: user is wwwrun and the group is www
+
+After you change the permissions, you can try again the update.
+After a successful update, please consider to re-apply any hardened directory permissions.
+
+
 ### What the updater doesn't do (yet):
 
 The updater is at the moment solely focused on replacing the files of the core installation. It does neither:
@@ -50,6 +83,7 @@ The updater is at the moment solely focused on replacing the files of the core i
 - Any plugins that are not included in releases are removed and need to reinstalled following update (settings for those plugins in the database are not affected; reinstalling the plugins should make them work as before).
 - It is possible to override the backup checks by reloading the page when the backup check fails. Do not reload the page unless you wish to proceed without a backup in this case.
 - When the update process fails you should manually remove actions.txt file inside the config folder in order to reset the process and be able to try again.
+- The config directory is required to be writable because the "current step" of the automatic updater is saved inside it.
 
 ### Future development plans
 
