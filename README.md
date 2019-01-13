@@ -1,7 +1,7 @@
 # Updating from Upstream
 
 ```console
-./update.sh 3.3.8
+./update.sh 3.3.8 # Adapt to your version
 ```
 
 # Push to Repository
