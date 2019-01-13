@@ -16,4 +16,3 @@ git tag v${version}
 git checkout master
 git merge v${version}
 git tag v${version}-digiges
-git push origin upstream-releases master --tags
