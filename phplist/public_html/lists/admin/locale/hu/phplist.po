@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: phpList 2.11.X\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-12 22:34+0000\n"
+"POT-Creation-Date: 2018-12-30 06:48+0000\n"
 "PO-Revision-Date: 2018-09-11 19:07+0000\n"
 "Last-Translator: samtuke <mail@samtuke.com>\n"
 "Language-Team: phpList <info@phplist.com>\n"
@@ -705,195 +705,195 @@ msgstr "Dokumentáció a hibáról"
 msgid "More information"
 msgstr "További információ"
 
-#: public_html/lists/admin/connect.php:874
+#: public_html/lists/admin/connect.php:876
 msgid "Main Page"
 msgstr "Főlap"
 
-#: public_html/lists/admin/connect.php:875
+#: public_html/lists/admin/connect.php:877
 msgid "about"
 msgstr "névjegy"
 
-#: public_html/lists/admin/connect.php:943
+#: public_html/lists/admin/connect.php:945
 msgid "In this section"
 msgstr "Ebben a részben"
 
-#: public_html/lists/admin/connect.php:982
+#: public_html/lists/admin/connect.php:984
 msgid "Recently visited"
 msgstr "Mostanában megtekintett"
 
-#: public_html/lists/admin/connect.php:1323
+#: public_html/lists/admin/connect.php:1325
 msgid "All Lists"
 msgstr "Minden lista"
 
-#: public_html/lists/admin/connect.php:1329
+#: public_html/lists/admin/connect.php:1331
 msgid "All Public Lists"
 msgstr "Minden nyilvános lista"
 
-#: public_html/lists/admin/connect.php:1333
+#: public_html/lists/admin/connect.php:1335
 #: public_html/lists/admin/import2.php:646 public_html/lists/admin/list.php:95
 #: public_html/lists/admin/list.php:99 public_html/lists/admin/list.php:325
 #: public_html/lists/admin/import3.php:43
 msgid "Add a list"
 msgstr "Lista hozzáadása"
 
-#: public_html/lists/admin/connect.php:1344
+#: public_html/lists/admin/connect.php:1346
 #: public_html/lists/admin/list.php:135 public_html/lists/admin/list.php:145
 #: public_html/lists/admin/list.php:167 public_html/lists/admin/list.php:175
 msgid "Uncategorised"
 msgstr "Nem kategorizált"
 
-#: public_html/lists/admin/connect.php:1361
+#: public_html/lists/admin/connect.php:1363
 msgid "Public list"
 msgstr "Nyilvános lista"
 
-#: public_html/lists/admin/connect.php:1363
+#: public_html/lists/admin/connect.php:1365
 msgid "Private list"
 msgstr "Privát lista"
 
-#: public_html/lists/admin/connect.php:1410
-#: public_html/lists/admin/connect.php:1413
+#: public_html/lists/admin/connect.php:1412
+#: public_html/lists/admin/connect.php:1415
 #: public_html/lists/admin/export.php:131
 msgid "Select all"
 msgstr "Összes kijelölése"
 
-#: public_html/lists/admin/connect.php:1427
+#: public_html/lists/admin/connect.php:1429
 msgid "There are no lists available"
 msgstr "Nem található lista"
 
-#: public_html/lists/admin/connect.php:1685
+#: public_html/lists/admin/connect.php:1687
 #: public_html/lists/admin/systemstats.php:13
 #: public_html/lists/admin/date.php:27
 msgid "January"
 msgstr "Január"
 
-#: public_html/lists/admin/connect.php:1686
+#: public_html/lists/admin/connect.php:1688
 #: public_html/lists/admin/systemstats.php:14
 #: public_html/lists/admin/date.php:28
 msgid "February"
 msgstr "Február"
 
-#: public_html/lists/admin/connect.php:1687
+#: public_html/lists/admin/connect.php:1689
 #: public_html/lists/admin/systemstats.php:15
 #: public_html/lists/admin/date.php:29
 msgid "March"
 msgstr "Március"
 
-#: public_html/lists/admin/connect.php:1688
+#: public_html/lists/admin/connect.php:1690
 #: public_html/lists/admin/systemstats.php:16
 #: public_html/lists/admin/date.php:30
 msgid "April"
 msgstr "Április"
 
-#: public_html/lists/admin/connect.php:1689
-#: public_html/lists/admin/connect.php:1704
+#: public_html/lists/admin/connect.php:1691
+#: public_html/lists/admin/connect.php:1706
 #: public_html/lists/admin/systemstats.php:17
 #: public_html/lists/admin/systemstats.php:32
 #: public_html/lists/admin/date.php:31
 msgid "May"
 msgstr "Máj"
 
-#: public_html/lists/admin/connect.php:1690
+#: public_html/lists/admin/connect.php:1692
 #: public_html/lists/admin/systemstats.php:18
 #: public_html/lists/admin/date.php:32
 msgid "June"
 msgstr "Június"
 
-#: public_html/lists/admin/connect.php:1691
+#: public_html/lists/admin/connect.php:1693
 #: public_html/lists/admin/systemstats.php:19
 #: public_html/lists/admin/date.php:33
 msgid "July"
 msgstr "Július"
 
-#: public_html/lists/admin/connect.php:1692
+#: public_html/lists/admin/connect.php:1694
 #: public_html/lists/admin/systemstats.php:20
 #: public_html/lists/admin/date.php:34
 msgid "August"
 msgstr "Augusztus"
 
-#: public_html/lists/admin/connect.php:1693
+#: public_html/lists/admin/connect.php:1695
 #: public_html/lists/admin/systemstats.php:21
 #: public_html/lists/admin/date.php:35
 msgid "September"
 msgstr "Szeptember"
 
-#: public_html/lists/admin/connect.php:1694
+#: public_html/lists/admin/connect.php:1696
 #: public_html/lists/admin/systemstats.php:22
 #: public_html/lists/admin/date.php:36
 msgid "October"
 msgstr "Október"
 
-#: public_html/lists/admin/connect.php:1695
+#: public_html/lists/admin/connect.php:1697
 #: public_html/lists/admin/systemstats.php:23
 #: public_html/lists/admin/date.php:37
 msgid "November"
 msgstr "November"
 
-#: public_html/lists/admin/connect.php:1696
+#: public_html/lists/admin/connect.php:1698
 #: public_html/lists/admin/systemstats.php:24
 #: public_html/lists/admin/date.php:38
 msgid "December"
 msgstr "December"
 
-#: public_html/lists/admin/connect.php:1700
+#: public_html/lists/admin/connect.php:1702
 #: public_html/lists/admin/systemstats.php:28
 msgid "Jan"
 msgstr "Jan"
 
-#: public_html/lists/admin/connect.php:1701
+#: public_html/lists/admin/connect.php:1703
 #: public_html/lists/admin/systemstats.php:29
 msgid "Feb"
 msgstr "Febr"
 
-#: public_html/lists/admin/connect.php:1702
+#: public_html/lists/admin/connect.php:1704
 #: public_html/lists/admin/systemstats.php:30
 msgid "Mar"
 msgstr "Márc"
 
-#: public_html/lists/admin/connect.php:1703
+#: public_html/lists/admin/connect.php:1705
 #: public_html/lists/admin/systemstats.php:31
 msgid "Apr"
 msgstr "Ápr"
 
-#: public_html/lists/admin/connect.php:1705
+#: public_html/lists/admin/connect.php:1707
 #: public_html/lists/admin/systemstats.php:33
 msgid "Jun"
 msgstr "Jún"
 
-#: public_html/lists/admin/connect.php:1706
+#: public_html/lists/admin/connect.php:1708
 #: public_html/lists/admin/systemstats.php:34
 msgid "Jul"
 msgstr "Júl"
 
-#: public_html/lists/admin/connect.php:1707
+#: public_html/lists/admin/connect.php:1709
 #: public_html/lists/admin/systemstats.php:35
 msgid "Aug"
 msgstr "Aug"
 
-#: public_html/lists/admin/connect.php:1708
+#: public_html/lists/admin/connect.php:1710
 #: public_html/lists/admin/systemstats.php:36
 msgid "Sep"
 msgstr "Szep"
 
-#: public_html/lists/admin/connect.php:1709
+#: public_html/lists/admin/connect.php:1711
 #: public_html/lists/admin/systemstats.php:37
 msgid "Oct"
 msgstr "Okt"
 
-#: public_html/lists/admin/connect.php:1710
+#: public_html/lists/admin/connect.php:1712
 #: public_html/lists/admin/systemstats.php:38
 msgid "Nov"
 msgstr "Nov"
 
-#: public_html/lists/admin/connect.php:1711
+#: public_html/lists/admin/connect.php:1713
 #: public_html/lists/admin/systemstats.php:39
 msgid "Dec"
 msgstr "Dec"
 
-#: public_html/lists/admin/connect.php:2117
+#: public_html/lists/admin/connect.php:2119
 msgid "secs"
 msgstr "mp."
 
-#: public_html/lists/admin/connect.php:2125
+#: public_html/lists/admin/connect.php:2127
 #: public_html/lists/admin/import4.php:177
 #: public_html/lists/admin/import4.php:186
 #: public_html/lists/admin/attributes.php:365
@@ -901,36 +901,36 @@ msgstr "mp."
 msgid "Attribute"
 msgstr "Tulajdonság"
 
-#: public_html/lists/admin/connect.php:2125
+#: public_html/lists/admin/connect.php:2127
 msgid "Placeholder"
 msgstr ""
 
-#: public_html/lists/admin/connect.php:2212
+#: public_html/lists/admin/connect.php:2214
 #, php-format
 msgid "Listing %d to %d of %d"
 msgstr "Listázás, %d - %d / %d"
 
-#: public_html/lists/admin/connect.php:2214
+#: public_html/lists/admin/connect.php:2216
 #, php-format
 #, php-format, php-format
 msgid "Listing %d to %d"
 msgstr "Listázás, %d - %d"
 
-#: public_html/lists/admin/connect.php:2229
+#: public_html/lists/admin/connect.php:2231
 msgid "First Page"
 msgstr "Első oldal"
 
-#: public_html/lists/admin/connect.php:2230
+#: public_html/lists/admin/connect.php:2232
 #: public_html/lists/admin/inc/interfacelib.php:832
 msgid "Previous"
 msgstr "Előző"
 
-#: public_html/lists/admin/connect.php:2232
+#: public_html/lists/admin/connect.php:2234
 #: public_html/lists/admin/inc/interfacelib.php:873
 msgid "Next"
 msgstr "Következő"
 
-#: public_html/lists/admin/connect.php:2234
+#: public_html/lists/admin/connect.php:2236
 msgid "Last Page"
 msgstr "Utolsó oldal"
 
@@ -7873,6 +7873,14 @@ msgstr ""
 msgid ""
 "phpList will work without Javascript, but it will be easier to use if you "
 "switch it on."
+msgstr ""
+
+#: public_html/lists/admin/index.php:515
+msgid "Running DEV version. All emails will be sent to "
+msgstr ""
+
+#: public_html/lists/admin/index.php:517
+msgid "Running DEV version, but developer email is not set"
 msgstr ""
 
 #: public_html/lists/admin/index.php:521

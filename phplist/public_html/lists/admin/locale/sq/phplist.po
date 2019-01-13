@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-12 22:36+0000\n"
-"PO-Revision-Date: 2018-10-20 12:19+0000\n"
+"POT-Creation-Date: 2018-12-30 06:49+0000\n"
+"PO-Revision-Date: 2019-01-09 19:35+0000\n"
 "Last-Translator: Kristina <kristina.qejvanaj@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -12,14 +12,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1540037992.000000\n"
+"X-POOTLE-MTIME: 1547062502.000000\n"
 
 #: public_html/lists/lt.php:230
 msgid ""
 "Profile links in test campaigns only work when you are logged in as an "
 "administrator."
 msgstr ""
-"Lidhjet e profilit në fushatat e testimit funksionojnë vetëm kur hyni si "
+"Lidhjet e profilit në fushatat për test funksionojnë vetëm kur hyni si "
 "administrator."
 
 #: public_html/lists/index.php:645
@@ -147,9 +147,9 @@ msgid "Download addresses"
 msgstr ""
 
 #: public_html/lists/admin/listbounces.php:76
-#, php-format
+#, fuzzy, php-format
 msgid "%s bounces to list %s"
-msgstr ""
+msgstr "%d u kthye tek lista %s"
 
 #: public_html/lists/admin/listbounces.php:96
 #: public_html/lists/admin/msgbounces.php:98
@@ -702,195 +702,195 @@ msgstr "Dokumentacioni për këtë gabim"
 msgid "More information"
 msgstr "Më shumë informacion"
 
-#: public_html/lists/admin/connect.php:874
+#: public_html/lists/admin/connect.php:876
 msgid "Main Page"
 msgstr "Faqja Kryesore"
 
-#: public_html/lists/admin/connect.php:875
+#: public_html/lists/admin/connect.php:877
 msgid "about"
 msgstr "rreth"
 
-#: public_html/lists/admin/connect.php:943
+#: public_html/lists/admin/connect.php:945
 msgid "In this section"
 msgstr "Në këtë seksion"
 
-#: public_html/lists/admin/connect.php:982
+#: public_html/lists/admin/connect.php:984
 msgid "Recently visited"
 msgstr "I vizituar së fundmi"
 
-#: public_html/lists/admin/connect.php:1323
+#: public_html/lists/admin/connect.php:1325
 msgid "All Lists"
 msgstr "Të gjitha listat"
 
-#: public_html/lists/admin/connect.php:1329
+#: public_html/lists/admin/connect.php:1331
 msgid "All Public Lists"
 msgstr "Të gjitha listat publike"
 
-#: public_html/lists/admin/connect.php:1333
+#: public_html/lists/admin/connect.php:1335
 #: public_html/lists/admin/import2.php:646 public_html/lists/admin/list.php:95
 #: public_html/lists/admin/list.php:99 public_html/lists/admin/list.php:325
 #: public_html/lists/admin/import3.php:43
 msgid "Add a list"
 msgstr "Shto një listë"
 
-#: public_html/lists/admin/connect.php:1344
+#: public_html/lists/admin/connect.php:1346
 #: public_html/lists/admin/list.php:135 public_html/lists/admin/list.php:145
 #: public_html/lists/admin/list.php:167 public_html/lists/admin/list.php:175
 msgid "Uncategorised"
 msgstr "Pakategorizuar"
 
-#: public_html/lists/admin/connect.php:1361
+#: public_html/lists/admin/connect.php:1363
 msgid "Public list"
 msgstr "Listë publike"
 
-#: public_html/lists/admin/connect.php:1363
+#: public_html/lists/admin/connect.php:1365
 msgid "Private list"
 msgstr "Listë private"
 
-#: public_html/lists/admin/connect.php:1410
-#: public_html/lists/admin/connect.php:1413
+#: public_html/lists/admin/connect.php:1412
+#: public_html/lists/admin/connect.php:1415
 #: public_html/lists/admin/export.php:131
 msgid "Select all"
 msgstr "Përzgjidhi të gjitha"
 
-#: public_html/lists/admin/connect.php:1427
+#: public_html/lists/admin/connect.php:1429
 msgid "There are no lists available"
 msgstr "Nuk ka lista të disponueshme."
 
-#: public_html/lists/admin/connect.php:1685
+#: public_html/lists/admin/connect.php:1687
 #: public_html/lists/admin/systemstats.php:13
 #: public_html/lists/admin/date.php:27
 msgid "January"
 msgstr "Janar"
 
-#: public_html/lists/admin/connect.php:1686
+#: public_html/lists/admin/connect.php:1688
 #: public_html/lists/admin/systemstats.php:14
 #: public_html/lists/admin/date.php:28
 msgid "February"
 msgstr "Shkurt"
 
-#: public_html/lists/admin/connect.php:1687
+#: public_html/lists/admin/connect.php:1689
 #: public_html/lists/admin/systemstats.php:15
 #: public_html/lists/admin/date.php:29
 msgid "March"
 msgstr "Mars"
 
-#: public_html/lists/admin/connect.php:1688
+#: public_html/lists/admin/connect.php:1690
 #: public_html/lists/admin/systemstats.php:16
 #: public_html/lists/admin/date.php:30
 msgid "April"
 msgstr "Prill"
 
-#: public_html/lists/admin/connect.php:1689
-#: public_html/lists/admin/connect.php:1704
+#: public_html/lists/admin/connect.php:1691
+#: public_html/lists/admin/connect.php:1706
 #: public_html/lists/admin/systemstats.php:17
 #: public_html/lists/admin/systemstats.php:32
 #: public_html/lists/admin/date.php:31
 msgid "May"
 msgstr "Maj"
 
-#: public_html/lists/admin/connect.php:1690
+#: public_html/lists/admin/connect.php:1692
 #: public_html/lists/admin/systemstats.php:18
 #: public_html/lists/admin/date.php:32
 msgid "June"
 msgstr "Qershor"
 
-#: public_html/lists/admin/connect.php:1691
+#: public_html/lists/admin/connect.php:1693
 #: public_html/lists/admin/systemstats.php:19
 #: public_html/lists/admin/date.php:33
 msgid "July"
 msgstr "Korrik"
 
-#: public_html/lists/admin/connect.php:1692
+#: public_html/lists/admin/connect.php:1694
 #: public_html/lists/admin/systemstats.php:20
 #: public_html/lists/admin/date.php:34
 msgid "August"
 msgstr "Gusht"
 
-#: public_html/lists/admin/connect.php:1693
+#: public_html/lists/admin/connect.php:1695
 #: public_html/lists/admin/systemstats.php:21
 #: public_html/lists/admin/date.php:35
 msgid "September"
 msgstr "Shtator"
 
-#: public_html/lists/admin/connect.php:1694
+#: public_html/lists/admin/connect.php:1696
 #: public_html/lists/admin/systemstats.php:22
 #: public_html/lists/admin/date.php:36
 msgid "October"
 msgstr "Tetor"
 
-#: public_html/lists/admin/connect.php:1695
+#: public_html/lists/admin/connect.php:1697
 #: public_html/lists/admin/systemstats.php:23
 #: public_html/lists/admin/date.php:37
 msgid "November"
 msgstr "Nëntor"
 
-#: public_html/lists/admin/connect.php:1696
+#: public_html/lists/admin/connect.php:1698
 #: public_html/lists/admin/systemstats.php:24
 #: public_html/lists/admin/date.php:38
 msgid "December"
 msgstr "Dhjetor"
 
-#: public_html/lists/admin/connect.php:1700
+#: public_html/lists/admin/connect.php:1702
 #: public_html/lists/admin/systemstats.php:28
 msgid "Jan"
 msgstr "Janar"
 
-#: public_html/lists/admin/connect.php:1701
+#: public_html/lists/admin/connect.php:1703
 #: public_html/lists/admin/systemstats.php:29
 msgid "Feb"
 msgstr "Shkurt"
 
-#: public_html/lists/admin/connect.php:1702
+#: public_html/lists/admin/connect.php:1704
 #: public_html/lists/admin/systemstats.php:30
 msgid "Mar"
 msgstr "Mars"
 
-#: public_html/lists/admin/connect.php:1703
+#: public_html/lists/admin/connect.php:1705
 #: public_html/lists/admin/systemstats.php:31
 msgid "Apr"
 msgstr "Prill"
 
-#: public_html/lists/admin/connect.php:1705
+#: public_html/lists/admin/connect.php:1707
 #: public_html/lists/admin/systemstats.php:33
 msgid "Jun"
 msgstr "Qershor"
 
-#: public_html/lists/admin/connect.php:1706
+#: public_html/lists/admin/connect.php:1708
 #: public_html/lists/admin/systemstats.php:34
 msgid "Jul"
 msgstr "Korrik"
 
-#: public_html/lists/admin/connect.php:1707
+#: public_html/lists/admin/connect.php:1709
 #: public_html/lists/admin/systemstats.php:35
 msgid "Aug"
 msgstr "Gusht"
 
-#: public_html/lists/admin/connect.php:1708
+#: public_html/lists/admin/connect.php:1710
 #: public_html/lists/admin/systemstats.php:36
 msgid "Sep"
 msgstr "Shtator"
 
-#: public_html/lists/admin/connect.php:1709
+#: public_html/lists/admin/connect.php:1711
 #: public_html/lists/admin/systemstats.php:37
 msgid "Oct"
 msgstr "Tetor"
 
-#: public_html/lists/admin/connect.php:1710
+#: public_html/lists/admin/connect.php:1712
 #: public_html/lists/admin/systemstats.php:38
 msgid "Nov"
 msgstr "Nëntor"
 
-#: public_html/lists/admin/connect.php:1711
+#: public_html/lists/admin/connect.php:1713
 #: public_html/lists/admin/systemstats.php:39
 msgid "Dec"
 msgstr "Dhjetor"
 
-#: public_html/lists/admin/connect.php:2117
+#: public_html/lists/admin/connect.php:2119
 msgid "secs"
 msgstr "sekondat"
 
-#: public_html/lists/admin/connect.php:2125
+#: public_html/lists/admin/connect.php:2127
 #: public_html/lists/admin/import4.php:177
 #: public_html/lists/admin/import4.php:186
 #: public_html/lists/admin/attributes.php:365
@@ -898,35 +898,35 @@ msgstr "sekondat"
 msgid "Attribute"
 msgstr "Tipar"
 
-#: public_html/lists/admin/connect.php:2125
+#: public_html/lists/admin/connect.php:2127
 msgid "Placeholder"
 msgstr "Hapësirë shkrimi"
 
-#: public_html/lists/admin/connect.php:2212
+#: public_html/lists/admin/connect.php:2214
 #, php-format
 msgid "Listing %d to %d of %d"
 msgstr "Listimi %d deri %d e %d"
 
-#: public_html/lists/admin/connect.php:2214
+#: public_html/lists/admin/connect.php:2216
 #, php-format
 msgid "Listing %d to %d"
 msgstr "Listim i %d deri tek %d"
 
-#: public_html/lists/admin/connect.php:2229
+#: public_html/lists/admin/connect.php:2231
 msgid "First Page"
 msgstr "Faqja e parë"
 
-#: public_html/lists/admin/connect.php:2230
+#: public_html/lists/admin/connect.php:2232
 #: public_html/lists/admin/inc/interfacelib.php:832
 msgid "Previous"
 msgstr "Paraardhësja"
 
-#: public_html/lists/admin/connect.php:2232
+#: public_html/lists/admin/connect.php:2234
 #: public_html/lists/admin/inc/interfacelib.php:873
 msgid "Next"
 msgstr "Pasardhësja"
 
-#: public_html/lists/admin/connect.php:2234
+#: public_html/lists/admin/connect.php:2236
 msgid "Last Page"
 msgstr "Faqja e fundit"
 
@@ -1058,8 +1058,9 @@ msgid "Installed plugins"
 msgstr "Shtesat e instaluara"
 
 #: public_html/lists/admin/plugins.php:188
+#, fuzzy
 msgid "Plugin"
-msgstr ""
+msgstr "Shtesat"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
@@ -1187,8 +1188,9 @@ msgid "All"
 msgstr ""
 
 #: public_html/lists/admin/plugins.php:358
+#, fuzzy
 msgid "Enabled"
-msgstr ""
+msgstr "e aktivizuar"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
@@ -1504,8 +1506,9 @@ msgid "Bounced"
 msgstr "U kthye"
 
 #: public_html/lists/admin/statsoverview.php:145
+#, fuzzy
 msgid "Opened "
-msgstr ""
+msgstr "U hap"
 
 #: public_html/lists/admin/statsoverview.php:156
 msgid "Clicked"
@@ -1853,7 +1856,7 @@ msgstr ""
 
 #: public_html/lists/admin/community.php:40
 msgid "Contribute to phpList"
-msgstr ""
+msgstr "Kontribo në phpList"
 
 #: public_html/lists/admin/community.php:41
 msgid ""
@@ -2962,8 +2965,9 @@ msgid " bounces to campaign %s"
 msgstr ""
 
 #: public_html/lists/admin/msgbounces.php:105
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "koha"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"
@@ -3332,8 +3336,9 @@ msgid "Purpose"
 msgstr "Qëllimi"
 
 #: public_html/lists/admin/messages.php:8
+#, fuzzy
 msgid "filter"
-msgstr ""
+msgstr "Filtro"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/users.php:323
@@ -3489,8 +3494,9 @@ msgid "Total clicks"
 msgstr ""
 
 #: public_html/lists/admin/messages.php:521
+#, fuzzy
 msgid "Started "
-msgstr ""
+msgstr "Filloi"
 
 #: public_html/lists/admin/messages.php:522
 msgid "Time to send"
@@ -4249,8 +4255,9 @@ msgstr ""
 
 #: public_html/lists/admin/usercheck.php:26
 #: public_html/lists/admin/usercheck.php:30
+#, fuzzy
 msgid "Foreign key"
-msgstr ""
+msgstr "Çelës i huaj"
 
 #: public_html/lists/admin/usercheck.php:49
 msgid "What is the type of information you want to check"
@@ -4478,8 +4485,9 @@ msgid "fwds"
 msgstr "ridërgo"
 
 #: public_html/lists/admin/actions/statsoverview.php:139
+#, fuzzy
 msgid "Unique views"
-msgstr ""
+msgstr "Pamje Unike"
 
 #: public_html/lists/admin/actions/statsoverview.php:151
 #: public_html/lists/admin/actions/mviews.php:113
@@ -4537,8 +4545,9 @@ msgid "editing cancelled"
 msgstr "redaktimi u anullua"
 
 #: public_html/lists/admin/actions/msgbounces.php:55
+#, fuzzy
 msgid "There are currently no data to view"
-msgstr ""
+msgstr "Aktualisht nuk ka fushata për të parë"
 
 #: public_html/lists/admin/actions/msgbounces.php:58
 msgid "Choose a campaign"
@@ -5492,8 +5501,9 @@ msgid "in progress"
 msgstr "në punë e sipër"
 
 #: public_html/lists/admin/actions/mviews.php:98
+#, fuzzy
 msgid "unique views"
-msgstr ""
+msgstr "Pamje Unike"
 
 #: public_html/lists/admin/actions/storemessage.php:20
 msgid ""
@@ -6092,8 +6102,9 @@ msgid "back"
 msgstr "pas"
 
 #: public_html/lists/admin/import1.php:139
+#, fuzzy
 msgid "to resubmit for real"
-msgstr ""
+msgstr " për të riparaqitur përfundimisht"
 
 #: public_html/lists/admin/import1.php:140
 #: public_html/lists/admin/import1.php:229
@@ -6369,8 +6380,9 @@ msgid "No Lists"
 msgstr "Nuk ka lista"
 
 #: public_html/lists/admin/user.php:329
+#, fuzzy
 msgid "Download subscriber data"
-msgstr ""
+msgstr "Shkarko abonuesit"
 
 #: public_html/lists/admin/user.php:335
 msgid "Preferences page"
@@ -6506,12 +6518,14 @@ msgstr ""
 
 #: public_html/lists/admin/updatetranslation.php:63
 #: public_html/lists/admin/updatetranslation.php:66
+#, fuzzy
 msgid "Update"
-msgstr ""
+msgstr "përditëso"
 
 #: public_html/lists/admin/updatetranslation.php:65
+#, fuzzy
 msgid "Up-to-date"
-msgstr ""
+msgstr "E përditësuar"
 
 #: public_html/lists/admin/updatetranslation.php:69
 msgid "Not installed"
@@ -7963,6 +7977,14 @@ msgstr ""
 "phpList do të punojë pa Javascript, por do të jetë më e lehtë për ju në "
 "qoftë se e aktivizoni atë."
 
+#: public_html/lists/admin/index.php:515
+msgid "Running DEV version. All emails will be sent to "
+msgstr ""
+
+#: public_html/lists/admin/index.php:517
+msgid "Running DEV version, but developer email is not set"
+msgstr ""
+
 #: public_html/lists/admin/index.php:521
 #: public_html/lists/admin/processqueue.php:32
 msgid "Running in testmode, no emails will be sent. Check your config file."
@@ -8197,8 +8219,9 @@ msgid "Do Import"
 msgstr "Importoje"
 
 #: public_html/lists/admin/setup.php:18
+#, fuzzy
 msgid "Step"
-msgstr ""
+msgstr "Shtator"
 
 #: public_html/lists/admin/setup.php:35
 msgid "Verify Settings"

@@ -182,6 +182,7 @@ if (isset($GLOBALS['pageheader'])) {
 
 $GLOBALS['require_login'] = 1; ## this is no longer configurable and should never have been
 if ($GLOBALS['commandline']) {
+    cl_output(ClineSignature());
     if (!isset($_SERVER['USER']) && count($GLOBALS['commandline_users'])) {
         clineError('USER environment variable is not defined, cannot do access check. Please make sure USER is defined.');
         exit;
@@ -206,7 +207,6 @@ if ($GLOBALS['commandline']) {
         } elseif (isset($cline['p'])) {
             $_GET['page'] = $cline['p'];
         }
-        cl_output( ClineSignature());
         cl_processtitle('core-'.$_GET['page']);
     } elseif ($cline['p'] && $IsCommandlinePlugin) {
         if (empty($GLOBALS['developer_email']) && isset($cline['p']) && !in_array($cline['p'],
@@ -216,7 +216,6 @@ if ($GLOBALS['commandline']) {
         } elseif (isset($cline['p'])) {
             $_GET['page'] = $cline['p'];
             $_GET['pi'] = $cline['m'];
-            cl_output( ClineSignature());
             cl_processtitle($_GET['pi'].'-'.$_GET['page']);
         }
     } else {
@@ -512,16 +511,16 @@ if (!$GLOBALS['commandline']) {
 if (!$ajax && $page != 'login') {
     if (strpos(VERSION, 'dev') && !TEST) {
         if (!empty($GLOBALS['developer_email'])) {
-            Info('Running DEV version. All emails will be sent to '.$GLOBALS['developer_email']);
+            Info( s('Running DEV version. All emails will be sent to '.$GLOBALS['developer_email']) );
         } else {
-            Info('Running DEV version, but developer email is not set');
+            Info( s('Running DEV version, but developer email is not set') );
         }
     }
     if (TEST) {
         echo Info($GLOBALS['I18N']->get('Running in testmode, no emails will be sent. Check your config file.'));
     }
     $updaterdir = __DIR__ . '/../updater';
-    if(file_exists($updaterdir)){
+    if(file_exists($updaterdir) && ALLOW_UPDATER){
         echo Info(s('Try automatic updater').' <a href="?page=redirecttoupdater" title="'.s('automatic updater').'">'.s('here').'</a>'.' ('.s('beta').')');
     }
     if (version_compare(PHP_VERSION, '5.3.3', '<') && WARN_ABOUT_PHP_SETTINGS) {

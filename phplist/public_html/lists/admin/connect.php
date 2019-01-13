@@ -442,14 +442,12 @@ function ClineSignature()
 function ClineError($msg)
 {
     ob_end_clean();
-    echo ClineSignature();
     echo "\nError: $msg\n";
     exit;
 }
 
 function clineUsage($line = '')
 {
-    cl_output(clineSignature());
     cl_output( 'Usage: '.$_SERVER['SCRIPT_FILENAME']." -p page $line".PHP_EOL);
 }
 
@@ -759,11 +757,6 @@ $GLOBALS['pagecategories'] = array(
             'catlists',
         ),
     ),
-    'update'   => array(
-        'toplink'=> 'redirecttoupdater',
-        'pages'  => array(),
-        'menulinks' => array(),
-    ),
     //'info' => array(
         //'toplink' => 'about',
         //'pages'   => array(
@@ -787,6 +780,13 @@ $GLOBALS['pagecategories'] = array(
     //'menulinks' => array(),
     //),
 );
+if(ALLOW_UPDATER){
+    $GLOBALS['pagecategories']['update'] = array(
+        'toplink'=> 'redirecttoupdater',
+        'pages'  => array(),
+        'menulinks' => array(),
+    );
+}
 if (DEVVERSION) {
     $GLOBALS['pagecategories']['develop'] = array(
         'toplink' => 'develop',
@@ -1034,7 +1034,7 @@ function recentlyVisited()
                     }
                 }
             }
-            if ($num >= 6) {
+            if ($num >= 3) {
                 break;
             }
         }
