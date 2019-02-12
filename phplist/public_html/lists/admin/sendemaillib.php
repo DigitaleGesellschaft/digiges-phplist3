@@ -388,7 +388,6 @@ $text['signature'] = '';
             $textmessage = str_replace($matchtext, '', $textmessage);
         }
     }
-
 //  $req = Sql_Query(sprintf('select filename,data from %s where template = %d',
 //    $GLOBALS["tables"]["templateimage"],$cached[$messageid]["templateid"]));
 
@@ -409,7 +408,8 @@ $text['signature'] = '';
     // make sure to only include usertrack once, otherwise the stats would go silly
     $htmlmessage = str_ireplace('[USERTRACK]', '', $htmlmessage);
     $textmessage = str_ireplace('[USERTRACK]', '', $textmessage);
-
+    $htmlmessage = parseVCardHTMLPlaceholder($htmlmessage);
+    $textmessage = parseVCardTextPlaceholder($textmessage);
     $html['subject'] = $cached[$messageid]['subject'];
     $text['subject'] = $cached[$messageid]['subject'];
 
