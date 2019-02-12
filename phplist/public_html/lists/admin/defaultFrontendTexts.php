@@ -141,6 +141,7 @@ $strForwardFooter = 'This message has been forwarded to you by [FORWARDEDBY].
 $strForward = 'Forward';
 $strFwd = 'Fwd'; # short version of forward for email subject
 $strContactAdmin = 'Contact the administrator';
+$strContactMessage     = 'Add us to your address book';
 
 
 ?>

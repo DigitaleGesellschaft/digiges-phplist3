@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: phpList 2.11.X\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-30 06:47+0000\n"
-"PO-Revision-Date: 2019-01-01 19:53+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
+"PO-Revision-Date: 2019-01-28 20:12+0000\n"
+"Last-Translator: Angel <angel.gonzalez@aidpr.com>\n"
 "Language-Team: phpList <info@phplist.com>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: public_html\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Basepath: /home/michiel/svn/phplist/translate/phplist\n"
-"X-POOTLE-MTIME: 1546372435.000000\n"
+"X-POOTLE-MTIME: 1548706346.000000\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;get;s\n"
 
 #: public_html/lists/lt.php:230
@@ -153,12 +153,12 @@ msgstr "Seleccione otra lista"
 #: public_html/lists/admin/listbounces.php:73
 #: public_html/lists/admin/msgbounces.php:75
 msgid "Download addresses"
-msgstr ""
+msgstr "Descargar direcciones"
 
 #: public_html/lists/admin/listbounces.php:76
-#, fuzzy, php-format
+#, php-format
 msgid "%s bounces to list %s"
-msgstr "%d rebotes a la lista %s"
+msgstr "%s rebotes en la lista %s"
 
 #: public_html/lists/admin/listbounces.php:96
 #: public_html/lists/admin/msgbounces.php:98
@@ -168,7 +168,7 @@ msgstr "Rebotes en"
 #: public_html/lists/admin/listbounces.php:107
 #: public_html/lists/admin/msgbounces.php:104
 msgid "Subscriber address"
-msgstr ""
+msgstr "Dirección del suscriptor"
 
 #: public_html/lists/admin/listbounces.php:108
 #: public_html/lists/admin/actions/listbounces.php:56
@@ -203,7 +203,7 @@ msgstr "Iniciar una nueva campaña"
 #: public_html/lists/admin/send.php:101
 #, fuzzy
 msgid "Choose an existing draft campaign to work on"
-msgstr "Elegir un borrador de mensaje ya existente sobre el que trabajar"
+msgstr "Selecciona un borrador de campaña existente para trabajar"
 
 #: public_html/lists/admin/send.php:102
 msgid "Draft campaigns"
@@ -610,7 +610,7 @@ msgstr "nombre real"
 #: public_html/lists/admin/dbcheck.php:51
 #: public_html/lists/admin/dbcheck.php:54
 msgid "exist"
-msgstr ""
+msgstr "existe"
 
 #: public_html/lists/admin/dbcheck.php:80
 #: public_html/lists/admin/dbcheck.php:83
@@ -621,11 +621,11 @@ msgstr "ok"
 
 #: public_html/lists/admin/dbcheck.php:86
 msgid "index"
-msgstr ""
+msgstr "índice"
 
 #: public_html/lists/admin/dbcheck.php:89
 msgid "unique"
-msgstr ""
+msgstr "úncio"
 
 #: public_html/lists/admin/dbcheck.php:92
 #, fuzzy
@@ -682,7 +682,7 @@ msgstr "mensajes/hora"
 
 #: public_html/lists/admin/connect.php:135
 msgid "Theme for phpList"
-msgstr ""
+msgstr "Tema para phpList"
 
 #: public_html/lists/admin/connect.php:214
 #: public_html/lists/admin/connect.php:235
@@ -1037,6 +1037,10 @@ msgid ""
 "configuration.php#ini.allow-url-fopen\">URL-aware fopen wrappers</a> needs "
 "to be enabled. This is required to allow installation from a remote URL"
 msgstr ""
+"La opción PHP para<a href=\""
+"http://php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen\""
+">URL-aware fopen wrappers</a> necesita estar habilitada. Esto es necesario "
+"para permitir la instalación desde una URL remota."
 
 #: public_html/lists/admin/plugins.php:171
 msgid ""
@@ -1073,20 +1077,20 @@ msgstr "Complementos"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
-msgstr ""
+msgstr "No se puede encontrar la actualización"
 
 #: public_html/lists/admin/plugins.php:229
 #, php-format
 msgid "Version %s is available"
-msgstr ""
+msgstr "La versión %s está disponible"
 
 #: public_html/lists/admin/plugins.php:232
 msgid "Plugin is up-to-date"
-msgstr ""
+msgstr "El plugin está actualizado"
 
 #: public_html/lists/admin/plugins.php:236
 msgid "Plugin must be updated manually"
-msgstr ""
+msgstr "El complemento debe actualizarse manualmente"
 
 #: public_html/lists/admin/plugins.php:249
 msgid "name"
@@ -1106,7 +1110,7 @@ msgstr "versión"
 
 #: public_html/lists/admin/plugins.php:265
 msgid "Update status"
-msgstr ""
+msgstr "Estado de la actualización"
 
 #: public_html/lists/admin/plugins.php:271
 msgid "origin"
@@ -1194,21 +1198,20 @@ msgstr "detalles"
 
 #: public_html/lists/admin/plugins.php:356
 msgid "All"
-msgstr ""
+msgstr "Todos"
 
 #: public_html/lists/admin/plugins.php:358
-#, fuzzy
 msgid "Enabled"
-msgstr "activado"
+msgstr "Activado"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
 msgid "Disabled"
-msgstr ""
+msgstr "Desactivado "
 
 #: public_html/lists/admin/plugins.php:362
 msgid "Update available"
-msgstr ""
+msgstr "Actualización disponible"
 
 #: public_html/lists/admin/lib.php:25
 msgid "delete subscriber"
@@ -1375,6 +1378,8 @@ msgid ""
 "Make sure you are updated with new security and feature release "
 "announcements (fewer than one message per month)"
 msgstr ""
+"Asegúrate de obtener los avisos de seguridad y nuevas características (menos "
+"de un mensaje al mes)"
 
 #: public_html/lists/admin/lib.php:2068
 msgid "Subscribe"
@@ -1387,48 +1392,61 @@ msgstr "No suscribir"
 #: public_html/lists/admin/lib.php:2245
 msgid "Please wait, your request is being processed. Do not refresh this page."
 msgstr ""
+"Por favor espere, su solicitud está siendo procesada. No recargue esta "
+"página."
 
 #: public_html/lists/admin/lib.php:2247
 msgid "Still loading"
-msgstr ""
+msgstr "Aún cargando..."
 
 #: public_html/lists/admin/lib.php:2248
+#, fuzzy
 msgid ""
 "It may seem to take a while, but there is a lot of data to crunch<br/>if you "
 "have a lot of subscribers and campaigns"
 msgstr ""
+"Parece ser que está tomando demasiado tiempo, pero hay muchos datos que "
+"procesar<br/>si tienes muchos suscriptores y campañas."
 
 #: public_html/lists/admin/lib.php:2249
+#, fuzzy
 msgid "It should be soon now, your page content is almost here."
-msgstr ""
+msgstr "Debería terminar pronto. El contenido de tu página esta casi listo"
 
 #: public_html/lists/admin/lib.php:2250
 msgid ""
 "This seems to take longer than expected, looks like there is a lot of data "
 "to work on."
 msgstr ""
+"Esto está tomando más de lo esperado, parece que hay muchos datos que "
+"procesar."
 
 #: public_html/lists/admin/lib.php:2251
 msgid "Still loading, please be patient, your page content will show shortly."
 msgstr ""
+"Cargando, por favor ten paciencia, el contenido de tu página se mostrará en "
+"unos instantes."
 
 #: public_html/lists/admin/lib.php:2252
+#, fuzzy
 msgid "It will really be soon now until the page will display."
-msgstr ""
+msgstr "Muy pronto se mostrará la página."
 
 #: public_html/lists/admin/lib.php:2253
 msgid "Still loading, please wait"
-msgstr ""
+msgstr "Sigue cargando, por favor espere"
 
 #: public_html/lists/admin/lib.php:2254
 msgid ""
 "The loading has been just over seven minutes. We can wait just a little "
 "longer."
-msgstr ""
+msgstr "La carga ha tardado más de siete minutos. Podemos esperar un poco más."
 
 #: public_html/lists/admin/lib.php:2255
+#, fuzzy
 msgid "If the page does not load soon, please report this in the user forums."
 msgstr ""
+"Si la página no carga pronto, por favor reporte esto en los foros de usuarios"
 
 #: public_html/lists/admin/statsoverview.php:32
 #: public_html/lists/admin/statsoverview.php:44
@@ -1460,9 +1478,8 @@ msgstr "Campaña no encontrada"
 
 #: public_html/lists/admin/statsoverview.php:91
 #: public_html/lists/admin/mviews.php:72
-#, fuzzy
 msgid "Campaign statistics"
-msgstr "Estadísticas de clic en campañas"
+msgstr "Estadísticas de campañas "
 
 #: public_html/lists/admin/statsoverview.php:97
 #: public_html/lists/admin/messages.php:12
@@ -1506,9 +1523,8 @@ msgid "Bounced"
 msgstr "Rebotado"
 
 #: public_html/lists/admin/statsoverview.php:145
-#, fuzzy
 msgid "Opened "
-msgstr "Abierto"
+msgstr "Abierto "
 
 #: public_html/lists/admin/statsoverview.php:156
 msgid "Clicked"
@@ -1517,7 +1533,7 @@ msgstr "Pulsado"
 #: public_html/lists/admin/statsoverview.php:165
 #: public_html/lists/admin/actions/statsoverview.php:142
 msgid "Unique Clicks"
-msgstr ""
+msgstr "Clics únicos"
 
 #: public_html/lists/admin/statsoverview.php:172
 msgid "Click Per View Rate"
@@ -1811,7 +1827,6 @@ msgid "How to get help"
 msgstr "Cómo obtener ayuda"
 
 #: public_html/lists/admin/community.php:11
-#, fuzzy
 msgid "Contribute"
 msgstr "Contribuciones"
 
@@ -1824,6 +1839,8 @@ msgid ""
 "The concept behind Open Source is collaboration. An organised network of "
 "many contributors where the whole is greater than the sum of its parts."
 msgstr ""
+"El concepto detrás de código abierto es la colaboración. Una red organizada "
+"de muchos contribuidores donde el todo es mayor que la suma de sus partes."
 
 #: public_html/lists/admin/community.php:18
 msgid ""
@@ -1843,22 +1860,25 @@ msgid ""
 "including free help from communnity members, and professional advice and "
 "consulting from experts"
 msgstr ""
+"Una variedad de ayuda esta disponibles para este servidor phpList, "
+"incluyendo la ayuda gratuita de los miembros de la comunidad, consejos de "
+"profesionales y consultaría de expertos."
 
 #: public_html/lists/admin/community.php:33
 msgid "Support community"
-msgstr ""
+msgstr "Comunidad de soporte"
 
 #: public_html/lists/admin/community.php:34
 msgid "Support forum"
-msgstr ""
+msgstr "Foro de ayuda"
 
 #: public_html/lists/admin/community.php:35
 msgid "Independent professional support"
-msgstr ""
+msgstr "Ayuda profesional independiente"
 
 #: public_html/lists/admin/community.php:40
 msgid "Contribute to phpList"
-msgstr ""
+msgstr "Contribuir a phpList"
 
 #: public_html/lists/admin/community.php:41
 msgid ""
@@ -1866,26 +1886,29 @@ msgid ""
 "Help phpList to serve your needs more effectively by applying your skills "
 "and resources."
 msgstr ""
+"phpList es un esfuerzo comunitario &mdash; tu contribución hace el proyecto "
+"posible. Ayuda a phpList a cumplir más eficientemente con tus necesidades "
+"aplicando tus habilidades y conocimientos."
 
 #: public_html/lists/admin/community.php:44
 msgid "Developer community"
-msgstr ""
+msgstr "Comunidad de desarrolladores"
 
 #: public_html/lists/admin/community.php:45
 msgid "Developer resources &amp; documentation"
-msgstr ""
+msgstr "Recursos para desarrolladores &amp; documentación"
 
 #: public_html/lists/admin/community.php:46
 msgid "Documentation coordination"
-msgstr ""
+msgstr "Coordinación de documentos"
 
 #: public_html/lists/admin/community.php:47
 msgid "Translation platform"
-msgstr ""
+msgstr "Plataforma de traducción"
 
 #: public_html/lists/admin/community.php:48
 msgid "Donate to support phpList development"
-msgstr ""
+msgstr "Dona para apoyar el desarrollo de phpList"
 
 #: public_html/lists/admin/community.php:54
 msgid "phpList Hosted"
@@ -1943,10 +1966,9 @@ msgid "Cannot open mailbox file"
 msgstr "No se puede abrir el archivo del buzón"
 
 #: public_html/lists/admin/processbounces.php:389
-#, php-format
-#, fuzzy, php-format
+#, php-format, php-format
 msgid "%d bounces to fetch from the mailbox"
-msgstr "rebotes a recuperar del buzón"
+msgstr "%d rebotes a recuperar del buzón"
 
 #: public_html/lists/admin/processbounces.php:396
 #: public_html/lists/admin/readtestmail.php:240
@@ -1954,16 +1976,15 @@ msgid "Please do not interrupt this process"
 msgstr "Por favor no interrumpa este proceso"
 
 #: public_html/lists/admin/processbounces.php:397
-#, php-format
-#, fuzzy, php-format
+#, php-format, php-format
 msgid "%d bounces to process"
-msgstr "%d rebotes para reprocesar"
+msgstr "%d rebotes para procesar"
 
 #: public_html/lists/admin/processbounces.php:399
 #: public_html/lists/admin/processbounces.php:400
 #, php-format
 msgid "Processing first %d bounces"
-msgstr ""
+msgstr "Procesando los primeros %d rebotes"
 
 #: public_html/lists/admin/processbounces.php:404
 msgid "Running in test mode, not deleting messages from mailbox"
@@ -2018,7 +2039,7 @@ msgstr "protocolo de rebotes no soportado"
 
 #: public_html/lists/admin/processbounces.php:494
 msgid "Download failed, exiting"
-msgstr ""
+msgstr "La descarga ha fallado, saliendo"
 
 #: public_html/lists/admin/processbounces.php:507
 #, php-format
@@ -2169,6 +2190,8 @@ msgid ""
 "Below are users who have been marked unconfirmed. The number in () is the "
 "number of consecutive bounces."
 msgstr ""
+"Abajo se encuentran los usuarios que han sido marcados como no confirmados. "
+"El número en () es el número de rebotes consecutivos."
 
 #: public_html/lists/admin/processbounces.php:823
 msgid "Report:"
@@ -2386,10 +2409,13 @@ msgstr "Eliminar suscriptores que no tienen direcciones de correo válidas"
 #: public_html/lists/admin/reconcileusers.php:536
 msgid "Delete subscribers who are blacklisted because they unsubscribed"
 msgstr ""
+"Borrar los suscriptores que están en la lista negra debido a que se han dado "
+"de baja"
 
 #: public_html/lists/admin/reconcileusers.php:542
+#, fuzzy
 msgid "Delete all blacklisted subscribers"
-msgstr ""
+msgstr "Borrar todos los suscriptores en la lista negra"
 
 #: public_html/lists/admin/reconcileusers.php:567
 msgid ""
@@ -2750,7 +2776,7 @@ msgstr ""
 
 #: public_html/lists/admin/configure.php:52
 msgid "other"
-msgstr ""
+msgstr "otro"
 
 #: public_html/lists/admin/configure.php:90
 msgid "cannot be empty"
@@ -2774,7 +2800,7 @@ msgstr "Categorías guardadas"
 #: public_html/lists/admin/configure.php:135
 #, php-format
 msgid "%s settings"
-msgstr ""
+msgstr "%s configuración"
 
 #: public_html/lists/admin/configure.php:148
 #: public_html/lists/admin/actions/configure.php:64
@@ -2901,7 +2927,6 @@ msgid "Paste the emails to remove in this box, and click continue"
 msgstr "Pegue en esta caja los correos a eliminar, y haga click en continuar"
 
 #: public_html/lists/admin/subscribelib2.php:99
-#, fuzzy
 msgid ""
 "\n"
 "-------------------------------------------------------------------------------- \n"
@@ -2925,19 +2950,19 @@ msgstr ""
 "-----------------------------------------------------------------------------"
 "--- \n"
 "Esto es una notificación de un posible ataque de spam a su página de "
-"subscripción de phplist.\n"
-"Los datos enviados han sido copiados a continuación, para que pueda "
-"comprobar si se trata realmente de eso.\n"
-"Los datos enviados serán convertidos a caractares no-html, por razones de "
-"seguridad.\n"
-"Si quiere dejar de recibir este mensaje, configure \n"
+"suscripción de phplist.\n"
+"Los datos enviados han sido copiados a continuación para que pueda comprobar "
+"si se trata realmente de eso.\n"
+" Por razones de seguridad los datos enviados han sido convertidos a "
+"caracteres no-html.\n"
+"Si quiere dejar de recibir este mensaje añada \n"
 "\n"
 " define(\"NOTIFY_SPAM\",0);\n"
 "\n"
-"en su fichero de configuración de phplist.\n"
+"a su archivo de configuración de phplist.\n"
 "\n"
-"Este suscriptor NO será añadido a la base de datos.\n"
-"Si considera que es un error, necesitará añadirlo manualmente.\n"
+"Este suscriptor NO ha sido añadido a la base de datos.\n"
+"Si considera que es un error necesitará añadirlo manualmente.\n"
 "-----------------------------------------------------------------------------"
 "---------------  "
 
@@ -2958,21 +2983,20 @@ msgstr ""
 
 #: public_html/lists/admin/subscribelib2.php:775
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: public_html/lists/admin/msgbounces.php:62
 msgid "Select another campaign"
-msgstr ""
+msgstr "Selecciona otra campaña"
 
 #: public_html/lists/admin/msgbounces.php:78
 #, php-format
 msgid " bounces to campaign %s"
-msgstr ""
+msgstr " rebotes en la campaña %s"
 
 #: public_html/lists/admin/msgbounces.php:105
-#, fuzzy
 msgid "Time"
-msgstr "hora"
+msgstr "Hora"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"

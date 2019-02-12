@@ -152,9 +152,9 @@ msgid "Download addresses"
 msgstr ""
 
 #: public_html/lists/admin/listbounces.php:76
-#, php-format
+#, fuzzy, php-format
 msgid "%s bounces to list %s"
-msgstr ""
+msgstr "%d visszapattanó a(z) %s listában"
 
 #: public_html/lists/admin/listbounces.php:96
 #: public_html/lists/admin/msgbounces.php:98
@@ -1055,8 +1055,9 @@ msgid "Installed plugins"
 msgstr "Telepített plugin-ok"
 
 #: public_html/lists/admin/plugins.php:188
+#, fuzzy
 msgid "Plugin"
-msgstr ""
+msgstr "Beépülő modulok"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
@@ -1184,8 +1185,9 @@ msgid "All"
 msgstr ""
 
 #: public_html/lists/admin/plugins.php:358
+#, fuzzy
 msgid "Enabled"
-msgstr ""
+msgstr "bekapcsolva"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
@@ -1488,8 +1490,9 @@ msgid "Bounced"
 msgstr "Visszapattanó"
 
 #: public_html/lists/admin/statsoverview.php:145
+#, fuzzy
 msgid "Opened "
-msgstr ""
+msgstr "Megnyitott"
 
 #: public_html/lists/admin/statsoverview.php:156
 msgid "Clicked"
@@ -1497,8 +1500,9 @@ msgstr "Kattintott"
 
 #: public_html/lists/admin/statsoverview.php:165
 #: public_html/lists/admin/actions/statsoverview.php:142
+#, fuzzy
 msgid "Unique Clicks"
-msgstr ""
+msgstr "egyedi kattintás"
 
 #: public_html/lists/admin/statsoverview.php:172
 msgid "Click Per View Rate"
@@ -2753,9 +2757,9 @@ msgid "Categories saved"
 msgstr ""
 
 #: public_html/lists/admin/configure.php:135
-#, php-format
+#, fuzzy, php-format
 msgid "%s settings"
-msgstr ""
+msgstr "RSS beállításai"
 
 #: public_html/lists/admin/configure.php:148
 #: public_html/lists/admin/actions/configure.php:64
@@ -2925,8 +2929,9 @@ msgid " bounces to campaign %s"
 msgstr ""
 
 #: public_html/lists/admin/msgbounces.php:105
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "idő"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"
@@ -3296,8 +3301,9 @@ msgid "Purpose"
 msgstr ""
 
 #: public_html/lists/admin/messages.php:8
+#, fuzzy
 msgid "filter"
-msgstr ""
+msgstr "Szűrő"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/users.php:323
@@ -3451,8 +3457,9 @@ msgid "Total clicks"
 msgstr ""
 
 #: public_html/lists/admin/messages.php:521
+#, fuzzy
 msgid "Started "
-msgstr ""
+msgstr "Elindult"
 
 #: public_html/lists/admin/messages.php:522
 msgid "Time to send"
@@ -4205,8 +4212,9 @@ msgstr ""
 
 #: public_html/lists/admin/usercheck.php:26
 #: public_html/lists/admin/usercheck.php:30
+#, fuzzy
 msgid "Foreign key"
-msgstr ""
+msgstr "Idegen kulcs"
 
 #: public_html/lists/admin/usercheck.php:49
 msgid "What is the type of information you want to check"
@@ -4437,8 +4445,9 @@ msgid "fwds"
 msgstr ""
 
 #: public_html/lists/admin/actions/statsoverview.php:139
+#, fuzzy
 msgid "Unique views"
-msgstr ""
+msgstr "Egyedi találatok"
 
 #: public_html/lists/admin/actions/statsoverview.php:151
 #: public_html/lists/admin/actions/mviews.php:113
@@ -4498,8 +4507,9 @@ msgid "editing cancelled"
 msgstr ""
 
 #: public_html/lists/admin/actions/msgbounces.php:55
+#, fuzzy
 msgid "There are currently no data to view"
-msgstr ""
+msgstr "Jelenleg még nincsenek kampányok"
 
 #: public_html/lists/admin/actions/msgbounces.php:58
 msgid "Choose a campaign"
@@ -5458,8 +5468,9 @@ msgid "in progress"
 msgstr ""
 
 #: public_html/lists/admin/actions/mviews.php:98
+#, fuzzy
 msgid "unique views"
-msgstr ""
+msgstr "Egyedi találatok"
 
 #: public_html/lists/admin/actions/storemessage.php:20
 msgid ""
@@ -6029,8 +6040,9 @@ msgid "back"
 msgstr "vissza"
 
 #: public_html/lists/admin/import1.php:139
+#, fuzzy
 msgid "to resubmit for real"
-msgstr ""
+msgstr " újraküldeni igaziból"
 
 #: public_html/lists/admin/import1.php:140
 #: public_html/lists/admin/import1.php:229
@@ -6299,8 +6311,9 @@ msgid "No Lists"
 msgstr "Nincsenek listák"
 
 #: public_html/lists/admin/user.php:329
+#, fuzzy
 msgid "Download subscriber data"
-msgstr ""
+msgstr "Feliratkozók letöltése"
 
 #: public_html/lists/admin/user.php:335
 msgid "Preferences page"
@@ -6438,8 +6451,9 @@ msgstr ""
 
 #: public_html/lists/admin/updatetranslation.php:63
 #: public_html/lists/admin/updatetranslation.php:66
+#, fuzzy
 msgid "Update"
-msgstr ""
+msgstr "frissítés"
 
 #: public_html/lists/admin/updatetranslation.php:65
 msgid "Up-to-date"
@@ -8117,8 +8131,9 @@ msgid "Do Import"
 msgstr "Importáld"
 
 #: public_html/lists/admin/setup.php:18
+#, fuzzy
 msgid "Step"
-msgstr ""
+msgstr "Szep"
 
 #: public_html/lists/admin/setup.php:35
 msgid "Verify Settings"
@@ -9430,16 +9445,19 @@ msgid "Translated string"
 msgstr ""
 
 #: public_html/databasestructure.php:207
+#, fuzzy
 msgid "pagetitle:home"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:208
+#, fuzzy
 msgid "pagetitlehover:home"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:209
+#, fuzzy
 msgid "pagetitle:setup"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:210
 #, fuzzy
@@ -9447,144 +9465,179 @@ msgid "pagetitlehover:setup"
 msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:211
+#, fuzzy
 msgid "pagetitle:about"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:212
+#, fuzzy
 msgid "pagetitlehover:about"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:213
+#, fuzzy
 msgid "pagetitle:attributes"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:214
+#, fuzzy
 msgid "pagetitlehover:attributes"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:215
+#, fuzzy
 msgid "pagetitle:stresstest"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:216
+#, fuzzy
 msgid "pagetitlehover:stresstest"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:217
+#, fuzzy
 msgid "pagetitle:list"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:218
+#, fuzzy
 msgid "pagetitlehover:list"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:219
+#, fuzzy
 msgid "pagetitle:config"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:220
+#, fuzzy
 msgid "pagetitlehover:config"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:221
+#, fuzzy
 msgid "pagetitle:catlists"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:222
+#, fuzzy
 msgid "pagetitlehover:catlists"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:223
+#, fuzzy
 msgid "pagetitle:editattributes"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:224
+#, fuzzy
 msgid "pagetitlehover:editattributes"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:225
+#, fuzzy
 msgid "pagetitle:editlist"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:226
+#, fuzzy
 msgid "pagetitlehover:editlist"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:227
+#, fuzzy
 msgid "pagetitle:checki18n"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:228
+#, fuzzy
 msgid "pagetitlehover:checki18n"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:229
+#, fuzzy
 msgid "pagetitle:importsimple"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:230
+#, fuzzy
 msgid "pagetitlehover:importsimple"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:231
+#, fuzzy
 msgid "pagetitle:import4"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:232
+#, fuzzy
 msgid "pagetitlehover:import4"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:233
+#, fuzzy
 msgid "pagetitle:import3"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:234
+#, fuzzy
 msgid "pagetitlehover:import3"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:235
+#, fuzzy
 msgid "pagetitle:import2"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:236
+#, fuzzy
 msgid "pagetitlehover:import2"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:237
+#, fuzzy
 msgid "pagetitle:import1"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:238
+#, fuzzy
 msgid "pagetitlehover:import1"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:239
+#, fuzzy
 msgid "pagetitle:import"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:240
+#, fuzzy
 msgid "pagetitlehover:import"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:241
+#, fuzzy
 msgid "pagetitle:export"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:242
+#, fuzzy
 msgid "pagetitlehover:export"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:243
+#, fuzzy
 msgid "pagetitle:initialise"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:244
+#, fuzzy
 msgid "pagetitlehover:initialise"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:245
+#, fuzzy
 msgid "pagetitle:send"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:246
 #, fuzzy
@@ -9608,16 +9661,19 @@ msgid "pagetitlehover:sendprepared"
 msgstr ""
 
 #: public_html/databasestructure.php:251
+#, fuzzy
 msgid "pagetitle:members"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:252
+#, fuzzy
 msgid "pagetitlehover:members"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:253
+#, fuzzy
 msgid "pagetitle:users"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:254
 #, fuzzy
@@ -9633,8 +9689,9 @@ msgid "pagetitlehover:reconcileusers"
 msgstr ""
 
 #: public_html/databasestructure.php:257
+#, fuzzy
 msgid "pagetitle:user"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:258
 #, fuzzy
@@ -9642,16 +9699,19 @@ msgid "pagetitlehover:user"
 msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:259
+#, fuzzy
 msgid "pagetitle:adduser"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:260
+#, fuzzy
 msgid "pagetitlehover:adduser"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:261
+#, fuzzy
 msgid "pagetitle:userhistory"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:262
 #, fuzzy
@@ -9659,40 +9719,49 @@ msgid "pagetitlehover:userhistory"
 msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:263
+#, fuzzy
 msgid "pagetitle:messages"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:264
+#, fuzzy
 msgid "pagetitlehover:messages"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:265
+#, fuzzy
 msgid "pagetitle:message"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:266
+#, fuzzy
 msgid "pagetitlehover:message"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:267
+#, fuzzy
 msgid "pagetitle:processqueue"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:268
+#, fuzzy
 msgid "pagetitlehover:processqueue"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:269
+#, fuzzy
 msgid "pagetitle:defaults"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:270
+#, fuzzy
 msgid "pagetitlehover:defaults"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:271
+#, fuzzy
 msgid "pagetitle:upgrade"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:272
 #, fuzzy
@@ -9700,96 +9769,119 @@ msgid "pagetitlehover:upgrade"
 msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:273
+#, fuzzy
 msgid "pagetitle:templates"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:274
+#, fuzzy
 msgid "pagetitlehover:templates"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:275
+#, fuzzy
 msgid "pagetitle:template"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:276
+#, fuzzy
 msgid "pagetitlehover:template"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:277
+#, fuzzy
 msgid "pagetitle:viewtemplate"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:278
+#, fuzzy
 msgid "pagetitlehover:viewtemplate"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:279
+#, fuzzy
 msgid "pagetitle:configure"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:280
+#, fuzzy
 msgid "pagetitlehover:configure"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:281
+#, fuzzy
 msgid "pagetitle:admin"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:282
+#, fuzzy
 msgid "pagetitlehover:admin"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:283
+#, fuzzy
 msgid "pagetitle:admins"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:284
+#, fuzzy
 msgid "pagetitlehover:admins"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:285
+#, fuzzy
 msgid "pagetitle:adminattributes"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:286
+#, fuzzy
 msgid "pagetitlehover:adminattributes"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:287
+#, fuzzy
 msgid "pagetitle:processbounces"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:288
+#, fuzzy
 msgid "pagetitlehover:processbounces"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:289
+#, fuzzy
 msgid "pagetitle:bounces"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:290
+#, fuzzy
 msgid "pagetitlehover:bounces"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:291
+#, fuzzy
 msgid "pagetitle:bounce"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:292
+#, fuzzy
 msgid "pagetitlehover:bounce"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:293
+#, fuzzy
 msgid "pagetitle:spageedit"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:294
+#, fuzzy
 msgid "pagetitlehover:spageedit"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:295
+#, fuzzy
 msgid "pagetitle:spage"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:296
 #, fuzzy
@@ -9805,68 +9897,84 @@ msgid "pagetitlehover:eventlog"
 msgstr ""
 
 #: public_html/databasestructure.php:299
+#, fuzzy
 msgid "pagetitle:getrss"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:300
+#, fuzzy
 msgid "pagetitlehover:getrss"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:301
+#, fuzzy
 msgid "pagetitle:viewrss"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:302
+#, fuzzy
 msgid "pagetitlehover:viewrss"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:303
+#, fuzzy
 msgid "pagetitle:community"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:304
+#, fuzzy
 msgid "pagetitlehover:community"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:305
+#, fuzzy
 msgid "pagetitle:vote"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:306
+#, fuzzy
 msgid "pagetitlehover:vote"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:307
+#, fuzzy
 msgid "pagetitle:login"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:308
+#, fuzzy
 msgid "pagetitlehover:login"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:309
+#, fuzzy
 msgid "pagetitle:logout"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:310
+#, fuzzy
 msgid "pagetitlehover:logout"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:311
+#, fuzzy
 msgid "pagetitle:mclicks"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:312
+#, fuzzy
 msgid "pagetitlehover:mclicks"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:313
+#, fuzzy
 msgid "pagetitle:uclicks"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:314
+#, fuzzy
 msgid "pagetitlehover:uclicks"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:315
 msgid "pagetitle:massunconfirm"
@@ -9877,12 +9985,14 @@ msgid "pagetitlehover:massunconfirm"
 msgstr ""
 
 #: public_html/databasestructure.php:317
+#, fuzzy
 msgid "pagetitle:massremove"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:318
+#, fuzzy
 msgid "pagetitlehover:massremove"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:319
 #, fuzzy
@@ -9894,8 +10004,9 @@ msgid "pagetitlehover:usermgt"
 msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:321
+#, fuzzy
 msgid "pagetitle:bouncemgt"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:322
 #, fuzzy
@@ -9903,24 +10014,29 @@ msgid "pagetitlehover:bouncemgt"
 msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:323
+#, fuzzy
 msgid "pagetitle:domainstats"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:324
+#, fuzzy
 msgid "pagetitlehover:domainstats"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:325
+#, fuzzy
 msgid "pagetitle:mviews"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:326
+#, fuzzy
 msgid "pagetitlehover:mviews"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:327
+#, fuzzy
 msgid "pagetitle:statsmgt"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:328
 #, fuzzy
@@ -9944,32 +10060,39 @@ msgid "pagetitlehover:subscriberstats"
 msgstr ""
 
 #: public_html/databasestructure.php:333
+#, fuzzy
 msgid "pagetitle:dbcheck"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:334
+#, fuzzy
 msgid "pagetitlehover:dbcheck"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:335
+#, fuzzy
 msgid "pagetitle:importadmin"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:336
+#, fuzzy
 msgid "pagetitlehover:importadmin"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:337
+#, fuzzy
 msgid "pagetitle:dbadmin"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:338
+#, fuzzy
 msgid "pagetitlehover:dbadmin"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:339
+#, fuzzy
 msgid "pagetitle:usercheck"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:340
 #, fuzzy
@@ -9977,52 +10100,64 @@ msgid "pagetitlehover:usercheck"
 msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:341
+#, fuzzy
 msgid "pagetitle:listbounces"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:342
+#, fuzzy
 msgid "pagetitlehover:listbounces"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:343
+#, fuzzy
 msgid "pagetitle:bouncerules"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:344
+#, fuzzy
 msgid "pagetitlehover:bouncerules"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:345
+#, fuzzy
 msgid "pagetitle:bouncerule"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:346
+#, fuzzy
 msgid "pagetitlehover:bouncerule"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:347
+#, fuzzy
 msgid "pagetitle:checkbouncerules"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:348
+#, fuzzy
 msgid "pagetitlehover:checkbouncerules"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:349
+#, fuzzy
 msgid "pagetitle:translate"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:350
+#, fuzzy
 msgid "pagetitlehover:translate"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:351
+#, fuzzy
 msgid "pagetitle:ajaxform"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:352
+#, fuzzy
 msgid "pagetitlehover:ajaxform"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:353
 msgid "pagetitle:updatetranslation"
@@ -10033,20 +10168,24 @@ msgid "pagetitlehover:updatetranslation"
 msgstr ""
 
 #: public_html/databasestructure.php:355
+#, fuzzy
 msgid "pagetitle:reindex"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:356
+#, fuzzy
 msgid "pagetitlehover:reindex"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:357
+#, fuzzy
 msgid "pagetitle:plugins"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:358
+#, fuzzy
 msgid "pagetitlehover:plugins"
-msgstr ""
+msgstr "pagetitlehover:Felhasználók kezelése"
 
 #: public_html/databasestructure.php:359
 msgid "pagetitle:hostedprocessqueuesetup"
