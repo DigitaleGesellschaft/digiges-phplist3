@@ -368,7 +368,7 @@ $('body.fixed li.list').each(function(){
 
 
 /* fire applyCustomFormatting on: */
-$( window ).load(function(){
+$( window ).on("load", function(){
     if ( $('body').hasClass('invisible') ){ applyCustomFormatting(); applyJqueryUiTabMigration();}
 });
 
@@ -475,9 +475,9 @@ $(document).ready(function(){
 				}
 			}
 		});
-        if ( e.target.id == "content" || $(e.target).parents("#content").size() || 
-        		e.target.id == "modal-open" || $(e.target).parents(".modal-open").size() ||
-	        	$(e.target).parents(".configValue").size() ) { 
+        if ( e.target.id == "content" || $(e.target).parents("#content").length ||
+        		e.target.id == "modal-open" || $(e.target).parents(".modal-open").length ||
+	        	$(e.target).parents(".configValue").length ) {
             var inside = 1;
         } else { 
            inside = 0;

@@ -47,19 +47,13 @@ class Toolbar
     const TEMPLATE = '/toolbar.tpl.php';
 
     private $buttons = array();
-    private $controller;
-
-    public function __construct($controller)
-    {
-        $this->controller = $controller;
-    }
 
     public function addAboutButton()
     {
         $this->buttons[] = new ToolbarButton(
             new PageURL('help', array('pi' => $_GET['pi'], 'topic' => 'about')),
             'gnu_licence.png',
-            $this->controller->i18n->get('about'),
+            s('about'),
             array('class' => 'helpdialog', 'target' => '_blank', 'style' => 'background: none; display: inline;')
         );
     }
@@ -69,7 +63,7 @@ class Toolbar
         $this->buttons[] = new ToolbarButton(
             PageURL::createFromGet($query + array('action' => 'exportCSV')),
             'excel.png',
-            $this->controller->i18n->get('export'),
+            s('export'),
             ['class' => 'dialog']
         );
     }
@@ -79,7 +73,7 @@ class Toolbar
         $this->buttons[] = new ToolbarButton(
             new PageURL('help', array('pi' => $_GET['pi'], 'topic' => $topic)),
             'info.png',
-            $this->controller->i18n->get('help'),
+            s('help'),
             array('class' => 'helpdialog', 'target' => '_blank', 'style' => 'background: none; display: inline;')
         );
         $this->addAboutButton();
@@ -90,7 +84,7 @@ class Toolbar
         $this->buttons[] = new ToolbarButton(
             $url,
             'info.png',
-            $this->controller->i18n->get('help'),
+            s('help'),
             array('target' => '_blank')
         );
         $this->addAboutButton();
@@ -100,6 +94,6 @@ class Toolbar
     {
         $params = array('buttons' => $this->buttons);
 
-        return $this->controller->render(dirname(__FILE__) . self::TEMPLATE, $params);
+        return new View(__DIR__ . self::TEMPLATE, $params);
     }
 }

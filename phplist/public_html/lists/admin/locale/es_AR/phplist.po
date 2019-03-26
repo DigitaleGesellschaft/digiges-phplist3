@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: phpList 2.11.X\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-30 06:47+0000\n"
-"PO-Revision-Date: 2017-07-26 19:12+0000\n"
-"Last-Translator: Mariela <marielazarate@gmail.com>\n"
+"PO-Revision-Date: 2019-02-14 12:10+0000\n"
+"Last-Translator: Angel <angel.gonzalez@aidpr.com>\n"
 "Language-Team: phpList <info@phplist.com>\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: public_html\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Basepath: /home/michiel/svn/phplist/translate/phplist\n"
-"X-POOTLE-MTIME: 1501096359.000000\n"
+"X-POOTLE-MTIME: 1550146259.000000\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;get;s\n"
 
 #: public_html/lists/lt.php:230
@@ -157,9 +157,9 @@ msgid "Download addresses"
 msgstr ""
 
 #: public_html/lists/admin/listbounces.php:76
-#, php-format
+#, fuzzy, php-format
 msgid "%s bounces to list %s"
-msgstr ""
+msgstr "%d rebotes de la lista %s"
 
 #: public_html/lists/admin/listbounces.php:96
 #: public_html/lists/admin/msgbounces.php:98
@@ -1068,8 +1068,9 @@ msgid "Installed plugins"
 msgstr "Complementos instalados"
 
 #: public_html/lists/admin/plugins.php:188
+#, fuzzy
 msgid "Plugin"
-msgstr ""
+msgstr "M&oacute;dulos (plugins)"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
@@ -1197,8 +1198,9 @@ msgid "All"
 msgstr ""
 
 #: public_html/lists/admin/plugins.php:358
+#, fuzzy
 msgid "Enabled"
-msgstr ""
+msgstr "habilitado"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
@@ -1387,6 +1389,7 @@ msgstr ""
 msgid "Subscribe"
 msgstr "Subscribir"
 
+# Aparece en los botones e indican necesidad de una acción  (cambiar de  no sucribir a no suscribirse) 
 #: public_html/lists/admin/lib.php:2068
 #, fuzzy
 msgid "Do not subscribe"
@@ -1513,8 +1516,9 @@ msgid "Bounced"
 msgstr "Rebotados"
 
 #: public_html/lists/admin/statsoverview.php:145
+#, fuzzy
 msgid "Opened "
-msgstr ""
+msgstr "Abierto"
 
 #: public_html/lists/admin/statsoverview.php:156
 msgid "Clicked"
@@ -2954,8 +2958,9 @@ msgid " bounces to campaign %s"
 msgstr ""
 
 #: public_html/lists/admin/msgbounces.php:105
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "hora"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"
@@ -3325,8 +3330,9 @@ msgid "Purpose"
 msgstr "Finalidad"
 
 #: public_html/lists/admin/messages.php:8
+#, fuzzy
 msgid "filter"
-msgstr ""
+msgstr "Filtro"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/users.php:323
@@ -3482,8 +3488,9 @@ msgid "Total clicks"
 msgstr ""
 
 #: public_html/lists/admin/messages.php:521
+#, fuzzy
 msgid "Started "
-msgstr ""
+msgstr "Comenzado..."
 
 #: public_html/lists/admin/messages.php:522
 msgid "Time to send"
@@ -4240,8 +4247,9 @@ msgstr ""
 
 #: public_html/lists/admin/usercheck.php:26
 #: public_html/lists/admin/usercheck.php:30
+#, fuzzy
 msgid "Foreign key"
-msgstr ""
+msgstr "Clave externa"
 
 #: public_html/lists/admin/usercheck.php:49
 msgid "What is the type of information you want to check"
@@ -4475,8 +4483,9 @@ msgid "fwds"
 msgstr "renvs"
 
 #: public_html/lists/admin/actions/statsoverview.php:139
+#, fuzzy
 msgid "Unique views"
-msgstr ""
+msgstr "Vistas &uacute;nicas"
 
 #: public_html/lists/admin/actions/statsoverview.php:151
 #: public_html/lists/admin/actions/mviews.php:113
@@ -4534,8 +4543,9 @@ msgid "editing cancelled"
 msgstr ""
 
 #: public_html/lists/admin/actions/msgbounces.php:55
+#, fuzzy
 msgid "There are currently no data to view"
-msgstr ""
+msgstr "Actualmente no hay mensajes para ver"
 
 #: public_html/lists/admin/actions/msgbounces.php:58
 msgid "Choose a campaign"
@@ -5498,8 +5508,9 @@ msgid "in progress"
 msgstr "en curso"
 
 #: public_html/lists/admin/actions/mviews.php:98
+#, fuzzy
 msgid "unique views"
-msgstr ""
+msgstr "Vistas &uacute;nicas"
 
 #: public_html/lists/admin/actions/storemessage.php:20
 msgid ""
@@ -6093,8 +6104,9 @@ msgid "back"
 msgstr "volver"
 
 #: public_html/lists/admin/import1.php:139
+#, fuzzy
 msgid "to resubmit for real"
-msgstr ""
+msgstr " para procesar realmente"
 
 #: public_html/lists/admin/import1.php:140
 #: public_html/lists/admin/import1.php:229
@@ -6368,8 +6380,9 @@ msgid "No Lists"
 msgstr "No hay listas"
 
 #: public_html/lists/admin/user.php:329
+#, fuzzy
 msgid "Download subscriber data"
-msgstr ""
+msgstr "Descargar suscriptores"
 
 #: public_html/lists/admin/user.php:335
 msgid "Preferences page"
@@ -6506,12 +6519,14 @@ msgstr ""
 
 #: public_html/lists/admin/updatetranslation.php:63
 #: public_html/lists/admin/updatetranslation.php:66
+#, fuzzy
 msgid "Update"
-msgstr ""
+msgstr "actualizar"
 
 #: public_html/lists/admin/updatetranslation.php:65
+#, fuzzy
 msgid "Up-to-date"
-msgstr ""
+msgstr "Actualizado"
 
 #: public_html/lists/admin/updatetranslation.php:69
 msgid "Not installed"
@@ -8217,8 +8232,9 @@ msgid "Do Import"
 msgstr "Importar"
 
 #: public_html/lists/admin/setup.php:18
+#, fuzzy
 msgid "Step"
-msgstr ""
+msgstr "Set"
 
 #: public_html/lists/admin/setup.php:35
 msgid "Verify Settings"

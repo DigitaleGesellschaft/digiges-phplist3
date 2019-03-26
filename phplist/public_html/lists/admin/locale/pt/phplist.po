@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-30 06:48+0000\n"
-"PO-Revision-Date: 2018-04-08 09:06+0000\n"
+"PO-Revision-Date: 2019-03-14 17:02+0000\n"
 "Last-Translator: Carlos <carlos.florest@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1523178371.000000\n"
+"X-POOTLE-MTIME: 1552582926.000000\n"
 
 #: public_html/lists/lt.php:230
 msgid ""
@@ -156,12 +156,12 @@ msgstr "Selecione outra lista"
 #: public_html/lists/admin/listbounces.php:73
 #: public_html/lists/admin/msgbounces.php:75
 msgid "Download addresses"
-msgstr ""
+msgstr "Descarregar endere&ccedil;os eletr&oacute;nicos"
 
 #: public_html/lists/admin/listbounces.php:76
 #, php-format
 msgid "%s bounces to list %s"
-msgstr ""
+msgstr "%s devolu&ccedil;&otilde;es para a lista %s"
 
 #: public_html/lists/admin/listbounces.php:96
 #: public_html/lists/admin/msgbounces.php:98
@@ -1079,24 +1079,25 @@ msgstr "Plugins instalados"
 
 #: public_html/lists/admin/plugins.php:188
 msgid "Plugin"
-msgstr ""
+msgstr "Plugin"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
 msgstr ""
+"N&atilde;o &eacute; poss&iacute;vel encontrar a atualiza&ccedil;&atilde;o"
 
 #: public_html/lists/admin/plugins.php:229
 #, php-format
 msgid "Version %s is available"
-msgstr ""
+msgstr "A vers&atilde;o %s est&aacute; dispon&aacute;vel"
 
 #: public_html/lists/admin/plugins.php:232
 msgid "Plugin is up-to-date"
-msgstr ""
+msgstr "O plugin est&aacute; atualizado"
 
 #: public_html/lists/admin/plugins.php:236
 msgid "Plugin must be updated manually"
-msgstr ""
+msgstr "O plugin deve ser atualizado manualmente"
 
 #: public_html/lists/admin/plugins.php:249
 msgid "name"
@@ -1116,7 +1117,7 @@ msgstr "vers&atilde;o"
 
 #: public_html/lists/admin/plugins.php:265
 msgid "Update status"
-msgstr ""
+msgstr "Atualizar o \"status\""
 
 #: public_html/lists/admin/plugins.php:271
 msgid "origin"
@@ -1205,20 +1206,20 @@ msgstr "detalhes"
 
 #: public_html/lists/admin/plugins.php:356
 msgid "All"
-msgstr ""
+msgstr "Todos"
 
 #: public_html/lists/admin/plugins.php:358
 msgid "Enabled"
-msgstr ""
+msgstr "Ativado"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
 msgid "Disabled"
-msgstr ""
+msgstr "Desativado"
 
 #: public_html/lists/admin/plugins.php:362
 msgid "Update available"
-msgstr ""
+msgstr "Atualiza&ccedil;&atilde;o dispon&aacute;vel"
 
 #: public_html/lists/admin/lib.php:25
 msgid "delete subscriber"
@@ -1538,7 +1539,7 @@ msgstr "Com problemas"
 
 #: public_html/lists/admin/statsoverview.php:145
 msgid "Opened "
-msgstr ""
+msgstr "Aberto "
 
 #: public_html/lists/admin/statsoverview.php:156
 msgid "Clicked"
@@ -1551,7 +1552,7 @@ msgstr "Cliques exclusivos"
 
 #: public_html/lists/admin/statsoverview.php:172
 msgid "Click Per View Rate"
-msgstr ""
+msgstr "Cliques da Taxa de Visualiza&ccedil;&atilde;o"
 
 #: public_html/lists/admin/statsoverview.php:185
 msgid "Forwarded"
@@ -2455,10 +2456,11 @@ msgstr ""
 #: public_html/lists/admin/reconcileusers.php:536
 msgid "Delete subscribers who are blacklisted because they unsubscribed"
 msgstr ""
+"Apagar assinantes que est&atilde;o na lista negra porque se desinscreveram"
 
 #: public_html/lists/admin/reconcileusers.php:542
 msgid "Delete all blacklisted subscribers"
-msgstr ""
+msgstr "Apagar todos os assinantes da lista negra"
 
 #: public_html/lists/admin/reconcileusers.php:567
 msgid ""
@@ -3040,20 +3042,20 @@ msgstr ""
 
 #: public_html/lists/admin/subscribelib2.php:775
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: public_html/lists/admin/msgbounces.php:62
 msgid "Select another campaign"
-msgstr ""
+msgstr "Selecione outra campanha/mensagem"
 
 #: public_html/lists/admin/msgbounces.php:78
 #, php-format
 msgid " bounces to campaign %s"
-msgstr ""
+msgstr " devoluções para a campanha %s"
 
 #: public_html/lists/admin/msgbounces.php:105
 msgid "Time"
-msgstr ""
+msgstr "Hora"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"
@@ -3286,14 +3288,16 @@ msgstr "mostrar"
 #: public_html/lists/admin/spage.php:104
 msgid "Are you sure you want to reset this subscription page template?"
 msgstr ""
+"Tem a certeza que pretende redefinir este tema/modelo da p&aacute;gina de "
+"inscri&ccedil;&atilde;o?"
 
 #: public_html/lists/admin/spage.php:104
 msgid "reset style to default"
-msgstr ""
+msgstr "redefinir o estilo para o padr&atilde;o"
 
 #: public_html/lists/admin/spage.php:105
 msgid "reset styling to default"
-msgstr ""
+msgstr "redefinir o estilo para o padr&atilde;o"
 
 #: public_html/lists/admin/spage.php:108
 msgid "Add a new subscribe page"
@@ -3425,7 +3429,7 @@ msgstr "Objetivo"
 
 #: public_html/lists/admin/messages.php:8
 msgid "filter"
-msgstr ""
+msgstr "filtro"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/users.php:323
@@ -3558,7 +3562,7 @@ msgstr "Estado"
 #: public_html/lists/admin/messages.php:448
 #, php-format
 msgid "and %d more"
-msgstr ""
+msgstr "e %d mais"
 
 #: public_html/lists/admin/messages.php:451
 #: public_html/lists/admin/send_core.php:578
@@ -3570,7 +3574,7 @@ msgstr "Listas"
 #: public_html/lists/admin/messages.php:488
 #: public_html/lists/admin/mviews.php:220
 msgid "Total views"
-msgstr ""
+msgstr "Total de visualiza&ccedil;&otilde;es"
 
 #: public_html/lists/admin/messages.php:492
 msgid "Unique Views"
@@ -3578,11 +3582,11 @@ msgstr "Exibidas uma vez"
 
 #: public_html/lists/admin/messages.php:498
 msgid "Total clicks"
-msgstr ""
+msgstr "Total de cliques"
 
 #: public_html/lists/admin/messages.php:521
 msgid "Started "
-msgstr ""
+msgstr "Iniciado "
 
 #: public_html/lists/admin/messages.php:522
 msgid "Time to send"
@@ -3673,7 +3677,7 @@ msgstr "apagar esta campanha"
 #: public_html/lists/admin/messages.php:633
 #: public_html/lists/admin/messages.php:634
 msgid "Copy to Draft"
-msgstr ""
+msgstr "Copiar para Rascunho"
 
 #: public_html/lists/admin/messages.php:637
 #: public_html/lists/admin/updatetranslation.php:76
@@ -4358,12 +4362,12 @@ msgstr "Assinantes n&atilde;o existentes "
 #: public_html/lists/admin/usercheck.php:23
 #: public_html/lists/admin/usercheck.php:32
 msgid "Subscriber email"
-msgstr ""
+msgstr "Email do assinante"
 
 #: public_html/lists/admin/usercheck.php:26
 #: public_html/lists/admin/usercheck.php:30
 msgid "Foreign key"
-msgstr ""
+msgstr "Chave Externa"
 
 #: public_html/lists/admin/usercheck.php:49
 msgid "What is the type of information you want to check"
@@ -4596,7 +4600,7 @@ msgstr "fwds"
 
 #: public_html/lists/admin/actions/statsoverview.php:139
 msgid "Unique views"
-msgstr ""
+msgstr "Exibidas uma vez"
 
 #: public_html/lists/admin/actions/statsoverview.php:151
 #: public_html/lists/admin/actions/mviews.php:113
@@ -4627,7 +4631,7 @@ msgstr "assinantes removidos"
 #: public_html/lists/admin/actions/reconcileusers.php:22
 #: public_html/lists/admin/actions/reconcileusers.php:44
 msgid "Deleting blacklisted subscribers"
-msgstr ""
+msgstr "Excluindo assinantes da lista negra"
 
 #: public_html/lists/admin/actions/configure.php:27
 msgid "Editing"
@@ -4655,11 +4659,11 @@ msgstr "edi&ccedil;&atilde;o cancelada"
 
 #: public_html/lists/admin/actions/msgbounces.php:55
 msgid "There are currently no data to view"
-msgstr ""
+msgstr "Atualmente n&atilde;o h&aacute; dados para visualizar"
 
 #: public_html/lists/admin/actions/msgbounces.php:58
 msgid "Choose a campaign"
-msgstr ""
+msgstr "Escolha uma campanha/mensagem"
 
 #: public_html/lists/admin/actions/mergeduplicatelists.php:4
 msgid "Merging lists"
@@ -4930,7 +4934,7 @@ msgstr "%d termos de idiomas atualizados"
 
 #: public_html/lists/admin/actions/updatetranslation.php:31
 msgid "No language terms found"
-msgstr ""
+msgstr "Nenhum idioma encontrado"
 
 #: public_html/lists/admin/actions/export.php:14
 #: public_html/lists/admin/export.php:31
@@ -4958,7 +4962,7 @@ msgstr "N&atilde;o existe nenhuma mensagem para ver"
 
 #: public_html/lists/admin/actions/mclicks.php:58
 msgid "Clicked campaigns"
-msgstr ""
+msgstr "Campanhas clicadas"
 
 #: public_html/lists/admin/actions/mclicks.php:70
 #: public_html/lists/admin/mclicks.php:66
@@ -5010,7 +5014,7 @@ msgstr "email devolvido"
 
 #: public_html/lists/admin/actions/campaigns.php:67
 msgid "Average response time: "
-msgstr ""
+msgstr "Tempo m&eacute;dio de resposta: "
 
 #: public_html/lists/admin/actions/subscription.php:29
 msgid ""
@@ -5171,7 +5175,7 @@ msgstr "Atribuir um UUID para %d campanhas/mensagens"
 #: public_html/lists/admin/actions/processqueue.php:112
 #: public_html/lists/admin/upgrade.php:368
 msgid "Creating new table \"user_message_view\""
-msgstr ""
+msgstr "Criando nova tabela \"user_message_view\""
 
 #: public_html/lists/admin/actions/processqueue.php:135
 msgid "The following restrictions have been set by your ISP:"
@@ -5592,7 +5596,7 @@ msgstr "hora"
 
 #: public_html/lists/admin/actions/bounces.php:53
 msgid "Bounces data not found"
-msgstr ""
+msgstr "Dados das devolu&ccedil;&otilde;es n&atilde;o encontrados"
 
 #: public_html/lists/admin/actions/checkurl.php:23
 #: public_html/lists/admin/actions/checkurl.php:25
@@ -5636,7 +5640,7 @@ msgstr "em curso"
 
 #: public_html/lists/admin/actions/mviews.php:98
 msgid "unique views"
-msgstr ""
+msgstr "Exibidas uma vez"
 
 #: public_html/lists/admin/actions/storemessage.php:20
 msgid ""
@@ -6193,7 +6197,7 @@ msgstr "gerir definições assinantes"
 
 #: public_html/lists/admin/phpListAdminAuthentication.php:43
 msgid "Please enter your credentials."
-msgstr ""
+msgstr "Por favor insira as suas credenciais."
 
 #: public_html/lists/admin/phpListAdminAuthentication.php:46
 #: public_html/lists/admin/phpListAdminAuthentication.php:102
@@ -6258,7 +6262,7 @@ msgstr "anterior"
 
 #: public_html/lists/admin/import1.php:139
 msgid "to resubmit for real"
-msgstr ""
+msgstr " reenviar novamente"
 
 #: public_html/lists/admin/import1.php:140
 #: public_html/lists/admin/import1.php:229
@@ -6539,11 +6543,11 @@ msgstr "N&atilde;o h&aacute; listas"
 
 #: public_html/lists/admin/user.php:329
 msgid "Download subscriber data"
-msgstr ""
+msgstr "Descarregar dados dos assinantes"
 
 #: public_html/lists/admin/user.php:335
 msgid "Preferences page"
-msgstr ""
+msgstr "Prefer&ecirc;ncias da p&aacute;gina"
 
 #: public_html/lists/admin/user.php:347
 msgid "Are you sure you want to remove this subscriber from the system."
@@ -6663,40 +6667,40 @@ msgstr "Erro, o corpo da mensagem a enviar para o email %s est&aacute; vazio"
 
 #: public_html/lists/admin/updatetranslation.php:30
 msgid "Language translations"
-msgstr ""
+msgstr "Tradu&ccedil;&otilde;es"
 
 #: public_html/lists/admin/updatetranslation.php:31
 msgid "Language"
-msgstr ""
+msgstr "Linguagem"
 
 #: public_html/lists/admin/updatetranslation.php:62
 msgid "Update is available"
-msgstr ""
+msgstr "Atualiza&ccedil;&atilde;o dispon&aacute;vel"
 
 #: public_html/lists/admin/updatetranslation.php:63
 #: public_html/lists/admin/updatetranslation.php:66
 msgid "Update"
-msgstr ""
+msgstr "Atualizar"
 
 #: public_html/lists/admin/updatetranslation.php:65
 msgid "Up-to-date"
-msgstr ""
+msgstr "Atualizado"
 
 #: public_html/lists/admin/updatetranslation.php:69
 msgid "Not installed"
-msgstr ""
+msgstr "N&atilde;o instalado"
 
 #: public_html/lists/admin/updatetranslation.php:70
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: public_html/lists/admin/updatetranslation.php:74
 msgid "Code"
-msgstr ""
+msgstr "C&oacute;digo"
 
 #: public_html/lists/admin/updatetranslation.php:75
 msgid "Translation status"
-msgstr ""
+msgstr "Estado da tradu&ccedil;&atilde;o"
 
 #: public_html/lists/admin/date.php:18
 msgid "Sunday"
@@ -7009,7 +7013,7 @@ msgstr "Assinantes que clicaram na campanha com o assunto \"%s\", enviada %s"
 
 #: public_html/lists/admin/userclicks.php:164
 msgid "All clicks by"
-msgstr ""
+msgstr "Todos os cliques por"
 
 #: public_html/lists/admin/userclicks.php:198
 #: public_html/lists/admin/mclicks.php:72 public_html/lists/admin/users.php:358
@@ -7067,7 +7071,7 @@ msgstr "Mostrar"
 
 #: public_html/lists/admin/admins.php:110
 msgid "Id"
-msgstr ""
+msgstr "Id"
 
 #: public_html/lists/admin/admins.php:111
 msgid "email"
@@ -7075,7 +7079,7 @@ msgstr "email"
 
 #: public_html/lists/admin/admins.php:112
 msgid "Super Admin"
-msgstr ""
+msgstr "Super Administrador"
 
 #: public_html/lists/admin/admins.php:115
 msgid "Del"
@@ -7120,23 +7124,23 @@ msgstr "Adicionar um novo Administrador"
 
 #: public_html/lists/admin/admin.php:191
 msgid "Choose how to set password"
-msgstr ""
+msgstr "Escolher como definir a senha"
 
 #: public_html/lists/admin/admin.php:193
 msgid "Send email"
-msgstr ""
+msgstr "Enviar email"
 
 #: public_html/lists/admin/admin.php:194 public_html/lists/admin/admin.php:200
 msgid "Create password"
-msgstr ""
+msgstr "Criar senha"
 
 #: public_html/lists/admin/admin.php:204
 msgid "Password must be at least 8 characters"
-msgstr ""
+msgstr "A senha deve ter pelo menos 8 carateres"
 
 #: public_html/lists/admin/admin.php:214
 msgid "Not matching"
-msgstr ""
+msgstr "N&atilde;o combina"
 
 #: public_html/lists/admin/admin.php:232
 msgid "hidden"
@@ -7198,7 +7202,7 @@ msgstr "Estat&iacute;sticas dos cliques da campanha"
 
 #: public_html/lists/admin/mclicks.php:84
 msgid "Link URL"
-msgstr ""
+msgstr "Link URL"
 
 #: public_html/lists/admin/importsimple.php:72
 msgid "import_by"
@@ -7266,7 +7270,7 @@ msgstr ""
 
 #: public_html/lists/admin/importsimple.php:192
 msgid "Confirm email addresses by default"
-msgstr ""
+msgstr "Confirmar endere&ccedil;os de email por defeito"
 
 #: public_html/lists/admin/importsimple.php:193
 msgid "Import emails"
@@ -7384,10 +7388,13 @@ msgid ""
 "Warning: Storage of sensitive personal data such as race, health, and sexual "
 "orientation is regulated by some data protection laws"
 msgstr ""
+"Aviso: o armazenamento de dados pessoais confidenciais, como ra&ccedil;a, "
+"sa&uacute;de e orienta&ccedil;&atilde;o sexual, &eacute; regulado por "
+"algumas leis de prote&ccedil;&atilde;o de dados."
 
 #: public_html/lists/admin/attributes.php:427
 msgid "Read more"
-msgstr ""
+msgstr "Ler mais"
 
 #: public_html/lists/admin/attributes.php:442
 #: public_html/lists/admin/spageedit.php:340
@@ -7445,7 +7452,7 @@ msgstr ""
 
 #: public_html/lists/admin/bounce.php:141
 msgid "Manage bounces"
-msgstr ""
+msgstr "Gerir devolu&ccedil;&otilde;es"
 
 #: public_html/lists/admin/bounce.php:165
 #: public_html/lists/admin/bouncerules.php:141
@@ -7654,6 +7661,7 @@ msgstr "Categorias para as listas (separar com v&iacute;rgulas)."
 #: public_html/lists/admin/defaultconfig.php:216
 msgid "Display list categories on subscribe page"
 msgstr ""
+"Exibir a lista de categorias na p&aacute;gina de inscri&ccedil;&atilde;o"
 
 #: public_html/lists/admin/defaultconfig.php:225
 msgid "Width of a textline field (numerical)"
@@ -8134,7 +8142,7 @@ msgstr "Op&ccedil;&otilde;es dispon&iacute;veis:"
 
 #: public_html/lists/admin/index.php:270
 msgid "Login not available. Create an account first."
-msgstr ""
+msgstr "Login n&atilde;o dispon&aacute;vel. Crie uma conta primeiro."
 
 #: public_html/lists/admin/index.php:309
 #, php-format
@@ -8207,10 +8215,13 @@ msgstr ""
 #: public_html/lists/admin/index.php:515
 msgid "Running DEV version. All emails will be sent to "
 msgstr ""
+"Executando a vers&atilde;o DEV. Todos os emails ser&atilde;o enviados para "
 
 #: public_html/lists/admin/index.php:517
 msgid "Running DEV version, but developer email is not set"
 msgstr ""
+"Executando a vers&atilde;o DEV, mas o email do programador n&atilde;o "
+"est&aacute; definido"
 
 #: public_html/lists/admin/index.php:521
 #: public_html/lists/admin/processqueue.php:32
@@ -8221,19 +8232,19 @@ msgstr ""
 
 #: public_html/lists/admin/index.php:525
 msgid "Try automatic updater"
-msgstr ""
+msgstr "Experimente o atualizador autom&aacute;tico"
 
 #: public_html/lists/admin/index.php:525
 msgid "automatic updater"
-msgstr ""
+msgstr "atualizador autom&aacute;tico"
 
 #: public_html/lists/admin/index.php:525
 msgid "here"
-msgstr ""
+msgstr "aqui"
 
 #: public_html/lists/admin/index.php:525
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: public_html/lists/admin/index.php:528
 msgid ""
@@ -8467,7 +8478,7 @@ msgstr "Fazer importa&ccedil;&atilde;o"
 
 #: public_html/lists/admin/setup.php:18
 msgid "Step"
-msgstr ""
+msgstr "Passo"
 
 #: public_html/lists/admin/setup.php:35
 msgid "Verify Settings"
@@ -8851,7 +8862,7 @@ msgstr "Lista de Regras para Emails de Erro"
 
 #: public_html/lists/admin/bouncemgt.php:12
 msgid "View Bounces per campaign"
-msgstr ""
+msgstr "Ver devolu&ccedil;&otilde;es por campanha/mensagem"
 
 #: public_html/lists/admin/bouncemgt.php:13
 msgid "View Bounces per list"
@@ -9200,15 +9211,15 @@ msgstr "Selecione as listas a serem disponibilizadas"
 
 #: public_html/lists/admin/spageedit.php:362
 msgid "Display list categories"
-msgstr ""
+msgstr "Exibir a lista das categorias"
 
 #: public_html/lists/admin/spageedit.php:365
 msgid "Do not show list categories"
-msgstr ""
+msgstr "N&atilde;o mostrar a lista das categorias"
 
 #: public_html/lists/admin/spageedit.php:368
 msgid "Display lists in labelled categories"
-msgstr ""
+msgstr "Exibir as listas em categorias rotuladas"
 
 #: public_html/lists/admin/spageedit.php:369
 msgid "You can only select \"public\" lists for subscribe pages."
@@ -9579,7 +9590,7 @@ msgstr "Chave prim&aacute;ria"
 
 #: public_html/databasestructure.php:107
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 #: public_html/databasestructure.php:108
 msgid "Start Time"
@@ -9772,7 +9783,7 @@ msgstr "ID reencaminhamento"
 
 #: public_html/databasestructure.php:191
 msgid "hash value of URL"
-msgstr ""
+msgstr "valor de hash do URL"
 
 #: public_html/databasestructure.php:193
 msgid "Forward adding the UID?"
@@ -9796,7 +9807,7 @@ msgstr "Regex"
 
 #: public_html/databasestructure.php:198
 msgid "hash value of regex"
-msgstr ""
+msgstr "valor hash de regex"
 
 #: public_html/databasestructure.php:199
 msgid "Action on rule"

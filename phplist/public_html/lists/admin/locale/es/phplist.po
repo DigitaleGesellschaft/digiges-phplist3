@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: phpList 2.11.X\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-30 06:47+0000\n"
-"PO-Revision-Date: 2019-01-28 20:12+0000\n"
+"PO-Revision-Date: 2019-02-14 13:05+0000\n"
 "Last-Translator: Angel <angel.gonzalez@aidpr.com>\n"
 "Language-Team: phpList <info@phplist.com>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: public_html\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Basepath: /home/michiel/svn/phplist/translate/phplist\n"
-"X-POOTLE-MTIME: 1548706346.000000\n"
+"X-POOTLE-MTIME: 1550149556.000000\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;get;s\n"
 
 #: public_html/lists/lt.php:230
@@ -201,9 +201,8 @@ msgid "Start a new campaign"
 msgstr "Iniciar una nueva campaña"
 
 #: public_html/lists/admin/send.php:101
-#, fuzzy
 msgid "Choose an existing draft campaign to work on"
-msgstr "Selecciona un borrador de campaña existente para trabajar"
+msgstr "Selecciona un borrador de campaña existente para editar"
 
 #: public_html/lists/admin/send.php:102
 msgid "Draft campaigns"
@@ -229,7 +228,7 @@ msgstr "eliminar"
 #: public_html/lists/admin/send.php:115
 #: public_html/lists/admin/editattributes.php:50
 msgid "delete all"
-msgstr "Eliminar todos"
+msgstr "eliminar todos"
 
 #: public_html/lists/admin/send.php:144
 msgid "Please select the lists you want to send your campaign to"
@@ -255,11 +254,11 @@ msgstr ""
 
 #: public_html/lists/admin/home.php:12 public_html/lists/admin/home.php:73
 msgid "Your version"
-msgstr "Su versi&oacute;n"
+msgstr "Su versión"
 
 #: public_html/lists/admin/home.php:13
 msgid "phplist version"
-msgstr "Versión de phpList"
+msgstr "versión de phpList"
 
 #: public_html/lists/admin/home.php:14 public_html/lists/admin/home.php:390
 #: public_html/lists/admin/initialise.php:249
@@ -273,7 +272,7 @@ msgstr "La base de datos no ha sido inicializada"
 
 #: public_html/lists/admin/home.php:20
 msgid "go to"
-msgstr "ir a"
+msgstr "Ir a"
 
 #: public_html/lists/admin/home.php:21 public_html/lists/admin/setup.php:20
 msgid "Initialise Database"
@@ -293,11 +292,11 @@ msgid ""
 "upgrade as soon as possible"
 msgstr ""
 "La nueva versión puede haber arreglado problemas de seguridad,<br />por lo "
-"que le recomendamos actualizarse tan pronto como sea posible"
+"que le recomendamos actualizar su sistema tan pronto como sea posible"
 
 #: public_html/lists/admin/home.php:74
 msgid "Latest version"
-msgstr "&Uacute;ltima versi&oacute;n"
+msgstr "Última versión"
 
 #: public_html/lists/admin/home.php:75
 msgid "Read what has changed in the new version"
@@ -305,7 +304,7 @@ msgstr "Lea lo que ha cambiado en la nueva versión"
 
 #: public_html/lists/admin/home.php:75
 msgid "View what has changed"
-msgstr "Ver los cambios"
+msgstr "Ver que ha cambiado"
 
 #: public_html/lists/admin/home.php:76
 msgid "Download the new version"
@@ -334,11 +333,11 @@ msgstr "Iniciar o continuar una campaña"
 
 #: public_html/lists/admin/home.php:104
 msgid "Manage Campaigns"
-msgstr "Administrar campañas"
+msgstr "Gestionar Campañas"
 
 #: public_html/lists/admin/home.php:107
 msgid "View current campaigns"
-msgstr "Ver campañas actuales"
+msgstr "Ver las campañas actuales"
 
 #: public_html/lists/admin/home.php:112
 msgid "Manage Subscribers"
@@ -628,9 +627,8 @@ msgid "unique"
 msgstr "úncio"
 
 #: public_html/lists/admin/dbcheck.php:92
-#, fuzzy
 msgid "category"
-msgstr "Categoría"
+msgstr "categoría"
 
 #: public_html/lists/admin/dbcheck.php:95
 msgid "check"
@@ -1071,9 +1069,8 @@ msgid "Installed plugins"
 msgstr "Complementos instalados"
 
 #: public_html/lists/admin/plugins.php:188
-#, fuzzy
 msgid "Plugin"
-msgstr "Complementos"
+msgstr "Complemento"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
@@ -3229,8 +3226,11 @@ msgid "view"
 msgstr "ver"
 
 #: public_html/lists/admin/spage.php:104
+#, fuzzy
 msgid "Are you sure you want to reset this subscription page template?"
 msgstr ""
+"Estas seguro de que quieres reiniciar la plantilla de esta página de "
+"suscripción?"
 
 #: public_html/lists/admin/spage.php:104
 msgid "reset style to default"
@@ -3368,9 +3368,8 @@ msgid "Purpose"
 msgstr "Propósito"
 
 #: public_html/lists/admin/messages.php:8
-#, fuzzy
 msgid "filter"
-msgstr "Filtro"
+msgstr "filtro"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/users.php:323
@@ -3490,7 +3489,7 @@ msgstr "Marcar todos como enviados "
 #: public_html/lists/admin/actions/campaigns.php:24
 #: public_html/lists/admin/user.php:539
 msgid "Campaigns"
-msgstr "Mensajes"
+msgstr "Campañas"
 
 #: public_html/lists/admin/messages.php:418
 #: public_html/lists/admin/bouncerule.php:69
@@ -3503,7 +3502,7 @@ msgstr "Estado"
 #: public_html/lists/admin/messages.php:448
 #, php-format
 msgid "and %d more"
-msgstr ""
+msgstr "y %d más"
 
 #: public_html/lists/admin/messages.php:451
 #: public_html/lists/admin/send_core.php:578
@@ -3522,17 +3521,19 @@ msgid "Unique Views"
 msgstr "Vistas &uacute;nicas"
 
 #: public_html/lists/admin/messages.php:498
+#, fuzzy
 msgid "Total clicks"
-msgstr ""
+msgstr "Total de clicks"
 
 #: public_html/lists/admin/messages.php:521
 #, fuzzy
 msgid "Started "
-msgstr "Comenzado"
+msgstr "Iniciado"
 
 #: public_html/lists/admin/messages.php:522
+#, fuzzy
 msgid "Time to send"
-msgstr "Hora a la que hay que enviarlo"
+msgstr "Hora a la que debe enviarse"
 
 #: public_html/lists/admin/messages.php:571
 #: public_html/lists/admin/actions/domainstats.php:85
@@ -3572,9 +3573,11 @@ msgstr "ambos"
 msgid "Suspend"
 msgstr "Suspender"
 
+# Añadir a la cola nuevamente?
 #: public_html/lists/admin/messages.php:600
 #: public_html/lists/admin/messages.php:601
 #: public_html/lists/admin/actions/msgstatus.php:70
+#, fuzzy
 msgid "Requeue"
 msgstr "Volver a añadir a la cola"
 
@@ -9128,7 +9131,7 @@ msgstr "Última Modificación"
 #: public_html/databasestructure.php:20 public_html/databasestructure.php:48
 #: public_html/databasestructure.php:192
 msgid "UUID"
-msgstr ""
+msgstr "UUID"
 
 #: public_html/databasestructure.php:21
 msgid "Send this subscriber HTML emails"
@@ -9364,7 +9367,7 @@ msgstr "Clave primaria"
 
 #: public_html/databasestructure.php:107
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 #: public_html/databasestructure.php:108
 msgid "Start Time"
@@ -10259,40 +10262,47 @@ msgid "pagetitlehover:suppressionlist"
 msgstr "Listado de bajas"
 
 #: public_html/databasestructure.php:363
+#, fuzzy
 msgid "general settings"
-msgstr ""
+msgstr "ajustes generales"
 
 #: public_html/databasestructure.php:364
 msgid "security settings"
-msgstr ""
+msgstr "ajustes de seguridad"
 
 #: public_html/databasestructure.php:365
+#, fuzzy
 msgid "reporting settings"
-msgstr ""
+msgstr "ajustes de reportes"
 
 #: public_html/databasestructure.php:366
+#, fuzzy
 msgid "campaign settings"
-msgstr ""
+msgstr "ajustes de campañas"
 
 #: public_html/databasestructure.php:367
+#, fuzzy
 msgid "transactional settings"
-msgstr ""
+msgstr "ajustes transaccionales"
 
 #: public_html/databasestructure.php:368
+#, fuzzy
 msgid "subscription-ui settings"
-msgstr ""
+msgstr "ajustes de la interfaz de usuario de suscripción"
 
 #: public_html/databasestructure.php:369
+#, fuzzy
 msgid "list-organisation settings"
-msgstr ""
+msgstr "ajustes de organización de las listas"
 
 #: public_html/databasestructure.php:370
+#, fuzzy
 msgid "subscription settings"
-msgstr ""
+msgstr "ajustes de suscripción"
 
 #: public_html/databasestructure.php:371
 msgid "system settings"
-msgstr ""
+msgstr "ajustes del sistema"
 
 #, php-format
 #~ msgid "%d bounces to list %s"
