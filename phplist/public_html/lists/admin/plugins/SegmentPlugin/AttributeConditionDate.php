@@ -25,6 +25,11 @@
  */
 class SegmentPlugin_AttributeConditionDate extends SegmentPlugin_DateConditionBase
 {
+    public function operators()
+    {
+        return parent::operators() + [SegmentPlugin_Operator::ANNIVERSARY => s('on anniversary')];
+    }
+
     protected function queryCallBacks()
     {
         $ua = $this->createUniqueAlias('ua');
@@ -37,13 +42,28 @@ class SegmentPlugin_AttributeConditionDate extends SegmentPlugin_DateConditionBa
                 return "COALESCE($ua.value, '') != '' AND CURDATE() = DATE($ua.value) + INTERVAL $interval";
             },
             SegmentPlugin_Operator::BETWEEN => function ($start, $end) use ($ua) {
-                return "(COALESCE($ua.value, '') != '' AND DATE(COALESCE($ua.value, '')) BETWEEN '$start' AND '$end')";
+                return "(COALESCE($ua.value, '') != '' AND DATE($ua.value) BETWEEN '$start' AND '$end')";
+            },
+            SegmentPlugin_Operator::IS => function ($date) use ($ua) {
+                return "(COALESCE($ua.value, '') != '' AND DATE($ua.value) = '$date')";
             },
             SegmentPlugin_Operator::BEFORE => function ($date) use ($ua) {
-                return "(COALESCE($ua.value, '') != '' AND DATE(COALESCE($ua.value, '')) < '$date')";
+                return "(COALESCE($ua.value, '') != '' AND DATE($ua.value) < '$date')";
             },
             SegmentPlugin_Operator::AFTER => function ($date) use ($ua) {
-                return "(COALESCE($ua.value, '') != '' AND DATE(COALESCE($ua.value, '')) > '$date')";
+                return "(COALESCE($ua.value, '') != '' AND DATE($ua.value) > '$date')";
+            },
+            SegmentPlugin_Operator::ANNIVERSARY => function () use ($ua) {
+                return <<<END
+                    (COALESCE($ua.value, '') != ''
+                    AND (
+                        DAYOFMONTH($ua.value) = DAYOFMONTH(CURDATE()) AND MONTH($ua.value) = MONTH(CURDATE())
+                        OR
+                        (DAYOFMONTH($ua.value) = 29 AND MONTH($ua.value) = 2 AND DAYOFMONTH(CURDATE()) = 1 AND MONTH(CURDATE()) = 3
+                        AND NOT (YEAR(CURDATE()) % 4 = 0 AND (YEAR(CURDATE()) % 100 != 0 OR YEAR(CURDATE()) % 400 = 0)))
+                        )
+                    )
+END;
             },
         ];
     }

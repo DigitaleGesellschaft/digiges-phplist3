@@ -151,9 +151,9 @@ msgid "Download addresses"
 msgstr ""
 
 #: public_html/lists/admin/listbounces.php:76
-#, php-format
+#, fuzzy, php-format
 msgid "%s bounces to list %s"
-msgstr ""
+msgstr " bounces to list "
 
 #: public_html/lists/admin/listbounces.php:96
 #: public_html/lists/admin/msgbounces.php:98
@@ -1053,8 +1053,9 @@ msgid "Installed plugins"
 msgstr "Installed plugins"
 
 #: public_html/lists/admin/plugins.php:188
+#, fuzzy
 msgid "Plugin"
-msgstr ""
+msgstr "Plugins"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
@@ -1182,8 +1183,9 @@ msgid "All"
 msgstr ""
 
 #: public_html/lists/admin/plugins.php:358
+#, fuzzy
 msgid "Enabled"
-msgstr ""
+msgstr "enabled"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
@@ -1489,8 +1491,9 @@ msgid "Bounced"
 msgstr "Preskočené"
 
 #: public_html/lists/admin/statsoverview.php:145
+#, fuzzy
 msgid "Opened "
-msgstr ""
+msgstr "Otvorené"
 
 #: public_html/lists/admin/statsoverview.php:156
 msgid "Clicked"
@@ -2914,8 +2917,9 @@ msgid " bounces to campaign %s"
 msgstr ""
 
 #: public_html/lists/admin/msgbounces.php:105
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "time"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"
@@ -3280,8 +3284,9 @@ msgid "Purpose"
 msgstr "Purpose"
 
 #: public_html/lists/admin/messages.php:8
+#, fuzzy
 msgid "filter"
-msgstr ""
+msgstr "Filter"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/users.php:323
@@ -3438,8 +3443,9 @@ msgid "Total clicks"
 msgstr ""
 
 #: public_html/lists/admin/messages.php:521
+#, fuzzy
 msgid "Started "
-msgstr ""
+msgstr "Started"
 
 #: public_html/lists/admin/messages.php:522
 msgid "Time to send"
@@ -4198,8 +4204,9 @@ msgstr ""
 
 #: public_html/lists/admin/usercheck.php:26
 #: public_html/lists/admin/usercheck.php:30
+#, fuzzy
 msgid "Foreign key"
-msgstr ""
+msgstr "Foreign Key"
 
 #: public_html/lists/admin/usercheck.php:49
 msgid "What is the type of information you want to check"
@@ -4432,8 +4439,9 @@ msgid "fwds"
 msgstr "fwds"
 
 #: public_html/lists/admin/actions/statsoverview.php:139
+#, fuzzy
 msgid "Unique views"
-msgstr ""
+msgstr "Unikátne zobrazenia"
 
 #: public_html/lists/admin/actions/statsoverview.php:151
 #: public_html/lists/admin/actions/mviews.php:113
@@ -4491,8 +4499,9 @@ msgid "editing cancelled"
 msgstr ""
 
 #: public_html/lists/admin/actions/msgbounces.php:55
+#, fuzzy
 msgid "There are currently no data to view"
-msgstr ""
+msgstr "Momentálne tu nie sú žiadne kampane pre zobrazenie"
 
 #: public_html/lists/admin/actions/msgbounces.php:58
 msgid "Choose a campaign"
@@ -5433,8 +5442,9 @@ msgid "in progress"
 msgstr "in progress"
 
 #: public_html/lists/admin/actions/mviews.php:98
+#, fuzzy
 msgid "unique views"
-msgstr ""
+msgstr "Unikátne zobrazenia"
 
 #: public_html/lists/admin/actions/storemessage.php:20
 msgid ""
@@ -6016,8 +6026,9 @@ msgid "back"
 msgstr "späť"
 
 #: public_html/lists/admin/import1.php:139
+#, fuzzy
 msgid "to resubmit for real"
-msgstr ""
+msgstr " to resubmit for real"
 
 #: public_html/lists/admin/import1.php:140
 #: public_html/lists/admin/import1.php:229
@@ -6290,8 +6301,9 @@ msgid "No Lists"
 msgstr "Žiadne zoznamy"
 
 #: public_html/lists/admin/user.php:329
+#, fuzzy
 msgid "Download subscriber data"
-msgstr ""
+msgstr "Download subscribers"
 
 #: public_html/lists/admin/user.php:335
 msgid "Preferences page"
@@ -6427,12 +6439,14 @@ msgstr ""
 
 #: public_html/lists/admin/updatetranslation.php:63
 #: public_html/lists/admin/updatetranslation.php:66
+#, fuzzy
 msgid "Update"
-msgstr ""
+msgstr "update"
 
 #: public_html/lists/admin/updatetranslation.php:65
+#, fuzzy
 msgid "Up-to-date"
-msgstr ""
+msgstr "Up to date"
 
 #: public_html/lists/admin/updatetranslation.php:69
 msgid "Not installed"
@@ -8112,8 +8126,9 @@ msgid "Do Import"
 msgstr "Do Import"
 
 #: public_html/lists/admin/setup.php:18
+#, fuzzy
 msgid "Step"
-msgstr ""
+msgstr "Sep"
 
 #: public_html/lists/admin/setup.php:35
 msgid "Verify Settings"

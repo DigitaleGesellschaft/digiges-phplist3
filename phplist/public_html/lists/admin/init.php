@@ -8,7 +8,7 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.3.9");
+define("VERSION","3.4.0");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
@@ -463,9 +463,9 @@ if (!defined('EMAIL_ADDRESS_VALIDATION_LEVEL')) {
     define('EMAIL_ADDRESS_VALIDATION_LEVEL', 3);
 }
 if (!defined('BLACKLIST_EMAIL_ON_BOUNCE')) {
-    define('BLACKLIST_EMAIL_ON_BOUNCE', 5);
+    define('BLACKLIST_EMAIL_ON_BOUNCE', 50);
 }
-if ($bounce_unsubscribe_threshold < BLACKLIST_EMAIL_ON_BOUNCE) {
+if ($bounce_unsubscribe_threshold > BLACKLIST_EMAIL_ON_BOUNCE) {
     $bounce_unsubscribe_threshold = BLACKLIST_EMAIL_ON_BOUNCE;
 }
 

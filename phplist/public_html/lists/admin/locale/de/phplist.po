@@ -152,9 +152,9 @@ msgid "Download addresses"
 msgstr ""
 
 #: public_html/lists/admin/listbounces.php:76
-#, php-format
+#, fuzzy, php-format
 msgid "%s bounces to list %s"
-msgstr ""
+msgstr "%d Retouren an Liste %s"
 
 #: public_html/lists/admin/listbounces.php:96
 #: public_html/lists/admin/msgbounces.php:98
@@ -1067,8 +1067,9 @@ msgid "Installed plugins"
 msgstr "Installierte Plugins"
 
 #: public_html/lists/admin/plugins.php:188
+#, fuzzy
 msgid "Plugin"
-msgstr ""
+msgstr "Plugins"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
@@ -1196,8 +1197,9 @@ msgid "All"
 msgstr ""
 
 #: public_html/lists/admin/plugins.php:358
+#, fuzzy
 msgid "Enabled"
-msgstr ""
+msgstr "aktiviert"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
@@ -1505,8 +1507,9 @@ msgid "Bounced"
 msgstr "Retouren"
 
 #: public_html/lists/admin/statsoverview.php:145
+#, fuzzy
 msgid "Opened "
-msgstr ""
+msgstr "geöffnet"
 
 #: public_html/lists/admin/statsoverview.php:156
 msgid "Clicked"
@@ -2976,8 +2979,9 @@ msgid " bounces to campaign %s"
 msgstr ""
 
 #: public_html/lists/admin/msgbounces.php:105
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "Zeit"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"
@@ -3348,8 +3352,9 @@ msgid "Purpose"
 msgstr "Zweck"
 
 #: public_html/lists/admin/messages.php:8
+#, fuzzy
 msgid "filter"
-msgstr ""
+msgstr "Filter"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/users.php:323
@@ -3504,8 +3509,9 @@ msgid "Total clicks"
 msgstr ""
 
 #: public_html/lists/admin/messages.php:521
+#, fuzzy
 msgid "Started "
-msgstr ""
+msgstr "Verarbeitung gestartet"
 
 #: public_html/lists/admin/messages.php:522
 msgid "Time to send"
@@ -4272,8 +4278,9 @@ msgstr ""
 
 #: public_html/lists/admin/usercheck.php:26
 #: public_html/lists/admin/usercheck.php:30
+#, fuzzy
 msgid "Foreign key"
-msgstr ""
+msgstr "Fremdschl&uuml;ssel"
 
 #: public_html/lists/admin/usercheck.php:49
 msgid "What is the type of information you want to check"
@@ -4505,8 +4512,9 @@ msgid "fwds"
 msgstr "Weiterleitungen"
 
 #: public_html/lists/admin/actions/statsoverview.php:139
+#, fuzzy
 msgid "Unique views"
-msgstr ""
+msgstr "Gesehen von unterschiedlichen Nutzern"
 
 #: public_html/lists/admin/actions/statsoverview.php:151
 #: public_html/lists/admin/actions/mviews.php:113
@@ -4564,8 +4572,9 @@ msgid "editing cancelled"
 msgstr "Bearbeitung abgebrochen"
 
 #: public_html/lists/admin/actions/msgbounces.php:55
+#, fuzzy
 msgid "There are currently no data to view"
-msgstr ""
+msgstr "Derzeit gibt es keine Nachrichten zur Ansicht"
 
 #: public_html/lists/admin/actions/msgbounces.php:58
 msgid "Choose a campaign"
@@ -5543,8 +5552,9 @@ msgid "in progress"
 msgstr "in Bearbeitung"
 
 #: public_html/lists/admin/actions/mviews.php:98
+#, fuzzy
 msgid "unique views"
-msgstr ""
+msgstr "Gesehen von unterschiedlichen Nutzern"
 
 #: public_html/lists/admin/actions/storemessage.php:20
 msgid ""
@@ -6157,8 +6167,9 @@ msgid "back"
 msgstr "zur&uuml;ck"
 
 #: public_html/lists/admin/import1.php:139
+#, fuzzy
 msgid "to resubmit for real"
-msgstr ""
+msgstr "wirklich nochmals senden"
 
 #: public_html/lists/admin/import1.php:140
 #: public_html/lists/admin/import1.php:229
@@ -6439,8 +6450,9 @@ msgid "No Lists"
 msgstr "Keine Listen"
 
 #: public_html/lists/admin/user.php:329
+#, fuzzy
 msgid "Download subscriber data"
-msgstr ""
+msgstr "Abonnenten herunterladen"
 
 #: public_html/lists/admin/user.php:335
 msgid "Preferences page"
@@ -6575,12 +6587,14 @@ msgstr ""
 
 #: public_html/lists/admin/updatetranslation.php:63
 #: public_html/lists/admin/updatetranslation.php:66
+#, fuzzy
 msgid "Update"
-msgstr ""
+msgstr "aktualisieren"
 
 #: public_html/lists/admin/updatetranslation.php:65
+#, fuzzy
 msgid "Up-to-date"
-msgstr ""
+msgstr "Aktuell"
 
 #: public_html/lists/admin/updatetranslation.php:69
 msgid "Not installed"
@@ -8301,8 +8315,9 @@ msgid "Do Import"
 msgstr "Importieren"
 
 #: public_html/lists/admin/setup.php:18
+#, fuzzy
 msgid "Step"
-msgstr ""
+msgstr "Sep"
 
 #: public_html/lists/admin/setup.php:35
 msgid "Verify Settings"
