@@ -96,7 +96,7 @@
                 "rest-api": {
                     "resource": "@PhpListRestBundle/Controller/",
                     "type": "rest",
-                    "prefix": "/api/v2"
+                    "prefix": "/"
                 }
             },
             "configuration": {
@@ -108,7 +108,7 @@
                         "enabled": true,
                         "rules": [
                             {
-                                "path": "^/api/v2/",
+                                "path": "^/",
                                 "fallback_format": "json"
                             },
                             {

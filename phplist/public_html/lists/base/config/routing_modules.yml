@@ -5,4 +5,4 @@ phplist/core.homepage:
 phplist/rest-api.rest-api:
     resource: '@PhpListRestBundle/Controller/'
     type: rest
-    prefix: /api/v2
+    prefix: /

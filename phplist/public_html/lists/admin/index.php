@@ -78,6 +78,7 @@ if (is_file($configfile) && filesize($configfile) > 20) {
     echo '<h3>Cannot find config file, please check permissions</h3>';
     exit;
 }
+
 $ajax = isset($_GET['ajaxed']);
 
 if (!isset($database_host) || !isset($database_user) || !isset($database_password) || !isset($database_name)) {

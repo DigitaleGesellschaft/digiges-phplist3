@@ -1051,8 +1051,9 @@ msgid "Installed plugins"
 msgstr ""
 
 #: public_html/lists/admin/plugins.php:188
+#, fuzzy
 msgid "Plugin"
-msgstr ""
+msgstr "外挂"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
@@ -2896,8 +2897,9 @@ msgid " bounces to campaign %s"
 msgstr ""
 
 #: public_html/lists/admin/msgbounces.php:105
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "时间"
 
 #: public_html/lists/admin/members.php:57
 msgid "Add a user"
@@ -3264,8 +3266,9 @@ msgid "Purpose"
 msgstr ""
 
 #: public_html/lists/admin/messages.php:8
+#, fuzzy
 msgid "filter"
-msgstr ""
+msgstr "规则"
 
 #: public_html/lists/admin/messages.php:11
 #: public_html/lists/admin/users.php:323
@@ -3420,8 +3423,9 @@ msgid "Total clicks"
 msgstr ""
 
 #: public_html/lists/admin/messages.php:521
+#, fuzzy
 msgid "Started "
-msgstr ""
+msgstr "开始"
 
 #: public_html/lists/admin/messages.php:522
 msgid "Time to send"
@@ -4163,8 +4167,9 @@ msgstr ""
 
 #: public_html/lists/admin/usercheck.php:26
 #: public_html/lists/admin/usercheck.php:30
+#, fuzzy
 msgid "Foreign key"
-msgstr ""
+msgstr "外部键值"
 
 #: public_html/lists/admin/usercheck.php:49
 msgid "What is the type of information you want to check"
@@ -4394,8 +4399,9 @@ msgid "fwds"
 msgstr ""
 
 #: public_html/lists/admin/actions/statsoverview.php:139
+#, fuzzy
 msgid "Unique views"
-msgstr ""
+msgstr "浏览人数"
 
 #: public_html/lists/admin/actions/statsoverview.php:151
 #: public_html/lists/admin/actions/mviews.php:113
@@ -5433,8 +5439,9 @@ msgid "in progress"
 msgstr ""
 
 #: public_html/lists/admin/actions/mviews.php:98
+#, fuzzy
 msgid "unique views"
-msgstr ""
+msgstr "浏览人数"
 
 #: public_html/lists/admin/actions/storemessage.php:20
 msgid ""
@@ -5989,8 +5996,9 @@ msgid "back"
 msgstr "回到"
 
 #: public_html/lists/admin/import1.php:139
+#, fuzzy
 msgid "to resubmit for real"
-msgstr ""
+msgstr "重新送出给"
 
 #: public_html/lists/admin/import1.php:140
 #: public_html/lists/admin/import1.php:229
@@ -8037,8 +8045,9 @@ msgid "Do Import"
 msgstr "汇入"
 
 #: public_html/lists/admin/setup.php:18
+#, fuzzy
 msgid "Step"
-msgstr ""
+msgstr "9"
 
 #: public_html/lists/admin/setup.php:35
 msgid "Verify Settings"

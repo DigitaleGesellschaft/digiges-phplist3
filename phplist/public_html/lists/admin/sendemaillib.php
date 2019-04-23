@@ -230,6 +230,8 @@ function sendEmail($messageid, $email, $hash, $htmlpref = 0, $rssitems = array()
     $text['website'] = $GLOBALS['website'];
     $html['domain'] = $GLOBALS['domain'];   // Your domain, e.g. yourdomain.com
     $text['domain'] = $GLOBALS['domain'];
+    $html['organisation_name'] = getConfig('organisation_name');   // Organisation name placeholder
+    $text['organisation_name'] = getConfig('organisation_name');
 
     if ($hash != 'forwarded') {
         $text['footer'] = $cached[$messageid]['textfooter'];
@@ -237,7 +239,7 @@ function sendEmail($messageid, $email, $hash, $htmlpref = 0, $rssitems = array()
     } else {
         //0013076: different content when forwarding 'to a friend'
         if (FORWARD_ALTERNATIVE_CONTENT) {
-            $text['footer'] = stripslashes($messagedata['forwardfooter']);
+            $text['footer'] = stripslashes($cached[$messageid]['footer']);
         } else {
             $text['footer'] = getConfig('forwardfooter');
         }
