@@ -153,12 +153,12 @@ msgid "%s bounces to list %s"
 msgstr ""
 
 #: public_html/lists/admin/listbounces.php:96
-#: public_html/lists/admin/msgbounces.php:98
+#: public_html/lists/admin/msgbounces.php:97
 msgid "Bounces on"
 msgstr "Broj nedostupnih adresa na"
 
 #: public_html/lists/admin/listbounces.php:107
-#: public_html/lists/admin/msgbounces.php:104
+#: public_html/lists/admin/msgbounces.php:103
 msgid "Subscriber address"
 msgstr "Adresa pretplatnika"
 
@@ -273,7 +273,7 @@ msgstr "Inicijalizuj bazu podataka"
 msgid "to continue"
 msgstr "nastaviti"
 
-#: public_html/lists/admin/home.php:39 public_html/lists/admin/index.php:500
+#: public_html/lists/admin/home.php:39 public_html/lists/admin/index.php:502
 msgid "Continue Configuration"
 msgstr "Nastavite podešavanja"
 
@@ -336,7 +336,7 @@ msgstr "korisnici"
 msgid "List all Users"
 msgstr "Prikaži sve korisnike"
 
-#: public_html/lists/admin/home.php:107 public_html/lists/admin/import1.php:242
+#: public_html/lists/admin/home.php:107 public_html/lists/admin/import1.php:251
 msgid "import"
 msgstr "uvoz"
 
@@ -467,7 +467,7 @@ msgstr "obradite red za slanje"
 msgid "Process the Message Queue"
 msgstr "Izvrši red slanja poruka"
 
-#: public_html/lists/admin/home.php:255 public_html/lists/admin/connect.php:565
+#: public_html/lists/admin/home.php:255 public_html/lists/admin/connect.php:571
 msgid "warning"
 msgstr "upozorenje"
 
@@ -647,217 +647,217 @@ msgstr ""
 msgid "Invalid value for email address"
 msgstr "Nevažeća vrednost za email adresu"
 
-#: public_html/lists/admin/connect.php:461
+#: public_html/lists/admin/connect.php:467
 msgid "error"
 msgstr "greška"
 
-#: public_html/lists/admin/connect.php:519
+#: public_html/lists/admin/connect.php:525
 msgid "Too many errors, please login again"
 msgstr "Previše grešaka, molimo vas da se prijavite ponovo"
 
-#: public_html/lists/admin/connect.php:529
-#: public_html/lists/admin/connect.php:534
+#: public_html/lists/admin/connect.php:535
+#: public_html/lists/admin/connect.php:540
 msgid "fatalerror"
 msgstr "fatalna greška"
 
-#: public_html/lists/admin/connect.php:555
+#: public_html/lists/admin/connect.php:561
 msgid "Documentation about this error"
 msgstr "Dokumentacija o ovoj grešci"
 
-#: public_html/lists/admin/connect.php:558
+#: public_html/lists/admin/connect.php:564
 #: public_html/lists/admin/plugins.php:290
 msgid "More information"
 msgstr "Više informacija"
 
-#: public_html/lists/admin/connect.php:874
+#: public_html/lists/admin/connect.php:880
 msgid "Main Page"
 msgstr "Glavna strana"
 
-#: public_html/lists/admin/connect.php:875
+#: public_html/lists/admin/connect.php:881
 msgid "about"
 msgstr "o aplikaciji"
 
-#: public_html/lists/admin/connect.php:943
+#: public_html/lists/admin/connect.php:949
 msgid "In this section"
 msgstr "U ovoj sekciji"
 
-#: public_html/lists/admin/connect.php:982
+#: public_html/lists/admin/connect.php:988
 msgid "Recently visited"
 msgstr "Nedavno posećeno"
 
-#: public_html/lists/admin/connect.php:1323
+#: public_html/lists/admin/connect.php:1329
 msgid "All Lists"
 msgstr "Sve liste"
 
-#: public_html/lists/admin/connect.php:1329
+#: public_html/lists/admin/connect.php:1335
 msgid "All Public Lists"
 msgstr "Sve javne liste"
 
-#: public_html/lists/admin/connect.php:1333
+#: public_html/lists/admin/connect.php:1339
 #: public_html/lists/admin/import2.php:646 public_html/lists/admin/list.php:95
 #: public_html/lists/admin/list.php:99 public_html/lists/admin/list.php:325
 #: public_html/lists/admin/import3.php:43
 msgid "Add a list"
 msgstr "Dodajte listu"
 
-#: public_html/lists/admin/connect.php:1344
+#: public_html/lists/admin/connect.php:1350
 #: public_html/lists/admin/list.php:135 public_html/lists/admin/list.php:145
 #: public_html/lists/admin/list.php:167 public_html/lists/admin/list.php:175
 msgid "Uncategorised"
 msgstr "Nekategorisano"
 
-#: public_html/lists/admin/connect.php:1361
+#: public_html/lists/admin/connect.php:1367
 msgid "Public list"
 msgstr "Javna lista"
 
-#: public_html/lists/admin/connect.php:1363
+#: public_html/lists/admin/connect.php:1369
 msgid "Private list"
 msgstr "Privatna lista"
 
-#: public_html/lists/admin/connect.php:1410
-#: public_html/lists/admin/connect.php:1413
+#: public_html/lists/admin/connect.php:1416
+#: public_html/lists/admin/connect.php:1419
 #: public_html/lists/admin/export.php:131
 msgid "Select all"
 msgstr "Obeleži sve"
 
-#: public_html/lists/admin/connect.php:1427
+#: public_html/lists/admin/connect.php:1433
 msgid "There are no lists available"
 msgstr "Nema dostupnih lista"
 
-#: public_html/lists/admin/connect.php:1685
+#: public_html/lists/admin/connect.php:1691
 #: public_html/lists/admin/systemstats.php:13
 #: public_html/lists/admin/date.php:27
 msgid "January"
 msgstr "Januar"
 
-#: public_html/lists/admin/connect.php:1686
+#: public_html/lists/admin/connect.php:1692
 #: public_html/lists/admin/systemstats.php:14
 #: public_html/lists/admin/date.php:28
 msgid "February"
 msgstr "Februar"
 
-#: public_html/lists/admin/connect.php:1687
+#: public_html/lists/admin/connect.php:1693
 #: public_html/lists/admin/systemstats.php:15
 #: public_html/lists/admin/date.php:29
 msgid "March"
 msgstr "Mart"
 
-#: public_html/lists/admin/connect.php:1688
+#: public_html/lists/admin/connect.php:1694
 #: public_html/lists/admin/systemstats.php:16
 #: public_html/lists/admin/date.php:30
 msgid "April"
 msgstr "April"
 
-#: public_html/lists/admin/connect.php:1689
-#: public_html/lists/admin/connect.php:1704
+#: public_html/lists/admin/connect.php:1695
+#: public_html/lists/admin/connect.php:1710
 #: public_html/lists/admin/systemstats.php:17
 #: public_html/lists/admin/systemstats.php:32
 #: public_html/lists/admin/date.php:31
 msgid "May"
 msgstr "Maj"
 
-#: public_html/lists/admin/connect.php:1690
+#: public_html/lists/admin/connect.php:1696
 #: public_html/lists/admin/systemstats.php:18
 #: public_html/lists/admin/date.php:32
 msgid "June"
 msgstr "Jun"
 
-#: public_html/lists/admin/connect.php:1691
+#: public_html/lists/admin/connect.php:1697
 #: public_html/lists/admin/systemstats.php:19
 #: public_html/lists/admin/date.php:33
 msgid "July"
 msgstr "Jul"
 
-#: public_html/lists/admin/connect.php:1692
+#: public_html/lists/admin/connect.php:1698
 #: public_html/lists/admin/systemstats.php:20
 #: public_html/lists/admin/date.php:34
 msgid "August"
 msgstr "Avgust"
 
-#: public_html/lists/admin/connect.php:1693
+#: public_html/lists/admin/connect.php:1699
 #: public_html/lists/admin/systemstats.php:21
 #: public_html/lists/admin/date.php:35
 msgid "September"
 msgstr "Septembar"
 
-#: public_html/lists/admin/connect.php:1694
+#: public_html/lists/admin/connect.php:1700
 #: public_html/lists/admin/systemstats.php:22
 #: public_html/lists/admin/date.php:36
 msgid "October"
 msgstr "Oktobar"
 
-#: public_html/lists/admin/connect.php:1695
+#: public_html/lists/admin/connect.php:1701
 #: public_html/lists/admin/systemstats.php:23
 #: public_html/lists/admin/date.php:37
 msgid "November"
 msgstr "Novembar"
 
-#: public_html/lists/admin/connect.php:1696
+#: public_html/lists/admin/connect.php:1702
 #: public_html/lists/admin/systemstats.php:24
 #: public_html/lists/admin/date.php:38
 msgid "December"
 msgstr "Decembar"
 
-#: public_html/lists/admin/connect.php:1700
+#: public_html/lists/admin/connect.php:1706
 #: public_html/lists/admin/systemstats.php:28
 msgid "Jan"
 msgstr "jan."
 
-#: public_html/lists/admin/connect.php:1701
+#: public_html/lists/admin/connect.php:1707
 #: public_html/lists/admin/systemstats.php:29
 msgid "Feb"
 msgstr "feb."
 
-#: public_html/lists/admin/connect.php:1702
+#: public_html/lists/admin/connect.php:1708
 #: public_html/lists/admin/systemstats.php:30
 msgid "Mar"
 msgstr "mar."
 
-#: public_html/lists/admin/connect.php:1703
+#: public_html/lists/admin/connect.php:1709
 #: public_html/lists/admin/systemstats.php:31
 msgid "Apr"
 msgstr "apr."
 
-#: public_html/lists/admin/connect.php:1705
+#: public_html/lists/admin/connect.php:1711
 #: public_html/lists/admin/systemstats.php:33
 msgid "Jun"
 msgstr "jun"
 
-#: public_html/lists/admin/connect.php:1706
+#: public_html/lists/admin/connect.php:1712
 #: public_html/lists/admin/systemstats.php:34
 msgid "Jul"
 msgstr "jul"
 
-#: public_html/lists/admin/connect.php:1707
+#: public_html/lists/admin/connect.php:1713
 #: public_html/lists/admin/systemstats.php:35
 msgid "Aug"
 msgstr "avg."
 
-#: public_html/lists/admin/connect.php:1708
+#: public_html/lists/admin/connect.php:1714
 #: public_html/lists/admin/systemstats.php:36
 msgid "Sep"
 msgstr "sep."
 
-#: public_html/lists/admin/connect.php:1709
+#: public_html/lists/admin/connect.php:1715
 #: public_html/lists/admin/systemstats.php:37
 msgid "Oct"
 msgstr "okt."
 
-#: public_html/lists/admin/connect.php:1710
+#: public_html/lists/admin/connect.php:1716
 #: public_html/lists/admin/systemstats.php:38
 msgid "Nov"
 msgstr "nov."
 
-#: public_html/lists/admin/connect.php:1711
+#: public_html/lists/admin/connect.php:1717
 #: public_html/lists/admin/systemstats.php:39
 msgid "Dec"
 msgstr "dec."
 
-#: public_html/lists/admin/connect.php:2117
+#: public_html/lists/admin/connect.php:2123
 msgid "secs"
 msgstr "sekundi"
 
-#: public_html/lists/admin/connect.php:2125
+#: public_html/lists/admin/connect.php:2131
 #: public_html/lists/admin/import4.php:177
 #: public_html/lists/admin/import4.php:186
 #: public_html/lists/admin/attributes.php:365
@@ -865,35 +865,35 @@ msgstr "sekundi"
 msgid "Attribute"
 msgstr "Atribut"
 
-#: public_html/lists/admin/connect.php:2125
+#: public_html/lists/admin/connect.php:2131
 msgid "Placeholder"
 msgstr "Zamenski tekst"
 
-#: public_html/lists/admin/connect.php:2212
+#: public_html/lists/admin/connect.php:2218
 #, php-format
 msgid "Listing %d to %d of %d"
 msgstr "Listam %d do %d od %d"
 
-#: public_html/lists/admin/connect.php:2214
+#: public_html/lists/admin/connect.php:2220
 #, php-format
 msgid "Listing %d to %d"
 msgstr "Listam %d do %d"
 
-#: public_html/lists/admin/connect.php:2229
+#: public_html/lists/admin/connect.php:2235
 msgid "First Page"
 msgstr "Prva strana"
 
-#: public_html/lists/admin/connect.php:2230
+#: public_html/lists/admin/connect.php:2236
 #: public_html/lists/admin/inc/interfacelib.php:832
 msgid "Previous"
 msgstr "Prethodno"
 
-#: public_html/lists/admin/connect.php:2232
+#: public_html/lists/admin/connect.php:2238
 #: public_html/lists/admin/inc/interfacelib.php:873
 msgid "Next"
 msgstr "Sledeće"
 
-#: public_html/lists/admin/connect.php:2234
+#: public_html/lists/admin/connect.php:2240
 msgid "Last Page"
 msgstr "Poslednja strana"
 
@@ -1484,31 +1484,31 @@ msgstr "Prosleđene"
 msgid "Sending message %d with subject %s to %s"
 msgstr "Slanje poruke %d sa naslovom %s za %s"
 
-#: public_html/lists/admin/sendemaillib.php:760
+#: public_html/lists/admin/sendemaillib.php:763
 msgid "sendingtextonlyto"
 msgstr "slanje samo teksta za"
 
-#: public_html/lists/admin/sendemaillib.php:950
+#: public_html/lists/admin/sendemaillib.php:953
 #, php-format
 msgid "Error sending message %d (%d/%d) to %s (%s) "
 msgstr "Greška u slanju poruke %d (%d/%d) za %s (%s) "
 
-#: public_html/lists/admin/sendemaillib.php:967
+#: public_html/lists/admin/sendemaillib.php:970
 #, php-format
 msgid "Size of HTML email: %s "
 msgstr "Veličina HTML email-a: %s "
 
-#: public_html/lists/admin/sendemaillib.php:971
+#: public_html/lists/admin/sendemaillib.php:974
 #, php-format
 msgid "Size of Text email: %s "
 msgstr "Veličina tekstualnih email-a: %s "
 
-#: public_html/lists/admin/sendemaillib.php:977
+#: public_html/lists/admin/sendemaillib.php:980
 #, php-format
 msgid "Message too large (%s is over %s), suspending"
 msgstr "Poruka je prevelika (%s je preko %s), suspendujem"
 
-#: public_html/lists/admin/sendemaillib.php:979
+#: public_html/lists/admin/sendemaillib.php:982
 msgid ""
 "Warning: the final message exceeds the sending limit, this campaign will "
 "fail sending. Reduce the size by removing attachments or images"
@@ -1516,22 +1516,22 @@ msgstr ""
 "Upozorenje: konačna poruka prelazi ograničenje za slanje, ova kampanja neće "
 "biti poslata. Smanjite joj veličinu uklanjanjem priloga ili slika"
 
-#: public_html/lists/admin/sendemaillib.php:983
+#: public_html/lists/admin/sendemaillib.php:986
 #, php-format
 msgid "Campaign %d suspended. Message too large"
 msgstr "Kampanja %d je suspendovana. Poruka je prevelika"
 
-#: public_html/lists/admin/sendemaillib.php:985
+#: public_html/lists/admin/sendemaillib.php:988
 #, php-format
 msgid "Campaign %d suspended, message too large"
 msgstr "Kampanja %d je suspendovana, poruka je prevelika"
 
-#: public_html/lists/admin/sendemaillib.php:1023
+#: public_html/lists/admin/sendemaillib.php:1026
 #, php-format
 msgid "Insufficient memory to add attachment to campaign %d %d - %d"
 msgstr "Nema dovoljno memorije da bi se dodao prilog u kampanju %d %d - %d"
 
-#: public_html/lists/admin/sendemaillib.php:1066
+#: public_html/lists/admin/sendemaillib.php:1069
 #, php-format
 msgid ""
 "Error, when trying to send campaign %d the attachment (%s) could not be "
@@ -1540,30 +1540,30 @@ msgstr ""
 "Greška u slanju kampanje %d jer prilog (%s) nije mogao biti kopiran u "
 "repozitorijum. Proverite dozvole."
 
-#: public_html/lists/admin/sendemaillib.php:1068
-#: public_html/lists/admin/sendemaillib.php:1083
+#: public_html/lists/admin/sendemaillib.php:1071
+#: public_html/lists/admin/sendemaillib.php:1086
 msgid "phpList system error"
 msgstr "phpList sistemska greška"
 
-#: public_html/lists/admin/sendemaillib.php:1073
+#: public_html/lists/admin/sendemaillib.php:1076
 #, php-format
 msgid "failed to open attachment (%s) to add to campaign %d"
 msgstr "neuspešno otvaranje priloga (%s) da bi se dodao kampanji %d"
 
-#: public_html/lists/admin/sendemaillib.php:1080
+#: public_html/lists/admin/sendemaillib.php:1083
 #, php-format
 msgid "Attachment %s does not exist"
 msgstr "Prilog %s ne postoji"
 
-#: public_html/lists/admin/sendemaillib.php:1081
+#: public_html/lists/admin/sendemaillib.php:1084
 #, php-format
 msgid ""
 "Error, when trying to send campaign %d the attachment (%s) could not be "
 "found in the repository"
 msgstr "Greška u slanju kampanje %d, prilog (%s) nije pronađen u repozitoriju"
 
-#: public_html/lists/admin/sendemaillib.php:1102
-#: public_html/lists/admin/sendemaillib.php:1104
+#: public_html/lists/admin/sendemaillib.php:1105
+#: public_html/lists/admin/sendemaillib.php:1107
 #, php-format
 msgid "Campaign %d suspended for too many errors with attachments"
 msgstr "Kampanja %d je suspendovana zbog previše grešaka sa prilozima"
@@ -1670,7 +1670,7 @@ msgid "No users to copy, is the prefix correct?"
 msgstr "Nema korisnika za kopiranje, da li je prefiks ispravan?"
 
 #: public_html/lists/admin/import4.php:126
-#: public_html/lists/admin/actions/import1.php:217
+#: public_html/lists/admin/actions/import1.php:226
 #: public_html/lists/admin/import3.php:510
 #: public_html/lists/admin/users.php:455
 msgid "lists"
@@ -1683,7 +1683,7 @@ msgstr "Kopiram liste"
 #: public_html/lists/admin/import4.php:144
 #: public_html/lists/admin/import4.php:153
 #: public_html/lists/admin/actions/listbounces.php:53
-#: public_html/lists/admin/actions/import1.php:217
+#: public_html/lists/admin/actions/import1.php:226
 #: public_html/lists/admin/list.php:108 public_html/lists/admin/import3.php:510
 msgid "list"
 msgstr "lista"
@@ -2925,15 +2925,15 @@ msgstr ""
 msgid "phplist Spam blocked"
 msgstr "phplist Spam blokiran"
 
-#: public_html/lists/admin/subscribelib2.php:340
+#: public_html/lists/admin/subscribelib2.php:338
 msgid "Email is blacklisted, so request for confirmation has been sent."
 msgstr "Email adresa je blokirana, pa je poslat zahtev za potvrdu."
 
-#: public_html/lists/admin/subscribelib2.php:341
+#: public_html/lists/admin/subscribelib2.php:339
 msgid "If user confirms subscription, they will be removed from the blacklist."
 msgstr "Ako korisnik potvrdi pretplatu, biće obrisan sa liste blokiranih."
 
-#: public_html/lists/admin/subscribelib2.php:775
+#: public_html/lists/admin/subscribelib2.php:786
 msgid "General"
 msgstr ""
 
@@ -2951,7 +2951,7 @@ msgstr "Preuzmi"
 msgid "bounces to campaign"
 msgstr "Ne postoji takva kampanja"
 
-#: public_html/lists/admin/msgbounces.php:105
+#: public_html/lists/admin/msgbounces.php:104
 msgid "Time"
 msgstr ""
 
@@ -3750,7 +3750,7 @@ msgid "Unable to create campaign, did you forget to upgrade the database?"
 msgstr ""
 
 #: public_html/lists/admin/send_core.php:115
-#: public_html/lists/admin/index.php:766 public_html/lists/admin/index.php:787
+#: public_html/lists/admin/index.php:760 public_html/lists/admin/index.php:781
 msgid "Access Denied"
 msgstr "Pristup odbijen"
 
@@ -4657,7 +4657,7 @@ msgid "%d emails subscribed to the lists"
 msgstr "%d email adresa je pretplaćeno na liste"
 
 #: public_html/lists/admin/actions/import2.php:502
-#: public_html/lists/admin/actions/import1.php:222
+#: public_html/lists/admin/actions/import1.php:231
 #, php-format
 msgid "%d emails already existed in the database"
 msgstr "%d email adresa je već postojalo u bazi podataka"
@@ -4706,7 +4706,7 @@ msgid "phplist Import Results"
 msgstr "phplist Rezultati uvoza"
 
 #: public_html/lists/admin/actions/import2.php:539
-#: public_html/lists/admin/actions/import1.php:234
+#: public_html/lists/admin/actions/import1.php:246
 #: public_html/lists/admin/import2.php:608
 #: public_html/lists/admin/import3.php:533
 #: public_html/lists/admin/importsimple.php:128
@@ -4722,74 +4722,80 @@ msgstr "Primer sadržaja biltena"
 msgid "File not found"
 msgstr "Datoteka nije pronađena"
 
-#: public_html/lists/admin/actions/import1.php:114
+#: public_html/lists/admin/actions/import1.php:123
 msgid "Import of existing subscriber"
 msgstr "Uvoz postojećeg pretplatnika"
 
-#: public_html/lists/admin/actions/import1.php:140
+#: public_html/lists/admin/actions/import1.php:149
 msgid "Import of new subscriber"
 msgstr "Uvoz novog pretplatnika"
 
-#: public_html/lists/admin/actions/import1.php:193
+#: public_html/lists/admin/actions/import1.php:202
 #: public_html/lists/admin/user.php:252
 msgid "No data changed"
 msgstr "Nema promene podataka"
 
-#: public_html/lists/admin/actions/import1.php:201
+#: public_html/lists/admin/actions/import1.php:210
 msgid "List subscriptions:"
 msgstr "Pretplate na listu:"
 
-#: public_html/lists/admin/actions/import1.php:203
+#: public_html/lists/admin/actions/import1.php:212
 msgid "Was subscribed to:"
 msgstr "Bio je pretplaćen na:"
 
-#: public_html/lists/admin/actions/import1.php:206
+#: public_html/lists/admin/actions/import1.php:215
 msgid "Is now subscribed to:"
 msgstr "Sada je pretplaćen na:"
 
-#: public_html/lists/admin/actions/import1.php:209
+#: public_html/lists/admin/actions/import1.php:218
 msgid "Not subscribed to any lists"
 msgstr "Bez pretplate ni na jednu listu"
 
-#: public_html/lists/admin/actions/import1.php:212
+#: public_html/lists/admin/actions/import1.php:221
 msgid "Import by "
 msgstr "Uvezao "
 
-#: public_html/lists/admin/actions/import1.php:218
+#: public_html/lists/admin/actions/import1.php:227
 #: public_html/lists/admin/import3.php:511
 msgid "new email was"
 msgstr "nova email adresa je bila"
 
-#: public_html/lists/admin/actions/import1.php:218
+#: public_html/lists/admin/actions/import1.php:227
 #: public_html/lists/admin/import3.php:511
 msgid "new emails were"
 msgstr "nove email adrese su bile"
 
-#: public_html/lists/admin/actions/import1.php:219
+#: public_html/lists/admin/actions/import1.php:228
 #: public_html/lists/admin/import3.php:512
 msgid "email was"
 msgstr "email adresa je bila"
 
-#: public_html/lists/admin/actions/import1.php:219
+#: public_html/lists/admin/actions/import1.php:228
 #: public_html/lists/admin/import3.php:512
 msgid "emails were"
 msgstr "email adrese su bile"
 
-#: public_html/lists/admin/actions/import1.php:225
+#: public_html/lists/admin/actions/import1.php:234
+#, fuzzy, php-format
+#| msgid "Invalid email"
+msgid "%d invalid emails"
+msgstr "Nevažeća email adresa"
+
+#: public_html/lists/admin/actions/import1.php:237
 msgid "All the emails already exist in the database."
 msgstr "Sve email adrese već postoje u bazi podataka."
 
-#: public_html/lists/admin/actions/import1.php:227
+#: public_html/lists/admin/actions/import1.php:239
 #: public_html/lists/admin/import3.php:517
 msgid "succesfully imported to the database and added to"
 msgstr "uspešno uvezene u bazu podataka i dodate u"
 
-#: public_html/lists/admin/actions/import1.php:227
+#: public_html/lists/admin/actions/import1.php:239
 #: public_html/lists/admin/import3.php:517
 msgid "subscribed to the"
 msgstr "pretplaćen na"
 
-#: public_html/lists/admin/actions/import1.php:230
+#: public_html/lists/admin/actions/import1.php:242
 #, php-format
 msgid ""
 "%d emails were found on the do-not-send-list and have not been added to the "
@@ -5563,7 +5569,7 @@ msgid "Reset Import session"
 msgstr "Resetujte sesiju uvoza"
 
 #: public_html/lists/admin/import2.php:77
-#: public_html/lists/admin/import1.php:45
+#: public_html/lists/admin/import1.php:47
 msgid "File is either too large or does not exist."
 msgstr "Datoteka je prevelika ili ne postoji."
 
@@ -5580,12 +5586,12 @@ msgstr ""
 "tabelu. Trebate izvesti podatke iz tabele u TAB odvojenu tekstualnu datoteku"
 
 #: public_html/lists/admin/import2.php:100
-#: public_html/lists/admin/import1.php:50
+#: public_html/lists/admin/import1.php:52
 msgid "File too big, please split it up into smaller ones"
 msgstr "Datoteka je prevelika, podelite je u više manjih"
 
 #: public_html/lists/admin/import2.php:114
-#: public_html/lists/admin/import1.php:66
+#: public_html/lists/admin/import1.php:68
 msgid "Please choose whether to sign up immediately or to send a notification"
 msgstr ""
 "Molimo odaberite da li se prijava obavlja odmah ili da se pošalje obaveštenje"
@@ -5596,7 +5602,7 @@ msgid "Cannot read %s. file is not readable !"
 msgstr "Ne mogu pročitati %s. datoteka nije čitljiva !"
 
 #: public_html/lists/admin/import2.php:137
-#: public_html/lists/admin/import1.php:88
+#: public_html/lists/admin/import1.php:90
 msgid ""
 "Something went wrong while uploading the file. Empty file received. Maybe "
 "the file is too big, or you have no permissions to read it."
@@ -5670,7 +5676,7 @@ msgid "Test Output"
 msgstr "Testirajte Rezultat"
 
 #: public_html/lists/admin/import2.php:440
-#: public_html/lists/admin/import1.php:167
+#: public_html/lists/admin/import1.php:171
 #, php-format
 msgid "Importing %d subscribers to %d lists, please wait"
 msgstr "Uvoz %d pretplatnika u %d liste, molimo sačekajte"
@@ -5689,7 +5695,7 @@ msgstr "Dodajem korisnike u listu"
 
 #: public_html/lists/admin/import2.php:635
 #: public_html/lists/admin/import2.php:650
-#: public_html/lists/admin/import1.php:200
+#: public_html/lists/admin/import1.php:204
 #: public_html/lists/admin/import3.php:248
 #: public_html/lists/admin/importsimple.php:181
 msgid "Select the lists to add the emails to"
@@ -5781,6 +5787,7 @@ msgid "Show Warnings"
 msgstr "Prikaži upozorenja"
 
 #: public_html/lists/admin/import2.php:723
+#: public_html/lists/admin/import1.php:238
 msgid "Omit Invalid"
 msgstr "Izostavi nevažeće"
 
@@ -5799,7 +5806,7 @@ msgid "Retain Old User Email"
 msgstr "Zadrži staru email adresu korisnika"
 
 #: public_html/lists/admin/import2.php:746
-#: public_html/lists/admin/import1.php:232
+#: public_html/lists/admin/import1.php:241
 msgid ""
 "If you choose \"send notification email\" the subscribers you are adding "
 "will be sent the request for confirmation of subscription to which they will "
@@ -5814,13 +5821,13 @@ msgid "Send&nbsp;Notification&nbsp;email"
 msgstr "Pošalji&nbsp;email&nbsp;obaveštenje"
 
 #: public_html/lists/admin/import2.php:747
-#: public_html/lists/admin/import1.php:233
+#: public_html/lists/admin/import1.php:242
 #: public_html/lists/admin/import3.php:270
 msgid "Make confirmed immediately"
 msgstr "Odmah ih potvrdi"
 
 #: public_html/lists/admin/import2.php:748
-#: public_html/lists/admin/import1.php:234
+#: public_html/lists/admin/import1.php:243
 msgid ""
 "If you are going to send notification to users, you may want to add a little "
 "delay between messages"
@@ -5829,12 +5836,12 @@ msgstr ""
 "malo kašnjenje između poruka"
 
 #: public_html/lists/admin/import2.php:749
-#: public_html/lists/admin/import1.php:235
+#: public_html/lists/admin/import1.php:244
 msgid "Notification throttle"
 msgstr "Regulacija obaveštenja"
 
 #: public_html/lists/admin/import2.php:749
-#: public_html/lists/admin/import1.php:235
+#: public_html/lists/admin/import1.php:244
 msgid "(default is nothing, will send as fast as it can)"
 msgstr "(podrazumevano je ništa, poslaće što pre može)"
 
@@ -6061,11 +6068,11 @@ msgid ""
 msgstr ""
 "Privremeni direktorijum za otpremanje nije upisiv, pa će uvoz biti neuspešan"
 
-#: public_html/lists/admin/import1.php:40
+#: public_html/lists/admin/import1.php:42
 msgid "No file was specified. Maybe the file is too big?"
 msgstr "Nije određena datoteka. Možda je datoteka prevelika?"
 
-#: public_html/lists/admin/import1.php:58
+#: public_html/lists/admin/import1.php:60
 msgid ""
 "Please upload a plain text file only. You cannot use a spreadsheet. You can "
 "only upload a plain text file with one email address per line."
@@ -6074,36 +6081,36 @@ msgstr ""
 "dokument. Možete otpremiti samo običnu tekstualnu datoteku sa jednom email "
 "adresom po liniji."
 
-#: public_html/lists/admin/import1.php:81
+#: public_html/lists/admin/import1.php:83
 msgid "Cannot read file. It is not readable !"
 msgstr "Ne mogu pročitati datoteku. Nije čitljiva !"
 
-#: public_html/lists/admin/import1.php:139
+#: public_html/lists/admin/import1.php:143
 msgid "There should only be ONE email per line."
 msgstr "Mora biti samo JEDNA email adresa po liniji."
 
-#: public_html/lists/admin/import1.php:139
+#: public_html/lists/admin/import1.php:143
 msgid "If the output looks ok, go"
 msgstr "Ako izlaz izgleda ok, idi"
 
-#: public_html/lists/admin/import1.php:139
+#: public_html/lists/admin/import1.php:143
 msgid "back"
 msgstr "nazad"
 
-#: public_html/lists/admin/import1.php:139
+#: public_html/lists/admin/import1.php:143
 msgid "to resubmit for real"
 msgstr ""
 
-#: public_html/lists/admin/import1.php:140
-#: public_html/lists/admin/import1.php:229
+#: public_html/lists/admin/import1.php:144
+#: public_html/lists/admin/import1.php:234
 msgid "Test output:"
 msgstr "Testiraj izlaz:"
 
-#: public_html/lists/admin/import1.php:197
+#: public_html/lists/admin/import1.php:201
 msgid "adding_users"
 msgstr "dodavanje_korisnika"
 
-#: public_html/lists/admin/import1.php:219
+#: public_html/lists/admin/import1.php:224
 msgid ""
 "The file you upload will need to contain the emails you want to add to these "
 "lists. Anything after the email will be added as attribute \"Info\" of the "
@@ -6117,11 +6124,11 @@ msgstr ""
 "pretplatnike. Upozorenje: datoteka mora biti običan tekst. Ne otpremajte "
 "binarne datoteke kao što je Word dokument."
 
-#: public_html/lists/admin/import1.php:222
+#: public_html/lists/admin/import1.php:227
 msgid "File containing emails:"
 msgstr "Datoteka koja sadrži email adrese:"
 
-#: public_html/lists/admin/import1.php:226
+#: public_html/lists/admin/import1.php:231
 #: public_html/lists/admin/importadmin.php:324
 msgid ""
 "If you check \"Test Output\", you will get the list of parsed emails on "
@@ -6134,7 +6141,7 @@ msgstr ""
 "korisno za proveru da li je format vaše datoteke dobar. Biće prikazano samo "
 "prvih 50 zapisa."
 
-#: public_html/lists/admin/import1.php:233
+#: public_html/lists/admin/import1.php:242
 msgid "Send Notification email"
 msgstr "Pošalji email obaveštenje"
 
@@ -7903,74 +7910,74 @@ msgstr "Završeno"
 msgid "Convert some more"
 msgstr "Konvertuj još"
 
-#: public_html/lists/admin/index.php:224
+#: public_html/lists/admin/index.php:226
 msgid "Available options:"
 msgstr ""
 
-#: public_html/lists/admin/index.php:270
+#: public_html/lists/admin/index.php:272
 msgid "Login not available. Create an account first."
 msgstr ""
 
-#: public_html/lists/admin/index.php:309
+#: public_html/lists/admin/index.php:311
 #, php-format
 msgid "invalid login from %s, tried logging in as %s"
 msgstr "nevažeća prijava u sistem od %s, pokušao da se prijavi u sistem kao %s"
 
-#: public_html/lists/admin/index.php:333
+#: public_html/lists/admin/index.php:335
 msgid "Failed sending a change password token"
 msgstr "Greška u slanju tokena za promenu lozinke"
 
-#: public_html/lists/admin/index.php:342
+#: public_html/lists/admin/index.php:344
 msgid "Incorrect processing secret"
 msgstr "Pogrešna šifra obrade"
 
-#: public_html/lists/admin/index.php:367
+#: public_html/lists/admin/index.php:369
 #, php-format
 msgid "login ip invalid from %s for %s (was %s)"
 msgstr "nevažeća ip pri prijavi sa %s od %s (bila je %s)"
 
-#: public_html/lists/admin/index.php:369
+#: public_html/lists/admin/index.php:371
 msgid "Your IP address has changed. For security reasons, please login again"
 msgstr ""
 "Vaša IP adresa se promenila. Molimo vas da se ponovo prijavite u sistem zbog "
 "bezbednosnih razloga"
 
-#: public_html/lists/admin/index.php:376
+#: public_html/lists/admin/index.php:378
 #, php-format
 msgid "invalidated login from %s for %s (error %s)"
 msgstr "poništena prijava sa %s za %s (greška %s)"
 
-#: public_html/lists/admin/index.php:395
+#: public_html/lists/admin/index.php:397
 msgid "Your session timed out, please log in again"
 msgstr ""
 "Vreme vaše sesije je isteklo, molimo vas da se ponovo prijavite u sistem"
 
-#: public_html/lists/admin/index.php:400
+#: public_html/lists/admin/index.php:402
 msgid "Your session timed out, please login again"
 msgstr ""
 "Vreme vaše sesije je isteklo, molimo vas da se ponovo prijavite u sistem"
 
-#: public_html/lists/admin/index.php:481
+#: public_html/lists/admin/index.php:483
 msgid "Main page"
 msgstr "Glavna strana"
 
-#: public_html/lists/admin/index.php:485
+#: public_html/lists/admin/index.php:487
 msgid "goodbye"
 msgstr "doviđenja"
 
-#: public_html/lists/admin/index.php:489
+#: public_html/lists/admin/index.php:491
 msgid "good morning"
 msgstr "dobro jutro"
 
-#: public_html/lists/admin/index.php:491
+#: public_html/lists/admin/index.php:493
 msgid "good afternoon"
 msgstr "dobar dan"
 
-#: public_html/lists/admin/index.php:493
+#: public_html/lists/admin/index.php:495
 msgid "good evening"
 msgstr "dobro veče"
 
-#: public_html/lists/admin/index.php:508
+#: public_html/lists/admin/index.php:510
 msgid ""
 "phpList will work without Javascript, but it will be easier to use if you "
 "switch it on."
@@ -7978,62 +7985,56 @@ msgstr ""
 "phpList će raditi bez Javaskript-a, ali će biti lakši za upotrebu ako "
 "uključite Javaskript."
 
-#: public_html/lists/admin/index.php:515
+#: public_html/lists/admin/index.php:517
 msgid "Running DEV version. All emails will be sent to "
 msgstr ""
 
-#: public_html/lists/admin/index.php:517
+#: public_html/lists/admin/index.php:519
 msgid "Running DEV version, but developer email is not set"
 msgstr ""
 
-#: public_html/lists/admin/index.php:521
+#: public_html/lists/admin/index.php:523
 #: public_html/lists/admin/processqueue.php:29
 msgid "Running in testmode, no emails will be sent. Check your config file."
 msgstr ""
 "Rad u test režimu, email-ovi se neće poslati. Proverite datoteku sa "
 "podešavanjima."
 
-#: public_html/lists/admin/index.php:537
-#, fuzzy
-#| msgid "error"
-msgid "Error: "
-msgstr "greška"
-
-#: public_html/lists/admin/index.php:541
+#: public_html/lists/admin/index.php:535
 msgid "Download the new version"
 msgstr "Preuzmite novu verziju"
 
-#: public_html/lists/admin/index.php:545
+#: public_html/lists/admin/index.php:539
 #, fuzzy
 #| msgid "update"
 msgid " or update"
 msgstr "ažuriranje"
 
-#: public_html/lists/admin/index.php:545
+#: public_html/lists/admin/index.php:539
 msgid "automatic updater"
 msgstr ""
 
-#: public_html/lists/admin/index.php:545
+#: public_html/lists/admin/index.php:539
 #, fuzzy
 #| msgid "Go there"
 msgid "here."
 msgstr "Idi tamo"
 
-#: public_html/lists/admin/index.php:556
+#: public_html/lists/admin/index.php:550
 msgid ""
 "Your PHP version is out of date. phpList requires PHP version 5.3.3 or "
 "higher."
 msgstr ""
 
-#: public_html/lists/admin/index.php:560
+#: public_html/lists/admin/index.php:554
 msgid "Get some help"
 msgstr ""
 
-#: public_html/lists/admin/index.php:561
+#: public_html/lists/admin/index.php:555
 msgid "Download the latest version"
 msgstr ""
 
-#: public_html/lists/admin/index.php:559
+#: public_html/lists/admin/index.php:553
 #, php-format
 msgid ""
 "Your phpList version is older than two years. Please %supgrade phpList</a> "
@@ -8041,44 +8042,44 @@ msgid ""
 "            Visit <a href=\"https://www.phplist.org/users/\" title=\""
 msgstr ""
 
-#: public_html/lists/admin/index.php:566
+#: public_html/lists/admin/index.php:560
 msgid "You are trying to use RSS, but XML is not included in your PHP"
 msgstr "Pokušavate da koristite RSS, ali XML nije uključen u vaš PHP"
 
-#: public_html/lists/admin/index.php:571
+#: public_html/lists/admin/index.php:565
 msgid ""
 "open_basedir restrictions are in effect, which may be the cause of the next "
 "warning"
 msgstr ""
 "open_basedir ograničenja su na snazi, što može biti uzrok sledećeg upozorenja"
 
-#: public_html/lists/admin/index.php:573
+#: public_html/lists/admin/index.php:567
 msgid "The attachment repository does not exist or is not writable"
 msgstr ""
 "Skladište za datoteke iz priloga ne postoji ili se u njega ne može upisivati"
 
-#: public_html/lists/admin/index.php:586
+#: public_html/lists/admin/index.php:580
 msgid "Process the queue"
 msgstr "Obradi red"
 
-#: public_html/lists/admin/index.php:587
+#: public_html/lists/admin/index.php:581
 msgid "View the queue"
 msgstr "Pregledaj red"
 
-#: public_html/lists/admin/index.php:589
+#: public_html/lists/admin/index.php:583
 #, php-format
 msgid "You have %s campaign(s) in the queue, ready for processing"
 msgstr "Imate %s kampanja u redu za slanje, spremnih za obradu"
 
-#: public_html/lists/admin/index.php:694
+#: public_html/lists/admin/index.php:688
 msgid "Hide forever"
 msgstr "Sakrij zauvek"
 
-#: public_html/lists/admin/index.php:716
+#: public_html/lists/admin/index.php:710
 msgid "You are trying to use PDF support without having FPDF loaded"
 msgstr "Pokušavate da koristite podršku za PDF bez učitanog FPDF"
 
-#: public_html/lists/admin/index.php:721
+#: public_html/lists/admin/index.php:715
 msgid ""
 "The pageroot in your config does not match the current locationCheck your "
 "config file."
@@ -8086,19 +8087,19 @@ msgstr ""
 "Adresa u pageroot parametru vaše konfiguracije ne odgovara trenutnoj "
 "lokaciji. Proverite vašu datoteku sa podešavanjima."
 
-#: public_html/lists/admin/index.php:762
+#: public_html/lists/admin/index.php:756
 msgid "phpList is in maintenance mode.<br/>Please try again in half an hour."
 msgstr ""
 
-#: public_html/lists/admin/index.php:783 public_html/lists/admin/index.php:784
+#: public_html/lists/admin/index.php:777 public_html/lists/admin/index.php:778
 msgid "Sorry this page was not found in the plugin"
 msgstr "Žao nam je, ova strana nije nađena u plugin-u"
 
-#: public_html/lists/admin/index.php:791
+#: public_html/lists/admin/index.php:785
 msgid "Sorry, that module does not exist"
 msgstr "Žao nam je, taj modul ne postoji"
 
-#: public_html/lists/admin/index.php:797
+#: public_html/lists/admin/index.php:791
 msgid "Sorry, not implemented yet"
 msgstr "Žao nam je, još nije primenjeno"
 
@@ -8354,11 +8355,7 @@ msgstr "Poništi"
 msgid "Do not save, and go back to the lists"
 msgstr "Nemoj da sačuvaš i vrati se nazad na liste"
 
-#: public_html/lists/admin/updateLib.php:20
-msgid "No production version found."
-msgstr ""
-
-#: public_html/lists/admin/updateLib.php:66
+#: public_html/lists/admin/updateLib.php:64
 #, fuzzy
 #| msgid "Update it?"
 msgid "Update to "
@@ -10216,6 +10213,11 @@ msgstr "lista-organizacija podešavanja"
 #: public_html/databasestructure.php:371
 msgid "subscription settings"
 msgstr "podešavanja za pretplatu"
+
+#, fuzzy
+#~| msgid "error"
+#~ msgid "Error: "
+#~ msgstr "greška"
 
 #~ msgid "A new version of phpList is available!"
 #~ msgstr "Dostupna je nova verzija phpList!"

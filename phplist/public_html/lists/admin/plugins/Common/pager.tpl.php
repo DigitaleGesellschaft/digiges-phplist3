@@ -55,10 +55,6 @@ td.listingelementwrap {
 .content table {
     table-layout: auto;
 }
-div.pager {
-    border: 0px;
-    padding-bottom: 0px;
-}
 div.pagerinline {
     float: left;
 }
@@ -71,15 +67,24 @@ div.pagerinline {
 .center {
     text-align: center;
 }
+
+/* separator after header row and between rows that have elements */
+tr[valign] + tr.row1, tr.rowelement + tr.row1 {
+    border-top: 2px solid #999;
+}
+/* separator after the final row element */
+tr.rowelement:last-child {
+    border-bottom: 2px solid #999;
+}
 </style>
-<div class='pager'>
+<div class="paging" id="paging">
     <div class='pagerinline left' style='width: 33.333%;'><?php echo $range; ?></div>
     <div class='pagerinline center' style='width: 33.333%;'><?php echo $show; ?></div>
 <?php if (isset($prev)): ?>
-    <div class='pagerinline right' style='width: 23.333%;'><?php echo $first; ?> | <?php echo $back; ?> | <?php echo $forward; ?> | <?php echo $last; ?></div>
     <div class='pagerinline center' style='width: 10%;'><?php echo $prev; ?> | <?php echo $next; ?></div>
-<?php else: ?>
-    <div class='pagerinline right' style='width: 33.333%;'><?php echo $first; ?> | <?php echo $back; ?> | <?php echo $forward; ?> | <?php echo $last; ?></div>
+<?php endif; ?>
+<?php if (isset($first)): ?>
+    <div class='controls right'><?= $first, $back, $forward, $last; ?></div>
 <?php endif; ?>
 </div>
 
