@@ -157,12 +157,12 @@ msgid "%s bounces to list %s"
 msgstr ""
 
 #: public_html/lists/admin/listbounces.php:96
-#: public_html/lists/admin/msgbounces.php:98
+#: public_html/lists/admin/msgbounces.php:97
 msgid "Bounces on"
 msgstr "Возвращённые письма в"
 
 #: public_html/lists/admin/listbounces.php:107
-#: public_html/lists/admin/msgbounces.php:104
+#: public_html/lists/admin/msgbounces.php:103
 msgid "Subscriber address"
 msgstr ""
 
@@ -278,7 +278,7 @@ msgstr "Инициализировать базу данных"
 msgid "to continue"
 msgstr "для продолжения"
 
-#: public_html/lists/admin/home.php:39 public_html/lists/admin/index.php:500
+#: public_html/lists/admin/home.php:39 public_html/lists/admin/index.php:502
 msgid "Continue Configuration"
 msgstr "Продолжить настройку"
 
@@ -340,7 +340,7 @@ msgstr "Подписчики"
 msgid "List all Users"
 msgstr "Показать всех подписчиков"
 
-#: public_html/lists/admin/home.php:107 public_html/lists/admin/import1.php:242
+#: public_html/lists/admin/home.php:107 public_html/lists/admin/import1.php:251
 msgid "import"
 msgstr "Импортировать"
 
@@ -471,7 +471,7 @@ msgstr "Обработать очередь"
 msgid "Process the Message Queue"
 msgstr "Обработать очередь кампаний"
 
-#: public_html/lists/admin/home.php:255 public_html/lists/admin/connect.php:565
+#: public_html/lists/admin/home.php:255 public_html/lists/admin/connect.php:571
 msgid "warning"
 msgstr "Предупреждение"
 
@@ -652,217 +652,217 @@ msgstr ""
 msgid "Invalid value for email address"
 msgstr "Недействительное значение для адреса эл. почты"
 
-#: public_html/lists/admin/connect.php:461
+#: public_html/lists/admin/connect.php:467
 msgid "error"
 msgstr "Ошибка"
 
-#: public_html/lists/admin/connect.php:519
+#: public_html/lists/admin/connect.php:525
 msgid "Too many errors, please login again"
 msgstr "Слишком много ошибок, войдите в систему заново"
 
-#: public_html/lists/admin/connect.php:529
-#: public_html/lists/admin/connect.php:534
+#: public_html/lists/admin/connect.php:535
+#: public_html/lists/admin/connect.php:540
 msgid "fatalerror"
 msgstr "Критическая ошибка"
 
-#: public_html/lists/admin/connect.php:555
+#: public_html/lists/admin/connect.php:561
 msgid "Documentation about this error"
 msgstr "Описание данной ошибки"
 
-#: public_html/lists/admin/connect.php:558
+#: public_html/lists/admin/connect.php:564
 #: public_html/lists/admin/plugins.php:290
 msgid "More information"
 msgstr "Подробнее"
 
-#: public_html/lists/admin/connect.php:874
+#: public_html/lists/admin/connect.php:880
 msgid "Main Page"
 msgstr "Главная страница"
 
-#: public_html/lists/admin/connect.php:875
+#: public_html/lists/admin/connect.php:881
 msgid "about"
 msgstr "О программе"
 
-#: public_html/lists/admin/connect.php:943
+#: public_html/lists/admin/connect.php:949
 msgid "In this section"
 msgstr "В этом разделе"
 
-#: public_html/lists/admin/connect.php:982
+#: public_html/lists/admin/connect.php:988
 msgid "Recently visited"
 msgstr "Недавно посещённые страницы"
 
-#: public_html/lists/admin/connect.php:1323
+#: public_html/lists/admin/connect.php:1329
 msgid "All Lists"
 msgstr "Все списки"
 
-#: public_html/lists/admin/connect.php:1329
+#: public_html/lists/admin/connect.php:1335
 msgid "All Public Lists"
 msgstr "Все общедоступные списки"
 
-#: public_html/lists/admin/connect.php:1333
+#: public_html/lists/admin/connect.php:1339
 #: public_html/lists/admin/import2.php:646 public_html/lists/admin/list.php:95
 #: public_html/lists/admin/list.php:99 public_html/lists/admin/list.php:325
 #: public_html/lists/admin/import3.php:43
 msgid "Add a list"
 msgstr "Добавить список рассылки"
 
-#: public_html/lists/admin/connect.php:1344
+#: public_html/lists/admin/connect.php:1350
 #: public_html/lists/admin/list.php:135 public_html/lists/admin/list.php:145
 #: public_html/lists/admin/list.php:167 public_html/lists/admin/list.php:175
 msgid "Uncategorised"
 msgstr "Без категории"
 
-#: public_html/lists/admin/connect.php:1361
+#: public_html/lists/admin/connect.php:1367
 msgid "Public list"
 msgstr "Общедоступный список"
 
-#: public_html/lists/admin/connect.php:1363
+#: public_html/lists/admin/connect.php:1369
 msgid "Private list"
 msgstr "Закрытый список"
 
-#: public_html/lists/admin/connect.php:1410
-#: public_html/lists/admin/connect.php:1413
+#: public_html/lists/admin/connect.php:1416
+#: public_html/lists/admin/connect.php:1419
 #: public_html/lists/admin/export.php:131
 msgid "Select all"
 msgstr "Выбрать всё"
 
-#: public_html/lists/admin/connect.php:1427
+#: public_html/lists/admin/connect.php:1433
 msgid "There are no lists available"
 msgstr "Нет доступных списков"
 
-#: public_html/lists/admin/connect.php:1685
+#: public_html/lists/admin/connect.php:1691
 #: public_html/lists/admin/systemstats.php:13
 #: public_html/lists/admin/date.php:27
 msgid "January"
 msgstr "Январь"
 
-#: public_html/lists/admin/connect.php:1686
+#: public_html/lists/admin/connect.php:1692
 #: public_html/lists/admin/systemstats.php:14
 #: public_html/lists/admin/date.php:28
 msgid "February"
 msgstr "Февраль"
 
-#: public_html/lists/admin/connect.php:1687
+#: public_html/lists/admin/connect.php:1693
 #: public_html/lists/admin/systemstats.php:15
 #: public_html/lists/admin/date.php:29
 msgid "March"
 msgstr "Март"
 
-#: public_html/lists/admin/connect.php:1688
+#: public_html/lists/admin/connect.php:1694
 #: public_html/lists/admin/systemstats.php:16
 #: public_html/lists/admin/date.php:30
 msgid "April"
 msgstr "Апрель"
 
-#: public_html/lists/admin/connect.php:1689
-#: public_html/lists/admin/connect.php:1704
+#: public_html/lists/admin/connect.php:1695
+#: public_html/lists/admin/connect.php:1710
 #: public_html/lists/admin/systemstats.php:17
 #: public_html/lists/admin/systemstats.php:32
 #: public_html/lists/admin/date.php:31
 msgid "May"
 msgstr "Май"
 
-#: public_html/lists/admin/connect.php:1690
+#: public_html/lists/admin/connect.php:1696
 #: public_html/lists/admin/systemstats.php:18
 #: public_html/lists/admin/date.php:32
 msgid "June"
 msgstr "Июнь"
 
-#: public_html/lists/admin/connect.php:1691
+#: public_html/lists/admin/connect.php:1697
 #: public_html/lists/admin/systemstats.php:19
 #: public_html/lists/admin/date.php:33
 msgid "July"
 msgstr "Июль"
 
-#: public_html/lists/admin/connect.php:1692
+#: public_html/lists/admin/connect.php:1698
 #: public_html/lists/admin/systemstats.php:20
 #: public_html/lists/admin/date.php:34
 msgid "August"
 msgstr "Август"
 
-#: public_html/lists/admin/connect.php:1693
+#: public_html/lists/admin/connect.php:1699
 #: public_html/lists/admin/systemstats.php:21
 #: public_html/lists/admin/date.php:35
 msgid "September"
 msgstr "Сентябрь"
 
-#: public_html/lists/admin/connect.php:1694
+#: public_html/lists/admin/connect.php:1700
 #: public_html/lists/admin/systemstats.php:22
 #: public_html/lists/admin/date.php:36
 msgid "October"
 msgstr "Октябрь"
 
-#: public_html/lists/admin/connect.php:1695
+#: public_html/lists/admin/connect.php:1701
 #: public_html/lists/admin/systemstats.php:23
 #: public_html/lists/admin/date.php:37
 msgid "November"
 msgstr "Ноябрь"
 
-#: public_html/lists/admin/connect.php:1696
+#: public_html/lists/admin/connect.php:1702
 #: public_html/lists/admin/systemstats.php:24
 #: public_html/lists/admin/date.php:38
 msgid "December"
 msgstr "Декабрь"
 
-#: public_html/lists/admin/connect.php:1700
+#: public_html/lists/admin/connect.php:1706
 #: public_html/lists/admin/systemstats.php:28
 msgid "Jan"
 msgstr "Янв"
 
-#: public_html/lists/admin/connect.php:1701
+#: public_html/lists/admin/connect.php:1707
 #: public_html/lists/admin/systemstats.php:29
 msgid "Feb"
 msgstr "Фев"
 
-#: public_html/lists/admin/connect.php:1702
+#: public_html/lists/admin/connect.php:1708
 #: public_html/lists/admin/systemstats.php:30
 msgid "Mar"
 msgstr "Мар"
 
-#: public_html/lists/admin/connect.php:1703
+#: public_html/lists/admin/connect.php:1709
 #: public_html/lists/admin/systemstats.php:31
 msgid "Apr"
 msgstr "Апр"
 
-#: public_html/lists/admin/connect.php:1705
+#: public_html/lists/admin/connect.php:1711
 #: public_html/lists/admin/systemstats.php:33
 msgid "Jun"
 msgstr "Июн"
 
-#: public_html/lists/admin/connect.php:1706
+#: public_html/lists/admin/connect.php:1712
 #: public_html/lists/admin/systemstats.php:34
 msgid "Jul"
 msgstr "Июл"
 
-#: public_html/lists/admin/connect.php:1707
+#: public_html/lists/admin/connect.php:1713
 #: public_html/lists/admin/systemstats.php:35
 msgid "Aug"
 msgstr "Авг"
 
-#: public_html/lists/admin/connect.php:1708
+#: public_html/lists/admin/connect.php:1714
 #: public_html/lists/admin/systemstats.php:36
 msgid "Sep"
 msgstr "Сен"
 
-#: public_html/lists/admin/connect.php:1709
+#: public_html/lists/admin/connect.php:1715
 #: public_html/lists/admin/systemstats.php:37
 msgid "Oct"
 msgstr "Окт"
 
-#: public_html/lists/admin/connect.php:1710
+#: public_html/lists/admin/connect.php:1716
 #: public_html/lists/admin/systemstats.php:38
 msgid "Nov"
 msgstr "Ноя"
 
-#: public_html/lists/admin/connect.php:1711
+#: public_html/lists/admin/connect.php:1717
 #: public_html/lists/admin/systemstats.php:39
 msgid "Dec"
 msgstr "Дек"
 
-#: public_html/lists/admin/connect.php:2117
+#: public_html/lists/admin/connect.php:2123
 msgid "secs"
 msgstr "сек."
 
-#: public_html/lists/admin/connect.php:2125
+#: public_html/lists/admin/connect.php:2131
 #: public_html/lists/admin/import4.php:177
 #: public_html/lists/admin/import4.php:186
 #: public_html/lists/admin/attributes.php:365
@@ -870,35 +870,35 @@ msgstr "сек."
 msgid "Attribute"
 msgstr "Атрибут"
 
-#: public_html/lists/admin/connect.php:2125
+#: public_html/lists/admin/connect.php:2131
 msgid "Placeholder"
 msgstr "Метка"
 
-#: public_html/lists/admin/connect.php:2212
+#: public_html/lists/admin/connect.php:2218
 #, php-format
 msgid "Listing %d to %d of %d"
 msgstr "Перечислены с %d по %d из %d."
 
-#: public_html/lists/admin/connect.php:2214
+#: public_html/lists/admin/connect.php:2220
 #, php-format
 msgid "Listing %d to %d"
 msgstr "Список от %d до %d"
 
-#: public_html/lists/admin/connect.php:2229
+#: public_html/lists/admin/connect.php:2235
 msgid "First Page"
 msgstr "Первая страница"
 
-#: public_html/lists/admin/connect.php:2230
+#: public_html/lists/admin/connect.php:2236
 #: public_html/lists/admin/inc/interfacelib.php:832
 msgid "Previous"
 msgstr "Предыдущий"
 
-#: public_html/lists/admin/connect.php:2232
+#: public_html/lists/admin/connect.php:2238
 #: public_html/lists/admin/inc/interfacelib.php:873
 msgid "Next"
 msgstr "Далее"
 
-#: public_html/lists/admin/connect.php:2234
+#: public_html/lists/admin/connect.php:2240
 msgid "Last Page"
 msgstr "Последняя страница"
 
@@ -1481,31 +1481,31 @@ msgstr "Переадресовано"
 msgid "Sending message %d with subject %s to %s"
 msgstr "Отправка сообщения %d с темой %s на %s"
 
-#: public_html/lists/admin/sendemaillib.php:760
+#: public_html/lists/admin/sendemaillib.php:763
 msgid "sendingtextonlyto"
 msgstr "Отправлять только текстовые письма для"
 
-#: public_html/lists/admin/sendemaillib.php:950
+#: public_html/lists/admin/sendemaillib.php:953
 #, php-format
 msgid "Error sending message %d (%d/%d) to %s (%s) "
 msgstr "Ошибка отправки кампании %d (%d/%d) на адрес %s (%s)"
 
-#: public_html/lists/admin/sendemaillib.php:967
+#: public_html/lists/admin/sendemaillib.php:970
 #, php-format
 msgid "Size of HTML email: %s "
 msgstr "Размер HTML-письма: %s "
 
-#: public_html/lists/admin/sendemaillib.php:971
+#: public_html/lists/admin/sendemaillib.php:974
 #, php-format
 msgid "Size of Text email: %s "
 msgstr "Размер текстового письма: %s "
 
-#: public_html/lists/admin/sendemaillib.php:977
+#: public_html/lists/admin/sendemaillib.php:980
 #, php-format
 msgid "Message too large (%s is over %s), suspending"
 msgstr "Приостановлено: слишком большой размер письма (%s превышает %s)"
 
-#: public_html/lists/admin/sendemaillib.php:979
+#: public_html/lists/admin/sendemaillib.php:982
 msgid ""
 "Warning: the final message exceeds the sending limit, this campaign will "
 "fail sending. Reduce the size by removing attachments or images"
@@ -1513,22 +1513,22 @@ msgstr ""
 "Внимание: кампания отправлена не будет, т.к. конечный размер письма "
 "превышает лимит. Сократите объём, удалив вложения или изображения"
 
-#: public_html/lists/admin/sendemaillib.php:983
+#: public_html/lists/admin/sendemaillib.php:986
 #, php-format
 msgid "Campaign %d suspended. Message too large"
 msgstr "Кампания «%d» приостановлена из-за большого объёма письма"
 
-#: public_html/lists/admin/sendemaillib.php:985
+#: public_html/lists/admin/sendemaillib.php:988
 #, php-format
 msgid "Campaign %d suspended, message too large"
 msgstr "Кампания «%d» приостановлена из-за большого объёма письма"
 
-#: public_html/lists/admin/sendemaillib.php:1023
+#: public_html/lists/admin/sendemaillib.php:1026
 #, php-format
 msgid "Insufficient memory to add attachment to campaign %d %d - %d"
 msgstr "Недостаточно памяти для добавления вложений в кампанию %d %d - %d"
 
-#: public_html/lists/admin/sendemaillib.php:1066
+#: public_html/lists/admin/sendemaillib.php:1069
 #, php-format
 msgid ""
 "Error, when trying to send campaign %d the attachment (%s) could not be "
@@ -1537,22 +1537,22 @@ msgstr ""
 "Ошибка при попытке отправить кампанию «%d»: не удалось скопировать вложение "
 "(%s) в репозиторий. Проверьте права доступа. "
 
-#: public_html/lists/admin/sendemaillib.php:1068
-#: public_html/lists/admin/sendemaillib.php:1083
+#: public_html/lists/admin/sendemaillib.php:1071
+#: public_html/lists/admin/sendemaillib.php:1086
 msgid "phpList system error"
 msgstr "системная ошибка phpList"
 
-#: public_html/lists/admin/sendemaillib.php:1073
+#: public_html/lists/admin/sendemaillib.php:1076
 #, php-format
 msgid "failed to open attachment (%s) to add to campaign %d"
 msgstr "не удалось открыть вложение (%s) для добавления в кампанию «%d»"
 
-#: public_html/lists/admin/sendemaillib.php:1080
+#: public_html/lists/admin/sendemaillib.php:1083
 #, php-format
 msgid "Attachment %s does not exist"
 msgstr "Вложение «%s» не существует"
 
-#: public_html/lists/admin/sendemaillib.php:1081
+#: public_html/lists/admin/sendemaillib.php:1084
 #, php-format
 msgid ""
 "Error, when trying to send campaign %d the attachment (%s) could not be "
@@ -1561,8 +1561,8 @@ msgstr ""
 "Ошибка при попытке отправить кампанию «%d»: не удалось найти вложение (%s) в "
 "репозитории"
 
-#: public_html/lists/admin/sendemaillib.php:1102
-#: public_html/lists/admin/sendemaillib.php:1104
+#: public_html/lists/admin/sendemaillib.php:1105
+#: public_html/lists/admin/sendemaillib.php:1107
 #, php-format
 msgid "Campaign %d suspended for too many errors with attachments"
 msgstr ""
@@ -1672,7 +1672,7 @@ msgid "No users to copy, is the prefix correct?"
 msgstr "Нет подписчиков для копирования, проверьте префикс"
 
 #: public_html/lists/admin/import4.php:126
-#: public_html/lists/admin/actions/import1.php:217
+#: public_html/lists/admin/actions/import1.php:226
 #: public_html/lists/admin/import3.php:510
 #: public_html/lists/admin/users.php:455
 msgid "lists"
@@ -1685,7 +1685,7 @@ msgstr "Копируются списки"
 #: public_html/lists/admin/import4.php:144
 #: public_html/lists/admin/import4.php:153
 #: public_html/lists/admin/actions/listbounces.php:53
-#: public_html/lists/admin/actions/import1.php:217
+#: public_html/lists/admin/actions/import1.php:226
 #: public_html/lists/admin/list.php:108 public_html/lists/admin/import3.php:510
 msgid "list"
 msgstr "списка"
@@ -2923,17 +2923,17 @@ msgstr ""
 msgid "phplist Spam blocked"
 msgstr "Подозрительные сообщения заблокированы"
 
-#: public_html/lists/admin/subscribelib2.php:340
+#: public_html/lists/admin/subscribelib2.php:338
 msgid "Email is blacklisted, so request for confirmation has been sent."
 msgstr ""
 "Подписчик внесен в чёрный список, поэтому был отправлен запрос на "
 "подтверждение."
 
-#: public_html/lists/admin/subscribelib2.php:341
+#: public_html/lists/admin/subscribelib2.php:339
 msgid "If user confirms subscription, they will be removed from the blacklist."
 msgstr "Если подписчик подтвердит подписку, он будет удален из чёрного списка."
 
-#: public_html/lists/admin/subscribelib2.php:775
+#: public_html/lists/admin/subscribelib2.php:786
 msgid "General"
 msgstr ""
 
@@ -2951,7 +2951,7 @@ msgstr "Скачать"
 msgid "bounces to campaign"
 msgstr "Нет такой кампании"
 
-#: public_html/lists/admin/msgbounces.php:105
+#: public_html/lists/admin/msgbounces.php:104
 msgid "Time"
 msgstr ""
 
@@ -3747,7 +3747,7 @@ msgid "Unable to create campaign, did you forget to upgrade the database?"
 msgstr ""
 
 #: public_html/lists/admin/send_core.php:115
-#: public_html/lists/admin/index.php:766 public_html/lists/admin/index.php:787
+#: public_html/lists/admin/index.php:760 public_html/lists/admin/index.php:781
 msgid "Access Denied"
 msgstr "доступ запрещён."
 
@@ -4658,7 +4658,7 @@ msgid "%d emails subscribed to the lists"
 msgstr "Электронных адресов добавлено в списки - %d"
 
 #: public_html/lists/admin/actions/import2.php:502
-#: public_html/lists/admin/actions/import1.php:222
+#: public_html/lists/admin/actions/import1.php:231
 #, php-format
 msgid "%d emails already existed in the database"
 msgstr "Количество электронных адресов, уже существующих в базе - %s"
@@ -4707,7 +4707,7 @@ msgid "phplist Import Results"
 msgstr "Результаты импорта phpList"
 
 #: public_html/lists/admin/actions/import2.php:539
-#: public_html/lists/admin/actions/import1.php:234
+#: public_html/lists/admin/actions/import1.php:246
 #: public_html/lists/admin/import2.php:608
 #: public_html/lists/admin/import3.php:533
 #: public_html/lists/admin/importsimple.php:128
@@ -4723,74 +4723,80 @@ msgstr "Пример новостного сообщения"
 msgid "File not found"
 msgstr "Файл не найден"
 
-#: public_html/lists/admin/actions/import1.php:114
+#: public_html/lists/admin/actions/import1.php:123
 msgid "Import of existing subscriber"
 msgstr "Импорт существующего подписчика"
 
-#: public_html/lists/admin/actions/import1.php:140
+#: public_html/lists/admin/actions/import1.php:149
 msgid "Import of new subscriber"
 msgstr "Импорт нового подписчика"
 
-#: public_html/lists/admin/actions/import1.php:193
+#: public_html/lists/admin/actions/import1.php:202
 #: public_html/lists/admin/user.php:252
 msgid "No data changed"
 msgstr "Данные подписчика не были изменены"
 
-#: public_html/lists/admin/actions/import1.php:201
+#: public_html/lists/admin/actions/import1.php:210
 msgid "List subscriptions:"
 msgstr "Подписка в списках:"
 
-#: public_html/lists/admin/actions/import1.php:203
+#: public_html/lists/admin/actions/import1.php:212
 msgid "Was subscribed to:"
 msgstr "Было подписано на:"
 
-#: public_html/lists/admin/actions/import1.php:206
+#: public_html/lists/admin/actions/import1.php:215
 msgid "Is now subscribed to:"
 msgstr "Сейчас подписано на:"
 
-#: public_html/lists/admin/actions/import1.php:209
+#: public_html/lists/admin/actions/import1.php:218
 msgid "Not subscribed to any lists"
 msgstr "Не подписано ни на один из списков"
 
-#: public_html/lists/admin/actions/import1.php:212
+#: public_html/lists/admin/actions/import1.php:221
 msgid "Import by "
 msgstr "Импортировать из "
 
-#: public_html/lists/admin/actions/import1.php:218
+#: public_html/lists/admin/actions/import1.php:227
 #: public_html/lists/admin/import3.php:511
 msgid "new email was"
 msgstr "новый адрес эл. почты был"
 
-#: public_html/lists/admin/actions/import1.php:218
+#: public_html/lists/admin/actions/import1.php:227
 #: public_html/lists/admin/import3.php:511
 msgid "new emails were"
 msgstr "новые адреса эл. почты были"
 
-#: public_html/lists/admin/actions/import1.php:219
+#: public_html/lists/admin/actions/import1.php:228
 #: public_html/lists/admin/import3.php:512
 msgid "email was"
 msgstr "эл. адрес был"
 
-#: public_html/lists/admin/actions/import1.php:219
+#: public_html/lists/admin/actions/import1.php:228
 #: public_html/lists/admin/import3.php:512
 msgid "emails were"
 msgstr "эл. адреса были"
 
-#: public_html/lists/admin/actions/import1.php:225
+#: public_html/lists/admin/actions/import1.php:234
+#, fuzzy, php-format
+#| msgid "Invalid email"
+msgid "%d invalid emails"
+msgstr "Неверный_адрес"
+
+#: public_html/lists/admin/actions/import1.php:237
 msgid "All the emails already exist in the database."
 msgstr "Все эл. адреса уже существуют в базе данных."
 
-#: public_html/lists/admin/actions/import1.php:227
+#: public_html/lists/admin/actions/import1.php:239
 #: public_html/lists/admin/import3.php:517
 msgid "succesfully imported to the database and added to"
 msgstr "успешно импортированы и занесены в базу данных"
 
-#: public_html/lists/admin/actions/import1.php:227
+#: public_html/lists/admin/actions/import1.php:239
 #: public_html/lists/admin/import3.php:517
 msgid "subscribed to the"
 msgstr "подписан(ы) на"
 
-#: public_html/lists/admin/actions/import1.php:230
+#: public_html/lists/admin/actions/import1.php:242
 #, php-format
 msgid ""
 "%d emails were found on the do-not-send-list and have not been added to the "
@@ -5582,7 +5588,7 @@ msgid "Reset Import session"
 msgstr "Cбросить"
 
 #: public_html/lists/admin/import2.php:77
-#: public_html/lists/admin/import1.php:45
+#: public_html/lists/admin/import1.php:47
 msgid "File is either too large or does not exist."
 msgstr "Файл либо слишком большой, либо его не существует."
 
@@ -5599,12 +5605,12 @@ msgstr ""
 "сохранить как текстовые файлы с табуляцией в качестве разделителя (TSV и CSV)"
 
 #: public_html/lists/admin/import2.php:100
-#: public_html/lists/admin/import1.php:50
+#: public_html/lists/admin/import1.php:52
 msgid "File too big, please split it up into smaller ones"
 msgstr "Файл слишком большой, разделите его на несколько меньших по размеру"
 
 #: public_html/lists/admin/import2.php:114
-#: public_html/lists/admin/import1.php:66
+#: public_html/lists/admin/import1.php:68
 msgid "Please choose whether to sign up immediately or to send a notification"
 msgstr ""
 "Выберите, что необходимо выполнить: подписать немедленно, либо отправить "
@@ -5616,7 +5622,7 @@ msgid "Cannot read %s. file is not readable !"
 msgstr "Ошибка чтения файла %s. Файл нечитаем!"
 
 #: public_html/lists/admin/import2.php:137
-#: public_html/lists/admin/import1.php:88
+#: public_html/lists/admin/import1.php:90
 msgid ""
 "Something went wrong while uploading the file. Empty file received. Maybe "
 "the file is too big, or you have no permissions to read it."
@@ -5690,7 +5696,7 @@ msgid "Test Output"
 msgstr "Проверить <br />результат"
 
 #: public_html/lists/admin/import2.php:440
-#: public_html/lists/admin/import1.php:167
+#: public_html/lists/admin/import1.php:171
 #, php-format
 msgid "Importing %d subscribers to %d lists, please wait"
 msgstr "Подписчики (%d) импортируются в списки рассылок (%d), ожидайте"
@@ -5709,7 +5715,7 @@ msgstr "Добавление подписчиков в список"
 
 #: public_html/lists/admin/import2.php:635
 #: public_html/lists/admin/import2.php:650
-#: public_html/lists/admin/import1.php:200
+#: public_html/lists/admin/import1.php:204
 #: public_html/lists/admin/import3.php:248
 #: public_html/lists/admin/importsimple.php:181
 msgid "Select the lists to add the emails to"
@@ -5802,6 +5808,7 @@ msgid "Show Warnings"
 msgstr "Показывать предупреждения"
 
 #: public_html/lists/admin/import2.php:723
+#: public_html/lists/admin/import1.php:238
 msgid "Omit Invalid"
 msgstr "Пропускать недействительные"
 
@@ -5820,7 +5827,7 @@ msgid "Retain Old User Email"
 msgstr "Сохранить старый адрес эл. почты"
 
 #: public_html/lists/admin/import2.php:746
-#: public_html/lists/admin/import1.php:232
+#: public_html/lists/admin/import1.php:241
 msgid ""
 "If you choose \"send notification email\" the subscribers you are adding "
 "will be sent the request for confirmation of subscription to which they will "
@@ -5836,13 +5843,13 @@ msgid "Send&nbsp;Notification&nbsp;email"
 msgstr "Отправить уведомление"
 
 #: public_html/lists/admin/import2.php:747
-#: public_html/lists/admin/import1.php:233
+#: public_html/lists/admin/import1.php:242
 #: public_html/lists/admin/import3.php:270
 msgid "Make confirmed immediately"
 msgstr "Отметить пользователя как &laquo;подтвержденный&raquo;"
 
 #: public_html/lists/admin/import2.php:748
-#: public_html/lists/admin/import1.php:234
+#: public_html/lists/admin/import1.php:243
 msgid ""
 "If you are going to send notification to users, you may want to add a little "
 "delay between messages"
@@ -5851,12 +5858,12 @@ msgstr ""
 "между сообщениями"
 
 #: public_html/lists/admin/import2.php:749
-#: public_html/lists/admin/import1.php:235
+#: public_html/lists/admin/import1.php:244
 msgid "Notification throttle"
 msgstr "Интервал отправки уведомления"
 
 #: public_html/lists/admin/import2.php:749
-#: public_html/lists/admin/import1.php:235
+#: public_html/lists/admin/import1.php:244
 msgid "(default is nothing, will send as fast as it can)"
 msgstr ""
 "(значение по умолчанию не установлено, по возможности будет отправлено сразу)"
@@ -6081,11 +6088,11 @@ msgstr ""
 "Импорт невозможен т.к. временная директория для загрузки не доступна для "
 "записи"
 
-#: public_html/lists/admin/import1.php:40
+#: public_html/lists/admin/import1.php:42
 msgid "No file was specified. Maybe the file is too big?"
 msgstr "Файл не определен. Вероятно файл слишком велик?"
 
-#: public_html/lists/admin/import1.php:58
+#: public_html/lists/admin/import1.php:60
 msgid ""
 "Please upload a plain text file only. You cannot use a spreadsheet. You can "
 "only upload a plain text file with one email address per line."
@@ -6093,36 +6100,36 @@ msgstr ""
 "Загрузите текстовый файл с адресами эл. почты, по одному в строку. Файлы "
 "Excel не поддерживаются."
 
-#: public_html/lists/admin/import1.php:81
+#: public_html/lists/admin/import1.php:83
 msgid "Cannot read file. It is not readable !"
 msgstr "Ошибка чтения файла. Файл не доступен для чтения!"
 
-#: public_html/lists/admin/import1.php:139
+#: public_html/lists/admin/import1.php:143
 msgid "There should only be ONE email per line."
 msgstr "В строке должен быть только один адрес эл. почты."
 
-#: public_html/lists/admin/import1.php:139
+#: public_html/lists/admin/import1.php:143
 msgid "If the output looks ok, go"
 msgstr "Если всё в порядке, вернитесь "
 
-#: public_html/lists/admin/import1.php:139
+#: public_html/lists/admin/import1.php:143
 msgid "back"
 msgstr "назад "
 
-#: public_html/lists/admin/import1.php:139
+#: public_html/lists/admin/import1.php:143
 msgid "to resubmit for real"
 msgstr ""
 
-#: public_html/lists/admin/import1.php:140
-#: public_html/lists/admin/import1.php:229
+#: public_html/lists/admin/import1.php:144
+#: public_html/lists/admin/import1.php:234
 msgid "Test output:"
 msgstr "Проверить результат"
 
-#: public_html/lists/admin/import1.php:197
+#: public_html/lists/admin/import1.php:201
 msgid "adding_users"
 msgstr "доабвление пользователей"
 
-#: public_html/lists/admin/import1.php:219
+#: public_html/lists/admin/import1.php:224
 msgid ""
 "The file you upload will need to contain the emails you want to add to these "
 "lists. Anything after the email will be added as attribute \"Info\" of the "
@@ -6136,11 +6143,11 @@ msgstr ""
 "установить ниже. Предупреждение: у файла должен быть текстовый формат. Не "
 "загружайте бинарные файлы, такие как документ MS Excel."
 
-#: public_html/lists/admin/import1.php:222
+#: public_html/lists/admin/import1.php:227
 msgid "File containing emails:"
 msgstr "Файл, содержащий адреса эл. почты:"
 
-#: public_html/lists/admin/import1.php:226
+#: public_html/lists/admin/import1.php:231
 #: public_html/lists/admin/importadmin.php:324
 msgid ""
 "If you check \"Test Output\", you will get the list of parsed emails on "
@@ -6153,7 +6160,7 @@ msgstr ""
 "данных. Воспользуйтесь данной возможностью для проверки на корректность "
 "формата файла. Будут выведены первые 50 записей."
 
-#: public_html/lists/admin/import1.php:233
+#: public_html/lists/admin/import1.php:242
 msgid "Send Notification email"
 msgstr "Отправить уведомление для подтверждения подписки"
 
@@ -7922,72 +7929,72 @@ msgstr "Завершено"
 msgid "Convert some more"
 msgstr "Продолжить преобразование"
 
-#: public_html/lists/admin/index.php:224
+#: public_html/lists/admin/index.php:226
 msgid "Available options:"
 msgstr ""
 
-#: public_html/lists/admin/index.php:270
+#: public_html/lists/admin/index.php:272
 msgid "Login not available. Create an account first."
 msgstr ""
 
-#: public_html/lists/admin/index.php:309
+#: public_html/lists/admin/index.php:311
 #, php-format
 msgid "invalid login from %s, tried logging in as %s"
 msgstr "войти в систему с адреса %s не удалась, попытка входа под именем %s"
 
-#: public_html/lists/admin/index.php:333
+#: public_html/lists/admin/index.php:335
 msgid "Failed sending a change password token"
 msgstr "Ошибка: ключ для смены пароля не был отправлен"
 
-#: public_html/lists/admin/index.php:342
+#: public_html/lists/admin/index.php:344
 msgid "Incorrect processing secret"
 msgstr "Неверный секретный ключ"
 
-#: public_html/lists/admin/index.php:367
+#: public_html/lists/admin/index.php:369
 #, php-format
 msgid "login ip invalid from %s for %s (was %s)"
 msgstr "IP-адрес от %s для %s недействителен (был %s)"
 
-#: public_html/lists/admin/index.php:369
+#: public_html/lists/admin/index.php:371
 msgid "Your IP address has changed. For security reasons, please login again"
 msgstr ""
 "Ваш IP-адрес изменился. В целях обеспечения безопасности, войдите снова"
 
-#: public_html/lists/admin/index.php:376
+#: public_html/lists/admin/index.php:378
 #, php-format
 msgid "invalidated login from %s for %s (error %s)"
 msgstr "недействительное имя пользователя от %s для %s (ошибка %s)"
 
-#: public_html/lists/admin/index.php:395
+#: public_html/lists/admin/index.php:397
 msgid "Your session timed out, please log in again"
 msgstr "Вышло время ожидания, сессия закрыта. Войдите снова"
 
-#: public_html/lists/admin/index.php:400
+#: public_html/lists/admin/index.php:402
 msgid "Your session timed out, please login again"
 msgstr "Вышло время ожидания, сессия закрыта. Войдите снова"
 
-#: public_html/lists/admin/index.php:481
+#: public_html/lists/admin/index.php:483
 #, fuzzy
 msgid "Main page"
 msgstr "Главная страница"
 
-#: public_html/lists/admin/index.php:485
+#: public_html/lists/admin/index.php:487
 msgid "goodbye"
 msgstr "до свидания"
 
-#: public_html/lists/admin/index.php:489
+#: public_html/lists/admin/index.php:491
 msgid "good morning"
 msgstr "доброе утро"
 
-#: public_html/lists/admin/index.php:491
+#: public_html/lists/admin/index.php:493
 msgid "good afternoon"
 msgstr "добрый день"
 
-#: public_html/lists/admin/index.php:493
+#: public_html/lists/admin/index.php:495
 msgid "good evening"
 msgstr "добрый вечер"
 
-#: public_html/lists/admin/index.php:508
+#: public_html/lists/admin/index.php:510
 msgid ""
 "phpList will work without Javascript, but it will be easier to use if you "
 "switch it on."
@@ -7995,62 +8002,56 @@ msgstr ""
 "Предпочтительно включить JavaScript, однако phpList будет работать и без "
 "него."
 
-#: public_html/lists/admin/index.php:515
+#: public_html/lists/admin/index.php:517
 msgid "Running DEV version. All emails will be sent to "
 msgstr ""
 
-#: public_html/lists/admin/index.php:517
+#: public_html/lists/admin/index.php:519
 msgid "Running DEV version, but developer email is not set"
 msgstr ""
 
-#: public_html/lists/admin/index.php:521
+#: public_html/lists/admin/index.php:523
 #: public_html/lists/admin/processqueue.php:29
 msgid "Running in testmode, no emails will be sent. Check your config file."
 msgstr ""
 "Система работает в тестовом режиме, сообщения отправлены не будут.<br /"
 ">Проверьте файл конфигурации."
 
-#: public_html/lists/admin/index.php:537
-#, fuzzy
-#| msgid "error"
-msgid "Error: "
-msgstr "Ошибка"
-
-#: public_html/lists/admin/index.php:541
+#: public_html/lists/admin/index.php:535
 msgid "Download the new version"
 msgstr "Скачать новую версию"
 
-#: public_html/lists/admin/index.php:545
+#: public_html/lists/admin/index.php:539
 #, fuzzy
 #| msgid "update"
 msgid " or update"
 msgstr "Обновить"
 
-#: public_html/lists/admin/index.php:545
+#: public_html/lists/admin/index.php:539
 msgid "automatic updater"
 msgstr ""
 
-#: public_html/lists/admin/index.php:545
+#: public_html/lists/admin/index.php:539
 #, fuzzy
 #| msgid "Go there"
 msgid "here."
 msgstr "Перейти"
 
-#: public_html/lists/admin/index.php:556
+#: public_html/lists/admin/index.php:550
 msgid ""
 "Your PHP version is out of date. phpList requires PHP version 5.3.3 or "
 "higher."
 msgstr ""
 
-#: public_html/lists/admin/index.php:560
+#: public_html/lists/admin/index.php:554
 msgid "Get some help"
 msgstr ""
 
-#: public_html/lists/admin/index.php:561
+#: public_html/lists/admin/index.php:555
 msgid "Download the latest version"
 msgstr ""
 
-#: public_html/lists/admin/index.php:559
+#: public_html/lists/admin/index.php:553
 #, php-format
 msgid ""
 "Your phpList version is older than two years. Please %supgrade phpList</a> "
@@ -8058,12 +8059,12 @@ msgid ""
 "            Visit <a href=\"https://www.phplist.org/users/\" title=\""
 msgstr ""
 
-#: public_html/lists/admin/index.php:566
+#: public_html/lists/admin/index.php:560
 msgid "You are trying to use RSS, but XML is not included in your PHP"
 msgstr ""
 "Ошибка при использовании RSS, поддержка XML не включена в установку PHP"
 
-#: public_html/lists/admin/index.php:571
+#: public_html/lists/admin/index.php:565
 msgid ""
 "open_basedir restrictions are in effect, which may be the cause of the next "
 "warning"
@@ -8071,32 +8072,32 @@ msgstr ""
 "Действуют ограничениия для open_basedir, что может быть причиной следующего "
 "предупреждения"
 
-#: public_html/lists/admin/index.php:573
+#: public_html/lists/admin/index.php:567
 msgid "The attachment repository does not exist or is not writable"
 msgstr "Приложенный репозиторий не существует или не доступен для записи"
 
-#: public_html/lists/admin/index.php:586
+#: public_html/lists/admin/index.php:580
 msgid "Process the queue"
 msgstr "Обработать"
 
-#: public_html/lists/admin/index.php:587
+#: public_html/lists/admin/index.php:581
 msgid "View the queue"
 msgstr "Просмотреть"
 
-#: public_html/lists/admin/index.php:589
+#: public_html/lists/admin/index.php:583
 #, php-format
 msgid "You have %s campaign(s) in the queue, ready for processing"
 msgstr ""
 
-#: public_html/lists/admin/index.php:694
+#: public_html/lists/admin/index.php:688
 msgid "Hide forever"
 msgstr "Скрыть навсегда"
 
-#: public_html/lists/admin/index.php:716
+#: public_html/lists/admin/index.php:710
 msgid "You are trying to use PDF support without having FPDF loaded"
 msgstr "Использование поддержки PDF невозможно без загруженного модуля FPDF"
 
-#: public_html/lists/admin/index.php:721
+#: public_html/lists/admin/index.php:715
 msgid ""
 "The pageroot in your config does not match the current locationCheck your "
 "config file."
@@ -8104,19 +8105,19 @@ msgstr ""
 "Заглавная страница в файле конфигурации не соответствует текущему "
 "расположению. Проверьте файл конфигурации."
 
-#: public_html/lists/admin/index.php:762
+#: public_html/lists/admin/index.php:756
 msgid "phpList is in maintenance mode.<br/>Please try again in half an hour."
 msgstr ""
 
-#: public_html/lists/admin/index.php:783 public_html/lists/admin/index.php:784
+#: public_html/lists/admin/index.php:777 public_html/lists/admin/index.php:778
 msgid "Sorry this page was not found in the plugin"
 msgstr "Данная страница не найдена в модуле"
 
-#: public_html/lists/admin/index.php:791
+#: public_html/lists/admin/index.php:785
 msgid "Sorry, that module does not exist"
 msgstr "Указанный модуль не существует"
 
-#: public_html/lists/admin/index.php:797
+#: public_html/lists/admin/index.php:791
 msgid "Sorry, not implemented yet"
 msgstr "Страница ещё не создана"
 
@@ -8376,11 +8377,7 @@ msgstr "Отмена"
 msgid "Do not save, and go back to the lists"
 msgstr "Не сохранять и вернуться к спискам"
 
-#: public_html/lists/admin/updateLib.php:20
-msgid "No production version found."
-msgstr ""
-
-#: public_html/lists/admin/updateLib.php:66
+#: public_html/lists/admin/updateLib.php:64
 #, fuzzy
 #| msgid "Update it?"
 msgid "Update to "
@@ -10229,6 +10226,11 @@ msgstr ""
 #: public_html/databasestructure.php:371
 msgid "subscription settings"
 msgstr ""
+
+#, fuzzy
+#~| msgid "error"
+#~ msgid "Error: "
+#~ msgstr "Ошибка"
 
 #~ msgid "A new version of phpList is available!"
 #~ msgstr "Доступна новая версия phpList!"
