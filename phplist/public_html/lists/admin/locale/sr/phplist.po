@@ -168,48 +168,48 @@ msgstr "Adresa pretplatnika"
 msgid "Total bounces"
 msgstr "Ukupan broj nedostupnih adresa"
 
-#: public_html/lists/admin/send.php:85
+#: public_html/lists/admin/send.php:87
 msgid "All draft campaigns deleted"
 msgstr "Sve nedovršene kampanje su obrisani"
 
-#: public_html/lists/admin/send.php:86
+#: public_html/lists/admin/send.php:88
 msgid "campaigns deleted"
 msgstr "kampanje obrisane"
 
-#: public_html/lists/admin/send.php:90
+#: public_html/lists/admin/send.php:92
 msgid "campaign deleted"
 msgstr "kampanja obrisana"
 
-#: public_html/lists/admin/send.php:91
+#: public_html/lists/admin/send.php:93
 msgid "Campaign deleted"
 msgstr "Kampanja obrisana"
 
-#: public_html/lists/admin/send.php:99
+#: public_html/lists/admin/send.php:101
 msgid "start a new message"
 msgstr "započni novu poruku"
 
-#: public_html/lists/admin/send.php:100
+#: public_html/lists/admin/send.php:102
 #: public_html/lists/admin/messages.php:138
 msgid "Start a new campaign"
 msgstr "Započni novu kampanju"
 
-#: public_html/lists/admin/send.php:101
+#: public_html/lists/admin/send.php:103
 msgid "Choose an existing draft campaign to work on"
 msgstr "Odaberi postojeću nedovršenu kampanju za rad"
 
-#: public_html/lists/admin/send.php:102
+#: public_html/lists/admin/send.php:104
 msgid "Draft campaigns"
 msgstr "Nedovršene kampanje"
 
-#: public_html/lists/admin/send.php:110 public_html/lists/admin/message.php:106
+#: public_html/lists/admin/send.php:112 public_html/lists/admin/message.php:106
 msgid "entered"
 msgstr "uneseno"
 
-#: public_html/lists/admin/send.php:111
+#: public_html/lists/admin/send.php:113
 msgid "age"
 msgstr "starost"
 
-#: public_html/lists/admin/send.php:113 public_html/lists/admin/spage.php:101
+#: public_html/lists/admin/send.php:115 public_html/lists/admin/spage.php:101
 #: public_html/lists/admin/send_core.php:949
 #: public_html/lists/admin/eventlog.php:113
 #: public_html/lists/admin/admins.php:106
@@ -218,20 +218,20 @@ msgstr "starost"
 msgid "del"
 msgstr "izbriši"
 
-#: public_html/lists/admin/send.php:115
+#: public_html/lists/admin/send.php:117
 #: public_html/lists/admin/editattributes.php:50
 msgid "delete all"
 msgstr "izbriši sve"
 
-#: public_html/lists/admin/send.php:143
+#: public_html/lists/admin/send.php:145
 msgid "Please select the lists you want to send your campaign to"
 msgstr "Odaberite liste na koje želite da pošaljete vašu kampanju"
 
-#: public_html/lists/admin/send.php:150
+#: public_html/lists/admin/send.php:152
 msgid "Please select the lists you want to exclude from this campaign"
 msgstr "Odaberite liste koje želite da isključite iz ove kampanje"
 
-#: public_html/lists/admin/send.php:156
+#: public_html/lists/admin/send.php:158
 msgid ""
 "The campaign will go to users who are a member of the lists above,     "
 "unless they are a member of one of the lists you select here."
@@ -550,47 +550,43 @@ msgstr "Promenite vaše detalje (npr. lozinku)"
 msgid "System Functions"
 msgstr "Sistemske funkcije"
 
-#: public_html/lists/admin/dbcheck.php:8
-msgid "Database structure check"
-msgstr "Provera strukture baze podataka"
-
-#: public_html/lists/admin/dbcheck.php:13
+#: public_html/lists/admin/dbcheck.php:11
 msgid "Database structure"
 msgstr "Struktura baze podataka"
 
-#: public_html/lists/admin/dbcheck.php:14
+#: public_html/lists/admin/dbcheck.php:12
 msgid "Table"
 msgstr "Tabela"
 
-#: public_html/lists/admin/dbcheck.php:21
+#: public_html/lists/admin/dbcheck.php:19
 msgid "real name"
 msgstr "pravo ime"
 
-#: public_html/lists/admin/dbcheck.php:51
-#: public_html/lists/admin/dbcheck.php:54
+#: public_html/lists/admin/dbcheck.php:49
+#: public_html/lists/admin/dbcheck.php:52
 msgid "exist"
 msgstr "postoji"
 
-#: public_html/lists/admin/dbcheck.php:80
-#: public_html/lists/admin/dbcheck.php:83
+#: public_html/lists/admin/dbcheck.php:78
+#: public_html/lists/admin/dbcheck.php:81
 #: public_html/lists/admin/import3.php:380
 #: public_html/lists/admin/initialise.php:161
 msgid "ok"
 msgstr "ok"
 
-#: public_html/lists/admin/dbcheck.php:86
+#: public_html/lists/admin/dbcheck.php:84
 msgid "index"
 msgstr "indeks"
 
-#: public_html/lists/admin/dbcheck.php:89
+#: public_html/lists/admin/dbcheck.php:87
 msgid "unique"
 msgstr "jedinstven"
 
-#: public_html/lists/admin/dbcheck.php:92
+#: public_html/lists/admin/dbcheck.php:90
 msgid "category"
 msgstr "kategorija"
 
-#: public_html/lists/admin/dbcheck.php:95
+#: public_html/lists/admin/dbcheck.php:93
 msgid "check"
 msgstr "provera"
 
@@ -724,140 +720,140 @@ msgstr "Obeleži sve"
 msgid "There are no lists available"
 msgstr "Nema dostupnih lista"
 
-#: public_html/lists/admin/connect.php:1691
+#: public_html/lists/admin/connect.php:1716
 #: public_html/lists/admin/systemstats.php:13
 #: public_html/lists/admin/date.php:27
 msgid "January"
 msgstr "Januar"
 
-#: public_html/lists/admin/connect.php:1692
+#: public_html/lists/admin/connect.php:1717
 #: public_html/lists/admin/systemstats.php:14
 #: public_html/lists/admin/date.php:28
 msgid "February"
 msgstr "Februar"
 
-#: public_html/lists/admin/connect.php:1693
+#: public_html/lists/admin/connect.php:1718
 #: public_html/lists/admin/systemstats.php:15
 #: public_html/lists/admin/date.php:29
 msgid "March"
 msgstr "Mart"
 
-#: public_html/lists/admin/connect.php:1694
+#: public_html/lists/admin/connect.php:1719
 #: public_html/lists/admin/systemstats.php:16
 #: public_html/lists/admin/date.php:30
 msgid "April"
 msgstr "April"
 
-#: public_html/lists/admin/connect.php:1695
-#: public_html/lists/admin/connect.php:1710
+#: public_html/lists/admin/connect.php:1720
+#: public_html/lists/admin/connect.php:1735
 #: public_html/lists/admin/systemstats.php:17
 #: public_html/lists/admin/systemstats.php:32
 #: public_html/lists/admin/date.php:31
 msgid "May"
 msgstr "Maj"
 
-#: public_html/lists/admin/connect.php:1696
+#: public_html/lists/admin/connect.php:1721
 #: public_html/lists/admin/systemstats.php:18
 #: public_html/lists/admin/date.php:32
 msgid "June"
 msgstr "Jun"
 
-#: public_html/lists/admin/connect.php:1697
+#: public_html/lists/admin/connect.php:1722
 #: public_html/lists/admin/systemstats.php:19
 #: public_html/lists/admin/date.php:33
 msgid "July"
 msgstr "Jul"
 
-#: public_html/lists/admin/connect.php:1698
+#: public_html/lists/admin/connect.php:1723
 #: public_html/lists/admin/systemstats.php:20
 #: public_html/lists/admin/date.php:34
 msgid "August"
 msgstr "Avgust"
 
-#: public_html/lists/admin/connect.php:1699
+#: public_html/lists/admin/connect.php:1724
 #: public_html/lists/admin/systemstats.php:21
 #: public_html/lists/admin/date.php:35
 msgid "September"
 msgstr "Septembar"
 
-#: public_html/lists/admin/connect.php:1700
+#: public_html/lists/admin/connect.php:1725
 #: public_html/lists/admin/systemstats.php:22
 #: public_html/lists/admin/date.php:36
 msgid "October"
 msgstr "Oktobar"
 
-#: public_html/lists/admin/connect.php:1701
+#: public_html/lists/admin/connect.php:1726
 #: public_html/lists/admin/systemstats.php:23
 #: public_html/lists/admin/date.php:37
 msgid "November"
 msgstr "Novembar"
 
-#: public_html/lists/admin/connect.php:1702
+#: public_html/lists/admin/connect.php:1727
 #: public_html/lists/admin/systemstats.php:24
 #: public_html/lists/admin/date.php:38
 msgid "December"
 msgstr "Decembar"
 
-#: public_html/lists/admin/connect.php:1706
+#: public_html/lists/admin/connect.php:1731
 #: public_html/lists/admin/systemstats.php:28
 msgid "Jan"
 msgstr "jan."
 
-#: public_html/lists/admin/connect.php:1707
+#: public_html/lists/admin/connect.php:1732
 #: public_html/lists/admin/systemstats.php:29
 msgid "Feb"
 msgstr "feb."
 
-#: public_html/lists/admin/connect.php:1708
+#: public_html/lists/admin/connect.php:1733
 #: public_html/lists/admin/systemstats.php:30
 msgid "Mar"
 msgstr "mar."
 
-#: public_html/lists/admin/connect.php:1709
+#: public_html/lists/admin/connect.php:1734
 #: public_html/lists/admin/systemstats.php:31
 msgid "Apr"
 msgstr "apr."
 
-#: public_html/lists/admin/connect.php:1711
+#: public_html/lists/admin/connect.php:1736
 #: public_html/lists/admin/systemstats.php:33
 msgid "Jun"
 msgstr "jun"
 
-#: public_html/lists/admin/connect.php:1712
+#: public_html/lists/admin/connect.php:1737
 #: public_html/lists/admin/systemstats.php:34
 msgid "Jul"
 msgstr "jul"
 
-#: public_html/lists/admin/connect.php:1713
+#: public_html/lists/admin/connect.php:1738
 #: public_html/lists/admin/systemstats.php:35
 msgid "Aug"
 msgstr "avg."
 
-#: public_html/lists/admin/connect.php:1714
+#: public_html/lists/admin/connect.php:1739
 #: public_html/lists/admin/systemstats.php:36
 msgid "Sep"
 msgstr "sep."
 
-#: public_html/lists/admin/connect.php:1715
+#: public_html/lists/admin/connect.php:1740
 #: public_html/lists/admin/systemstats.php:37
 msgid "Oct"
 msgstr "okt."
 
-#: public_html/lists/admin/connect.php:1716
+#: public_html/lists/admin/connect.php:1741
 #: public_html/lists/admin/systemstats.php:38
 msgid "Nov"
 msgstr "nov."
 
-#: public_html/lists/admin/connect.php:1717
+#: public_html/lists/admin/connect.php:1742
 #: public_html/lists/admin/systemstats.php:39
 msgid "Dec"
 msgstr "dec."
 
-#: public_html/lists/admin/connect.php:2123
+#: public_html/lists/admin/connect.php:2148
 msgid "secs"
 msgstr "sekundi"
 
-#: public_html/lists/admin/connect.php:2131
+#: public_html/lists/admin/connect.php:2156
 #: public_html/lists/admin/import4.php:177
 #: public_html/lists/admin/import4.php:186
 #: public_html/lists/admin/attributes.php:365
@@ -865,35 +861,35 @@ msgstr "sekundi"
 msgid "Attribute"
 msgstr "Atribut"
 
-#: public_html/lists/admin/connect.php:2131
+#: public_html/lists/admin/connect.php:2156
 msgid "Placeholder"
 msgstr "Zamenski tekst"
 
-#: public_html/lists/admin/connect.php:2218
+#: public_html/lists/admin/connect.php:2243
 #, php-format
 msgid "Listing %d to %d of %d"
 msgstr "Listam %d do %d od %d"
 
-#: public_html/lists/admin/connect.php:2220
+#: public_html/lists/admin/connect.php:2245
 #, php-format
 msgid "Listing %d to %d"
 msgstr "Listam %d do %d"
 
-#: public_html/lists/admin/connect.php:2235
+#: public_html/lists/admin/connect.php:2260
 msgid "First Page"
 msgstr "Prva strana"
 
-#: public_html/lists/admin/connect.php:2236
+#: public_html/lists/admin/connect.php:2261
 #: public_html/lists/admin/inc/interfacelib.php:832
 msgid "Previous"
 msgstr "Prethodno"
 
-#: public_html/lists/admin/connect.php:2238
+#: public_html/lists/admin/connect.php:2263
 #: public_html/lists/admin/inc/interfacelib.php:873
 msgid "Next"
 msgstr "Sledeće"
 
-#: public_html/lists/admin/connect.php:2240
+#: public_html/lists/admin/connect.php:2265
 msgid "Last Page"
 msgstr "Poslednja strana"
 
@@ -1858,223 +1854,223 @@ msgstr "Greška u obradi nedostupne adrese"
 msgid "Bounce Processing info"
 msgstr "Informacija o nedostupnoj adresi"
 
-#: public_html/lists/admin/processbounces.php:234
+#: public_html/lists/admin/processbounces.php:256
 msgid "system message bounced, user marked unconfirmed"
 msgstr "sistemska poruka nije dostavljena, korisnik označen kao nepotvrđen"
 
-#: public_html/lists/admin/processbounces.php:235
+#: public_html/lists/admin/processbounces.php:257
 msgid "Bounced system message"
 msgstr "Nedostavljena sistemska poruka"
 
-#: public_html/lists/admin/processbounces.php:236
+#: public_html/lists/admin/processbounces.php:258
 msgid "User marked unconfirmed"
 msgstr "Korisnik označen kao nepotvrđen"
 
-#: public_html/lists/admin/processbounces.php:237
+#: public_html/lists/admin/processbounces.php:259
 msgid "View Bounce"
 msgstr "Pregledajte izveštaj o nedostupnoj adresi"
 
-#: public_html/lists/admin/processbounces.php:307
+#: public_html/lists/admin/processbounces.php:329
 msgid "system message bounced, but unknown user"
 msgstr "sistemska poruka nije dostavljena, ali je korisnik nepoznat"
 
-#: public_html/lists/admin/processbounces.php:350
+#: public_html/lists/admin/processbounces.php:372
 #: public_html/lists/admin/readtestmail.php:207
 msgid "Cannot create POP3 connection to"
 msgstr "Ne može se napraviti POP3 veza ka"
 
-#: public_html/lists/admin/processbounces.php:368
+#: public_html/lists/admin/processbounces.php:390
 #: public_html/lists/admin/readtestmail.php:225
 msgid "Cannot open mailbox file"
 msgstr "Ne može se otvoriti datoteka elektronskog sandučeta"
 
-#: public_html/lists/admin/processbounces.php:380
+#: public_html/lists/admin/processbounces.php:402
 #, php-format
 msgid "%d bounces to fetch from the mailbox"
 msgstr ""
 "%d - broj izveštaja o nedostupnoj adresi koje treba preuzeti iz elektronskog "
 "sandučeta"
 
-#: public_html/lists/admin/processbounces.php:387
+#: public_html/lists/admin/processbounces.php:409
 #: public_html/lists/admin/readtestmail.php:240
 msgid "Please do not interrupt this process"
 msgstr "Molimo ne prekidajte ovaj proces"
 
-#: public_html/lists/admin/processbounces.php:388
+#: public_html/lists/admin/processbounces.php:410
 #, php-format
 msgid "%d bounces to process"
 msgstr "%d - broj izveštaja o nedostupnoj adresi za obradu"
 
-#: public_html/lists/admin/processbounces.php:390
-#: public_html/lists/admin/processbounces.php:391
+#: public_html/lists/admin/processbounces.php:412
+#: public_html/lists/admin/processbounces.php:413
 #, php-format
 msgid "Processing first %d bounces"
 msgstr "Obrađujem prvih %d izveštaja o nedostupnoj adresi"
 
-#: public_html/lists/admin/processbounces.php:395
+#: public_html/lists/admin/processbounces.php:417
 msgid "Running in test mode, not deleting messages from mailbox"
 msgstr "Rad u test režimu, ne brišu se poruke iz elektronskog sandučeta"
 
-#: public_html/lists/admin/processbounces.php:397
+#: public_html/lists/admin/processbounces.php:419
 msgid "Processed messages will be deleted from mailbox"
 msgstr "Obrađene poruke će biti obrisane iz elektronskog sandučeta"
 
-#: public_html/lists/admin/processbounces.php:414
-#: public_html/lists/admin/processbounces.php:423
+#: public_html/lists/admin/processbounces.php:436
+#: public_html/lists/admin/processbounces.php:445
 #: public_html/lists/admin/readtestmail.php:265
 #: public_html/lists/admin/readtestmail.php:270
 msgid "Deleting message"
 msgstr "Brisanje poruke"
 
-#: public_html/lists/admin/processbounces.php:418
+#: public_html/lists/admin/processbounces.php:440
 msgid "Not deleting processed message"
 msgstr "Ne brišem obrađenu poruku"
 
-#: public_html/lists/admin/processbounces.php:427
+#: public_html/lists/admin/processbounces.php:449
 msgid "Not deleting unprocessed message"
 msgstr "Ne brišem neobrađenu poruku"
 
-#: public_html/lists/admin/processbounces.php:433
+#: public_html/lists/admin/processbounces.php:455
 #: public_html/lists/admin/readtestmail.php:277
 msgid "Closing mailbox, and purging messages"
 msgstr "Zatvaram elektronsko sanduče i brišem poruke"
 
-#: public_html/lists/admin/processbounces.php:441
+#: public_html/lists/admin/processbounces.php:463
 #: public_html/lists/admin/readtestmail.php:292
 msgid "IMAP is not included in your PHP installation, cannot continue"
 msgstr "IMAP nije uključen u vašu PHP instalaciju, ne možemo nastaviti"
 
-#: public_html/lists/admin/processbounces.php:442
+#: public_html/lists/admin/processbounces.php:464
 #: public_html/lists/admin/readtestmail.php:293
 msgid "Check out"
 msgstr "Proveri"
 
-#: public_html/lists/admin/processbounces.php:449
+#: public_html/lists/admin/processbounces.php:471
 msgid "Bounce mechanism not properly configured"
 msgstr "Mehanizam za nedostupne adrese nije ispravno podešen"
 
-#: public_html/lists/admin/processbounces.php:459
+#: public_html/lists/admin/processbounces.php:481
 msgid "Force set, killing other send processes"
 msgstr "Silom se gase drugi procesi slanja."
 
-#: public_html/lists/admin/processbounces.php:479
+#: public_html/lists/admin/processbounces.php:501
 msgid "bounce_protocol not supported"
 msgstr "protokol za nedostupne adrese nije podržan"
 
-#: public_html/lists/admin/processbounces.php:485
+#: public_html/lists/admin/processbounces.php:507
 msgid "Download failed, exiting"
 msgstr "Neuspelo preuzimanje, izlazim"
 
-#: public_html/lists/admin/processbounces.php:498
+#: public_html/lists/admin/processbounces.php:520
 #, php-format
 msgid "%d bounces to reprocess"
 msgstr "%d - broj izveštaja o nedostupnoj adresi za ponovnu obradu"
 
-#: public_html/lists/admin/processbounces.php:502
-#: public_html/lists/admin/processbounces.php:514
+#: public_html/lists/admin/processbounces.php:524
+#: public_html/lists/admin/processbounces.php:536
 #, php-format
 msgid "%d out of %d processed"
 msgstr "%d od %d obrađeno"
 
-#: public_html/lists/admin/processbounces.php:516
+#: public_html/lists/admin/processbounces.php:538
 #, php-format
 msgid "%d bounces were re-processed and %d bounces were re-identified"
 msgstr ""
 "%d - broj nedostupnih adresa koje je ponovo obrađeno; %d - broj nedostupnih "
 "adresa je ponovo identifikovano"
 
-#: public_html/lists/admin/processbounces.php:521
+#: public_html/lists/admin/processbounces.php:543
 msgid "Processing bounces based on active bounce rules"
 msgstr ""
 "Obrada nedostupnih adresa na osnovu aktivnih pravila za nedostupne adrese"
 
-#: public_html/lists/admin/processbounces.php:535
+#: public_html/lists/admin/processbounces.php:557
 #, php-format
 msgid "processed %d out of %d bounces for advanced bounce rules"
 msgstr ""
 "obrađeno %d od %d nedostupne adrese po naprednim pravilima za nedostupne "
 "adrese"
 
-#: public_html/lists/admin/processbounces.php:544
+#: public_html/lists/admin/processbounces.php:566
 #: public_html/lists/admin/actions/processqueue.php:992
 #: public_html/lists/admin/generatebouncerules.php:50
 msgid "Process Killed by other process"
 msgstr "Proces je ubijen od strane drugog procesa"
 
-#: public_html/lists/admin/processbounces.php:587
-#: public_html/lists/admin/processbounces.php:771
+#: public_html/lists/admin/processbounces.php:609
+#: public_html/lists/admin/processbounces.php:793
 msgid "Auto Unconfirmed"
 msgstr "Automatski nepotvrđeno"
 
-#: public_html/lists/admin/processbounces.php:588
-#: public_html/lists/admin/processbounces.php:611
+#: public_html/lists/admin/processbounces.php:610
+#: public_html/lists/admin/processbounces.php:633
 msgid "Subscriber auto unconfirmed for"
 msgstr "Pretplatnik automatski nepotvrđen za"
 
-#: public_html/lists/admin/processbounces.php:588
-#: public_html/lists/admin/processbounces.php:611
-#: public_html/lists/admin/processbounces.php:626
-#: public_html/lists/admin/processbounces.php:640
-#: public_html/lists/admin/processbounces.php:654
-#: public_html/lists/admin/processbounces.php:666
+#: public_html/lists/admin/processbounces.php:610
+#: public_html/lists/admin/processbounces.php:633
+#: public_html/lists/admin/processbounces.php:648
+#: public_html/lists/admin/processbounces.php:662
+#: public_html/lists/admin/processbounces.php:676
+#: public_html/lists/admin/processbounces.php:688
 msgid "bounce rule"
 msgstr "pravilo za nedostupne adrese"
 
-#: public_html/lists/admin/processbounces.php:610
+#: public_html/lists/admin/processbounces.php:632
 msgid "Auto unconfirmed"
 msgstr "Automatski nepotvrđen"
 
-#: public_html/lists/admin/processbounces.php:621
+#: public_html/lists/admin/processbounces.php:643
 msgid "Subscriber auto blacklisted  by bounce rule"
 msgstr "Pretplatnik je automatski blokiran  po pravilu za nedostupne adrese"
 
-#: public_html/lists/admin/processbounces.php:625
-#: public_html/lists/admin/processbounces.php:639
-#: public_html/lists/admin/processbounces.php:653
-#: public_html/lists/admin/processbounces.php:665
+#: public_html/lists/admin/processbounces.php:647
+#: public_html/lists/admin/processbounces.php:661
+#: public_html/lists/admin/processbounces.php:675
+#: public_html/lists/admin/processbounces.php:687
 msgid "Auto Unsubscribed"
 msgstr "Automatski odjavljen"
 
-#: public_html/lists/admin/processbounces.php:626
-#: public_html/lists/admin/processbounces.php:640
-#: public_html/lists/admin/processbounces.php:666
+#: public_html/lists/admin/processbounces.php:648
+#: public_html/lists/admin/processbounces.php:662
+#: public_html/lists/admin/processbounces.php:688
 msgid "User auto unsubscribed for"
 msgstr "Korisnik automatski odjavljen za"
 
-#: public_html/lists/admin/processbounces.php:635
+#: public_html/lists/admin/processbounces.php:657
 #, php-format
 msgid "Subscriber auto blacklisted by bounce rule %d"
 msgstr "Pretplatnik je automatski blokiran po pravilu %d za nedostupne adrese"
 
-#: public_html/lists/admin/processbounces.php:649
-#: public_html/lists/admin/processbounces.php:661
+#: public_html/lists/admin/processbounces.php:671
+#: public_html/lists/admin/processbounces.php:683
 #, php-format
 msgid "Email address auto blacklisted by bounce rule %d"
 msgstr ""
 "Email adresa je automatski blokirana po pravilu %d za nedostupne adrese"
 
-#: public_html/lists/admin/processbounces.php:654
+#: public_html/lists/admin/processbounces.php:676
 msgid "email auto unsubscribed for"
 msgstr "email adresa automatski odjavljena sa"
 
-#: public_html/lists/admin/processbounces.php:684
+#: public_html/lists/admin/processbounces.php:706
 msgid "bounces processed by advanced processing"
 msgstr "nedostupne adrese obrađene naprednom obradom"
 
-#: public_html/lists/admin/processbounces.php:685
+#: public_html/lists/admin/processbounces.php:707
 msgid "bounces were not matched by advanced processing rules"
 msgstr "nedostupne adrese se ne podudaraju sa pravilima napredne obrade"
 
-#: public_html/lists/admin/processbounces.php:689
+#: public_html/lists/admin/processbounces.php:711
 msgid "Identifying consecutive bounces"
 msgstr "Identifikovanje uzastopno nedostupnih adresa"
 
-#: public_html/lists/admin/processbounces.php:699
+#: public_html/lists/admin/processbounces.php:721
 #: public_html/lists/admin/cron.php:55
 msgid "Nothing to do"
 msgstr "Ništa za rad"
 
-#: public_html/lists/admin/processbounces.php:768
+#: public_html/lists/admin/processbounces.php:790
 #, php-format
 msgid ""
 "User (url:%s) has consecutive bounces (%d) over threshold (%d), user marked "
@@ -2083,36 +2079,36 @@ msgstr ""
 "Korisnik (url:%s) ima (%d) uzastopno nedostupnih poruka od kojih je (%d) "
 "iznad praga, korisnik označen kao nepotvrđen"
 
-#: public_html/lists/admin/processbounces.php:772
+#: public_html/lists/admin/processbounces.php:794
 #, php-format
 msgid "Subscriber auto unconfirmed for %d consecutive bounces"
 msgstr "Pretplatnik automatski nepotvrđen zbog %d uzastopno nedostupnih poruka"
 
-#: public_html/lists/admin/processbounces.php:782
+#: public_html/lists/admin/processbounces.php:804
 #, php-format
 msgid "%d consecutive bounces, threshold reached, blacklisting subscriber"
 msgstr "%d uzastopno nedostupnih poruka, dostignut prag, blokiram pretplatnika"
 
-#: public_html/lists/admin/processbounces.php:783
+#: public_html/lists/admin/processbounces.php:805
 #, php-format
 msgid "%d consecutive bounces, threshold reached"
 msgstr "%d uzastopno nedostupnih poruka, dostignut prag"
 
-#: public_html/lists/admin/processbounces.php:795
+#: public_html/lists/admin/processbounces.php:817
 #, php-format
 msgid "processed %d out of %d subscribers"
 msgstr "obrađeno %d od %d pretplatnika"
 
-#: public_html/lists/admin/processbounces.php:802
+#: public_html/lists/admin/processbounces.php:824
 #, php-format
 msgid "total of %d subscribers processed"
 msgstr "ukupno obrađeno %d pretplatnika"
 
-#: public_html/lists/admin/processbounces.php:807
+#: public_html/lists/admin/processbounces.php:829
 msgid "Report of advanced bounce processing:"
 msgstr "Izveštaj napredne obrade nedostunpih adresa:"
 
-#: public_html/lists/admin/processbounces.php:810
+#: public_html/lists/admin/processbounces.php:832
 msgid ""
 "Below are users who have been marked unconfirmed. The number in () is the "
 "number of consecutive bounces."
@@ -2120,7 +2116,7 @@ msgstr ""
 "Ispod su korisnici koji su označeni kao nepotvrđeni. Broj u () je broj "
 "uzastopnih poruka o nedostupnosti."
 
-#: public_html/lists/admin/processbounces.php:814
+#: public_html/lists/admin/processbounces.php:836
 msgid "Report:"
 msgstr "Izveštaj:"
 
@@ -4525,6 +4521,36 @@ msgstr "za obradu"
 msgid "%d bounces have been associated with a subscriber profile"
 msgstr ""
 
+#: public_html/lists/admin/actions/domainbounces.php:18
+#, fuzzy
+#| msgid "Domain Statistics"
+msgid "Domain statistics"
+msgstr "Statistika domena"
+
+#: public_html/lists/admin/actions/domainbounces.php:71
+#, fuzzy
+#| msgid "Total bounces"
+msgid "Total bounced emails"
+msgstr "Ukupan broj nedostupnih adresa"
+
+#: public_html/lists/admin/actions/domainbounces.php:75
+#, fuzzy
+#| msgid "Import emails"
+msgid "Total sent emails"
+msgstr "Uvezi email adrese"
+
+#: public_html/lists/admin/actions/domainbounces.php:79
+#, fuzzy
+#| msgid "bounce rule"
+msgid "Bounce rate"
+msgstr "pravilo za nedostupne adrese"
+
+#: public_html/lists/admin/actions/domainbounces.php:83
+#, fuzzy
+#| msgid "Viewed"
+msgid "View rate"
+msgstr "Pregledano"
+
 #: public_html/lists/admin/actions/configure.php:27
 msgid "Editing"
 msgstr "Izmena"
@@ -5025,6 +5051,18 @@ msgstr "Domeni sa najviše nepotvrđenih pretplatnika"
 msgid "Top 25 local-parts of email addresses"
 msgstr ""
 
+#: public_html/lists/admin/actions/domainstats.php:208
+#, fuzzy
+#| msgid "Top 50 domains with more than 5 subscribers"
+msgid "Top 25 domains with the highest number of bounces"
+msgstr "Prvih 50 domena sa više od 5 pretplatnika"
+
+#: public_html/lists/admin/actions/domainstats.php:225
+#: public_html/lists/admin/actions/bounces.php:25
+#: public_html/lists/admin/user.php:540
+msgid "Bounces"
+msgstr "Nedostupne poruke"
+
 #: public_html/lists/admin/actions/processqueue.php:42
 msgid "Unable get lock for processing"
 msgstr "Neuspešno zaključan resurs za početak obrade"
@@ -5435,11 +5473,6 @@ msgstr "da bi videli statistiku ove kampanje, idite na %s://%s"
 #: public_html/lists/admin/actions/processqueue.php:1382
 msgid "to send this message"
 msgstr "da pošaljete ovu poruku"
-
-#: public_html/lists/admin/actions/bounces.php:25
-#: public_html/lists/admin/user.php:540
-msgid "Bounces"
-msgstr "Nedostupne poruke"
 
 #: public_html/lists/admin/actions/bounces.php:46
 #: public_html/lists/admin/actions/bounces.php:48
@@ -6485,12 +6518,12 @@ msgid ""
 msgstr ""
 "Da bi izbegli preopterećenje sistema, ovo će konvertovati po 10000 zapisa"
 
-#: public_html/lists/admin/class.phplistmailer.php:316
+#: public_html/lists/admin/class.phplistmailer.php:319
 #, php-format
 msgid "Error sending email to %s"
 msgstr "Greška u slanju email-a ka %s"
 
-#: public_html/lists/admin/class.phplistmailer.php:321
+#: public_html/lists/admin/class.phplistmailer.php:324
 #, php-format
 msgid "Error, empty message-body sending email to %s"
 msgstr "Greška, slanje prazne poruke za %s"
@@ -10213,6 +10246,9 @@ msgstr "lista-organizacija podešavanja"
 #: public_html/databasestructure.php:371
 msgid "subscription settings"
 msgstr "podešavanja za pretplatu"
+
+#~ msgid "Database structure check"
+#~ msgstr "Provera strukture baze podataka"
 
 #, fuzzy
 #~| msgid "error"

@@ -179,48 +179,48 @@ msgstr "Abonnee adres"
 msgid "Total bounces"
 msgstr "Totaal teruggekaatste email berichten"
 
-#: public_html/lists/admin/send.php:85
+#: public_html/lists/admin/send.php:87
 msgid "All draft campaigns deleted"
 msgstr "Alle concept berichten verwijderd"
 
-#: public_html/lists/admin/send.php:86
+#: public_html/lists/admin/send.php:88
 msgid "campaigns deleted"
 msgstr "berichten verwijderd"
 
-#: public_html/lists/admin/send.php:90
+#: public_html/lists/admin/send.php:92
 msgid "campaign deleted"
 msgstr "bericht verwijderd"
 
-#: public_html/lists/admin/send.php:91
+#: public_html/lists/admin/send.php:93
 msgid "Campaign deleted"
 msgstr "Bericht verwijderd"
 
-#: public_html/lists/admin/send.php:99
+#: public_html/lists/admin/send.php:101
 msgid "start a new message"
 msgstr "Maak een nieuw bericht"
 
-#: public_html/lists/admin/send.php:100
+#: public_html/lists/admin/send.php:102
 #: public_html/lists/admin/messages.php:138
 msgid "Start a new campaign"
 msgstr "Maak een nieuw bericht"
 
-#: public_html/lists/admin/send.php:101
+#: public_html/lists/admin/send.php:103
 msgid "Choose an existing draft campaign to work on"
 msgstr "Kies een bestaand concept bericht om mee verder te gaan"
 
-#: public_html/lists/admin/send.php:102
+#: public_html/lists/admin/send.php:104
 msgid "Draft campaigns"
 msgstr "Campagnes in ontwikkeling"
 
-#: public_html/lists/admin/send.php:110 public_html/lists/admin/message.php:106
+#: public_html/lists/admin/send.php:112 public_html/lists/admin/message.php:106
 msgid "entered"
 msgstr "Aangemeld"
 
-#: public_html/lists/admin/send.php:111
+#: public_html/lists/admin/send.php:113
 msgid "age"
 msgstr "leeftijd"
 
-#: public_html/lists/admin/send.php:113 public_html/lists/admin/spage.php:101
+#: public_html/lists/admin/send.php:115 public_html/lists/admin/spage.php:101
 #: public_html/lists/admin/send_core.php:949
 #: public_html/lists/admin/eventlog.php:113
 #: public_html/lists/admin/admins.php:106
@@ -229,24 +229,24 @@ msgstr "leeftijd"
 msgid "del"
 msgstr "wis"
 
-#: public_html/lists/admin/send.php:115
+#: public_html/lists/admin/send.php:117
 #: public_html/lists/admin/editattributes.php:50
 msgid "delete all"
 msgstr "Verwijder alles"
 
-#: public_html/lists/admin/send.php:143
+#: public_html/lists/admin/send.php:145
 msgid "Please select the lists you want to send your campaign to"
 msgstr ""
 "Kies één of meerdere verzendlijsten waar het bericht naartoe moet worden "
 "verzonden"
 
-#: public_html/lists/admin/send.php:150
+#: public_html/lists/admin/send.php:152
 msgid "Please select the lists you want to exclude from this campaign"
 msgstr ""
 "Kies de verzendlijsten die je wilt gebruiken om abonnees van uit te sluiten "
 "voor dit bericht"
 
-#: public_html/lists/admin/send.php:156
+#: public_html/lists/admin/send.php:158
 msgid ""
 "The campaign will go to users who are a member of the lists above,     "
 "unless they are a member of one of the lists you select here."
@@ -568,47 +568,43 @@ msgstr "Verander je eigen details (bijv wachtwoord)"
 msgid "System Functions"
 msgstr "Programma"
 
-#: public_html/lists/admin/dbcheck.php:8
-msgid "Database structure check"
-msgstr "Controleer de structuur van de database"
-
-#: public_html/lists/admin/dbcheck.php:13
+#: public_html/lists/admin/dbcheck.php:11
 msgid "Database structure"
 msgstr "Controleer de structuur van de database"
 
-#: public_html/lists/admin/dbcheck.php:14
+#: public_html/lists/admin/dbcheck.php:12
 msgid "Table"
 msgstr "Tabel"
 
-#: public_html/lists/admin/dbcheck.php:21
+#: public_html/lists/admin/dbcheck.php:19
 msgid "real name"
 msgstr "echte naam"
 
-#: public_html/lists/admin/dbcheck.php:51
-#: public_html/lists/admin/dbcheck.php:54
+#: public_html/lists/admin/dbcheck.php:49
+#: public_html/lists/admin/dbcheck.php:52
 msgid "exist"
 msgstr "bestaat"
 
-#: public_html/lists/admin/dbcheck.php:80
-#: public_html/lists/admin/dbcheck.php:83
+#: public_html/lists/admin/dbcheck.php:78
+#: public_html/lists/admin/dbcheck.php:81
 #: public_html/lists/admin/import3.php:380
 #: public_html/lists/admin/initialise.php:161
 msgid "ok"
 msgstr "ok"
 
-#: public_html/lists/admin/dbcheck.php:86
+#: public_html/lists/admin/dbcheck.php:84
 msgid "index"
 msgstr "index"
 
-#: public_html/lists/admin/dbcheck.php:89
+#: public_html/lists/admin/dbcheck.php:87
 msgid "unique"
 msgstr "uniek"
 
-#: public_html/lists/admin/dbcheck.php:92
+#: public_html/lists/admin/dbcheck.php:90
 msgid "category"
 msgstr "categorie"
 
-#: public_html/lists/admin/dbcheck.php:95
+#: public_html/lists/admin/dbcheck.php:93
 msgid "check"
 msgstr "controleer"
 
@@ -742,140 +738,140 @@ msgstr "Selecteer alles"
 msgid "There are no lists available"
 msgstr "Er zijn geen verzendlijsten beschikbaar"
 
-#: public_html/lists/admin/connect.php:1691
+#: public_html/lists/admin/connect.php:1716
 #: public_html/lists/admin/systemstats.php:13
 #: public_html/lists/admin/date.php:27
 msgid "January"
 msgstr "Januari"
 
-#: public_html/lists/admin/connect.php:1692
+#: public_html/lists/admin/connect.php:1717
 #: public_html/lists/admin/systemstats.php:14
 #: public_html/lists/admin/date.php:28
 msgid "February"
 msgstr "Februari"
 
-#: public_html/lists/admin/connect.php:1693
+#: public_html/lists/admin/connect.php:1718
 #: public_html/lists/admin/systemstats.php:15
 #: public_html/lists/admin/date.php:29
 msgid "March"
 msgstr "Maart"
 
-#: public_html/lists/admin/connect.php:1694
+#: public_html/lists/admin/connect.php:1719
 #: public_html/lists/admin/systemstats.php:16
 #: public_html/lists/admin/date.php:30
 msgid "April"
 msgstr "April"
 
-#: public_html/lists/admin/connect.php:1695
-#: public_html/lists/admin/connect.php:1710
+#: public_html/lists/admin/connect.php:1720
+#: public_html/lists/admin/connect.php:1735
 #: public_html/lists/admin/systemstats.php:17
 #: public_html/lists/admin/systemstats.php:32
 #: public_html/lists/admin/date.php:31
 msgid "May"
 msgstr "Mei"
 
-#: public_html/lists/admin/connect.php:1696
+#: public_html/lists/admin/connect.php:1721
 #: public_html/lists/admin/systemstats.php:18
 #: public_html/lists/admin/date.php:32
 msgid "June"
 msgstr "Juni"
 
-#: public_html/lists/admin/connect.php:1697
+#: public_html/lists/admin/connect.php:1722
 #: public_html/lists/admin/systemstats.php:19
 #: public_html/lists/admin/date.php:33
 msgid "July"
 msgstr "Juli"
 
-#: public_html/lists/admin/connect.php:1698
+#: public_html/lists/admin/connect.php:1723
 #: public_html/lists/admin/systemstats.php:20
 #: public_html/lists/admin/date.php:34
 msgid "August"
 msgstr "Augustus"
 
-#: public_html/lists/admin/connect.php:1699
+#: public_html/lists/admin/connect.php:1724
 #: public_html/lists/admin/systemstats.php:21
 #: public_html/lists/admin/date.php:35
 msgid "September"
 msgstr "September"
 
-#: public_html/lists/admin/connect.php:1700
+#: public_html/lists/admin/connect.php:1725
 #: public_html/lists/admin/systemstats.php:22
 #: public_html/lists/admin/date.php:36
 msgid "October"
 msgstr "Oktober"
 
-#: public_html/lists/admin/connect.php:1701
+#: public_html/lists/admin/connect.php:1726
 #: public_html/lists/admin/systemstats.php:23
 #: public_html/lists/admin/date.php:37
 msgid "November"
 msgstr "November"
 
-#: public_html/lists/admin/connect.php:1702
+#: public_html/lists/admin/connect.php:1727
 #: public_html/lists/admin/systemstats.php:24
 #: public_html/lists/admin/date.php:38
 msgid "December"
 msgstr "December"
 
-#: public_html/lists/admin/connect.php:1706
+#: public_html/lists/admin/connect.php:1731
 #: public_html/lists/admin/systemstats.php:28
 msgid "Jan"
 msgstr "Jan"
 
-#: public_html/lists/admin/connect.php:1707
+#: public_html/lists/admin/connect.php:1732
 #: public_html/lists/admin/systemstats.php:29
 msgid "Feb"
 msgstr "Feb"
 
-#: public_html/lists/admin/connect.php:1708
+#: public_html/lists/admin/connect.php:1733
 #: public_html/lists/admin/systemstats.php:30
 msgid "Mar"
 msgstr "Mar"
 
-#: public_html/lists/admin/connect.php:1709
+#: public_html/lists/admin/connect.php:1734
 #: public_html/lists/admin/systemstats.php:31
 msgid "Apr"
 msgstr "Apr"
 
-#: public_html/lists/admin/connect.php:1711
+#: public_html/lists/admin/connect.php:1736
 #: public_html/lists/admin/systemstats.php:33
 msgid "Jun"
 msgstr "Jun"
 
-#: public_html/lists/admin/connect.php:1712
+#: public_html/lists/admin/connect.php:1737
 #: public_html/lists/admin/systemstats.php:34
 msgid "Jul"
 msgstr "Jul"
 
-#: public_html/lists/admin/connect.php:1713
+#: public_html/lists/admin/connect.php:1738
 #: public_html/lists/admin/systemstats.php:35
 msgid "Aug"
 msgstr "Aug"
 
-#: public_html/lists/admin/connect.php:1714
+#: public_html/lists/admin/connect.php:1739
 #: public_html/lists/admin/systemstats.php:36
 msgid "Sep"
 msgstr "Sep"
 
-#: public_html/lists/admin/connect.php:1715
+#: public_html/lists/admin/connect.php:1740
 #: public_html/lists/admin/systemstats.php:37
 msgid "Oct"
 msgstr "Okt"
 
-#: public_html/lists/admin/connect.php:1716
+#: public_html/lists/admin/connect.php:1741
 #: public_html/lists/admin/systemstats.php:38
 msgid "Nov"
 msgstr "Nov"
 
-#: public_html/lists/admin/connect.php:1717
+#: public_html/lists/admin/connect.php:1742
 #: public_html/lists/admin/systemstats.php:39
 msgid "Dec"
 msgstr "Dec"
 
-#: public_html/lists/admin/connect.php:2123
+#: public_html/lists/admin/connect.php:2148
 msgid "secs"
 msgstr "seconden"
 
-#: public_html/lists/admin/connect.php:2131
+#: public_html/lists/admin/connect.php:2156
 #: public_html/lists/admin/import4.php:177
 #: public_html/lists/admin/import4.php:186
 #: public_html/lists/admin/attributes.php:365
@@ -883,35 +879,35 @@ msgstr "seconden"
 msgid "Attribute"
 msgstr "Veld"
 
-#: public_html/lists/admin/connect.php:2131
+#: public_html/lists/admin/connect.php:2156
 msgid "Placeholder"
 msgstr "Plaatshouder"
 
-#: public_html/lists/admin/connect.php:2218
+#: public_html/lists/admin/connect.php:2243
 #, php-format
 msgid "Listing %d to %d of %d"
 msgstr "Berichten %d tot %d van %d stuks"
 
-#: public_html/lists/admin/connect.php:2220
+#: public_html/lists/admin/connect.php:2245
 #, php-format
 msgid "Listing %d to %d"
 msgstr "Overzicht van %d tot %d"
 
-#: public_html/lists/admin/connect.php:2235
+#: public_html/lists/admin/connect.php:2260
 msgid "First Page"
 msgstr "Eerste pagina"
 
-#: public_html/lists/admin/connect.php:2236
+#: public_html/lists/admin/connect.php:2261
 #: public_html/lists/admin/inc/interfacelib.php:832
 msgid "Previous"
 msgstr "Vorige"
 
-#: public_html/lists/admin/connect.php:2238
+#: public_html/lists/admin/connect.php:2263
 #: public_html/lists/admin/inc/interfacelib.php:873
 msgid "Next"
 msgstr "Volgende"
 
-#: public_html/lists/admin/connect.php:2240
+#: public_html/lists/admin/connect.php:2265
 msgid "Last Page"
 msgstr "Laatste pagina"
 
@@ -1904,232 +1900,232 @@ msgstr "Teruggekaatste e-mail berichten verwerkings fout"
 msgid "Bounce Processing info"
 msgstr "Teruggekaatste e-mail berichten verwerkings info"
 
-#: public_html/lists/admin/processbounces.php:234
+#: public_html/lists/admin/processbounces.php:256
 msgid "system message bounced, user marked unconfirmed"
 msgstr "systeem bericht teruggekaatst, abonnee als onbevestigd gemarkeerd"
 
-#: public_html/lists/admin/processbounces.php:235
+#: public_html/lists/admin/processbounces.php:257
 msgid "Bounced system message"
 msgstr "Teruggekaatst systeem bericht"
 
-#: public_html/lists/admin/processbounces.php:236
+#: public_html/lists/admin/processbounces.php:258
 msgid "User marked unconfirmed"
 msgstr "Abonnee als onbevestigd gemarkeerd"
 
-#: public_html/lists/admin/processbounces.php:237
+#: public_html/lists/admin/processbounces.php:259
 msgid "View Bounce"
 msgstr "Bekijk teruggekaatste e-mail berichten"
 
-#: public_html/lists/admin/processbounces.php:307
+#: public_html/lists/admin/processbounces.php:329
 msgid "system message bounced, but unknown user"
 msgstr "systeem bericht teruggekaatst, maar geen  bekende abonnee"
 
-#: public_html/lists/admin/processbounces.php:350
+#: public_html/lists/admin/processbounces.php:372
 #: public_html/lists/admin/readtestmail.php:207
 msgid "Cannot create POP3 connection to"
 msgstr "Kan geen POP3 verbinding maken met"
 
-#: public_html/lists/admin/processbounces.php:368
+#: public_html/lists/admin/processbounces.php:390
 #: public_html/lists/admin/readtestmail.php:225
 msgid "Cannot open mailbox file"
 msgstr "Kan mailbox bestand niet openen"
 
-#: public_html/lists/admin/processbounces.php:380
+#: public_html/lists/admin/processbounces.php:402
 #, php-format
 msgid "%d bounces to fetch from the mailbox"
 msgstr "%d teruggekaatste e-mail berichten te ontvangen van de mailbox"
 
-#: public_html/lists/admin/processbounces.php:387
+#: public_html/lists/admin/processbounces.php:409
 #: public_html/lists/admin/readtestmail.php:240
 msgid "Please do not interrupt this process"
 msgstr "Verstoor deze verwerking aub niet"
 
-#: public_html/lists/admin/processbounces.php:388
+#: public_html/lists/admin/processbounces.php:410
 #, fuzzy, php-format
 msgid "%d bounces to process"
 msgstr "%d teruggekaatste e-mail berichten worden opnieuw geanalyseerd"
 
-#: public_html/lists/admin/processbounces.php:390
-#: public_html/lists/admin/processbounces.php:391
+#: public_html/lists/admin/processbounces.php:412
+#: public_html/lists/admin/processbounces.php:413
 #, php-format
 msgid "Processing first %d bounces"
 msgstr "Verwerken eerste %d teruggekaatste e-mail berichten"
 
-#: public_html/lists/admin/processbounces.php:395
+#: public_html/lists/admin/processbounces.php:417
 msgid "Running in test mode, not deleting messages from mailbox"
 msgstr ""
 "De testmode is actief, er zullen geen berichten uit de mailbox worden "
 "verwijderd"
 
-#: public_html/lists/admin/processbounces.php:397
+#: public_html/lists/admin/processbounces.php:419
 msgid "Processed messages will be deleted from mailbox"
 msgstr "Verwerkte berichten zullen worden verwijderd uit de mailbox"
 
-#: public_html/lists/admin/processbounces.php:414
-#: public_html/lists/admin/processbounces.php:423
+#: public_html/lists/admin/processbounces.php:436
+#: public_html/lists/admin/processbounces.php:445
 #: public_html/lists/admin/readtestmail.php:265
 #: public_html/lists/admin/readtestmail.php:270
 msgid "Deleting message"
 msgstr "Verwijderen van bericht"
 
-#: public_html/lists/admin/processbounces.php:418
+#: public_html/lists/admin/processbounces.php:440
 msgid "Not deleting processed message"
 msgstr "Het verwerkte e-mail bericht wordt niet verwijderd"
 
-#: public_html/lists/admin/processbounces.php:427
+#: public_html/lists/admin/processbounces.php:449
 msgid "Not deleting unprocessed message"
 msgstr "Het niet verwerkte e-mail bericht wordt niet verwijderd"
 
-#: public_html/lists/admin/processbounces.php:433
+#: public_html/lists/admin/processbounces.php:455
 #: public_html/lists/admin/readtestmail.php:277
 msgid "Closing mailbox, and purging messages"
 msgstr "Het sluiten van de mailbox en het zuiveren van de berichten"
 
-#: public_html/lists/admin/processbounces.php:441
+#: public_html/lists/admin/processbounces.php:463
 #: public_html/lists/admin/readtestmail.php:292
 msgid "IMAP is not included in your PHP installation, cannot continue"
 msgstr ""
 "In de PHP configuratie is geen IMAP opgenomen, het proces kan niet worden "
 "voltooid"
 
-#: public_html/lists/admin/processbounces.php:442
+#: public_html/lists/admin/processbounces.php:464
 #: public_html/lists/admin/readtestmail.php:293
 msgid "Check out"
 msgstr "Raadpleeg"
 
-#: public_html/lists/admin/processbounces.php:449
+#: public_html/lists/admin/processbounces.php:471
 msgid "Bounce mechanism not properly configured"
 msgstr "Teruggekaatste e-mail berichten mechanisme niet goed geconfigureerd"
 
-#: public_html/lists/admin/processbounces.php:459
+#: public_html/lists/admin/processbounces.php:481
 msgid "Force set, killing other send processes"
 msgstr "Forceer bewerking, breek andere processen af"
 
-#: public_html/lists/admin/processbounces.php:479
+#: public_html/lists/admin/processbounces.php:501
 msgid "bounce_protocol not supported"
 msgstr "Teruggekaatste e-mail berichten protocol wordt niet ondersteund"
 
-#: public_html/lists/admin/processbounces.php:485
+#: public_html/lists/admin/processbounces.php:507
 msgid "Download failed, exiting"
 msgstr "Download mislukt, afbreken"
 
-#: public_html/lists/admin/processbounces.php:498
+#: public_html/lists/admin/processbounces.php:520
 #, php-format
 msgid "%d bounces to reprocess"
 msgstr "%d teruggekaatste e-mail berichten worden opnieuw geanalyseerd"
 
-#: public_html/lists/admin/processbounces.php:502
-#: public_html/lists/admin/processbounces.php:514
+#: public_html/lists/admin/processbounces.php:524
+#: public_html/lists/admin/processbounces.php:536
 #, php-format
 msgid "%d out of %d processed"
 msgstr "%d van %d geanalyseerd"
 
-#: public_html/lists/admin/processbounces.php:516
+#: public_html/lists/admin/processbounces.php:538
 #, php-format
 msgid "%d bounces were re-processed and %d bounces were re-identified"
 msgstr ""
 "%d teruggekaatste e-mail berichten zijn opnieuw geanalyseerd en %d "
 "teruggekaatste e-mail berichten zijn geïdentificeerd"
 
-#: public_html/lists/admin/processbounces.php:521
+#: public_html/lists/admin/processbounces.php:543
 msgid "Processing bounces based on active bounce rules"
 msgstr ""
 "Verwerken van teruggekaatste e-mail berichten gebaseerd op actieve regels"
 
-#: public_html/lists/admin/processbounces.php:535
+#: public_html/lists/admin/processbounces.php:557
 #, php-format
 msgid "processed %d out of %d bounces for advanced bounce rules"
 msgstr ""
 "%d van %d teruggekaatste e-mail berichten vanuit geavanceerde teruggekaatste "
 "e-mail regels zijn verwerkt"
 
-#: public_html/lists/admin/processbounces.php:544
+#: public_html/lists/admin/processbounces.php:566
 #: public_html/lists/admin/actions/processqueue.php:992
 #: public_html/lists/admin/generatebouncerules.php:50
 msgid "Process Killed by other process"
 msgstr "Verwerking gestopt door een andere verwerking"
 
-#: public_html/lists/admin/processbounces.php:587
-#: public_html/lists/admin/processbounces.php:771
+#: public_html/lists/admin/processbounces.php:609
+#: public_html/lists/admin/processbounces.php:793
 msgid "Auto Unconfirmed"
 msgstr "Automatisch onbevestigd"
 
-#: public_html/lists/admin/processbounces.php:588
-#: public_html/lists/admin/processbounces.php:611
+#: public_html/lists/admin/processbounces.php:610
+#: public_html/lists/admin/processbounces.php:633
 msgid "Subscriber auto unconfirmed for"
 msgstr "Abonnee automatisch onbevestigd door"
 
-#: public_html/lists/admin/processbounces.php:588
-#: public_html/lists/admin/processbounces.php:611
-#: public_html/lists/admin/processbounces.php:626
-#: public_html/lists/admin/processbounces.php:640
-#: public_html/lists/admin/processbounces.php:654
-#: public_html/lists/admin/processbounces.php:666
+#: public_html/lists/admin/processbounces.php:610
+#: public_html/lists/admin/processbounces.php:633
+#: public_html/lists/admin/processbounces.php:648
+#: public_html/lists/admin/processbounces.php:662
+#: public_html/lists/admin/processbounces.php:676
+#: public_html/lists/admin/processbounces.php:688
 msgid "bounce rule"
 msgstr "teruggekaatste e-mail berichten regel"
 
-#: public_html/lists/admin/processbounces.php:610
+#: public_html/lists/admin/processbounces.php:632
 msgid "Auto unconfirmed"
 msgstr "Automatisch onbevestigd"
 
-#: public_html/lists/admin/processbounces.php:621
+#: public_html/lists/admin/processbounces.php:643
 msgid "Subscriber auto blacklisted  by bounce rule"
 msgstr ""
 "De abonnee is automatisch op de Zwarte lijst geplaatst  door teruggekaatste "
 "e-mail regel"
 
-#: public_html/lists/admin/processbounces.php:625
-#: public_html/lists/admin/processbounces.php:639
-#: public_html/lists/admin/processbounces.php:653
-#: public_html/lists/admin/processbounces.php:665
+#: public_html/lists/admin/processbounces.php:647
+#: public_html/lists/admin/processbounces.php:661
+#: public_html/lists/admin/processbounces.php:675
+#: public_html/lists/admin/processbounces.php:687
 msgid "Auto Unsubscribed"
 msgstr "Auto Uitschrijven"
 
-#: public_html/lists/admin/processbounces.php:626
-#: public_html/lists/admin/processbounces.php:640
-#: public_html/lists/admin/processbounces.php:666
+#: public_html/lists/admin/processbounces.php:648
+#: public_html/lists/admin/processbounces.php:662
+#: public_html/lists/admin/processbounces.php:688
 msgid "User auto unsubscribed for"
 msgstr "Abonnee is automatisch uitgeschreven voor"
 
-#: public_html/lists/admin/processbounces.php:635
+#: public_html/lists/admin/processbounces.php:657
 #, php-format
 msgid "Subscriber auto blacklisted by bounce rule %d"
 msgstr ""
 "Abonnee automatisch op Zwarte lijst geplaatst door teruggekaatste e-mail "
 "regel %d "
 
-#: public_html/lists/admin/processbounces.php:649
-#: public_html/lists/admin/processbounces.php:661
+#: public_html/lists/admin/processbounces.php:671
+#: public_html/lists/admin/processbounces.php:683
 #, php-format
 msgid "Email address auto blacklisted by bounce rule %d"
 msgstr ""
 "E-mail adres automatisch op Zwarte lijst geplaatst door teruggekaatste e-"
 "mail regel %d"
 
-#: public_html/lists/admin/processbounces.php:654
+#: public_html/lists/admin/processbounces.php:676
 msgid "email auto unsubscribed for"
 msgstr "e-mail adres is automatisch uitgeschreven voor"
 
-#: public_html/lists/admin/processbounces.php:684
+#: public_html/lists/admin/processbounces.php:706
 msgid "bounces processed by advanced processing"
 msgstr "teruggekaatste e-mail berichten verwerkt op geavanceerde wijze"
 
-#: public_html/lists/admin/processbounces.php:685
+#: public_html/lists/admin/processbounces.php:707
 msgid "bounces were not matched by advanced processing rules"
 msgstr ""
 "teruggekaatste e-mail berichten kwamen niet in aanmerking voor geavanceerde "
 "verwerking"
 
-#: public_html/lists/admin/processbounces.php:689
+#: public_html/lists/admin/processbounces.php:711
 msgid "Identifying consecutive bounces"
 msgstr "Identificeren van opeenvolgende teruggekaatste e-mail berichten"
 
-#: public_html/lists/admin/processbounces.php:699
+#: public_html/lists/admin/processbounces.php:721
 #: public_html/lists/admin/cron.php:55
 msgid "Nothing to do"
 msgstr "Niets te doen"
 
-#: public_html/lists/admin/processbounces.php:768
+#: public_html/lists/admin/processbounces.php:790
 #, php-format
 msgid ""
 "User (url:%s) has consecutive bounces (%d) over threshold (%d), user marked "
@@ -2138,41 +2134,41 @@ msgstr ""
 "Abonnee (url:%s) heeft opeenvolgende teruggekaatste e-mail berichten (%d) "
 "hoger dan drempel waarde (%d). De abonnee is gemarkeerd als onbevestigd."
 
-#: public_html/lists/admin/processbounces.php:772
+#: public_html/lists/admin/processbounces.php:794
 #, php-format
 msgid "Subscriber auto unconfirmed for %d consecutive bounces"
 msgstr ""
 "Abonnee auto onbevestigd door %d opeenvolgende teruggekaatste e-mail "
 "berichten"
 
-#: public_html/lists/admin/processbounces.php:782
+#: public_html/lists/admin/processbounces.php:804
 #, php-format
 msgid "%d consecutive bounces, threshold reached, blacklisting subscriber"
 msgstr ""
 "%d opeenvolgende teruggekaatste e-mail berichten. De limiet is hiermee "
 "bereikt en de abonnee is op de Zwarte lijst geplaatst"
 
-#: public_html/lists/admin/processbounces.php:783
+#: public_html/lists/admin/processbounces.php:805
 #, php-format
 msgid "%d consecutive bounces, threshold reached"
 msgstr ""
 "%d opeenvolgende teruggekaatste e-mail berichten, drempelwaarde bereikt"
 
-#: public_html/lists/admin/processbounces.php:795
+#: public_html/lists/admin/processbounces.php:817
 #, php-format
 msgid "processed %d out of %d subscribers"
 msgstr "Verwerkt %d van %d abonnees"
 
-#: public_html/lists/admin/processbounces.php:802
+#: public_html/lists/admin/processbounces.php:824
 #, php-format
 msgid "total of %d subscribers processed"
 msgstr "totaal van %d abonnees verwerkt"
 
-#: public_html/lists/admin/processbounces.php:807
+#: public_html/lists/admin/processbounces.php:829
 msgid "Report of advanced bounce processing:"
 msgstr "Rapport van geavanceerde teruggekaatste e-mail berichten verwerking:"
 
-#: public_html/lists/admin/processbounces.php:810
+#: public_html/lists/admin/processbounces.php:832
 msgid ""
 "Below are users who have been marked unconfirmed. The number in () is the "
 "number of consecutive bounces."
@@ -2180,7 +2176,7 @@ msgstr ""
 "Lijst met gebruikers gemarkeerd als onbevestigd. Getal tussen haakjes geeft "
 "aantal opeenvolgende teruggekaatste e-mail berichten weer"
 
-#: public_html/lists/admin/processbounces.php:814
+#: public_html/lists/admin/processbounces.php:836
 msgid "Report:"
 msgstr "Rapport:"
 
@@ -4620,6 +4616,36 @@ msgstr "%d te bewerken"
 msgid "%d bounces have been associated with a subscriber profile"
 msgstr ""
 
+#: public_html/lists/admin/actions/domainbounces.php:18
+#, fuzzy
+#| msgid "Domain Statistics"
+msgid "Domain statistics"
+msgstr "Overzicht van de domeinen waaraan e-mail berichten werden verzonden"
+
+#: public_html/lists/admin/actions/domainbounces.php:71
+#, fuzzy
+#| msgid "Total bounces"
+msgid "Total bounced emails"
+msgstr "Totaal teruggekaatste email berichten"
+
+#: public_html/lists/admin/actions/domainbounces.php:75
+#, fuzzy
+#| msgid "Import emails"
+msgid "Total sent emails"
+msgstr "Importeer"
+
+#: public_html/lists/admin/actions/domainbounces.php:79
+#, fuzzy
+#| msgid "bounce rule"
+msgid "Bounce rate"
+msgstr "teruggekaatste e-mail berichten regel"
+
+#: public_html/lists/admin/actions/domainbounces.php:83
+#, fuzzy
+#| msgid "View Items"
+msgid "View rate"
+msgstr "Bekijk Items"
+
 #: public_html/lists/admin/actions/configure.php:27
 msgid "Editing"
 msgstr "Bewerken"
@@ -5132,6 +5158,18 @@ msgstr "Domeinen met meeste niet bevestigde abonnees"
 msgid "Top 25 local-parts of email addresses"
 msgstr ""
 
+#: public_html/lists/admin/actions/domainstats.php:208
+#, fuzzy
+#| msgid "Top 50 domains with more than 5 subscribers"
+msgid "Top 25 domains with the highest number of bounces"
+msgstr "Overzicht van top 50 domeinen met meer dan vijf abonnees"
+
+#: public_html/lists/admin/actions/domainstats.php:225
+#: public_html/lists/admin/actions/bounces.php:25
+#: public_html/lists/admin/user.php:540
+msgid "Bounces"
+msgstr "Teruggekaatste e-mail berichten"
+
 #: public_html/lists/admin/actions/processqueue.php:42
 msgid "Unable get lock for processing"
 msgstr "Wachtrij kon niet worden geblokkeerd"
@@ -5561,11 +5599,6 @@ msgstr "Om de statistieken van dit bericht te bekijken, ga naar %s://%s"
 #: public_html/lists/admin/actions/processqueue.php:1382
 msgid "to send this message"
 msgstr "om dit bericht te zenden"
-
-#: public_html/lists/admin/actions/bounces.php:25
-#: public_html/lists/admin/user.php:540
-msgid "Bounces"
-msgstr "Teruggekaatste e-mail berichten"
 
 #: public_html/lists/admin/actions/bounces.php:46
 #: public_html/lists/admin/actions/bounces.php:48
@@ -6621,12 +6654,12 @@ msgstr ""
 "Om overbelasting te voorkomen zullen er 10000 regels per keer worden "
 "geconverteerd."
 
-#: public_html/lists/admin/class.phplistmailer.php:316
+#: public_html/lists/admin/class.phplistmailer.php:319
 #, php-format
 msgid "Error sending email to %s"
 msgstr "Fout bij het verzenden van het e-mail bericht aan %s"
 
-#: public_html/lists/admin/class.phplistmailer.php:321
+#: public_html/lists/admin/class.phplistmailer.php:324
 #, php-format
 msgid "Error, empty message-body sending email to %s"
 msgstr ""
@@ -10417,6 +10450,9 @@ msgstr ""
 msgid "subscription settings"
 msgstr ""
 
+#~ msgid "Database structure check"
+#~ msgstr "Controleer de structuur van de database"
+
 #, fuzzy
 #~| msgid "error"
 #~ msgid "Error: "
@@ -11629,9 +11665,6 @@ msgstr ""
 
 #~ msgid "validate"
 #~ msgstr "valideer"
-
-#~ msgid "View Items"
-#~ msgstr "Bekijk Items"
 
 #~ msgid "RSS Source"
 #~ msgstr "RSS Bron"
