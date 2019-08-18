@@ -117,9 +117,9 @@ msgstr "Cette page ne peut être appelée qu'en ligne de commande"
 
 #: public_html/lists/admin/runcommand.php:12
 #: public_html/lists/admin/pageaction.php:16
-#: public_html/lists/admin/messages.php:298
-#: public_html/lists/admin/messages.php:314
-#: public_html/lists/admin/messages.php:326
+#: public_html/lists/admin/messages.php:295
+#: public_html/lists/admin/messages.php:311
+#: public_html/lists/admin/messages.php:323
 #: public_html/lists/admin/tests/sendpage.php:34
 #: public_html/lists/admin/tests/sendpage.php:42
 msgid "Failed"
@@ -194,7 +194,7 @@ msgid "start a new message"
 msgstr "rédiger un nouveau message"
 
 #: public_html/lists/admin/send.php:102
-#: public_html/lists/admin/messages.php:138
+#: public_html/lists/admin/messages.php:137
 msgid "Start a new campaign"
 msgstr "Démarrer une nouvelle campagne"
 
@@ -263,7 +263,7 @@ msgstr "version de phplist"
 
 #: public_html/lists/admin/home.php:14 public_html/lists/admin/home.php:343
 #: public_html/lists/admin/initialise.php:249
-#: public_html/lists/admin/upgrade.php:467
+#: public_html/lists/admin/upgrade.php:469
 msgid "Upgrade"
 msgstr "Mettre à jour"
 
@@ -427,8 +427,8 @@ msgstr "Configurer les attributs des administrateurs"
 msgid "Administrator Functions"
 msgstr "Fonctions des administrateurs"
 
-#: public_html/lists/admin/home.php:208 public_html/lists/admin/list.php:228
-#: public_html/lists/admin/list.php:287
+#: public_html/lists/admin/home.php:208 public_html/lists/admin/list.php:251
+#: public_html/lists/admin/list.php:310
 msgid "send"
 msgstr "envoyer"
 
@@ -622,7 +622,7 @@ msgid "ETA"
 msgstr "Durée restante estimée"
 
 #: public_html/lists/admin/msgstatus.php:29
-#: public_html/lists/admin/messages.php:143
+#: public_html/lists/admin/messages.php:142
 #: public_html/lists/admin/actions/msgstatus.php:74
 #: public_html/lists/admin/actions/statsoverview.php:138
 #: public_html/lists/admin/actions/campaigns.php:54
@@ -701,15 +701,15 @@ msgid "All Public Lists"
 msgstr "Toutes les listes publiques"
 
 #: public_html/lists/admin/connect.php:1339
-#: public_html/lists/admin/import2.php:646 public_html/lists/admin/list.php:95
-#: public_html/lists/admin/list.php:99 public_html/lists/admin/list.php:325
+#: public_html/lists/admin/import2.php:646 public_html/lists/admin/list.php:110
+#: public_html/lists/admin/list.php:114 public_html/lists/admin/list.php:348
 #: public_html/lists/admin/import3.php:43
 msgid "Add a list"
 msgstr "Ajouter une liste"
 
 #: public_html/lists/admin/connect.php:1350
-#: public_html/lists/admin/list.php:135 public_html/lists/admin/list.php:145
-#: public_html/lists/admin/list.php:167 public_html/lists/admin/list.php:175
+#: public_html/lists/admin/list.php:150 public_html/lists/admin/list.php:160
+#: public_html/lists/admin/list.php:182 public_html/lists/admin/list.php:190
 msgid "Uncategorised"
 msgstr "Sans catégorie"
 
@@ -1452,8 +1452,8 @@ msgid "Campaign statistics"
 msgstr "Statistiques des clics de l'envoi"
 
 #: public_html/lists/admin/statsoverview.php:97
-#: public_html/lists/admin/messages.php:13
-#: public_html/lists/admin/messages.php:18
+#: public_html/lists/admin/messages.php:12
+#: public_html/lists/admin/messages.php:17
 #: public_html/lists/admin/send_core.php:732
 #: public_html/lists/admin/message.php:105
 #: public_html/lists/admin/userclicks.php:84
@@ -1487,7 +1487,7 @@ msgid "Sent as text"
 msgstr "Envoyer en mode texte"
 
 #: public_html/lists/admin/statsoverview.php:136
-#: public_html/lists/admin/messages.php:506
+#: public_html/lists/admin/messages.php:503
 #: public_html/lists/admin/mclicks.php:78
 msgid "Bounced"
 msgstr "Rejetés"
@@ -1732,7 +1732,7 @@ msgstr "Copie des listes"
 #: public_html/lists/admin/import4.php:153
 #: public_html/lists/admin/actions/listbounces.php:53
 #: public_html/lists/admin/actions/import1.php:226
-#: public_html/lists/admin/list.php:108 public_html/lists/admin/import3.php:510
+#: public_html/lists/admin/list.php:123 public_html/lists/admin/import3.php:510
 msgid "list"
 msgstr "liste"
 
@@ -1773,13 +1773,13 @@ msgstr "Erreur, aucune liste en local définie pour"
 #: public_html/lists/admin/import4.php:358
 #: public_html/lists/admin/reconcileusers.php:410
 #: public_html/lists/admin/members.php:253
-#: public_html/lists/admin/messages.php:206
-#: public_html/lists/admin/messages.php:249
-#: public_html/lists/admin/messages.php:281
-#: public_html/lists/admin/messages.php:296
-#: public_html/lists/admin/messages.php:312
-#: public_html/lists/admin/messages.php:324
-#: public_html/lists/admin/eventlog.php:37 public_html/lists/admin/list.php:115
+#: public_html/lists/admin/messages.php:203
+#: public_html/lists/admin/messages.php:246
+#: public_html/lists/admin/messages.php:278
+#: public_html/lists/admin/messages.php:293
+#: public_html/lists/admin/messages.php:309
+#: public_html/lists/admin/messages.php:321
+#: public_html/lists/admin/eventlog.php:37 public_html/lists/admin/list.php:130
 #: public_html/lists/admin/user.php:300 public_html/lists/admin/admins.php:48
 #: public_html/lists/admin/admin.php:136 public_html/lists/admin/users.php:240
 msgid "Done"
@@ -2614,7 +2614,7 @@ msgstr "Vérifier que toutes les images externes existent"
 #: public_html/lists/admin/template.php:349
 #: public_html/lists/admin/adminattributes.php:5
 #: public_html/lists/admin/adminattributes.php:156
-#: public_html/lists/admin/list.php:295 public_html/lists/admin/user.php:504
+#: public_html/lists/admin/list.php:318 public_html/lists/admin/user.php:504
 #: public_html/lists/admin/user.php:530
 #: public_html/lists/admin/bouncerule.php:79
 #: public_html/lists/admin/admin.php:316
@@ -2685,7 +2685,7 @@ msgid "System"
 msgstr "Système"
 
 #: public_html/lists/admin/templates.php:50
-#: public_html/lists/admin/messages.php:639
+#: public_html/lists/admin/messages.php:636
 #: public_html/lists/admin/updatetranslation.php:76
 #: public_html/lists/admin/bouncerule.php:64
 #: public_html/lists/admin/bounce.php:158
@@ -2694,10 +2694,10 @@ msgid "Action"
 msgstr "Action"
 
 #: public_html/lists/admin/templates.php:56
-#: public_html/lists/admin/messages.php:616
-#: public_html/lists/admin/messages.php:617
-#: public_html/lists/admin/messages.php:627
-#: public_html/lists/admin/messages.php:628
+#: public_html/lists/admin/messages.php:613
+#: public_html/lists/admin/messages.php:614
+#: public_html/lists/admin/messages.php:624
+#: public_html/lists/admin/messages.php:625
 msgid "Edit"
 msgstr "Modifier"
 
@@ -3162,8 +3162,8 @@ msgstr "%d abonnés"
 msgid "Tag all users in this page"
 msgstr "Cocher tous les utilisateurs de cette page"
 
-#: public_html/lists/admin/members.php:316 public_html/lists/admin/list.php:223
-#: public_html/lists/admin/list.php:267
+#: public_html/lists/admin/members.php:316 public_html/lists/admin/list.php:246
+#: public_html/lists/admin/list.php:290
 msgid "Members"
 msgstr "Membres"
 
@@ -3266,7 +3266,7 @@ msgid "default"
 msgstr "par défaut"
 
 #: public_html/lists/admin/spage.php:93 public_html/lists/admin/spage.php:97
-#: public_html/lists/admin/messages.php:144
+#: public_html/lists/admin/messages.php:143
 #: public_html/lists/admin/bouncerules.php:66
 #: public_html/lists/admin/bouncerules.php:71
 msgid "active"
@@ -3420,30 +3420,25 @@ msgstr "Tests disponibles"
 msgid "Purpose"
 msgstr "Objectif"
 
-#: public_html/lists/admin/messages.php:8
-#, fuzzy
-msgid "filter"
-msgstr "Filtre"
-
-#: public_html/lists/admin/messages.php:13
-#: public_html/lists/admin/messages.php:22
-#: public_html/lists/admin/messages.php:30
-#: public_html/lists/admin/messages.php:38
-#: public_html/lists/admin/messages.php:46
+#: public_html/lists/admin/messages.php:12
+#: public_html/lists/admin/messages.php:21
+#: public_html/lists/admin/messages.php:29
+#: public_html/lists/admin/messages.php:37
+#: public_html/lists/admin/messages.php:45
 msgid "Ascending"
 msgstr "Ascendant"
 
-#: public_html/lists/admin/messages.php:18
-#: public_html/lists/admin/messages.php:26
-#: public_html/lists/admin/messages.php:34
-#: public_html/lists/admin/messages.php:42
-#: public_html/lists/admin/messages.php:50
+#: public_html/lists/admin/messages.php:17
+#: public_html/lists/admin/messages.php:25
+#: public_html/lists/admin/messages.php:33
+#: public_html/lists/admin/messages.php:41
+#: public_html/lists/admin/messages.php:49
 msgid "Descending"
 msgstr "Descendant"
 
-#: public_html/lists/admin/messages.php:22
-#: public_html/lists/admin/messages.php:26
-#: public_html/lists/admin/messages.php:407
+#: public_html/lists/admin/messages.php:21
+#: public_html/lists/admin/messages.php:25
+#: public_html/lists/admin/messages.php:404
 #: public_html/lists/admin/userclicks.php:85
 #: public_html/lists/admin/userclicks.php:105
 #: public_html/lists/admin/userclicks.php:141
@@ -3454,21 +3449,21 @@ msgstr "Descendant"
 msgid "Entered"
 msgstr "Entré"
 
-#: public_html/lists/admin/messages.php:30
-#: public_html/lists/admin/messages.php:34 public_html/databasestructure.php:39
+#: public_html/lists/admin/messages.php:29
+#: public_html/lists/admin/messages.php:33 public_html/databasestructure.php:39
 #: public_html/databasestructure.php:46 public_html/databasestructure.php:57
 #: public_html/databasestructure.php:86 public_html/databasestructure.php:109
 msgid "Modified"
 msgstr "Modifié"
 
-#: public_html/lists/admin/messages.php:38
-#: public_html/lists/admin/messages.php:42
+#: public_html/lists/admin/messages.php:37
+#: public_html/lists/admin/messages.php:41
 msgid "Embargo"
 msgstr "Embargo"
 
-#: public_html/lists/admin/messages.php:46
-#: public_html/lists/admin/messages.php:50
-#: public_html/lists/admin/messages.php:418
+#: public_html/lists/admin/messages.php:45
+#: public_html/lists/admin/messages.php:49
+#: public_html/lists/admin/messages.php:415
 #: public_html/lists/admin/userclicks.php:86
 #: public_html/lists/admin/userclicks.php:106
 #: public_html/lists/admin/userclicks.php:142
@@ -3476,34 +3471,41 @@ msgstr "Embargo"
 msgid "Sent"
 msgstr "Envoyé"
 
-#: public_html/lists/admin/messages.php:145
+#: public_html/lists/admin/messages.php:144
 msgid "draft"
 msgstr "brouillon"
 
-#: public_html/lists/admin/messages.php:148
+#: public_html/lists/admin/messages.php:147
 msgid "static"
 msgstr "statique"
 
-#: public_html/lists/admin/messages.php:186
-#: public_html/lists/admin/admins.php:97 public_html/lists/admin/users.php:326
-#: public_html/lists/admin/users.php:395
+#: public_html/lists/admin/messages.php:163
+#, fuzzy
+#| msgid "Send a campaign"
+msgid "Search campaigns"
+msgstr "Envoyer une campagne"
+
+#: public_html/lists/admin/messages.php:183
+#: public_html/lists/admin/list.php:226 public_html/lists/admin/admins.php:97
+#: public_html/lists/admin/users.php:326 public_html/lists/admin/users.php:395
 msgid "Go"
 msgstr "Aller"
 
-#: public_html/lists/admin/messages.php:186
+#: public_html/lists/admin/messages.php:183
+#: public_html/lists/admin/list.php:227
 msgid "Clear"
 msgstr "Effacer"
 
-#: public_html/lists/admin/messages.php:203
-#: public_html/lists/admin/eventlog.php:32 public_html/lists/admin/list.php:108
+#: public_html/lists/admin/messages.php:200
+#: public_html/lists/admin/eventlog.php:32 public_html/lists/admin/list.php:123
 #: public_html/lists/admin/user.php:271 public_html/lists/admin/admins.php:43
 #: public_html/lists/admin/admin.php:132
 msgid "Deleting"
 msgstr "Suppression"
 
-#: public_html/lists/admin/messages.php:208
-#: public_html/lists/admin/messages.php:268
-#: public_html/lists/admin/messages.php:283
+#: public_html/lists/admin/messages.php:205
+#: public_html/lists/admin/messages.php:265
+#: public_html/lists/admin/messages.php:280
 #: public_html/lists/admin/send_core.php:501
 #: public_html/lists/admin/import3.php:382
 #: public_html/lists/admin/initialise.php:120
@@ -3511,11 +3513,11 @@ msgstr "Suppression"
 msgid "failed"
 msgstr "échec"
 
-#: public_html/lists/admin/messages.php:240
+#: public_html/lists/admin/messages.php:237
 msgid "Requeuing"
 msgstr "Remise dans la file d'attente"
 
-#: public_html/lists/admin/messages.php:260
+#: public_html/lists/admin/messages.php:257
 #: public_html/lists/admin/send_core.php:1306
 #: public_html/lists/admin/message.php:57
 msgid ""
@@ -3525,7 +3527,7 @@ msgstr ""
 "Cette campagne devrait cesser d'envoyer dans le passé. Aucun message ne sera "
 "envoyé. "
 
-#: public_html/lists/admin/messages.php:262
+#: public_html/lists/admin/messages.php:259
 #: public_html/lists/admin/send_core.php:373
 #: public_html/lists/admin/send_core.php:1301
 #: public_html/lists/admin/send_core.php:1307
@@ -3533,30 +3535,30 @@ msgstr ""
 msgid "Review Scheduling"
 msgstr "Examiner la planification"
 
-#: public_html/lists/admin/messages.php:276
+#: public_html/lists/admin/messages.php:273
 msgid "Suspending"
 msgstr "Suspension"
 
-#: public_html/lists/admin/messages.php:291
+#: public_html/lists/admin/messages.php:288
 msgid "Marking as sent "
 msgstr "Marquer comme envoyé "
 
-#: public_html/lists/admin/messages.php:307
+#: public_html/lists/admin/messages.php:304
 msgid "Suspending all"
 msgstr "Suspendre tous"
 
-#: public_html/lists/admin/messages.php:319
+#: public_html/lists/admin/messages.php:316
 msgid "Marking all as sent "
 msgstr "Marquer tous comme envoyés "
 
+#: public_html/lists/admin/messages.php:367
 #: public_html/lists/admin/messages.php:370
-#: public_html/lists/admin/messages.php:373
 #: public_html/lists/admin/actions/campaigns.php:24
 #: public_html/lists/admin/user.php:539
 msgid "Campaigns"
 msgstr "Campagnes"
 
-#: public_html/lists/admin/messages.php:420
+#: public_html/lists/admin/messages.php:417
 #: public_html/lists/admin/bouncerule.php:69
 #: public_html/lists/admin/userclicks.php:240
 #: public_html/lists/admin/bounce.php:226 public_html/lists/admin/setup.php:18
@@ -3564,43 +3566,43 @@ msgstr "Campagnes"
 msgid "Status"
 msgstr "Statut"
 
-#: public_html/lists/admin/messages.php:450
+#: public_html/lists/admin/messages.php:447
 #, php-format
 msgid "and %d more"
 msgstr ""
 
-#: public_html/lists/admin/messages.php:453
+#: public_html/lists/admin/messages.php:450
 #: public_html/lists/admin/send_core.php:578
-#: public_html/lists/admin/list.php:206 public_html/lists/admin/user.php:538
+#: public_html/lists/admin/list.php:229 public_html/lists/admin/user.php:538
 #: public_html/lists/admin/spageedit.php:369
 msgid "Lists"
 msgstr "Listes"
 
-#: public_html/lists/admin/messages.php:490
+#: public_html/lists/admin/messages.php:487
 #: public_html/lists/admin/mviews.php:220
 msgid "Total views"
 msgstr ""
 
-#: public_html/lists/admin/messages.php:494
+#: public_html/lists/admin/messages.php:491
 msgid "Unique Views"
 msgstr "Vues Uniques"
 
-#: public_html/lists/admin/messages.php:500
+#: public_html/lists/admin/messages.php:497
 #: public_html/lists/admin/mclicks.php:84
 #, fuzzy
 msgid "Total clicks"
 msgstr "Nombre total de clics"
 
-#: public_html/lists/admin/messages.php:523
+#: public_html/lists/admin/messages.php:520
 #, fuzzy
 msgid "Started "
 msgstr "Débuté"
 
-#: public_html/lists/admin/messages.php:524
+#: public_html/lists/admin/messages.php:521
 msgid "Time to send"
 msgstr "Temps pris pour l'envoi"
 
-#: public_html/lists/admin/messages.php:573
+#: public_html/lists/admin/messages.php:570
 #: public_html/lists/admin/actions/domainstats.php:85
 #: public_html/lists/admin/actions/domainstats.php:166
 #: public_html/lists/admin/actions/domainstats.php:200
@@ -3611,7 +3613,7 @@ msgstr "Temps pris pour l'envoi"
 msgid "total"
 msgstr "total"
 
-#: public_html/lists/admin/messages.php:573
+#: public_html/lists/admin/messages.php:570
 #: public_html/lists/admin/send_core.php:836
 #: public_html/lists/admin/actions/mclicks.php:94
 #: public_html/lists/admin/userclicks.php:253
@@ -3619,72 +3621,72 @@ msgstr "total"
 msgid "text"
 msgstr "texte"
 
-#: public_html/lists/admin/messages.php:573
+#: public_html/lists/admin/messages.php:570
 #: public_html/lists/admin/send_core.php:833
 #: public_html/lists/admin/actions/mclicks.php:94
 #: public_html/lists/admin/mclicks.php:141
 msgid "html"
 msgstr "html"
 
-#: public_html/lists/admin/messages.php:584
+#: public_html/lists/admin/messages.php:581
 msgid "PDF"
 msgstr "PDF"
 
-#: public_html/lists/admin/messages.php:585
+#: public_html/lists/admin/messages.php:582
 msgid "both"
 msgstr "les deux"
 
-#: public_html/lists/admin/messages.php:600
+#: public_html/lists/admin/messages.php:597
 msgid "Suspend"
 msgstr "Suspension"
 
-#: public_html/lists/admin/messages.php:602
-#: public_html/lists/admin/messages.php:603
+#: public_html/lists/admin/messages.php:599
+#: public_html/lists/admin/messages.php:600
 #: public_html/lists/admin/actions/msgstatus.php:70
 msgid "Requeue"
 msgstr "Remettre dans la file d'attente"
 
-#: public_html/lists/admin/messages.php:605
-#: public_html/lists/admin/messages.php:606
+#: public_html/lists/admin/messages.php:602
+#: public_html/lists/admin/messages.php:603
 msgid "View"
 msgstr "Afficher"
 
-#: public_html/lists/admin/messages.php:610
+#: public_html/lists/admin/messages.php:607
 msgid "statistics"
 msgstr "statistiques"
 
-#: public_html/lists/admin/messages.php:610
+#: public_html/lists/admin/messages.php:607
 #: public_html/lists/admin/subscriberstats.php:7
 #: public_html/lists/admin/message.php:97
 msgid "Statistics"
 msgstr "Statistiques"
 
-#: public_html/lists/admin/messages.php:615
+#: public_html/lists/admin/messages.php:612
 msgid "Mark&nbsp;sent"
 msgstr "Marqué envoyé"
 
-#: public_html/lists/admin/messages.php:615
+#: public_html/lists/admin/messages.php:612
 msgid "Mark sent"
 msgstr "Marquer comme envoyé"
 
-#: public_html/lists/admin/messages.php:622
+#: public_html/lists/admin/messages.php:619
 msgid "Are you sure you want to delete this campaign?"
 msgstr "Êtes-vous sûr de vouloir supprimer ce message ?"
 
-#: public_html/lists/admin/messages.php:624
+#: public_html/lists/admin/messages.php:621
 msgid "delete this campaign"
 msgstr "supprimer cette campagne"
 
-#: public_html/lists/admin/messages.php:635
-#: public_html/lists/admin/messages.php:636
+#: public_html/lists/admin/messages.php:632
+#: public_html/lists/admin/messages.php:633
 msgid "Copy to Draft"
 msgstr ""
 
-#: public_html/lists/admin/messages.php:647
+#: public_html/lists/admin/messages.php:644
 msgid "Suspend All"
 msgstr "Suspendre tous"
 
-#: public_html/lists/admin/messages.php:648
+#: public_html/lists/admin/messages.php:645
 msgid "Mark All Sent"
 msgstr "Marquer tous envoyé"
 
@@ -3816,24 +3818,24 @@ msgstr ""
 "moment svp"
 
 #: public_html/lists/admin/converttoutf8.php:74
-#: public_html/lists/admin/upgrade.php:254
+#: public_html/lists/admin/upgrade.php:256
 msgid "Upgrading the database to use UTF-8, please wait"
 msgstr "Mise à jour de la base de données au format UTF-8, veuillez patienter"
 
 #: public_html/lists/admin/converttoutf8.php:77
 #: public_html/lists/admin/converttoutf8.php:79
-#: public_html/lists/admin/upgrade.php:257
+#: public_html/lists/admin/upgrade.php:259
 msgid "Upgrading table "
 msgstr "Mise à jour de la table "
 
 #: public_html/lists/admin/converttoutf8.php:85
 #: public_html/lists/admin/converttoutf8.php:87
-#: public_html/lists/admin/upgrade.php:263
+#: public_html/lists/admin/upgrade.php:265
 msgid "Upgrading column "
 msgstr "Mise à jour de la colonne "
 
 #: public_html/lists/admin/converttoutf8.php:92
-#: public_html/lists/admin/upgrade.php:268
+#: public_html/lists/admin/upgrade.php:270
 msgid "upgrade to UTF-8, done"
 msgstr "mise à jour vers le format UTF-8 terminé"
 
@@ -4481,8 +4483,8 @@ msgstr "Cette campagne a été envoyée aux membres des listes suivantes"
 msgid "None yet"
 msgstr "Aucune pour le moment"
 
-#: public_html/lists/admin/message.php:180 public_html/lists/admin/list.php:224
-#: public_html/lists/admin/list.php:261 public_html/lists/admin/list.php:268
+#: public_html/lists/admin/message.php:180 public_html/lists/admin/list.php:247
+#: public_html/lists/admin/list.php:284 public_html/lists/admin/list.php:291
 msgid "View Members"
 msgstr "Voir les membres"
 
@@ -5237,7 +5239,7 @@ msgid "Giving a UUID to %d campaigns"
 msgstr "Attribution d'un identifiant unique (UUID) à %d campagnes"
 
 #: public_html/lists/admin/actions/processqueue.php:103
-#: public_html/lists/admin/upgrade.php:404
+#: public_html/lists/admin/upgrade.php:406
 msgid "Creating new table \"user_message_view\""
 msgstr ""
 
@@ -6129,23 +6131,29 @@ msgstr "Membres non confirmés et non blacklistés"
 msgid "Blacklisted members"
 msgstr "destinataires interdits d'envoi"
 
-#: public_html/lists/admin/list.php:90 public_html/lists/admin/catlists.php:75
+#: public_html/lists/admin/list.php:105 public_html/lists/admin/catlists.php:75
 msgid "Categorise lists"
 msgstr "Liste des catégories"
 
-#: public_html/lists/admin/list.php:217 public_html/lists/admin/list.php:219
+#: public_html/lists/admin/list.php:225
+#, fuzzy
+#| msgid "Merging lists"
+msgid "Search lists"
+msgstr "Fusion des listes"
+
+#: public_html/lists/admin/list.php:240 public_html/lists/admin/list.php:242
 msgid "All subscribers"
 msgstr "Tous les abonnés"
 
-#: public_html/lists/admin/list.php:228
+#: public_html/lists/admin/list.php:251
 msgid "start a new campaign targetting all lists"
 msgstr "Démarrer une nouvelle campagne ciblant toutes les listes"
 
-#: public_html/lists/admin/list.php:229 public_html/lists/admin/list.php:290
+#: public_html/lists/admin/list.php:252 public_html/lists/admin/list.php:313
 msgid "Add Members"
 msgstr "Ajouter des abonnés"
 
-#: public_html/lists/admin/list.php:234
+#: public_html/lists/admin/list.php:257
 msgid ""
 "You seem to have quite a lot of lists, do you want to organise them in "
 "categories? "
@@ -6153,29 +6161,29 @@ msgstr ""
 "Il semble que vous ayez de nombreuses listes, souhaitez vous les organiser "
 "en catégories? "
 
-#: public_html/lists/admin/list.php:235
+#: public_html/lists/admin/list.php:258
 msgid "Great idea!"
 msgstr "Bonne idée !"
 
-#: public_html/lists/admin/list.php:271
+#: public_html/lists/admin/list.php:294
 msgid "Public"
 msgstr "Publique"
 
-#: public_html/lists/admin/list.php:276
+#: public_html/lists/admin/list.php:299
 msgid "Order"
 msgstr "Ordre"
 
-#: public_html/lists/admin/list.php:281
+#: public_html/lists/admin/list.php:304
 #: public_html/lists/admin/editlist.php:127
 msgid "Are you sure you want to delete this list?"
 msgstr "Êtes vous sur de vouloir supprimer cette liste ?"
 
-#: public_html/lists/admin/list.php:281
+#: public_html/lists/admin/list.php:304
 #: public_html/lists/admin/editlist.php:127
 msgid "This will NOT remove the subscribers that are on this list."
 msgstr "Cela ne supprimera pas les destinataires qui figurent sur cette liste."
 
-#: public_html/lists/admin/list.php:281
+#: public_html/lists/admin/list.php:304
 #: public_html/lists/admin/editlist.php:127
 msgid ""
 "You can reconnect subscribers to lists on the Reconcile Subscribers page."
@@ -6183,20 +6191,20 @@ msgstr ""
 "Vous pouvez remettre en ligne les destinataires vers les listes en utilisant "
 "la page de remise en ligne des destinataires."
 
-#: public_html/lists/admin/list.php:283
+#: public_html/lists/admin/list.php:306
 #: public_html/lists/admin/editlist.php:129
 msgid "delete this list"
 msgstr "supprimer cette liste"
 
-#: public_html/lists/admin/list.php:286
+#: public_html/lists/admin/list.php:309
 msgid "Edit this list"
 msgstr "Modifier cette liste"
 
-#: public_html/lists/admin/list.php:288
+#: public_html/lists/admin/list.php:311
 msgid "start a new campaign targetting this list"
 msgstr "démarrer un nouveau publipostage en utilisant cette liste"
 
-#: public_html/lists/admin/list.php:298
+#: public_html/lists/admin/list.php:321
 msgid "No lists, use Add List to add one"
 msgstr "Pas de liste, utiliser Ajouter une liste"
 
@@ -6684,18 +6692,18 @@ msgid "Domain Statistics"
 msgstr "Statistiques du domaine"
 
 #: public_html/lists/admin/statsmgt.php:15
-#: public_html/lists/admin/upgrade.php:448
+#: public_html/lists/admin/upgrade.php:450
 msgid "The clicktracking system has changed"
 msgstr "Le système d'enregistrement des clics a été modifié"
 
 #: public_html/lists/admin/statsmgt.php:16
-#: public_html/lists/admin/upgrade.php:449
+#: public_html/lists/admin/upgrade.php:451
 #, php-format
 msgid "You have %s entries in the old statistics table"
 msgstr "Vous avez %s entrées dans l'ancienne table des statistiques"
 
 #: public_html/lists/admin/statsmgt.php:18
-#: public_html/lists/admin/upgrade.php:450
+#: public_html/lists/admin/upgrade.php:452
 msgid "Convert Old data to new"
 msgstr "Convertir les anciennes données sur le nouveau système"
 
@@ -8098,7 +8106,7 @@ msgid "Sign up to our newsletter"
 msgstr "Abonné-vous à notre bulletin d'information / newsletter"
 
 #: public_html/lists/admin/initialise.php:227
-#: public_html/lists/admin/upgrade.php:439
+#: public_html/lists/admin/upgrade.php:441
 msgid "Success"
 msgstr "Opération réussie"
 
@@ -9024,42 +9032,42 @@ msgstr ""
 "Votre base de données est déjà en version %s (%s), il n'est pas nécessaire "
 "de mettre à niveau."
 
-#: public_html/lists/admin/upgrade.php:70
+#: public_html/lists/admin/upgrade.php:71
 msgid ""
 "Your database is already the correct version, there is no need to upgrade"
 msgstr ""
 "La base de données est déjà à la bonne version, mise à jour non requise"
 
-#: public_html/lists/admin/upgrade.php:72
+#: public_html/lists/admin/upgrade.php:73
 msgid "update Top Level Domains"
 msgstr "Mise à jour des Domaines de premier niveau (TLDs)"
 
-#: public_html/lists/admin/upgrade.php:80
+#: public_html/lists/admin/upgrade.php:82
 msgid "Upgrading phpList to version "
 msgstr "Mise à jour de phpList vers la version "
 
-#: public_html/lists/admin/upgrade.php:99
+#: public_html/lists/admin/upgrade.php:101
 msgid "Please wait, upgrading your database, do not interrupt"
 msgstr ""
 "Veuillez patienter, mise à jour de la base de données, ne pas interrompre"
 
-#: public_html/lists/admin/upgrade.php:271
+#: public_html/lists/admin/upgrade.php:273
 msgid "Database requires converting to UTF-8."
 msgstr "La base de données requière une conversion vers UTF-8."
 
-#: public_html/lists/admin/upgrade.php:272
+#: public_html/lists/admin/upgrade.php:274
 msgid "However, there is too little diskspace for this conversion"
 msgstr "Cependant, il y a trop peu d'espace disque libre pour cette conversion"
 
-#: public_html/lists/admin/upgrade.php:273
+#: public_html/lists/admin/upgrade.php:275
 msgid "Please do a manual conversion."
 msgstr "Veuillez faire une conversion manuelle."
 
-#: public_html/lists/admin/upgrade.php:274
+#: public_html/lists/admin/upgrade.php:276
 msgid "Run manual conversion to UTF8"
 msgstr "Effectuer une conversion manuelle vers UTF8"
 
-#: public_html/lists/admin/upgrade.php:381
+#: public_html/lists/admin/upgrade.php:383
 msgid ""
 "Giving a UUID to your subscribers and campaigns. If you have a lot of them, "
 "this may take a while."
@@ -9067,7 +9075,7 @@ msgstr ""
 "Ajout d'un identifiant unique (UUID) aux abonnés et campagnes. Cette "
 "opération peut prendre du temps."
 
-#: public_html/lists/admin/upgrade.php:382
+#: public_html/lists/admin/upgrade.php:384
 msgid ""
 "If the page times out, you can reload. Or otherwise try to run the upgrade "
 "from commandline instead."
@@ -9076,19 +9084,19 @@ msgstr ""
 "recharger. Dans la négative, il faudra essayer d'exécuter la mise à niveau à "
 "partir de la ligne de commande."
 
-#: public_html/lists/admin/upgrade.php:382
+#: public_html/lists/admin/upgrade.php:384
 msgid "Documentation how to set up phpList commandline"
 msgstr "Documentation pour paramétrer phpList depuis la ligne de commande"
 
-#: public_html/lists/admin/upgrade.php:454
+#: public_html/lists/admin/upgrade.php:456
 msgid "Upgrade successful"
 msgstr "Mise à jour réussie"
 
-#: public_html/lists/admin/upgrade.php:459
+#: public_html/lists/admin/upgrade.php:461
 msgid "Upgrade failed"
 msgstr "Mise à jour échouée"
 
-#: public_html/lists/admin/upgrade.php:464
+#: public_html/lists/admin/upgrade.php:466
 msgid ""
 "Your database requires upgrading, please make sure to create a backup of "
 "your database first."
@@ -9096,7 +9104,7 @@ msgstr ""
 "Votre base de données requière une mise à niveau, assurez-vous de créer "
 "d'abord une copie de votre base de données."
 
-#: public_html/lists/admin/upgrade.php:465
+#: public_html/lists/admin/upgrade.php:467
 msgid ""
 "If you have a large database, make sure you have sufficient diskspace "
 "available for upgrade."
@@ -9104,7 +9112,7 @@ msgstr ""
 "Si vous avez une base de données volumineuse, assurez vous d'avoir assez "
 "d'espace disque pour la mise à jour."
 
-#: public_html/lists/admin/upgrade.php:466
+#: public_html/lists/admin/upgrade.php:468
 #, php-format
 msgid ""
 "When you are ready click %s Depending on the size of your database, this may "
@@ -10518,6 +10526,10 @@ msgstr "Paramètres d'organisation des listes"
 #: public_html/databasestructure.php:371
 msgid "subscription settings"
 msgstr "Paramètres d'abonnement"
+
+#, fuzzy
+#~ msgid "filter"
+#~ msgstr "Filtre"
 
 #~ msgid "Database structure check"
 #~ msgstr "Vérification de la structure de la base de données"
