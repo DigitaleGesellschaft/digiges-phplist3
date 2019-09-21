@@ -789,7 +789,7 @@ $text['signature'] = '';
                             'application/pdf');
                     }
                 }
-                if (!addAttachments($messageid, $mail, 'HTML')) {
+                if (!addAttachments($messageid, $mail, 'HTML',$hash)) {
                     return 0;
                 }
             } else {
@@ -797,7 +797,7 @@ $text['signature'] = '';
                     Sql_Query("update {$GLOBALS['tables']['message']} set astext = astext + 1 where id = $messageid");
                 }
                 $mail->add_text($textmessage);
-                if (!addAttachments($messageid, $mail, 'text')) {
+                if (!addAttachments($messageid, $mail, 'text',$hash)) {
                     return 0;
                 }
             }
@@ -831,7 +831,7 @@ $text['signature'] = '';
                             'application/pdf');
                     }
                 }
-                if (!addAttachments($messageid, $mail, 'HTML')) {
+                if (!addAttachments($messageid, $mail, 'HTML',$hash)) {
                     return 0;
                 }
             } else {
@@ -839,7 +839,7 @@ $text['signature'] = '';
                     Sql_Query("update {$GLOBALS['tables']['message']} set astext = astext + 1 where id = $messageid");
                 }
                 $mail->add_text($textmessage);
-                if (!addAttachments($messageid, $mail, 'text')) {
+                if (!addAttachments($messageid, $mail, 'text',$hash)) {
                     return 0;
                 }
             }
@@ -850,7 +850,7 @@ $text['signature'] = '';
                 Sql_Query("update {$GLOBALS['tables']['message']} set astext = astext + 1 where id = $messageid");
             }
             $mail->add_text($textmessage);
-            if (!addAttachments($messageid, $mail, 'text')) {
+            if (!addAttachments($messageid, $mail, 'text',$hash)) {
                 return 0;
             }
             break;
@@ -883,7 +883,7 @@ $text['signature'] = '';
                         $htmlmessage = wordwrap($htmlmessage, WORDWRAP_HTML, "\r\n");
                     }
                     $mail->add_html($htmlmessage, $textmessage, $cached[$messageid]['templateid']);
-                    if (!addAttachments($messageid, $mail, 'HTML')) {
+                    if (!addAttachments($messageid, $mail, 'HTML',$hash)) {
                         return 0;
                     }
                 } else {
@@ -893,7 +893,7 @@ $text['signature'] = '';
                     $mail->add_text($textmessage);
 //          $mail->setText($textmessage);
 //          $mail->Encoding = TEXTEMAIL_ENCODING;
-                    if (!addAttachments($messageid, $mail, 'text')) {
+                    if (!addAttachments($messageid, $mail, 'text',$hash)) {
                         return 0;
                     }
                 }
@@ -984,7 +984,7 @@ $text['signature'] = '';
     return 0;
 }
 
-function addAttachments($msgid, &$mail, $type)
+function addAttachments($msgid, &$mail, $type,$hash = '')
 {
     global $attachment_repository, $website;
     $hasError = false;
@@ -1075,6 +1075,9 @@ function addAttachments($msgid, &$mail, $type)
 
                     case 'text':
                         $viewurl = $GLOBALS['public_scheme'].'://'.$website.$GLOBALS['pageroot'].'/dl.php?id='.$att['id'];
+                        if (!empty($hash)) {
+                            $viewurl .= '&uid='.$hash;
+                        }
                         $mail->append_text($att['description']."\n".$GLOBALS['strLocation'].': '.$viewurl."\n");
                         break;
                 }

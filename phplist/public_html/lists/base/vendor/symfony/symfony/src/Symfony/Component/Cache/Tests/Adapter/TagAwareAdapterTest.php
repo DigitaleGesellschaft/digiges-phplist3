@@ -11,6 +11,7 @@
 
 namespace Symfony\Component\Cache\Tests\Adapter;
 
+use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Cache\Adapter\TagAwareAdapter;
@@ -30,11 +31,9 @@ class TagAwareAdapterTest extends AdapterTestCase
         FilesystemAdapterTest::rmdir(sys_get_temp_dir().'/symfony-cache');
     }
 
-    /**
-     * @expectedException \Psr\Cache\InvalidArgumentException
-     */
     public function testInvalidTag()
     {
+        $this->expectException('Psr\Cache\InvalidArgumentException');
         $pool = $this->createCachePool();
         $item = $pool->getItem('foo');
         $item->tag(':');
@@ -162,7 +161,7 @@ class TagAwareAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|PruneableCacheInterface
+     * @return MockObject|PruneableCacheInterface
      */
     private function getPruneableMock()
     {
@@ -179,7 +178,7 @@ class TagAwareAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|PruneableCacheInterface
+     * @return MockObject|PruneableCacheInterface
      */
     private function getFailingPruneableMock()
     {
@@ -196,7 +195,7 @@ class TagAwareAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|AdapterInterface
+     * @return MockObject|AdapterInterface
      */
     private function getNonPruneableMock()
     {

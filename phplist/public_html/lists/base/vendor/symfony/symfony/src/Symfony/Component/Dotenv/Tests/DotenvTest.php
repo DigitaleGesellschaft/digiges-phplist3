@@ -200,11 +200,9 @@ class DotenvTest extends TestCase
         $this->assertSame('BAZ', $bar);
     }
 
-    /**
-     * @expectedException \Symfony\Component\Dotenv\Exception\PathException
-     */
     public function testLoadDirectory()
     {
+        $this->expectException('Symfony\Component\Dotenv\Exception\PathException');
         $dotenv = new Dotenv();
         $dotenv->load(__DIR__);
     }

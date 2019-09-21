@@ -699,17 +699,17 @@
     },
     {
         "name": "symfony/symfony",
-        "version": "v3.4.30",
-        "version_normalized": "3.4.30.0",
+        "version": "v3.4.31",
+        "version_normalized": "3.4.31.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/symfony.git",
-            "reference": "4d911e98e1f70538edcca4576c65395ef0fbfa84"
+            "reference": "944e04808117477f46f804133d17913b77cf63d3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/symfony/zipball/4d911e98e1f70538edcca4576c65395ef0fbfa84",
-            "reference": "4d911e98e1f70538edcca4576c65395ef0fbfa84",
+            "url": "https://api.github.com/repos/symfony/symfony/zipball/944e04808117477f46f804133d17913b77cf63d3",
+            "reference": "944e04808117477f46f804133d17913b77cf63d3",
             "shasum": ""
         },
         "require": {
@@ -728,7 +728,7 @@
             "symfony/polyfill-mbstring": "~1.0",
             "symfony/polyfill-php56": "~1.0",
             "symfony/polyfill-php70": "~1.6",
-            "twig/twig": "^1.40|^2.9"
+            "twig/twig": "^1.41|^2.10"
         },
         "conflict": {
             "phpdocumentor/reflection-docblock": "<3.0||>=3.2.0,<3.2.2",
@@ -807,10 +807,10 @@
             "ocramius/proxy-manager": "~0.4|~1.0|~2.0",
             "phpdocumentor/reflection-docblock": "^3.0|^4.0",
             "predis/predis": "~1.0",
-            "symfony/phpunit-bridge": "^3.4.19|^4.1.8|~5.0",
+            "symfony/phpunit-bridge": "^3.4.31|^4.3.4|~5.0",
             "symfony/security-acl": "~2.8|~3.0"
         },
-        "time": "2019-07-27T17:14:21+00:00",
+        "time": "2019-08-26T16:36:53+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -828,7 +828,8 @@
                 "Symfony\\Component\\": "src/Symfony/Component/"
             },
             "classmap": [
-                "src/Symfony/Component/Intl/Resources/stubs"
+                "src/Symfony/Component/Intl/Resources/stubs",
+                "src/Symfony/Bridge/ProxyManager/Legacy/ProxiedMethodReturnExpression.php"
             ],
             "exclude-from-classmap": [
                 "**/Tests/"
@@ -1329,19 +1330,19 @@
         "authors": [
             {
                 "name": "Fabien Potencier",
-                "role": "Lead Developer",
                 "email": "fabien@symfony.com",
-                "homepage": "http://fabien.potencier.org"
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
             },
             {
                 "name": "Armin Ronacher",
-                "role": "Project Founder",
-                "email": "armin.ronacher@active-4.com"
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
             },
             {
                 "name": "Twig Team",
-                "role": "Contributors",
-                "homepage": "https://twig.symfony.com/contributors"
+                "homepage": "https://twig.symfony.com/contributors",
+                "role": "Contributors"
             }
         ],
         "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -1687,8 +1688,8 @@
         "authors": [
             {
                 "name": "Marco Pivetta",
-                "email": "ocramius@gmail.com",
-                "role": "maintainer"
+                "role": "maintainer",
+                "email": "ocramius@gmail.com"
             }
         ],
         "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it"
@@ -1896,17 +1897,17 @@
     },
     {
         "name": "composer/ca-bundle",
-        "version": "1.2.3",
-        "version_normalized": "1.2.3.0",
+        "version": "1.2.4",
+        "version_normalized": "1.2.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/composer/ca-bundle.git",
-            "reference": "f26a67e397be0e5c00d7c52ec7b5010098e15ce5"
+            "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/ca-bundle/zipball/f26a67e397be0e5c00d7c52ec7b5010098e15ce5",
-            "reference": "f26a67e397be0e5c00d7c52ec7b5010098e15ce5",
+            "url": "https://api.github.com/repos/composer/ca-bundle/zipball/10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
+            "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
             "shasum": ""
         },
         "require": {
@@ -1919,7 +1920,7 @@
             "psr/log": "^1.0",
             "symfony/process": "^2.5 || ^3.0 || ^4.0"
         },
-        "time": "2019-08-02T09:05:43+00:00",
+        "time": "2019-08-30T08:44:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2470,17 +2471,17 @@
     },
     {
         "name": "monolog/monolog",
-        "version": "1.24.0",
-        "version_normalized": "1.24.0.0",
+        "version": "1.25.1",
+        "version_normalized": "1.25.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266"
+            "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
-            "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
+            "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
             "shasum": ""
         },
         "require": {
@@ -2516,7 +2517,7 @@
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
             "sentry/sentry": "Allow sending log messages to a Sentry server"
         },
-        "time": "2018-11-05T09:00:11+00:00",
+        "time": "2019-09-06T13:49:17+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3084,13 +3085,13 @@
         "authors": [
             {
                 "name": "Oliver Klee",
-                "role": "Developer",
-                "email": "oliver@phplist.com"
+                "email": "oliver@phplist.com",
+                "role": "Developer"
             },
             {
                 "name": "Sam Tuke",
-                "role": "Developer",
-                "email": "mail@samtuke.com"
+                "email": "mail@samtuke.com",
+                "role": "Developer"
             }
         ],
         "description": "The core module of phpList, the world's most popular open source newsletter manager",
@@ -3207,8 +3208,8 @@
         "authors": [
             {
                 "name": "Oliver Klee",
-                "role": "Developer",
-                "email": "oliver@phplist.com"
+                "email": "oliver@phplist.com",
+                "role": "Developer"
             }
         ],
         "description": "A REST API for phpList, the world's most popular open source newsletter manager",

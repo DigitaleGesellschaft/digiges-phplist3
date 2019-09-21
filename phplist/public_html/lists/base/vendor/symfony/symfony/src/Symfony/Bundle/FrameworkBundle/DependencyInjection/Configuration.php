@@ -264,7 +264,7 @@ class Configuration implements ConfigurationInterface
                     ->canBeEnabled()
                     ->beforeNormalization()
                         ->always(function ($v) {
-                            if (true === $v['enabled']) {
+                            if (\is_array($v) && true === $v['enabled']) {
                                 $workflows = $v;
                                 unset($workflows['enabled']);
 
@@ -470,12 +470,6 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('session')
-                    ->validate()
-                        ->ifTrue(function ($v) {
-                            return empty($v['handler_id']) && !empty($v['save_path']);
-                        })
-                        ->thenInvalid('Session save path is ignored without a handler service')
-                    ->end()
                     ->info('session configuration')
                     ->canBeEnabled()
                     ->children()
@@ -504,7 +498,7 @@ class Configuration implements ConfigurationInterface
                             ->defaultTrue()
                             ->setDeprecated('The "%path%.%node%" option is enabled by default and deprecated since Symfony 3.4. It will be always enabled in 4.0.')
                         ->end()
-                        ->scalarNode('save_path')->end()
+                        ->scalarNode('save_path')->defaultValue('%kernel.cache_dir%/sessions')->end()
                         ->integerNode('metadata_update_threshold')
                             ->defaultValue('0')
                             ->info('seconds to wait between 2 session metadata updates')
