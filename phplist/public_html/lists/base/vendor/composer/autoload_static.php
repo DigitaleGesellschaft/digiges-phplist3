@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit147fad0c6089dba82cf1c9cbe74c9920
+class ComposerStaticInite6ee5c9af7fefbeff504f294a0b0cf14
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -311,6 +311,7 @@ class ComposerStaticInit147fad0c6089dba82cf1c9cbe74c9920
         'Locale' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/Intl/Resources/stubs/Locale.php',
         'NumberFormatter' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/Intl/Resources/stubs/NumberFormatter.php',
         'ParseError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
+        'ProxyManager\\Generator\\Util\\ProxiedMethodReturnExpression' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/ProxyManager/Legacy/ProxiedMethodReturnExpression.php',
         'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
         'SqlFormatter' => __DIR__ . '/..' . '/jdorn/sql-formatter/lib/SqlFormatter.php',
         'TypeError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
@@ -319,10 +320,10 @@ class ComposerStaticInit147fad0c6089dba82cf1c9cbe74c9920
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit147fad0c6089dba82cf1c9cbe74c9920::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit147fad0c6089dba82cf1c9cbe74c9920::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit147fad0c6089dba82cf1c9cbe74c9920::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit147fad0c6089dba82cf1c9cbe74c9920::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite6ee5c9af7fefbeff504f294a0b0cf14::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite6ee5c9af7fefbeff504f294a0b0cf14::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite6ee5c9af7fefbeff504f294a0b0cf14::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInite6ee5c9af7fefbeff504f294a0b0cf14::$classMap;
 
         }, null, ClassLoader::class);
     }
