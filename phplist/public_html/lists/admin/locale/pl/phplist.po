@@ -353,7 +353,7 @@ msgstr "eksport"
 
 #: public_html/lists/admin/home.php:116
 msgid "Export Users"
-msgstr "Export odbiorców"
+msgstr "Export odbiorców "
 
 #: public_html/lists/admin/home.php:121
 msgid "reconcileusers"
@@ -9578,79 +9578,79 @@ msgstr "Przetłumaczony łańcuch"
 
 #: public_html/databasestructure.php:207
 msgid "pagetitle:home"
-msgstr "pagetitle:Panel zarządzania"
+msgstr "Główna"
 
 #: public_html/databasestructure.php:208
 msgid "pagetitlehover:home"
-msgstr "pagetitlehover:Panel zarządzania"
+msgstr "Idź do głównej strony"
 
 #: public_html/databasestructure.php:209
 msgid "pagetitle:setup"
-msgstr "pagetitle:Ustawienia systemowe"
+msgstr "Ustawienia"
 
 #: public_html/databasestructure.php:210
 msgid "pagetitlehover:setup"
-msgstr "Opcje konfiguracji"
+msgstr "Lista rzeczy do zrobienia, aby poprawnie skonfigurować phpList"
 
 #: public_html/databasestructure.php:211
 msgid "pagetitle:about"
-msgstr "pagetitle:O programie"
+msgstr "O phpList"
 
 #: public_html/databasestructure.php:212
 msgid "pagetitlehover:about"
-msgstr "pagetitlehover:O programie"
+msgstr "Więcej informacji o aplikacji phpList"
 
 #: public_html/databasestructure.php:213
 msgid "pagetitle:attributes"
-msgstr "pagetitle:Atrybuty"
+msgstr "Skonfiguruj atrybuty"
 
 #: public_html/databasestructure.php:214
 msgid "pagetitlehover:attributes"
-msgstr "pagetitlehover:Atrybuty"
+msgstr "Twórz, edytuj i zmieniaj atrybuty subskrybentów"
 
 #: public_html/databasestructure.php:215
 msgid "pagetitle:stresstest"
-msgstr "pagetitle:Testowanie odporności"
+msgstr "Test warunków skrajnych"
 
 #: public_html/databasestructure.php:216
 msgid "pagetitlehover:stresstest"
-msgstr "Test obciążeniowy"
+msgstr "Test warunków skrajnych"
 
 #: public_html/databasestructure.php:217
 msgid "pagetitle:list"
-msgstr "Lista newsletterów"
+msgstr "Listy subskrybentów"
 
 #: public_html/databasestructure.php:218
 msgid "pagetitlehover:list"
-msgstr "Lista newsletterów"
+msgstr "Listy, do których subskrybenci mogą się zarejestrować"
 
 #: public_html/databasestructure.php:219
 msgid "pagetitle:config"
-msgstr "uaktualnij tłumaczenie"
+msgstr "Konfiguracja"
 
 #: public_html/databasestructure.php:220
 msgid "pagetitlehover:config"
-msgstr "uaktualnij tłumaczenie"
+msgstr "Funkcje konfiguracyjne"
 
 #: public_html/databasestructure.php:221
 msgid "pagetitle:catlists"
-msgstr "Kategorie"
+msgstr "Listy kategorii"
 
 #: public_html/databasestructure.php:222
 msgid "pagetitlehover:catlists"
-msgstr "Kategorie "
+msgstr "Organizuj listy subskrybentów według kategorii"
 
 #: public_html/databasestructure.php:223
 msgid "pagetitle:editattributes"
-msgstr "Edycja atrybutów "
+msgstr "Skonfiguruj atrybuty"
 
 #: public_html/databasestructure.php:224
 msgid "pagetitlehover:editattributes"
-msgstr "Edycja atrybutów"
+msgstr "Edytuj szczegóły atrybutu"
 
 #: public_html/databasestructure.php:225
 msgid "pagetitle:editlist"
-msgstr "pagetitle:Edycja listy"
+msgstr "Edytuj listę"
 
 #: public_html/databasestructure.php:226
 msgid "pagetitlehover:editlist"
@@ -9658,7 +9658,7 @@ msgstr "pagetitlehover:Edycja listy"
 
 #: public_html/databasestructure.php:227
 msgid "pagetitle:checki18n"
-msgstr "pagetitle:Sprawdź czy istnieje tłumaczenie"
+msgstr "Sprawdź, czy istnieją tłumaczenia"
 
 #: public_html/databasestructure.php:228
 msgid "pagetitlehover:checki18n"
@@ -9706,7 +9706,7 @@ msgstr "pagetitlehover:Import pliku tekstowego z adresami e-mail"
 
 #: public_html/databasestructure.php:239
 msgid "pagetitle:import"
-msgstr "pagetitle:Importowanie odbiorców"
+msgstr "Importuj emaile"
 
 #: public_html/databasestructure.php:240
 msgid "pagetitlehover:import"
@@ -9714,7 +9714,7 @@ msgstr "pagetitlehover:Importowanie odbiorców"
 
 #: public_html/databasestructure.php:241
 msgid "pagetitle:export"
-msgstr "pagetitle:Eksport odbiorców"
+msgstr "Eksportuj subskrybentów"
 
 #: public_html/databasestructure.php:242
 msgid "pagetitlehover:export"
@@ -9722,7 +9722,7 @@ msgstr "Export odbiorców "
 
 #: public_html/databasestructure.php:243
 msgid "pagetitle:initialise"
-msgstr "Zainicjuj bazę danych"
+msgstr "Initializuj baze danych"
 
 #: public_html/databasestructure.php:244
 msgid "pagetitlehover:initialise"
@@ -9762,11 +9762,11 @@ msgstr "pagetitlehover:Członkowie tej listy"
 
 #: public_html/databasestructure.php:253
 msgid "pagetitle:users"
-msgstr "pagetitle:Lista wszystkich użytkowników"
+msgstr "Szukaj subskrybentów"
 
 #: public_html/databasestructure.php:254
 msgid "pagetitlehover:users"
-msgstr "pagetitlehover:Lista wszystkich użytkowników"
+msgstr "Wyszukaj subskrybentów w systemie"
 
 #: public_html/databasestructure.php:255
 msgid "pagetitle:reconcileusers"
@@ -9804,7 +9804,7 @@ msgstr "Hstoria użytkownika"
 
 #: public_html/databasestructure.php:263
 msgid "pagetitle:messages"
-msgstr "Zobacz aktualne kampanie"
+msgstr "Lista kampanii"
 
 #: public_html/databasestructure.php:264
 msgid "pagetitlehover:messages"
@@ -9820,7 +9820,7 @@ msgstr "Wiadomość"
 
 #: public_html/databasestructure.php:267
 msgid "pagetitle:processqueue"
-msgstr "Kolejka wiadomości"
+msgstr "Wyślij kolejkę"
 
 #: public_html/databasestructure.php:268
 msgid "pagetitlehover:processqueue"
@@ -9836,7 +9836,7 @@ msgstr "pagetitlehover:Użyteczne atrybuty"
 
 #: public_html/databasestructure.php:271
 msgid "pagetitle:upgrade"
-msgstr "pagetitle:Aktualizacja"
+msgstr "Aktualizuj phpList"
 
 #: public_html/databasestructure.php:272
 msgid "pagetitlehover:upgrade"
@@ -9844,7 +9844,7 @@ msgstr "pagetitlehover:Aktualizacja"
 
 #: public_html/databasestructure.php:273
 msgid "pagetitle:templates"
-msgstr "pagetitle:Zarządzanie szablonami kampanii"
+msgstr "Zarządzaj szablonami kampanii"
 
 #: public_html/databasestructure.php:274
 msgid "pagetitlehover:templates"
@@ -9884,7 +9884,7 @@ msgstr "Edycja Administratora"
 
 #: public_html/databasestructure.php:283
 msgid "pagetitle:admins"
-msgstr "Administratorzy"
+msgstr "Zarządzaj administratorami"
 
 #: public_html/databasestructure.php:284
 msgid "pagetitlehover:admins"
@@ -9892,7 +9892,7 @@ msgstr "pagetitlehover:Administratorzy"
 
 #: public_html/databasestructure.php:285
 msgid "pagetitle:adminattributes"
-msgstr "pagetitle:Atrybuty administratora"
+msgstr "Konfiguruj atrybuty administratorów"
 
 #: public_html/databasestructure.php:286
 msgid "pagetitlehover:adminattributes"
@@ -9940,7 +9940,7 @@ msgstr "pagetitlehover:Strona rejestracji"
 
 #: public_html/databasestructure.php:297
 msgid "pagetitle:eventlog"
-msgstr "pagetitle:Dziennik zdarzeń"
+msgstr "Logi eventów"
 
 #: public_html/databasestructure.php:298
 msgid "pagetitlehover:eventlog"
@@ -9996,7 +9996,7 @@ msgstr "Wylogowanie"
 
 #: public_html/databasestructure.php:311
 msgid "pagetitle:mclicks"
-msgstr "Statystyka kliknięć wiadomości"
+msgstr "Statystyki kliknięć"
 
 #: public_html/databasestructure.php:312
 msgid "pagetitlehover:mclicks"
@@ -10004,7 +10004,7 @@ msgstr "Statystyka kliknięć wiadomości"
 
 #: public_html/databasestructure.php:313
 msgid "pagetitle:uclicks"
-msgstr "Statystyka kliknięć adresu URL"
+msgstr "Statystyki URL"
 
 #: public_html/databasestructure.php:314
 msgid "pagetitlehover:uclicks"
@@ -10028,15 +10028,15 @@ msgstr "Masowe usunięcie adresów"
 
 #: public_html/databasestructure.php:319
 msgid "pagetitle:usermgt"
-msgstr "Zarządzanie użytkownikami"
+msgstr "Zarządzaj subskrybentami"
 
 #: public_html/databasestructure.php:320
 msgid "pagetitlehover:usermgt"
-msgstr "Zarządzanie użytkownikami"
+msgstr "Wspólne funkcje zarządzania subskrybentami"
 
 #: public_html/databasestructure.php:321
 msgid "pagetitle:bouncemgt"
-msgstr "Zwroty"
+msgstr "Zarządzaj odbiciami"
 
 #: public_html/databasestructure.php:322
 msgid "pagetitlehover:bouncemgt"
@@ -10044,7 +10044,7 @@ msgstr "Zwroty"
 
 #: public_html/databasestructure.php:323
 msgid "pagetitle:domainstats"
-msgstr "Statystyka domen"
+msgstr "Statystyki domen"
 
 #: public_html/databasestructure.php:324
 msgid "pagetitlehover:domainstats"
@@ -10052,7 +10052,7 @@ msgstr "Statystyka domen"
 
 #: public_html/databasestructure.php:325
 msgid "pagetitle:mviews"
-msgstr "Statystyka wyświetleń wiadomości"
+msgstr "Wyświetl otwarte"
 
 #: public_html/databasestructure.php:326
 msgid "pagetitlehover:mviews"
@@ -10068,7 +10068,7 @@ msgstr "Statystyka "
 
 #: public_html/databasestructure.php:329
 msgid "pagetitle:statsoverview"
-msgstr "Przegląd statystyki"
+msgstr "Ogólne statystyki"
 
 #: public_html/databasestructure.php:330
 msgid "pagetitlehover:statsoverview"
@@ -10084,7 +10084,7 @@ msgstr "Statystyki subskrybentów"
 
 #: public_html/databasestructure.php:333
 msgid "pagetitle:dbcheck"
-msgstr "Sprawdzić BD"
+msgstr "Uaktualnij strukturę bazy"
 
 #: public_html/databasestructure.php:334
 msgid "pagetitlehover:dbcheck"
@@ -10092,7 +10092,7 @@ msgstr "Sprawdzić BD"
 
 #: public_html/databasestructure.php:335
 msgid "pagetitle:importadmin"
-msgstr "Import administratorów "
+msgstr "Importuj administratorów"
 
 #: public_html/databasestructure.php:336
 msgid "pagetitlehover:importadmin"
@@ -10124,7 +10124,7 @@ msgstr "Lista zwrotów od odbiorców"
 
 #: public_html/databasestructure.php:343
 msgid "pagetitle:bouncerules"
-msgstr "Reguły zwrotów "
+msgstr "Zasady odrzuceń"
 
 #: public_html/databasestructure.php:344
 msgid "pagetitlehover:bouncerules"
@@ -10140,7 +10140,7 @@ msgstr "Reguła zwrotu "
 
 #: public_html/databasestructure.php:347
 msgid "pagetitle:checkbouncerules"
-msgstr "Sprawdzenie reguł zwrotów "
+msgstr "Sprawdź zasady odrzuceń"
 
 #: public_html/databasestructure.php:348
 msgid "pagetitlehover:checkbouncerules"
@@ -10164,7 +10164,7 @@ msgstr "Formularz AJAX"
 
 #: public_html/databasestructure.php:353
 msgid "pagetitle:updatetranslation"
-msgstr "Uaktualnij tłumaczenie"
+msgstr "Uaktualnij tłumaczenia"
 
 #: public_html/databasestructure.php:354
 msgid "pagetitlehover:updatetranslation"
@@ -10172,7 +10172,7 @@ msgstr "Uaktualnij tłumaczenie"
 
 #: public_html/databasestructure.php:355
 msgid "pagetitle:reindex"
-msgstr "Przebudowa indeksów BD"
+msgstr "Rekonfiguj indeksy bazy"
 
 #: public_html/databasestructure.php:356
 msgid "pagetitlehover:reindex"
@@ -10180,7 +10180,7 @@ msgstr "Przebudowa indeksów BD"
 
 #: public_html/databasestructure.php:357
 msgid "pagetitle:plugins"
-msgstr "Wtyczki"
+msgstr "Konfiguracja pluginów"
 
 #: public_html/databasestructure.php:358
 msgid "pagetitlehover:plugins"
@@ -10196,7 +10196,7 @@ msgstr "Ustawianie hostowanej kolejki przetwarzania"
 
 #: public_html/databasestructure.php:361
 msgid "pagetitle:suppressionlist"
-msgstr "Lista zablokowanych adresów"
+msgstr "Lista zakazanych"
 
 #: public_html/databasestructure.php:362
 msgid "pagetitlehover:suppressionlist"
