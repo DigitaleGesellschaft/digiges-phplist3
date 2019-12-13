@@ -28,6 +28,7 @@ return array(
     'Psr\\Link\\' => array($vendorDir . '/psr/link/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
+    'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
     'PhpList\\RestBundle\\' => array($vendorDir . '/phplist/rest-api/src'),
     'PhpList\\Core\\' => array($vendorDir . '/phplist/core/src'),
     'PhpList\\BaseDistribution\\' => array($baseDir . '/src'),
