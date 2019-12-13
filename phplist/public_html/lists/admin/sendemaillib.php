@@ -735,6 +735,7 @@ $text['signature'] = '';
     }
     $mail->addCustomHeader('List-Help: <'.$text['preferences'].'>');
     $mail->addCustomHeader('List-Unsubscribe: <'.$text['jumpoffurl'].'>');
+    $mail->addCustomHeader('List-Unsubscribe-Post: List-Unsubscribe=One-Click');
     $mail->addCustomHeader('List-Subscribe: <'.getConfig('subscribeurl').'>');
     $mail->addCustomHeader('List-Owner: <mailto:'.getConfig('admin_address').'>');
 
