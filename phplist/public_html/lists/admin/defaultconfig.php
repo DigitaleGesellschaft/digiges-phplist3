@@ -98,6 +98,14 @@ $default_config = array(
         'allowempty'  => true,
         'category'    => 'general',
     ),
+    'date_format' => array(
+        'value'       => 'j F Y',
+        'description' => s('Date format'),
+        'infoicon'    => true,
+        'type'        => 'text',
+        'allowempty'  => false,
+        'category'    => 'general',
+    ),
     'rc_notification' => array(
         'value'       => 0,
         'description' => s('Show notification for Release Candidates'),
@@ -146,10 +154,18 @@ $default_config = array(
     ),
     'always_add_googletracking' => array(
         'value'       => '0',
-        'description' => s('Always add Google tracking code to campaigns'),
+        'description' => s('Always add analytics tracking code to campaigns'),
         'type'        => 'boolean',
         'allowempty'  => true,
         'category'    => 'campaign',
+    ),
+    'analytic_tracker' => array(
+        'values'       => array('google' => 'Google Analytics', 'matomo' => 'Matomo'),
+        'value'        => 'google',
+        'description'  => s('Analytics tracking code to add to campaign URLs'),
+        'type'         => 'select',
+        'allowempty'   => false,
+        'category'     => 'campaign',
     ),
     // report address is the person who gets the reports
     'report_address' => array(
