@@ -245,6 +245,14 @@ function SaveConfig($item, $value, $editable = 1, $ignore_errors = 0)
 #            }
             //# we only use the image type for the logo
             flushLogoCache();
+            break;
+        default:
+            if (isset($configInfo['allowtags'])) { ## allowtags can be set but empty
+                $value = strip_tags($value,$configInfo['allowtags']);
+            }
+            if (isset($configInfo['allowJS']) && !$configInfo['allowJS']) { ## it needs to be set and false
+                $value = disableJavascript($value);
+            }
     }
     //# reset to default if not set, and required
     if (empty($configInfo['allowempty']) && empty($value)) {
@@ -788,7 +796,7 @@ $GLOBALS['pagecategories'] = array(
     //'menulinks' => array(),
     //),
 );
-if(ALLOW_UPDATER){
+if(isSuperUser() && ALLOW_UPDATER){
     $GLOBALS['pagecategories']['update'] = array(
         'toplink'=> 'redirecttoupdater',
         'pages'  => array(),
@@ -1323,18 +1331,22 @@ function ListofLists($current, $fieldname, $subselect)
     // $categoryhtml['unselect'] = '<input type="hidden" name="'.$fieldname.'[unselect]" value="1" />';
 
     $categoryhtml['selected'] = '';
-    $categoryhtml['all'] = '
-  <li><input type="hidden" name="' .$fieldname.'[unselect]" value="-1" /><input type="checkbox" name="'.$fieldname.'[all]"';
-    if (!empty($current['all'])) {
-        $categoryhtml['all'] .= 'checked';
-    }
-    $categoryhtml['all'] .= ' />'.s('All Lists').'</li>';
 
-    $categoryhtml['all'] .= '<li><input type="checkbox" name="'.$fieldname.'[allactive]"';
-    if (!empty($current['allactive'])) {
-        $categoryhtml['all'] .= 'checked="checked"';
+    $categoryhtml['all'] = '<input type="hidden" name="' .$fieldname.'[unselect]" value="-1" />';
+    if ($fieldname == 'targetlist') {
+        $categoryhtml['all'] .= '
+    <li><input type="checkbox" name="'.$fieldname.'[all]"';
+        if (!empty($current['all'])) {
+            $categoryhtml['all'] .= 'checked';
+        }
+        $categoryhtml['all'] .= ' />'.s('All Lists').'</li>';
+    
+        $categoryhtml['all'] .= '<li><input type="checkbox" name="'.$fieldname.'[allactive]"';
+        if (!empty($current['allactive'])) {
+            $categoryhtml['all'] .= 'checked="checked"';
+        }
+        $categoryhtml['all'] .= ' />'.s('All Public Lists').'</li>';
     }
-    $categoryhtml['all'] .= ' />'.s('All Public Lists').'</li>';
 
     //# need a better way to suppress this
     if ($_GET['page'] != 'send') {
@@ -1372,7 +1384,7 @@ function ListofLists($current, $fieldname, $subselect)
         }
 
         if (!empty($list['description'])) {
-            $desc = nl2br(stripslashes($list['description']));
+            $desc = nl2br(stripslashes(disableJavascript($list['description'])));
             $categoryhtml[$list['category']] .= "<br />$desc";
         }
         $categoryhtml[$list['category']] .= '</li>';

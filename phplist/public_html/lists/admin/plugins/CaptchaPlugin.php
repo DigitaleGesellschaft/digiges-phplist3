@@ -96,7 +96,7 @@ END;
     {
         global $tmpdir;
 
-        include $this->coderoot . 'botbouncer.php';
+        require_once $this->coderoot . 'botbouncer.php';
 
         $bb = new Botbouncer();
         $bb->setLogRoot($tmpdir);
@@ -184,7 +184,7 @@ END;
         return array(
             'GD extension installed' => extension_loaded('gd'),
             'curl extension installed' => extension_loaded('curl'),
-            'Common Plugin installed' => phpListPlugin::isEnabled('CommonPlugin'),
+            'Common Plugin must be enabled' => phpListPlugin::isEnabled('CommonPlugin'),
         );
     }
 

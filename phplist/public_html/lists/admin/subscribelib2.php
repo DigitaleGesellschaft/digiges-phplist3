@@ -140,7 +140,7 @@ if (!isset($_POST['password'])) {
 }
 
 if ($allthere && ASKFORPASSWORD && ($_POST['passwordreq'] || $_POST['password'])) {
-    if (empty($_POST['password']) || $_POST['password'] != $_POST['password_check']) {
+    if (empty($_POST['password']) || $_POST['password'] !== $_POST['password_check']) {
         $allthere = 0;
         $missing = $GLOBALS['strPasswordsNoMatch'];
     }
@@ -148,7 +148,7 @@ if ($allthere && ASKFORPASSWORD && ($_POST['passwordreq'] || $_POST['password'])
         $curpwd = Sql_Fetch_Row_Query(sprintf('select password from %s where email = "%s"',
             $GLOBALS['tables']['user'], sql_escape($_POST['email'])));
 
-        if ($curpwd[0] && $_POST['password'] != $curpwd[0]) {
+        if ($curpwd[0] && $_POST['password'] !== $curpwd[0]) {
             $missing = $GLOBALS['strInvalidPassword'];
         }
     }
@@ -807,7 +807,7 @@ function ListAvailableLists($userid = 0, $lists_to_show = '')
 
 
                         $html .= ' /><b>' . stripslashes($listelement['name']) . '</b><div class="listdescription">';
-                        $desc = nl2br(stripslashes($listelement['description']));
+                        $desc = nl2br(disableJavascript(stripslashes($listelement['description'])));
                         //     $html .= '<input type="hidden" name="listname['.$row["id"] . ']" value="'.htmlspecialchars(stripslashes($row["name"])).'"/>';
                         $html .= $desc . '</div></li>';
                         ++$some;
@@ -846,7 +846,7 @@ function ListAvailableLists($userid = 0, $lists_to_show = '')
                     }
                 }
                 $html .= " /> <label for=\"list$row[id]\"><b>".stripslashes($row['name']).'</b></label><div class="listdescription">';
-                $desc = nl2br(stripslashes($row['description']));
+                $desc = nl2br(disableJavascript(stripslashes($row['description'])));
                 //     $html .= '<input type="hidden" name="listname['.$row["id"] . ']" value="'.htmlspecialchars(stripslashes($row["name"])).'"/>';
                 $html .= $desc.'</div></li>';
                 ++$some;

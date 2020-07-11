@@ -26,7 +26,11 @@ class updater
 
     public function isAuthenticated()
     {
-        session_start();
+
+        ini_set('session.name','phpListSession');
+        ini_set('session.cookie_samesite','Strict');
+        ini_set('session.use_only_cookies',1);
+        ini_set('session.cookie_httponly',1);        session_start();
         if (isset($_SESSION[self::ELIGIBLE_SESSION_KEY]) && $_SESSION[self::ELIGIBLE_SESSION_KEY] === true) {
             return true;
         }
@@ -148,7 +152,9 @@ class updater
         $files = array();
         foreach ($iterator as $info) {
             if (!is_writable($info->getRealPath())) {
-                $files[] = $info->getRealPath();
+                if (!empty($info->getRealPath())) {
+                    $files[] = $info->getRealPath();
+                }
             }
         }
 
@@ -220,11 +226,15 @@ class updater
         foreach ($files as $fileinfo) {
             if ($fileinfo->isDir()) {
                 if (false === rmdir($fileinfo->getRealPath())) {
-                    throw new \UpdateException("Could not delete $fileinfo");
+                    if (false === unlink($fileinfo)) {
+                        throw new \UpdateException("Could not delete $fileinfo");
+                    }
                 }
             } else {
                 if (false === unlink($fileinfo->getRealPath())) {
-                    throw new \UpdateException("Could not delete $fileinfo");
+                    if (false === unlink($fileinfo)) {
+                        throw new \UpdateException("Could not delete $fileinfo");
+                    }
                 }
             }
         }

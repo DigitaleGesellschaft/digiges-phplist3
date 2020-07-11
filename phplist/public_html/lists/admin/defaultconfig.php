@@ -59,6 +59,7 @@ $default_config = array(
     'website' => array(
         'value'       => $D_website,
         'description' => s('Website address (without http://)'),
+        'infoicon'    => true,
         'type'        => 'text',
         'allowempty'  => false, //# indication this value cannot be empty (1 being it can be empty)
         'category'    => 'general',
@@ -87,6 +88,8 @@ $default_config = array(
         'description' => s('Name of the organisation'),
         'type'        => 'text',
         'allowempty'  => true,
+        'allowtags'   => '<b><i><u><strong><em><h1><h2><h3><h4>',
+        'allowJS'     => false,
         'category'    => 'general',
     ),
 // logo of the organisation
@@ -111,7 +114,7 @@ $default_config = array(
         'description' => s('Show notification for Release Candidates'),
         'type'        => 'boolean',
         'allowempty'  => true,
-        'category'    => 'system',
+        'category'    => 'security',
     ),
 
     //# remote processing secret

@@ -5546,7 +5546,7 @@ msgstr "Versand der Nachricht mit Betreff %s abgeschlossen"
 #: public_html/lists/admin/actions/processqueue.php:1372
 #, fuzzy, php-format
 msgid "to view the statistics of this campaign, go to %s://%s"
-msgstr "Zu den Ergebnissen des Nachrichtenversands: http://%s"
+msgstr "Zu den Ergebnissen des Nachrichtenversands: %s://%s"
 
 #: public_html/lists/admin/actions/processqueue.php:1382
 msgid "to send this message"
