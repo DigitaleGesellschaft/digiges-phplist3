@@ -8,10 +8,15 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.5.3");
+define("VERSION","3.5.5");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
+
+ini_set('session.name','phpListSession');
+ini_set('session.cookie_samesite','Strict');
+ini_set('session.use_only_cookies',1);
+ini_set('session.cookie_httponly',1);
 
 // record the start time(usec) of script
 $now = gettimeofday();
@@ -627,20 +632,9 @@ if (!defined('USE_PRECEDENCE_HEADER')) {
 if (!defined('RFC_DIRECT_DELIVERY')) {
     define('RFC_DIRECT_DELIVERY', false);
 }  //# Request for Confirmation, delivery with SMTP
-// check whether Pear HTTP/Request is available, and which version
-// try 2 first
 
-// @@TODO finish this, as it is more involved than just renaming the class
-//@include_once "HTTP/Request2.php";
-if (0 && class_exists('HTTP_Request2')) {
-    $GLOBALS['has_pear_http_request'] = 2;
-} else {
-    //# this seems to crash in PHP7. Let's just use curl instead
-    // @include_once 'HTTP/Request.php';
-    $GLOBALS['has_pear_http_request'] = class_exists('HTTP_Request');
-}
+set_include_path(get_include_path() . PATH_SEPARATOR . __DIR__ . '/PEAR');
 $GLOBALS['has_curl'] = function_exists('curl_init');
-$GLOBALS['can_fetchUrl'] = $GLOBALS['has_pear_http_request'] || $GLOBALS['has_curl'];
 
 $GLOBALS['jQuery'] = 'jquery-3.3.1.min.js';
 
@@ -658,14 +652,15 @@ if (!isset($attachment_repository)) {
     $attachment_repository = $tmpdir;
 }
 
-if (!isset($pageroot)) {
+if (isset($pageroot)) {
+    if ($pageroot == '/') {
+        $pageroot = '';
+    }
+} else {
     $pageroot = '/lists';
-    $GLOBALS['pageroot'] = '/lists';
 }
-//# as the "admin" in adminpages is hardcoded, don't put it in the config file
+// as the "admin" in adminpages is hardcoded, don't put it in the config file
 $adminpages = $GLOBALS['pageroot'].'/admin';
-//# remove possibly duplicated // at the beginning
-$adminpages = preg_replace('~^//~', '/', $adminpages);
 
 $GLOBALS['homepage'] = 'home';
 
