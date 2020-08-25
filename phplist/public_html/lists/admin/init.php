@@ -8,7 +8,7 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.5.5");
+define("VERSION","3.5.6");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
@@ -584,6 +584,9 @@ if (!defined('USERSPAGE_MAX')) {
 // if false, it will disable the automatic updater.
 if (!defined ('ALLOW_UPDATER')){
     define('ALLOW_UPDATER', true);
+}
+if (!defined ('USE_REPLY_TO')){
+    define('USE_REPLY_TO', false);
 }
 if (!isset($plugins_disabled) || !is_array($plugins_disabled)) {
     $plugins_disabled = array();

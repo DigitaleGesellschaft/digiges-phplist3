@@ -872,19 +872,21 @@ $text['signature'] = '';
 //  print htmlspecialchars($htmlmessage);exit;
 
     if (!TEST) {
+        $fromemail = $cached[$messageid]['fromemail'];
+
         if ($hash != 'forwarded' || !count($forwardedby)) {
             $fromname = $cached[$messageid]['fromname'];
-            $fromemail = $cached[$messageid]['fromemail'];
             $subject = $cached[$messageid]['subject'];
+
+            if (!empty($cached[$messageid]['replytoemail'])) {
+                $mail->AddReplyTo($cached[$messageid]['replytoemail'], $cached[$messageid]['replytoname']);
+            }
         } else {
-            $fromname = '';
-            $fromemail = $forwardedby['email'];
+            $fromname = $forwardedby['subscriberName'];
             $subject = $GLOBALS['strFwd'].': '.$cached[$messageid]['subject'];
+            $mail->AddReplyTo($forwardedby['email'], $forwardedby['subscriberName']);
         }
 
-        if (!empty($cached[$messageid]['replytoemail'])) {
-            $mail->AddReplyTo($cached[$messageid]['replytoemail'], $cached[$messageid]['replytoname']);
-        }
         if ($getspeedstats) {
             output('build End '.$GLOBALS['processqueue_timer']->interval(1));
         }
@@ -1374,7 +1376,7 @@ function precacheMessage($messageid, $forwardContent = 0)
     $message = loadMessageData($messageid);
     $cached[$messageid]['uuid'] = $message['uuid'];
 
-    //# the reply to is actually not in use
+    // parse the reply-to field into its components - email and name
     if (preg_match('/([^ ]+@[^ ]+)/', $message['replyto'], $regs)) {
         // if there is an email in the from, rewrite it as "name <email>"
         $message['replyto'] = str_replace($regs[0], '', $message['replyto']);
@@ -1520,16 +1522,15 @@ function precacheMessage($messageid, $forwardContent = 0)
         output('parse config end');
     }
 
-    //# ##17233 not that many fields are actually useful, so don't blatantly use all
-//  foreach($message as $key => $val) {
     foreach (array('subject', 'id', 'fromname', 'fromemail') as $key) {
         $val = $message[$key];
-        if (!is_array($val)) {
+        // Replace in content except for user-specific URL
+        if (!$cached[$messageid]['userspecific_url']) {
             $cached[$messageid]['content'] = str_ireplace("[$key]", $val, $cached[$messageid]['content']);
-            $cached[$messageid]['textcontent'] = str_ireplace("[$key]", $val, $cached[$messageid]['textcontent']);
-            $cached[$messageid]['textfooter'] = str_ireplace("[$key]", $val, $cached[$messageid]['textfooter']);
-            $cached[$messageid]['htmlfooter'] = str_ireplace("[$key]", $val, $cached[$messageid]['htmlfooter']);
         }
+        $cached[$messageid]['textcontent'] = str_ireplace("[$key]", $val, $cached[$messageid]['textcontent']);
+        $cached[$messageid]['textfooter'] = str_ireplace("[$key]", $val, $cached[$messageid]['textfooter']);
+        $cached[$messageid]['htmlfooter'] = str_ireplace("[$key]", $val, $cached[$messageid]['htmlfooter']);
     }
     /*
      *  cache message owner and list owner attribute values
