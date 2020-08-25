@@ -83,7 +83,7 @@ class CKEditorPlugin extends phplistPlugin
     {
         $kcPath = rtrim(getConfig('kcfinder_path'), '/');
         $kcImageDir = getConfig('kcfinder_image_directory');
-        $kcUrl = htmlspecialchars("$kcPath/browse.php?type=$kcImageDir");
+        $kcUrl = "$kcPath/browse.php?type=$kcImageDir&cms=phplist";
         $html = <<<END
 <script type='text/javascript'>
 $function = function(callback) {
@@ -228,12 +228,19 @@ Image browsing is not available because directory "%s" does not exist or is not 
 END;
                 $html .= sprintf($format, htmlspecialchars($kcUploadDir));
             } else {
+                $uploadUrl = sprintf('%s://%s/%s', $public_scheme, $website, ltrim(UPLOADIMAGES_DIR, '/'));
+
+                if (defined('IMAGE_DIR_PER_ADMIN') && IMAGE_DIR_PER_ADMIN) {
+                    $directory = $_SESSION['logindetails']['id'];
+                    $kcUploadDir .= "/$directory";
+                    $uploadUrl .= "/$directory";
+                }
                 $kcImageDir = getConfig('kcfinder_image_directory');
                 $kcFilesDir = getConfig('kcfinder_files_directory');
                 $kcFlashDir = getConfig('kcfinder_flash_directory');
                 $_SESSION['KCFINDER'] = array(
                     'disabled' => false,
-                    'uploadURL' => sprintf('%s://%s/%s', $public_scheme, $website, ltrim(UPLOADIMAGES_DIR, '/')),
+                    'uploadURL' => $uploadUrl,
                     'uploadDir' => $kcUploadDir,
                     'types' => array(
                         $kcFilesDir => '',
@@ -295,7 +302,7 @@ END;
             : '';
         $this->settings = array(
             'ckeditor_url' => array(
-                'value' => '//cdn.ckeditor.com/4.10.1/full/ckeditor.js',
+                'value' => '//cdn.ckeditor.com/4.14.1/full/ckeditor.js',
                 'description' => 'URL of ckeditor.js',
                 'type' => 'text',
                 'allowempty' => 0,

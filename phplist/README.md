@@ -5,7 +5,7 @@
 
 #
 [![Build Status](https://travis-ci.org/phpList/phplist3.svg?branch=master)](https://travis-ci.org/phpList/phplist3)
-[![Stable release](https://img.shields.io/badge/stable-3.5.4-blue.svg)](https://sourceforge.net/projects/phplist/files/phplist/)
+[![Stable release](https://img.shields.io/badge/stable-3.5.6-blue.svg)](https://sourceforge.net/projects/phplist/files/phplist/)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 <a href="http://translate.phplist.org/engage/phplist/?utm_source=widget">
 <img src="http://translate.phplist.org/widgets/phplist/-/svg-badge.svg" alt="Translation status" />
@@ -68,9 +68,9 @@ Alternatively, you can try out the latest phpList release at [phplist.org](https
 </div>
 
 <div align="center" width="100%">
-<a href="#" style="text-decoration:none;font-size:22px;color:#000;">Requirements</a>
-<a href="#" style="margin-right:90px;margin-left:60px; text-decoration:none;font-size:22px;color:#000;">Development</a>
-<a href="#" style="text-decoration:none;font-size:22px;color:#000;">Installation</a>
+<a href="https://resources.phplist.com/system/start#phplist_system_requirements" style="text-decoration:none;font-size:22px;color:#000;">Requirements</a>
+<a href="https://www.phplist.org/development/" style="margin-right:90px;margin-left:60px; text-decoration:none;font-size:22px;color:#000;">Development</a>
+<a href="https://www.phplist.org/manual/books/phplist-manual/page/installing-phplist-manually" style="text-decoration:none;font-size:22px;color:#000;">Installation</a>
 </div>
 
 
