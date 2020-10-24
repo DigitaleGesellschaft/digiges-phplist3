@@ -8,15 +8,17 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.5.6");
+define("VERSION","3.5.7");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
 
-ini_set('session.name','phpListSession');
-ini_set('session.cookie_samesite','Strict');
-ini_set('session.use_only_cookies',1);
-ini_set('session.cookie_httponly',1);
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    ini_set('session.name','phpListSession');
+    ini_set('session.cookie_samesite','Strict');
+    ini_set('session.use_only_cookies',1);
+    ini_set('session.cookie_httponly',1);
+}
 
 // record the start time(usec) of script
 $now = gettimeofday();

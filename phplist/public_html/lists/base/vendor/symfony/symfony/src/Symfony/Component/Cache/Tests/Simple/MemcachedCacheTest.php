@@ -81,7 +81,7 @@ class MemcachedCacheTest extends CacheTestCase
             $this->expectExceptionMessage('constant(): Couldn\'t find constant Memcached::');
         } else {
             $this->expectException('Error');
-            $this->expectExceptionMessage('Undefined class constant \'Memcached::');
+            $this->expectExceptionMessage('Undefined constant Memcached::');
         }
 
         MemcachedCache::createConnection([], [$name => $value]);
@@ -150,7 +150,7 @@ class MemcachedCacheTest extends CacheTestCase
             'localhost',
             11222,
         ];
-        if (filter_var(ini_get('memcached.use_sasl'), FILTER_VALIDATE_BOOLEAN)) {
+        if (filter_var(ini_get('memcached.use_sasl'), \FILTER_VALIDATE_BOOLEAN)) {
             yield [
                 'memcached://user:password@127.0.0.1?weight=50',
                 '127.0.0.1',
@@ -167,7 +167,7 @@ class MemcachedCacheTest extends CacheTestCase
             '/var/local/run/memcached.socket',
             0,
         ];
-        if (filter_var(ini_get('memcached.use_sasl'), FILTER_VALIDATE_BOOLEAN)) {
+        if (filter_var(ini_get('memcached.use_sasl'), \FILTER_VALIDATE_BOOLEAN)) {
             yield [
                 'memcached://user:password@/var/local/run/memcached.socket?weight=25',
                 '/var/local/run/memcached.socket',

@@ -152,6 +152,7 @@ if ($login_required && empty($_SESSION['userloggedin'])) {
         if (!$canlogin) {
             $msg = '<p class="error">'.$strInvalidPassword.'</p>';
         } else {
+            session_regenerate_id();
             loadUser($emailcheck);
             $_SESSION['userloggedin'] = $_SERVER['REMOTE_ADDR'];
         }
