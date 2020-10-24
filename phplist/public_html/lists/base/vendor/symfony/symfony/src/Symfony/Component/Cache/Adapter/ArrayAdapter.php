@@ -113,6 +113,10 @@ class ArrayAdapter implements AdapterInterface, LoggerAwareInterface, Resettable
         $value = $item["\0*\0value"];
         $expiry = $item["\0*\0expiry"];
 
+        if (0 === $expiry) {
+            $expiry = \PHP_INT_MAX;
+        }
+
         if (null !== $expiry && $expiry <= time()) {
             $this->deleteItem($key);
 
@@ -133,7 +137,7 @@ class ArrayAdapter implements AdapterInterface, LoggerAwareInterface, Resettable
         }
 
         $this->values[$key] = $value;
-        $this->expiries[$key] = null !== $expiry ? $expiry : PHP_INT_MAX;
+        $this->expiries[$key] = null !== $expiry ? $expiry : \PHP_INT_MAX;
 
         return true;
     }
