@@ -8,7 +8,7 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.5.7");
+define("VERSION","3.5.8");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
@@ -620,7 +620,9 @@ if (!defined('PHPLIST_POWEREDBY_URLROOT')) {
 if (!isset($allowed_referrers) || !is_array($allowed_referrers)) {
     $allowed_referrers = array();
 }
-if (!defined('ACCESS_CONTROL_ALLOW_ORIGIN')) {
+if (defined('ACCESS_CONTROL_ALLOW_ORIGINS') && in_array($_SERVER['HTTP_ORIGIN'], ACCESS_CONTROL_ALLOW_ORIGINS)) {
+    define('ACCESS_CONTROL_ALLOW_ORIGIN', $_SERVER['HTTP_ORIGIN']);
+} elseif (!defined('ACCESS_CONTROL_ALLOW_ORIGIN')) {
     define('ACCESS_CONTROL_ALLOW_ORIGIN', $GLOBALS['scheme'].'://'.$_SERVER['HTTP_HOST']);
 }
 
@@ -726,7 +728,7 @@ if (!defined('MESSAGEQUEUE_PREPARE')) {
     }
 }
 if (!defined('USE_PHPMAILER6')) {
-    define('USE_PHPMAILER6', false);
+    define('USE_PHPMAILER6', true);
 }
 if (!isset($GLOBALS['export_mimetype'])) {
     $GLOBALS['export_mimetype'] = 'application/csv';
