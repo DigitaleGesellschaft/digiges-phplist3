@@ -723,6 +723,7 @@ $GLOBALS['pagecategories'] = array(
             'generatebouncerules',
             'initialise',
             'upgrade',
+            'update',
             'processqueue',
             'processbounces',
             'reindex',
@@ -736,6 +737,7 @@ $GLOBALS['pagecategories'] = array(
             'eventlog',
             'initialise',
             'upgrade',
+            'update',
             'bouncemgt',
             'processqueue',
             //     'processbounces',
@@ -797,12 +799,9 @@ $GLOBALS['pagecategories'] = array(
     //'menulinks' => array(),
     //),
 );
-if(isSuperUser() && ALLOW_UPDATER){
-    $GLOBALS['pagecategories']['update'] = array(
-        'toplink'=> 'redirecttoupdater',
-        'pages'  => array(),
-        'menulinks' => array(),
-    );
+if(!isSuperUser() || !ALLOW_UPDATER) {
+    unset($GLOBALS['pagecategories']['system']['pages']['update']);
+    unset($GLOBALS['pagecategories']['system']['menulinks']['update']);
 }
 if (DEVVERSION) {
     $GLOBALS['pagecategories']['develop'] = array(
@@ -1558,21 +1557,14 @@ function Help($topic, $text = '?')
  */
 function isPrivateList($listid) {
 
-    $activeVal = Sql_Query(sprintf('
+    $activeList = Sql_Fetch_Row_Query(sprintf('
           SELECT active
           FROM   %s
           WHERE  id = %d',
             $GLOBALS['tables']['list'], sql_escape($listid))
     );
 
-    while ($row = Sql_Fetch_Row($activeVal)) {
-        $activeVal = $row[0];
-    }
-
-    if ($activeVal == 0) {
-        return true;
-    } else
-        return false;
+    return $activeList[0] == 0;
 }
 
 // Debugging system, needs $debug = TRUE and $verbose = TRUE or $debug_log = {path} in config.php
