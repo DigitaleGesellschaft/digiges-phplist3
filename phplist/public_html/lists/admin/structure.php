@@ -13,7 +13,7 @@ if (!defined('PHPLISTINIT')) {
 
 //# don't remove spaces
 if (!defined('STRUCTUREVERSION')) {
-    define('STRUCTUREVERSION',"3.5.9");
+    define('STRUCTUREVERSION',"3.6.0");
 }
 
 $DBstructuser = array( // order of tables is essential for smooth upgrade
@@ -139,7 +139,7 @@ $DBstructphplist = array(
         'htmlformatted' => array('tinyint default 0', 'Is this message HTML formatted'),
         'sendformat'    => array('varchar(20)', 'Format to send this message in'),
         'template'      => array('integer', 'Template to use'),
-        'processed'     => array('mediumint unsigned default 0', 'Number Processed'),
+        'processed'     => array('integer unsigned default 0', 'Number Processed'),
         'astext'        => array('integer default 0', 'Sent as text'),
         'ashtml'        => array('integer default 0', 'Sent as HTML'),
         'astextandhtml' => array('integer default 0', 'Sent as Text and HTML'), // obsolete
