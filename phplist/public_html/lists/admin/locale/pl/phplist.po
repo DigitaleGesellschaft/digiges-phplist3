@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-30 06:48+0000\n"
-"PO-Revision-Date: 2019-07-08 07:34+0000\n"
+"PO-Revision-Date: 2020-12-19 14:59+0000\n"
 "Last-Translator: rysiek_d <ryszard.d79@gmail.com>\n"
-"Language-Team: Polish <http://translate.phplist.org/projects/phplist/phplist-"
-"languages/pl/>\n"
+"Language-Team: Polish <http://translate.phplist.org/projects/phplist/"
+"phplist-languages/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.3.1\n"
 "X-Poedit-SearchPath-0: public_html\n"
 "X-Poedit-Basepath: /home/michiel/svn/phplist/translate/phplist\n"
 "X-POOTLE-MTIME: 1545203893.000000\n"
@@ -1119,7 +1119,7 @@ msgstr "Sprawdzanie zależności"
 #: public_html/lists/admin/plugins.php:333
 #, php-format
 msgid "Plugin can not be enabled, because \"%s\" is enabled."
-msgstr "Wtyczka nie może być włączona, ponieważ  \"%s\" jest włączona."
+msgstr "Wtyczka nie może być włączona, ponieważ \"%s\" jest włączona."
 
 #: public_html/lists/admin/plugins.php:336
 msgid "Plugin can not be enabled."
@@ -1403,7 +1403,7 @@ msgstr "Nie masz dostępu do tej strony"
 
 #: public_html/lists/admin/statsoverview.php:80
 msgid "View all campaigns"
-msgstr "Zobacz wszystkie campanie"
+msgstr "Zobacz wszystkie kampanie"
 
 #: public_html/lists/admin/statsoverview.php:86
 msgid "Campaign not found"
@@ -1479,7 +1479,7 @@ msgstr "Przekazano"
 #: public_html/lists/admin/sendemaillib.php:52
 #, php-format
 msgid "Sending message %d with subject %s to %s"
-msgstr "Wysyłanie wiadomości  %d z tematem %s do %s"
+msgstr "Wysyłanie wiadomości %d z tematem %s do %s"
 
 #: public_html/lists/admin/sendemaillib.php:763
 msgid "sendingtextonlyto"
@@ -1503,7 +1503,7 @@ msgstr "Wielkość wiadomości tekstowej: %s "
 #: public_html/lists/admin/sendemaillib.php:980
 #, php-format
 msgid "Message too large (%s is over %s), suspending"
-msgstr "Wiadomość za duża  (%s jest ponad %s), zawieszenie"
+msgstr "Wiadomość za duża (%s jest ponad %s), zawieszenie"
 
 #: public_html/lists/admin/sendemaillib.php:982
 msgid ""
@@ -1633,8 +1633,8 @@ msgid ""
 "email."
 msgstr ""
 "Jeśli zaznaczysz \"nadpisz istniejący\", informacje na temat użytkownika w "
-"bazie danych zostaną zastąpione przez importowane informacje.  Użytkownicy "
-"są dopasowani przez e-mail."
+"bazie danych zostaną zastąpione przez importowane informacje. Użytkownicy są "
+"dopasowani przez e-mail."
 
 #: public_html/lists/admin/import4.php:87
 msgid "Overwrite Existing:"
@@ -1813,13 +1813,12 @@ msgid "Contribute to phpList"
 msgstr "Wnoszą wkład do phpList"
 
 #: public_html/lists/admin/community.php:41
-#, fuzzy
 msgid ""
 "phpList is a community effort &mdash; your contributions power the project. "
 "Help phpList to serve your needs more effectively by applying your skills "
 "and resources."
 msgstr ""
-"phpList jest wysiłkiem społeczności &mdash; twoje wkład zasilą projekt."
+"phpList jest tworzona przez społeczność &mdash; twój wkład zasili projekt."
 
 #: public_html/lists/admin/community.php:44
 msgid "Developer community"
@@ -3370,10 +3369,8 @@ msgid "static"
 msgstr "statyczny"
 
 #: public_html/lists/admin/messages.php:163
-#, fuzzy
-#| msgid "Send a campaign"
 msgid "Search campaigns"
-msgstr "Wyślij kampanię"
+msgstr "Szukaj kampanii"
 
 #: public_html/lists/admin/messages.php:183
 #: public_html/lists/admin/list.php:226 public_html/lists/admin/admins.php:97
@@ -4516,34 +4513,24 @@ msgid "%d bounces have been associated with a subscriber profile"
 msgstr "%d zwrotów powiązano z profilem subskrybenta"
 
 #: public_html/lists/admin/actions/domainbounces.php:18
-#, fuzzy
-#| msgid "Domain Statistics"
 msgid "Domain statistics"
 msgstr "Statystyki domeny"
 
 #: public_html/lists/admin/actions/domainbounces.php:71
-#, fuzzy
-#| msgid "Total bounces"
 msgid "Total bounced emails"
 msgstr "Wszystkie odbicia"
 
 #: public_html/lists/admin/actions/domainbounces.php:75
-#, fuzzy
-#| msgid "Import emails"
 msgid "Total sent emails"
-msgstr "Importuj e-maile"
+msgstr "Wysłano łącznie e-maile"
 
 #: public_html/lists/admin/actions/domainbounces.php:79
-#, fuzzy
-#| msgid "bounce rule"
 msgid "Bounce rate"
-msgstr "reguła zwrotu"
+msgstr "Współczynnik odrzuceń"
 
 #: public_html/lists/admin/actions/domainbounces.php:83
-#, fuzzy
-#| msgid "Viewed"
 msgid "View rate"
-msgstr "Wizyty"
+msgstr "Współczynnik obejrzeń"
 
 #: public_html/lists/admin/actions/configure.php:27
 msgid "Editing"
@@ -4658,7 +4645,7 @@ msgstr "Duplikat email"
 
 #: public_html/lists/admin/actions/import2.php:239
 msgid " user imported as "
-msgstr "użytkownik zaimportowany jako "
+msgstr " użytkownik zaimportowany jako "
 
 #: public_html/lists/admin/actions/import2.php:496
 msgid ""
@@ -4797,10 +4784,9 @@ msgid "emails were"
 msgstr "e-maile były"
 
 #: public_html/lists/admin/actions/import1.php:234
-#, fuzzy, php-format
-#| msgid "Invalid email"
+#, php-format
 msgid "%d invalid emails"
-msgstr "Nieprawidłowy adres email"
+msgstr "%d nieprawidłowych e-maili"
 
 #: public_html/lists/admin/actions/import1.php:237
 msgid "All the emails already exist in the database."
@@ -5048,10 +5034,8 @@ msgid "Top 25 local-parts of email addresses"
 msgstr "Top 25 lokalnych części adresów e-mail"
 
 #: public_html/lists/admin/actions/domainstats.php:208
-#, fuzzy
-#| msgid "Top 50 domains with more than 5 subscribers"
 msgid "Top 25 domains with the highest number of bounces"
-msgstr "Top 50 domen z więcej niż pięcioma subskrybentami"
+msgstr "25 domen z największą liczbą odrzuceń"
 
 #: public_html/lists/admin/actions/domainstats.php:225
 #: public_html/lists/admin/actions/bounces.php:25
@@ -5955,10 +5939,8 @@ msgid "Categorise lists"
 msgstr "Kategoryzacja list"
 
 #: public_html/lists/admin/list.php:225
-#, fuzzy
-#| msgid "Merging lists"
 msgid "Search lists"
-msgstr "Scalanie list"
+msgstr "Listy wyszukiwania"
 
 #: public_html/lists/admin/list.php:240 public_html/lists/admin/list.php:242
 msgid "All subscribers"
@@ -6116,7 +6098,7 @@ msgstr ""
 
 #: public_html/lists/admin/import1.php:83
 msgid "Cannot read file. It is not readable !"
-msgstr "Nie można odczytać pliku. Nie ma on uprawnień do odczytu! "
+msgstr "Nie można odczytać pliku. Nie ma on uprawnień do odczytu!"
 
 #: public_html/lists/admin/import1.php:143
 msgid "There should only be ONE email per line."
@@ -7703,8 +7685,8 @@ msgstr "%s subskrybentów"
 msgid ""
 "Subscribers with a red icon are either unconfirmed or blacklisted or both"
 msgstr ""
-" Subskrybenci z czerwoną ikoną niepotwierdzili subskrypcji, lub są na "
-"czarnej liście "
+"Subskrybenci z czerwoną ikoną niepotwierdzili subskrypcji, lub są na czarnej "
+"liście"
 
 #: public_html/lists/admin/users.php:297
 msgid "Show only unconfirmed users"
@@ -8029,7 +8011,7 @@ msgstr "Pobierz nową wersję"
 
 #: public_html/lists/admin/index.php:539
 msgid " or update"
-msgstr "lub uaktualnij"
+msgstr " lub uaktualnij"
 
 #: public_html/lists/admin/index.php:539
 msgid "automatic updater"
@@ -10100,7 +10082,7 @@ msgstr "Import administratorów "
 
 #: public_html/databasestructure.php:337
 msgid "pagetitle:dbadmin"
-msgstr " administrator_bazy_danych"
+msgstr "administrator_bazy_danych"
 
 #: public_html/databasestructure.php:338
 msgid "pagetitlehover:dbadmin"

@@ -30,19 +30,19 @@ class InstalledVersions
     array (
       0 => '4.0.x-dev',
     ),
-    'reference' => '2a27cecb92837e3788954c5433c7249611ef3e9e',
+    'reference' => '681c9e72135b8814c070499e5ad6afc14ef5a846',
     'name' => 'phplist/base-distribution',
   ),
   'versions' => 
   array (
     'composer/ca-bundle' => 
     array (
-      'pretty_version' => '1.2.8',
-      'version' => '1.2.8.0',
+      'pretty_version' => '1.2.9',
+      'version' => '1.2.9.0',
       'aliases' => 
       array (
       ),
-      'reference' => '8a7ecad675253e4654ea05505233285377405215',
+      'reference' => '78a0e288fdcebf92aa2318a8d3656168da6ac1a5',
     ),
     'doctrine/annotations' => 
     array (
@@ -145,12 +145,12 @@ class InstalledVersions
     ),
     'fig/link-util' => 
     array (
-      'pretty_version' => '1.1.1',
-      'version' => '1.1.1.0',
+      'pretty_version' => '1.1.2',
+      'version' => '1.1.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'c038ee75ca13663ddc2d1f185fe6f7533c00832a',
+      'reference' => '5d7b8d04ed3393b4b59968ca1e906fb7186d81e8',
     ),
     'friendsofsymfony/rest-bundle' => 
     array (
@@ -241,7 +241,7 @@ class InstalledVersions
       array (
         0 => '4.0.x-dev',
       ),
-      'reference' => '2a27cecb92837e3788954c5433c7249611ef3e9e',
+      'reference' => '681c9e72135b8814c070499e5ad6afc14ef5a846',
     ),
     'phplist/core' => 
     array (
@@ -358,7 +358,7 @@ class InstalledVersions
       'aliases' => 
       array (
       ),
-      'reference' => 'a2c04f857299a7119e96448249a9dd5954e099c1',
+      'reference' => '5f40d4d577a71466f9723122251b46bdaf634709',
     ),
     'sensio/distribution-bundle' => 
     array (
