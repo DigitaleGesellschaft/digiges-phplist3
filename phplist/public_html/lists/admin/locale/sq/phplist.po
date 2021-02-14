@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-30 06:49+0000\n"
-"PO-Revision-Date: 2019-04-29 08:43+0000\n"
-"Last-Translator: Mariana Balla <marianaballa848@gmail.com>\n"
+"PO-Revision-Date: 2020-05-12 12:12+0000\n"
+"Last-Translator: user1356 <suela_palushi@hotmail.com>\n"
 "Language-Team: Albanian <http://translate.phplist.org/projects/phplist/"
 "phplist-languages/sq/>\n"
 "Language: sq\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-POOTLE-MTIME: 1547062502.000000\n"
 
 #: public_html/lists/lt.php:230
@@ -144,12 +144,12 @@ msgstr "Zgjidhni një tjetër listë"
 
 #: public_html/lists/admin/listbounces.php:73
 msgid "Download addresses"
-msgstr ""
+msgstr "Adresat e shkarkimit lokal"
 
 #: public_html/lists/admin/listbounces.php:76
 #, fuzzy, php-format
 msgid "%s bounces to list %s"
-msgstr "%d u kthye tek lista %s"
+msgstr "%d kthime ne list %s"
 
 #: public_html/lists/admin/listbounces.php:96
 #: public_html/lists/admin/msgbounces.php:97
@@ -195,7 +195,7 @@ msgstr "Filloni një fushatë të re"
 #: public_html/lists/admin/send.php:103
 #, fuzzy
 msgid "Choose an existing draft campaign to work on"
-msgstr "Zgjidhni një mesazh të papërfunduar ekzistues për të punuar"
+msgstr "Zgjidhni një fushatë të papërfunduar ekzistuese për të punuar"
 
 #: public_html/lists/admin/send.php:104
 msgid "Draft campaigns"
@@ -1030,20 +1030,20 @@ msgstr "Shtesat"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
-msgstr ""
+msgstr "E pamundur për të gjetur përditësim"
 
 #: public_html/lists/admin/plugins.php:229
 #, php-format
 msgid "Version %s is available"
-msgstr ""
+msgstr "Versioni %s është i disponueshëm"
 
 #: public_html/lists/admin/plugins.php:232
 msgid "Plugin is up-to-date"
-msgstr ""
+msgstr "Shtesa është e përditësuar"
 
 #: public_html/lists/admin/plugins.php:236
 msgid "Plugin must be updated manually"
-msgstr ""
+msgstr "Shtesa duhet përditësuar manualisht"
 
 #: public_html/lists/admin/plugins.php:249
 msgid "name"
@@ -1063,7 +1063,7 @@ msgstr "version"
 
 #: public_html/lists/admin/plugins.php:265
 msgid "Update status"
-msgstr ""
+msgstr "Statusi i përditësimit"
 
 #: public_html/lists/admin/plugins.php:271
 msgid "origin"
@@ -1151,21 +1151,21 @@ msgstr "detajet"
 
 #: public_html/lists/admin/plugins.php:356
 msgid "All"
-msgstr ""
+msgstr "Të gjitha"
 
 #: public_html/lists/admin/plugins.php:358
 #, fuzzy
 msgid "Enabled"
-msgstr "e aktivizuar"
+msgstr "E aktivizuar"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
 msgid "Disabled"
-msgstr ""
+msgstr "E çaktivizuar"
 
 #: public_html/lists/admin/plugins.php:362
 msgid "Update available"
-msgstr ""
+msgstr "Përditësim i disponueshëm"
 
 #: public_html/lists/admin/lib.php:25
 msgid "delete subscriber"
@@ -1370,6 +1370,8 @@ msgid ""
 "This seems to take longer than expected, looks like there is a lot of data "
 "to work on."
 msgstr ""
+"Kjo po merr me shume kohe nga sa pritej, me sa duket ka shume te dhena per "
+"te perpunuar."
 
 #: public_html/lists/admin/lib.php:2287
 msgid "Still loading, please be patient, your page content will show shortly."

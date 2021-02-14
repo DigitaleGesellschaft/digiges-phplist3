@@ -3,15 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-30 06:47+0000\n"
-"PO-Revision-Date: 2019-01-10 08:14+0000\n"
-"Last-Translator: xheni <xheni@phplist.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-02-08 02:05+0000\n"
+"Last-Translator: Michiel <michiel@phplist.com>\n"
+"Language-Team: English <http://translate.phplist.org/projects/phplist/"
+"phplist-languages/en/>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.1\n"
 "X-Poedit-SearchPath-0: public_html\n"
 "X-Poedit-Basepath: /home/michiel/svn/phplist/translate/phplist\n"
 "X-POOTLE-MTIME: 1547108062.000000\n"
@@ -196,7 +197,6 @@ msgid "Start a new campaign"
 msgstr "Start a new campaign"
 
 #: public_html/lists/admin/send.php:103
-#, fuzzy
 msgid "Choose an existing draft campaign to work on"
 msgstr "Choose an existing draft campaign to work on"
 
@@ -584,7 +584,6 @@ msgid "unique"
 msgstr "unique"
 
 #: public_html/lists/admin/dbcheck.php:90
-#, fuzzy
 msgid "category"
 msgstr "Category"
 
@@ -986,6 +985,10 @@ msgid ""
 "configuration.php#ini.allow-url-fopen\">URL-aware fopen wrappers</a> needs "
 "to be enabled. This is required to allow installation from a remote URL"
 msgstr ""
+"The PHP option for <a href=\"http://php.net/manual/en/"
+"filesystem.configuration.php#ini.allow-url-fopen\">URL-aware fopen "
+"wrappers</a> needs to be enabled. This is required to allow installation "
+"from a remote URL"
 
 #: public_html/lists/admin/plugins.php:171
 msgid ""
@@ -1017,16 +1020,16 @@ msgstr "Installed plugins"
 
 #: public_html/lists/admin/plugins.php:188
 msgid "Plugin"
-msgstr ""
+msgstr "Plugin"
 
 #: public_html/lists/admin/plugins.php:227
 msgid "Unable to find update"
-msgstr ""
+msgstr "Unable to find update"
 
 #: public_html/lists/admin/plugins.php:229
 #, php-format
 msgid "Version %s is available"
-msgstr ""
+msgstr "Version %s is available"
 
 #: public_html/lists/admin/plugins.php:232
 msgid "Plugin is up-to-date"
@@ -1142,16 +1145,16 @@ msgstr "Details"
 
 #: public_html/lists/admin/plugins.php:356
 msgid "All"
-msgstr ""
+msgstr "All"
 
 #: public_html/lists/admin/plugins.php:358
 msgid "Enabled"
-msgstr ""
+msgstr "Enabled"
 
 #: public_html/lists/admin/plugins.php:360
 #: public_html/lists/admin/admins.php:113
 msgid "Disabled"
-msgstr ""
+msgstr "Disabled"
 
 #: public_html/lists/admin/plugins.php:362
 msgid "Update available"
@@ -1360,25 +1363,27 @@ msgstr ""
 
 #: public_html/lists/admin/lib.php:2287
 msgid "Still loading, please be patient, your page content will show shortly."
-msgstr ""
+msgstr "Still loading, please be patient, your page content will show shortly."
 
 #: public_html/lists/admin/lib.php:2288
 msgid "It will really be soon now until the page will display."
-msgstr ""
+msgstr "It will really be soon now until the page will display."
 
 #: public_html/lists/admin/lib.php:2289
 msgid "Still loading, please wait"
-msgstr ""
+msgstr "Still loading, please wait"
 
 #: public_html/lists/admin/lib.php:2290
 msgid ""
 "The loading has been just over seven minutes. We can wait just a little "
 "longer."
 msgstr ""
+"The loading has been just over seven minutes. We can wait just a little "
+"longer."
 
 #: public_html/lists/admin/lib.php:2291
 msgid "If the page does not load soon, please report this in the user forums."
-msgstr ""
+msgstr "If the page does not load soon, please report this in the user forums."
 
 #: public_html/lists/admin/statsoverview.php:32
 #: public_html/lists/admin/statsoverview.php:44
@@ -1456,7 +1461,7 @@ msgstr "Bounced"
 
 #: public_html/lists/admin/statsoverview.php:145
 msgid "Opened "
-msgstr ""
+msgstr "Opened "
 
 #: public_html/lists/admin/statsoverview.php:156
 msgid "Clicked"
@@ -1465,7 +1470,7 @@ msgstr "Clicked"
 #: public_html/lists/admin/statsoverview.php:165
 #: public_html/lists/admin/actions/statsoverview.php:146
 msgid "Unique Clicks"
-msgstr ""
+msgstr "Unique Clicks"
 
 #: public_html/lists/admin/statsoverview.php:172
 msgid "Click Per View Rate"
@@ -1757,9 +1762,8 @@ msgid "How to get help"
 msgstr "How to get help"
 
 #: public_html/lists/admin/community.php:11
-#, fuzzy
 msgid "Contribute"
-msgstr "Contributors"
+msgstr "Contribute"
 
 #: public_html/lists/admin/community.php:16
 msgid "phpList is Open Source software"
@@ -1770,6 +1774,8 @@ msgid ""
 "The concept behind Open Source is collaboration. An organised network of "
 "many contributors where the whole is greater than the sum of its parts."
 msgstr ""
+"The concept behind Open Source is collaboration. An organised network of "
+"many contributors where the whole is greater than the sum of its parts."
 
 #: public_html/lists/admin/community.php:18
 msgid ""
@@ -1789,6 +1795,9 @@ msgid ""
 "including free help from communnity members, and professional advice and "
 "consulting from experts"
 msgstr ""
+"A variety of support options are available for this phpList server, "
+"including free help from community members, and professional advice and "
+"consulting from experts"
 
 #: public_html/lists/admin/community.php:33
 msgid "Support community"
@@ -1818,27 +1827,27 @@ msgstr ""
 
 #: public_html/lists/admin/community.php:44
 msgid "Developer community"
-msgstr ""
+msgstr "Developer community"
 
 #: public_html/lists/admin/community.php:45
 msgid "Developer resources &amp; documentation"
-msgstr ""
+msgstr "Developer resources &amp; documentation"
 
 #: public_html/lists/admin/community.php:46
 msgid "Documentation coordination"
-msgstr ""
+msgstr "Documentation coordination"
 
 #: public_html/lists/admin/community.php:47
 msgid "Translation platform"
-msgstr ""
+msgstr "Translation platform"
 
 #: public_html/lists/admin/community.php:48
 msgid "Donate to support phpList development"
-msgstr ""
+msgstr "Donate to support phpList development"
 
 #: public_html/lists/admin/community.php:54
 msgid "phpList Hosted"
-msgstr ""
+msgstr "phpList Hosted"
 
 #: public_html/lists/admin/processbounces.php:14
 #: public_html/lists/admin/actions/processqueue.php:8
@@ -1894,9 +1903,9 @@ msgid "Please do not interrupt this process"
 msgstr "Please do not interrupt this process"
 
 #: public_html/lists/admin/processbounces.php:410
-#, fuzzy, php-format
+#, php-format
 msgid "%d bounces to process"
-msgstr "%d bounces to reprocess"
+msgstr "%d bounces to process"
 
 #: public_html/lists/admin/processbounces.php:412
 #: public_html/lists/admin/processbounces.php:413

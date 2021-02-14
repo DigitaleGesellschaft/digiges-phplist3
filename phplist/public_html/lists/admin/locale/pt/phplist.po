@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-30 06:48+0000\n"
-"PO-Revision-Date: 2019-07-11 14:29+0000\n"
+"PO-Revision-Date: 2020-11-08 09:42+0000\n"
 "Last-Translator: cflores <carlos.florest@gmail.com>\n"
 "Language-Team: Portuguese <http://translate.phplist.org/projects/phplist/"
 "phplist-languages/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.3.1\n"
 "X-POOTLE-MTIME: 1552582926.000000\n"
 
 #: public_html/lists/lt.php:230
@@ -577,7 +577,7 @@ msgstr "Tabela"
 
 #: public_html/lists/admin/dbcheck.php:19
 msgid "real name"
-msgstr "nome verdadeiro"
+msgstr "caminho"
 
 #: public_html/lists/admin/dbcheck.php:49
 #: public_html/lists/admin/dbcheck.php:52
@@ -3467,10 +3467,8 @@ msgid "static"
 msgstr "est&aacute;tica"
 
 #: public_html/lists/admin/messages.php:163
-#, fuzzy
-#| msgid "Send a campaign"
 msgid "Search campaigns"
-msgstr "Enviar campanha"
+msgstr "Procurar campanhas"
 
 #: public_html/lists/admin/messages.php:183
 #: public_html/lists/admin/list.php:226 public_html/lists/admin/admins.php:97
@@ -3997,7 +3995,7 @@ msgstr "Remover anexo "
 #: public_html/lists/admin/send_core.php:584
 #: public_html/lists/admin/send_core.php:708
 msgid "Content"
-msgstr "Conte&uacute;do"
+msgstr "Conteúdo"
 
 #: public_html/lists/admin/send_core.php:563
 msgid "Text"
@@ -4637,34 +4635,24 @@ msgstr ""
 "%d rejei&ccedil;&otilde;es que foram associadas a um perfil de assinante"
 
 #: public_html/lists/admin/actions/domainbounces.php:18
-#, fuzzy
-#| msgid "Domain Statistics"
 msgid "Domain statistics"
 msgstr "Estat&iacute;sticas por dom&iacute;nio"
 
 #: public_html/lists/admin/actions/domainbounces.php:71
-#, fuzzy
-#| msgid "Total bounces"
 msgid "Total bounced emails"
 msgstr "Total devolu&ccedil;&otilde;es"
 
 #: public_html/lists/admin/actions/domainbounces.php:75
-#, fuzzy
-#| msgid "Import emails"
 msgid "Total sent emails"
-msgstr "Importar emails"
+msgstr "Total emails enviados"
 
 #: public_html/lists/admin/actions/domainbounces.php:79
-#, fuzzy
-#| msgid "bounce rule"
 msgid "Bounce rate"
-msgstr "regra de emails de erro"
+msgstr "Taxa de rejei&ccedil;&atilde;o"
 
 #: public_html/lists/admin/actions/domainbounces.php:83
-#, fuzzy
-#| msgid "Viewed"
 msgid "View rate"
-msgstr "Exibida"
+msgstr "Taxa de visualiza&ccedil;&atilde;o"
 
 #: public_html/lists/admin/actions/configure.php:27
 msgid "Editing"
@@ -4925,10 +4913,9 @@ msgid "emails were"
 msgstr "os emails s&atilde;o"
 
 #: public_html/lists/admin/actions/import1.php:234
-#, fuzzy, php-format
-#| msgid "Invalid email"
+#, php-format
 msgid "%d invalid emails"
-msgstr "Email inv&aacute;lido"
+msgstr "%d emails inv&aacute;lidos"
 
 #: public_html/lists/admin/actions/import1.php:237
 msgid "All the emails already exist in the database."
@@ -5178,10 +5165,10 @@ msgid "Top 25 local-parts of email addresses"
 msgstr "Top 25 do dom&iacute;nio dos endere&ccedil;os eletr&oacute;nicos"
 
 #: public_html/lists/admin/actions/domainstats.php:208
-#, fuzzy
-#| msgid "Top 50 domains with more than 5 subscribers"
 msgid "Top 25 domains with the highest number of bounces"
-msgstr "Os 50 dom&iacute;nios com mais de 5 assinantes"
+msgstr ""
+"25 principais dom&iacute;nios com o maior n&uacute;mero de "
+"rejei&ccedil;&otilde;es"
 
 #: public_html/lists/admin/actions/domainstats.php:225
 #: public_html/lists/admin/actions/bounces.php:25
@@ -5381,7 +5368,7 @@ msgid ""
 "In the last %s seconds more emails were sent (%s) than is currently allowed "
 "per batch (%s)"
 msgstr ""
-"Nos últimos %s segundos, foram enviados mais emails  (%s) do que o permitido "
+"Nos últimos %s segundos, foram enviados mais emails (%s) do que o permitido "
 "atualmente por lote (%s)"
 
 #: public_html/lists/admin/actions/processqueue.php:561
@@ -6137,10 +6124,8 @@ msgid "Categorise lists"
 msgstr "Categorias das listas"
 
 #: public_html/lists/admin/list.php:225
-#, fuzzy
-#| msgid "Merging lists"
 msgid "Search lists"
-msgstr "Unir listas"
+msgstr "Procurar listas"
 
 #: public_html/lists/admin/list.php:240 public_html/lists/admin/list.php:242
 msgid "All subscribers"
