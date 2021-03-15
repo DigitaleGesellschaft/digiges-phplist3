@@ -450,7 +450,6 @@ function sendMail($to, $subject, $message, $header = '', $parameters = '', $skip
 function constructSystemMail($message, $subject = '')
 {
     $hasHTML = strip_tags($message) != $message;
-    $htmlcontent = '';
 
     if ($hasHTML) {
         $message = stripslashes($message);
@@ -475,28 +474,39 @@ function constructSystemMail($message, $subject = '')
         $htmlmessage = str_replace($listsmatch[0], '<ul>'.$listsHTML.'</ul>', $htmlmessage);
     }
 
-    $htmltemplate = '';
+    $htmlcontent = $htmlmessage;
+    $textcontent = $textmessage;
     $templateid = getConfig('systemmessagetemplate');
     if (!empty($templateid)) {
-        $req = Sql_Fetch_Row_Query(sprintf('select template from %s where id = %d',
+        $req = Sql_Fetch_Row_Query(sprintf('select template, template_text from %s where id = %d',
             $GLOBALS['tables']['template'], $templateid));
-        $htmltemplate = stripslashes($req[0]);
-    }
-    if (strpos($htmltemplate, '[CONTENT]')) {
-        $htmlcontent = str_replace('[CONTENT]', $htmlmessage, $htmltemplate);
-        $htmlcontent = str_replace('[SUBJECT]', $subject, $htmlcontent);
-        $htmlcontent = str_replace('[FOOTER]', '', $htmlcontent);
-        if (strpos($htmlcontent, '[SIGNATURE]')) {
-            $htmlcontent = str_replace('[SIGNATURE]', $phpListPowered, $htmlcontent);
-        } elseif (strpos($htmlcontent, '</body>')) {
-            $htmlcontent = str_replace('</body>', $phpListPowered.'</body>', $htmlcontent);
-        } else {
-            $htmlcontent .= $phpListPowered;
+        if ($req) {
+            $htmltemplate = stripslashes($req[0]);
+            $texttemplate = stripslashes($req[1]);
+            $htmlcontent = str_replace('[CONTENT]', $htmlmessage, $htmltemplate);
+            $htmlcontent = str_replace('[SUBJECT]', $subject, $htmlcontent);
+            $htmlcontent = str_replace('[FOOTER]', '', $htmlcontent);
+            $phpListPowered = '';
+            if (strpos($htmlcontent, '[SIGNATURE]')) {
+                $htmlcontent = str_replace('[SIGNATURE]', $phpListPowered, $htmlcontent);
+            } elseif (strpos($htmlcontent, '</body>')) {
+                $htmlcontent = str_replace('</body>', $phpListPowered.'</body>', $htmlcontent);
+            } else {
+                $htmlcontent .= $phpListPowered;
+            }
+            $htmlcontent = parseLogoPlaceholders($htmlcontent);
+            $textcontent = str_replace('[CONTENT]', $textmessage, $texttemplate);
+            $textcontent = str_replace('[SUBJECT]', $subject, $textcontent);
+            $textcontent = str_replace('[FOOTER]', '', $textcontent);
+            if (strpos($textcontent, '[SIGNATURE]')) {
+                $textcontent = str_replace('[SIGNATURE]', $phpListPowered, $textcontent);
+            } else {
+                $textcontent .= "\n\n" . $phpListPowered;
+            }
         }
-        $htmlcontent = parseLogoPlaceholders($htmlcontent);
     }
 
-    return array($htmlcontent, $textmessage);
+    return array($htmlcontent, $textcontent);
 }
 
 function sendMailPhpMailer($to, $subject, $message)
@@ -572,7 +582,7 @@ function sendMailDirect($destinationemail, $subject, $message)
     }
     $mail->add_text($textmessage);
     try {
-        $mail->Send('', $destinationemail, $fromname, $fromemail, $subject);
+        $mail->send('', $destinationemail, $fromname, $fromemail, $subject);
     } catch (Exception $e) {
         $GLOBALS['smtpError'] = $e->getMessage();
 

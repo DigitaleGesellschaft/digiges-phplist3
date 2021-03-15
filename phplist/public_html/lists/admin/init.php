@@ -8,7 +8,7 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.6.1");
+define("VERSION","3.6.2");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
@@ -37,6 +37,13 @@ if (function_exists('iconv') || ((!strtoupper(substr(PHP_OS, 0, 3)) === 'WIN' &&
         iconv_set_encoding('output_encoding', 'UTF-8');
     }
 }
+
+## ironically, this doesn't work with Xdebug enabled.
+## avoid the screen being blank, due to the FOUC system
+ini_set("error_append_string",'<script>document.body.classList.remove("invisible");</script>'); ## remove the FOUC
+ini_set("error_prepend_string",'<div style="{font-size: 24px;color:red;}">Sorry a software error occurred:</div><br/>
+  Please <a href="http://mantis.phplist.org">report a bug</a> when reporting the bug, please include URL and the entire content of this page.<br/>');
+
 
 if (function_exists('mb_internal_encoding')) {
     mb_internal_encoding('UTF-8');

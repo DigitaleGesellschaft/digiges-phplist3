@@ -13,7 +13,7 @@ if (!defined('PHPLISTINIT')) {
 
 //# don't remove spaces
 if (!defined('STRUCTUREVERSION')) {
-    define('STRUCTUREVERSION',"3.6.1");
+    define('STRUCTUREVERSION',"3.6.2");
 }
 
 $DBstructuser = array( // order of tables is essential for smooth upgrade
@@ -232,6 +232,7 @@ $DBstructphplist = array(
         'id'        => array('integer not null primary key auto_increment', 'ID'),
         'title'     => array('varchar(255) not null', 'Title'),
         'template'  => array('longblob', 'The template'),
+        'template_text' => array('longblob', 'The template (text version)'),
         'listorder' => array('integer', ''),
         'unique_1'  => array('(title)', ''),
     ),
