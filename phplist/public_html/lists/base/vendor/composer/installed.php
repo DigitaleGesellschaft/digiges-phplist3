@@ -7,7 +7,7 @@
     array (
       0 => '4.0.x-dev',
     ),
-    'reference' => '681c9e72135b8814c070499e5ad6afc14ef5a846',
+    'reference' => 'ba1c34eb3963bacfd9e124ddfda58c26311fea90',
     'name' => 'phplist/base-distribution',
   ),
   'versions' => 
@@ -218,7 +218,7 @@
       array (
         0 => '4.0.x-dev',
       ),
-      'reference' => '681c9e72135b8814c070499e5ad6afc14ef5a846',
+      'reference' => 'ba1c34eb3963bacfd9e124ddfda58c26311fea90',
     ),
     'phplist/core' => 
     array (
@@ -335,7 +335,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5f40d4d577a71466f9723122251b46bdaf634709',
+      'reference' => '43a315341710475e88006a0e55864b348d3d781c',
     ),
     'sensio/distribution-bundle' => 
     array (
