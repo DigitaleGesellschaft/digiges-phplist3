@@ -64,10 +64,10 @@ class CommonPlugin extends phplistPlugin
                 'category' => 'campaign',
             ],
             'common_pdf_logo_path' => [
-                'value' => $this->coderoot . 'images/logo.png',
+                'value' => '',
                 'description' => 'File system path or URL to a logo to be used on PDF reports',
                 'type' => 'text',
-                'allowempty' => false,
+                'allowempty' => true,
                 'category' => 'campaign',
             ],
         ];
@@ -77,7 +77,6 @@ class CommonPlugin extends phplistPlugin
             ? file_get_contents($f)
             : '';
         include_once $this->coderoot . 'functions.php';
-        include_once $this->coderoot . 'polyfill.php';
     }
 
     public function activate()

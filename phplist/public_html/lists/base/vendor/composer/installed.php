@@ -1,13 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'v3.6.3',
+    'version' => '3.6.3.0',
     'aliases' => 
     array (
-      0 => '4.0.x-dev',
     ),
-    'reference' => 'ba1c34eb3963bacfd9e124ddfda58c26311fea90',
+    'reference' => 'd518b3d6c40c84639c169c4e966d4761b90a6e2f',
     'name' => 'phplist/base-distribution',
   ),
   'versions' => 
@@ -212,13 +211,12 @@
     ),
     'phplist/base-distribution' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'v3.6.3',
+      'version' => '3.6.3.0',
       'aliases' => 
       array (
-        0 => '4.0.x-dev',
       ),
-      'reference' => 'ba1c34eb3963bacfd9e124ddfda58c26311fea90',
+      'reference' => 'd518b3d6c40c84639c169c4e966d4761b90a6e2f',
     ),
     'phplist/core' => 
     array (
@@ -297,12 +295,12 @@
     ),
     'psr/log' => 
     array (
-      'pretty_version' => '1.1.3',
-      'version' => '1.1.3.0',
+      'pretty_version' => '1.1.4',
+      'version' => '1.1.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
+      'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
     ),
     'psr/log-implementation' => 
     array (
@@ -335,7 +333,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '43a315341710475e88006a0e55864b348d3d781c',
+      'reference' => '9d9641b43426b6614603313428170f3b2e7d61fa',
     ),
     'sensio/distribution-bundle' => 
     array (
@@ -368,182 +366,182 @@
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/browser-kit' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/cache' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/class-loader' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/config' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/console' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/css-selector' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/debug' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/debug-bundle' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/dependency-injection' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/doctrine-bridge' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/dom-crawler' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/dotenv' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/event-dispatcher' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/expression-language' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/filesystem' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/finder' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/form' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/framework-bundle' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/http-foundation' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/http-kernel' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/inflector' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/intl' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/ldap' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/lock' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/monolog-bridge' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/monolog-bundle' => 
@@ -559,7 +557,7 @@
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/polyfill-apcu' => 
@@ -629,177 +627,177 @@
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/property-access' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/property-info' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/proxy-manager-bridge' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/routing' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/security' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/security-bundle' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/security-core' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/security-csrf' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/security-guard' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/security-http' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/serializer' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/stopwatch' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/symfony' => 
     array (
-      'pretty_version' => 'v3.4.47',
-      'version' => '3.4.47.0',
+      'pretty_version' => 'v3.4.49',
+      'version' => '3.4.49.0',
       'aliases' => 
       array (
       ),
-      'reference' => '83093d5448a7b90fd4cbcce38580ae53898f506f',
+      'reference' => 'ba0e346e3ad11de4a307fe4fa2452a3656dcc17b',
     ),
     'symfony/templating' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/translation' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/twig-bridge' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/twig-bundle' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/validator' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/var-dumper' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/web-link' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/web-profiler-bundle' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/web-server-bundle' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/workflow' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'symfony/yaml' => 
     array (
       'replaced' => 
       array (
-        0 => 'v3.4.47',
+        0 => 'v3.4.49',
       ),
     ),
     'twig/twig' => 

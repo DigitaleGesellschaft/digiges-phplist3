@@ -70,12 +70,26 @@ function cleanListName($name) { ## we allow certain tags in a listname
     return $name;
 }
 
+/**
+ * Returns the name of a list.
+ * The list names are cached because this can be called repeatedly for the same list id.
+ *
+ * @param int $id list id
+ *
+ * @return string the list name
+ */
 function listName($id)
 {
     global $tables;
-    $req = Sql_Fetch_Row_Query(sprintf('select name from %s where id = %d', $tables['list'], $id));
 
-    return $req[0] ? stripslashes(cleanListName($req[0])) : $GLOBALS['I18N']->get('Unnamed List');
+    static $listNames = [];
+
+    if (!isset($listNames[$id])) {
+        $req = Sql_Fetch_Row_Query(sprintf('select name from %s where id = %d', $tables['list'], $id));
+        $listNames[$id] = $req[0] ? stripslashes(cleanListName($req[0])) : $GLOBALS['I18N']->get('Unnamed List');
+    }
+
+    return $listNames[$id];
 }
 
 function setMessageData($msgid, $name, $value)
@@ -90,6 +104,9 @@ function setMessageData($msgid, $name, $value)
     if ($name == 'subject' || $name == 'campaigntitle') {
         //# disallow html in the subject and title
         $value = strip_tags($value);
+    }
+    if ($name == 'message') { ## there's no need for js actions in the body. @@TODO expand on other fields
+      $value = disableJavascript($value);
     }
 
     if ($name == 'targetlist' && is_array($value)) {
@@ -1027,7 +1044,7 @@ function clearPageCache()
 function removeJavascript($content)
 {
     $content = preg_replace('/<script[^>]*>(.*?)<\/script\s*>/mis', '', $content);
-
+    $content = disableJavascript($content);
     return $content;
 }
 
@@ -1339,6 +1356,10 @@ function fetchUrlCurl($url, $request_parameters)
     curl_setopt($curl, CURLOPT_HEADER, 0);
     curl_setopt($curl, CURLOPT_DNS_USE_GLOBAL_CACHE, true);
     curl_setopt($curl, CURLOPT_USERAGENT, 'phplist v'.VERSION.'c (https://www.phplist.com)');
+    if (HTTP_PROXY_HOST and HTTP_PROXY_PORT) {
+        curl_setopt($curl, CURLOPT_PROXY, HTTP_PROXY_HOST);
+        curl_setopt($curl, CURLOPT_PROXYPORT, HTTP_PROXY_PORT);
+    }    
     $raw_result = curl_exec($curl);
     $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     curl_close($curl);
