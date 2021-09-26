@@ -1,14 +1,17 @@
 <?php if (empty($_GET['page']) || $_GET['page'] == 'dashboard' || $_GET['page'] == 'home') { ?>
                 <div class="clear"></div>
                 <div id="newsfeed" class="menutableright block">
-                           <h3><span class="glyphicon glyphicon-bullhorn text-danger"></span> <?php print s('<a target="_blank" href="https://www.phplist.org/newslist/">phpList community news</a>'); ?></h3>
+                           <h3><span class="glyphicon glyphicon-bullhorn text-danger"></span> <?php printf('<a target="_blank" href="https://www.phplist.org/newslist/">%s</a>', s('phpList community news')); ?></h3>
                                 <?php  include 'communityfeed.php'; ?>
             </div>
 <?php } ?>
         </div> <!-- end #Wrapp -->
             <div id="footer">
                 <div class="version pull-left">
-                    <a target="_blank" href="https://phplist.com">&copy; phpList ltd.</a> - v<?php echo VERSION?>
+                    <a target="_blank" href="./?page=about">&copy; phpList ltd.</a>
+                    <?php if (!empty($_SESSION['adminloggedin'])) {
+                         echo '- v'. VERSION;
+                    } ?>
                 </div>
                 <div class="ressources pull-right">
                     <a href="./?page=about"><?php echo s('About'); ?></a>&nbsp;  |
@@ -24,9 +27,9 @@
 
 </div> <!-- end .container-fluid -->
 
-<script type="text/javascript" src="ui/phplist-ui-bootlist/js/jquery.min.js?v=<?php echo VERSION ?>"></script>
-<script type="text/javascript" src="js/phplistapp.js?v=<?php echo VERSION ?>"></script>
-<script type="text/javascript" src="ui/phplist-ui-bootlist/js/dist/phpList_ui_bootlist.min.js?v=<?php echo VERSION ?>"></script>
+<script type="text/javascript" src="ui/phplist-ui-bootlist/js/jquery.min.js?v=<?php echo md5(VERSION) ?>"></script>
+<script type="text/javascript" src="js/phplistapp.js?v=<?php echo md5(VERSION)  ?>"></script>
+<script type="text/javascript" src="ui/phplist-ui-bootlist/js/dist/phpList_ui_bootlist.min.js?v=<?php echo md5(VERSION)  ?>"></script>
 <script>
 /* do not remove this from here */
 $(document).ready(function(){
