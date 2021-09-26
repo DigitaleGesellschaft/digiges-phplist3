@@ -8,7 +8,7 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.6.3");
+define("VERSION","3.6.4");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
@@ -310,6 +310,27 @@ if (!defined('PLUGIN_ROOTDIRS')) {
 if (!defined('PHPMAILERHOST')) {
     define('PHPMAILERHOST', '');
 }
+if (!defined('PHPMAILERSUBSCRIBEHOST') && defined('PHPMAILERHOST')) {
+    define('PHPMAILERSUBSCRIBEHOST', PHPMAILERHOST);
+}
+if (!defined('PHPMAILERBLASTHOST') && defined('PHPMAILERHOST')) {
+    define('PHPMAILERBLASTHOST', PHPMAILERHOST);
+}
+if (!defined('PHPMAILERBLASTPORT') && defined('PHPMAILERPORT')) {
+    define('PHPMAILERBLASTPORT', PHPMAILERPORT);
+}
+if (!defined('PHPMAILERSUBSCRIBEPORT') && defined('PHPMAILERPORT')) {
+    define('PHPMAILERSUBSCRIBEPORT', PHPMAILERPORT);
+}
+if (!defined('PHPMAILERTESTHOST') && defined('PHPMAILERHOST')) {
+    define('PHPMAILERTESTHOST', PHPMAILERHOST);
+}
+if (!defined('PHPMAILER_SECURE')) {
+    define('PHPMAILER_SECURE', 'auto');
+}
+if (!defined('PHPMAILER_SMTP_DEBUG')) {
+    define('PHPMAILER_SMTP_DEBUG', 0);
+}
 if (!defined('MANUALLY_PROCESS_QUEUE')) {
     define('MANUALLY_PROCESS_QUEUE', 1);
 }
@@ -565,21 +586,6 @@ if (!defined('MAX_MAILSIZE')) {
 } // in bytes, 200Mb
 if (!defined('INTERFACELIB')) {
     define('INTERFACELIB', 1);
-}
-if (!defined('PHPMAILERBLASTHOST') && defined('PHPMAILERHOST')) {
-    define('PHPMAILERBLASTHOST', PHPMAILERHOST);
-}
-if (!defined('PHPMAILERBLASTPORT') && defined('PHPMAILERPORT')) {
-    define('PHPMAILERBLASTPORT', PHPMAILERPORT);
-}
-if (!defined('PHPMAILERTESTHOST') && defined('PHPMAILERHOST')) {
-    define('PHPMAILERTESTHOST', PHPMAILERHOST);
-}
-if (!defined('PHPMAILER_SECURE')) {
-    define('PHPMAILER_SECURE', 'auto');
-}
-if (!defined('PHPMAILER_SMTP_DEBUG')) {
-    define('PHPMAILER_SMTP_DEBUG', 0);
 }
 if (!defined('POP_BEFORE_SMTP')) {
     define('POP_BEFORE_SMTP', '');
