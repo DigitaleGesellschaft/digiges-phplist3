@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'v3.6.4',
-        'version' => '3.6.4.0',
+        'pretty_version' => 'v3.6.5',
+        'version' => '3.6.5.0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '771e17c7a0b5eb2f1f9cad2f49ba4e4ab3f9992a',
+        'reference' => '9006f433249218f04d3acd7b84a66e614b3175fc',
         'name' => 'phplist/base-distribution',
         'dev' => false,
     ),
@@ -209,12 +209,12 @@
             'dev_requirement' => false,
         ),
         'phplist/base-distribution' => array(
-            'pretty_version' => 'v3.6.4',
-            'version' => '3.6.4.0',
+            'pretty_version' => 'v3.6.5',
+            'version' => '3.6.5.0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '771e17c7a0b5eb2f1f9cad2f49ba4e4ab3f9992a',
+            'reference' => '9006f433249218f04d3acd7b84a66e614b3175fc',
             'dev_requirement' => false,
         ),
         'phplist/core' => array(
@@ -236,12 +236,12 @@
             'dev_requirement' => false,
         ),
         'phpoption/phpoption' => array(
-            'pretty_version' => '1.7.5',
-            'version' => '1.7.5.0',
+            'pretty_version' => '1.8.0',
+            'version' => '1.8.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpoption/phpoption',
             'aliases' => array(),
-            'reference' => '994ecccd8f3283ecf5ac33254543eb0ac946d525',
+            'reference' => '5455cb38aed4523f99977c4a12ef19da4bfe2a28',
             'dev_requirement' => false,
         ),
         'psr/cache' => array(
@@ -326,7 +326,7 @@
             'type' => 'metapackage',
             'install_path' => NULL,
             'aliases' => array(),
-            'reference' => '52a126190a36bc9236846f5d42e10bff9ff60d72',
+            'reference' => '4911abe63afbbba425931f44a3c62fc002973935',
             'dev_requirement' => false,
         ),
         'sensio/distribution-bundle' => array(

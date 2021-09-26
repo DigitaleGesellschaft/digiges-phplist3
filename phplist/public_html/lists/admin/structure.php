@@ -13,7 +13,7 @@ if (!defined('PHPLISTINIT')) {
 
 //# don't remove spaces
 if (!defined('STRUCTUREVERSION')) {
-    define('STRUCTUREVERSION',"3.6.4");
+    define('STRUCTUREVERSION',"3.6.5");
 }
 
 $DBstructuser = array( // order of tables is essential for smooth upgrade
