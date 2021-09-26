@@ -9,7 +9,7 @@ git rm -r phplist
 rm -rf phplist
 mkdir phplist
 wget "https://sourceforge.net/projects/phplist/files/phplist/${version}/phplist-${version}.tgz/download" -O phplist-${version}.tgz
-tar xf phplist-${version}.tgz --exclude='*.gitignore' --strip 1  -C phplist
+tar xf phplist-${version}.tgz --exclude='*.gitignore' --exclude='*.git' --strip 1  -C phplist
 rm phplist-${version}.tgz
 git add phplist
 git commit -m "phplist-${version}.tgz"
