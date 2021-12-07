@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'v3.6.5',
-        'version' => '3.6.5.0',
+        'pretty_version' => 'v3.6.6',
+        'version' => '3.6.6.0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9006f433249218f04d3acd7b84a66e614b3175fc',
+        'reference' => '63e76565d363f0c1e0a2e19f1aeb0041f98d209b',
         'name' => 'phplist/base-distribution',
         'dev' => false,
     ),
     'versions' => array(
         'composer/ca-bundle' => array(
-            'pretty_version' => '1.2.10',
-            'version' => '1.2.10.0',
+            'pretty_version' => '1.3.1',
+            'version' => '1.3.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/./ca-bundle',
             'aliases' => array(),
-            'reference' => '9fdb22c2e97a614657716178093cd1da90a64aa8',
+            'reference' => '4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -209,12 +209,12 @@
             'dev_requirement' => false,
         ),
         'phplist/base-distribution' => array(
-            'pretty_version' => 'v3.6.5',
-            'version' => '3.6.5.0',
+            'pretty_version' => 'v3.6.6',
+            'version' => '3.6.6.0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9006f433249218f04d3acd7b84a66e614b3175fc',
+            'reference' => '63e76565d363f0c1e0a2e19f1aeb0041f98d209b',
             'dev_requirement' => false,
         ),
         'phplist/core' => array(
@@ -236,12 +236,12 @@
             'dev_requirement' => false,
         ),
         'phpoption/phpoption' => array(
-            'pretty_version' => '1.8.0',
-            'version' => '1.8.0.0',
+            'pretty_version' => '1.8.1',
+            'version' => '1.8.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpoption/phpoption',
             'aliases' => array(),
-            'reference' => '5455cb38aed4523f99977c4a12ef19da4bfe2a28',
+            'reference' => 'eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15',
             'dev_requirement' => false,
         ),
         'psr/cache' => array(
@@ -326,7 +326,7 @@
             'type' => 'metapackage',
             'install_path' => NULL,
             'aliases' => array(),
-            'reference' => '4911abe63afbbba425931f44a3c62fc002973935',
+            'reference' => 'e26f8fefe293849248fb3414805684d0ba1f94f3',
             'dev_requirement' => false,
         ),
         'sensio/distribution-bundle' => array(
