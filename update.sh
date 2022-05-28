@@ -14,6 +14,6 @@ rm phplist-${version}.tgz
 git add phplist
 git commit -m "phplist-${version}.tgz"
 git tag v${version}
-git checkout master
+git checkout main
 git merge v${version}
 git tag v${version}-digiges

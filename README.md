@@ -6,5 +6,5 @@
 
 # Push to Repository
 ```console
-git push origin upstream-releases master --tags
+git push origin upstream-releases main --tags
 ```
