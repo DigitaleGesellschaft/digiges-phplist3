@@ -19,7 +19,7 @@ class ComposerStaticInitb823a7e2f2d90c601377e32a0b92bc17
         'P' => 
         array (
             'Psr\\Container\\' => 14,
-            'Pelago\\' => 7,
+            'Pelago\\Emogrifier\\' => 18,
         ),
         'M' => 
         array (
@@ -56,7 +56,7 @@ class ComposerStaticInitb823a7e2f2d90c601377e32a0b92bc17
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Pelago\\' => 
+        'Pelago\\Emogrifier\\' => 
         array (
             0 => __DIR__ . '/..' . '/pelago/emogrifier/src',
         ),
@@ -152,21 +152,19 @@ class ComposerStaticInitb823a7e2f2d90c601377e32a0b92bc17
         'Crossjoin\\PreMailer\\HtmlFile' => __DIR__ . '/..' . '/crossjoin/pre-mailer/src/Crossjoin/PreMailer/HtmlFile.php',
         'Crossjoin\\PreMailer\\HtmlString' => __DIR__ . '/..' . '/crossjoin/pre-mailer/src/Crossjoin/PreMailer/HtmlString.php',
         'Crossjoin\\PreMailer\\PreMailerAbstract' => __DIR__ . '/..' . '/crossjoin/pre-mailer/src/Crossjoin/PreMailer/PreMailerAbstract.php',
-        'FPDF' => __DIR__ . '/..' . '/ext/fpdf/fpdf.php',
         'Interop\\Container\\ContainerInterface' => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container/ContainerInterface.php',
         'Interop\\Container\\Exception\\ContainerException' => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container/Exception/ContainerException.php',
         'Interop\\Container\\Exception\\NotFoundException' => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container/Exception/NotFoundException.php',
         'Katzgrau\\KLogger\\Logger' => __DIR__ . '/..' . '/katzgrau/klogger/src/Logger.php',
         'Mouf\\Picotainer\\Picotainer' => __DIR__ . '/..' . '/mouf/picotainer/src/Picotainer.php',
         'Mouf\\Picotainer\\PicotainerNotFoundException' => __DIR__ . '/..' . '/mouf/picotainer/src/PicotainerNotFoundException.php',
-        'Pelago\\Emogrifier' => __DIR__ . '/..' . '/pelago/emogrifier/src/Emogrifier.php',
-        'Pelago\\Emogrifier\\CssInliner' => __DIR__ . '/..' . '/pelago/emogrifier/src/Emogrifier/CssInliner.php',
-        'Pelago\\Emogrifier\\HtmlProcessor\\AbstractHtmlProcessor' => __DIR__ . '/..' . '/pelago/emogrifier/src/Emogrifier/HtmlProcessor/AbstractHtmlProcessor.php',
-        'Pelago\\Emogrifier\\HtmlProcessor\\CssToAttributeConverter' => __DIR__ . '/..' . '/pelago/emogrifier/src/Emogrifier/HtmlProcessor/CssToAttributeConverter.php',
-        'Pelago\\Emogrifier\\HtmlProcessor\\HtmlNormalizer' => __DIR__ . '/..' . '/pelago/emogrifier/src/Emogrifier/HtmlProcessor/HtmlNormalizer.php',
-        'Pelago\\Emogrifier\\HtmlProcessor\\HtmlPruner' => __DIR__ . '/..' . '/pelago/emogrifier/src/Emogrifier/HtmlProcessor/HtmlPruner.php',
-        'Pelago\\Emogrifier\\Utilities\\ArrayIntersector' => __DIR__ . '/..' . '/pelago/emogrifier/src/Emogrifier/Utilities/ArrayIntersector.php',
-        'Pelago\\Emogrifier\\Utilities\\CssConcatenator' => __DIR__ . '/..' . '/pelago/emogrifier/src/Emogrifier/Utilities/CssConcatenator.php',
+        'Pelago\\Emogrifier\\CssInliner' => __DIR__ . '/..' . '/pelago/emogrifier/src/CssInliner.php',
+        'Pelago\\Emogrifier\\HtmlProcessor\\AbstractHtmlProcessor' => __DIR__ . '/..' . '/pelago/emogrifier/src/HtmlProcessor/AbstractHtmlProcessor.php',
+        'Pelago\\Emogrifier\\HtmlProcessor\\CssToAttributeConverter' => __DIR__ . '/..' . '/pelago/emogrifier/src/HtmlProcessor/CssToAttributeConverter.php',
+        'Pelago\\Emogrifier\\HtmlProcessor\\HtmlNormalizer' => __DIR__ . '/..' . '/pelago/emogrifier/src/HtmlProcessor/HtmlNormalizer.php',
+        'Pelago\\Emogrifier\\HtmlProcessor\\HtmlPruner' => __DIR__ . '/..' . '/pelago/emogrifier/src/HtmlProcessor/HtmlPruner.php',
+        'Pelago\\Emogrifier\\Utilities\\ArrayIntersector' => __DIR__ . '/..' . '/pelago/emogrifier/src/Utilities/ArrayIntersector.php',
+        'Pelago\\Emogrifier\\Utilities\\CssConcatenator' => __DIR__ . '/..' . '/pelago/emogrifier/src/Utilities/CssConcatenator.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
         'Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/NotFoundExceptionInterface.php',
@@ -233,9 +231,11 @@ class ComposerStaticInitb823a7e2f2d90c601377e32a0b92bc17
         'Symfony\\Component\\Filesystem\\Exception\\IOExceptionInterface' => __DIR__ . '/..' . '/symfony/filesystem/Exception/IOExceptionInterface.php',
         'Symfony\\Component\\Filesystem\\Filesystem' => __DIR__ . '/..' . '/symfony/filesystem/Filesystem.php',
         'Symfony\\Component\\Filesystem\\LockHandler' => __DIR__ . '/..' . '/symfony/filesystem/LockHandler.php',
+        'TTFontFile' => __DIR__ . '/..' . '/setasign/tfpdf/font/unifont/ttfonts.php',
         'WkHtmlToPdf' => __DIR__ . '/..' . '/ext/mikehaertl/WkHtmlToPdf.php',
         'chdemko\\BitArray\\BitArray' => __DIR__ . '/..' . '/chdemko/bitarray/src/BitArray/BitArray.php',
         'chdemko\\BitArray\\Iterator' => __DIR__ . '/..' . '/chdemko/bitarray/src/BitArray/Iterator.php',
+        'tFPDF' => __DIR__ . '/..' . '/setasign/tfpdf/tfpdf.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -45,7 +45,7 @@ class session {
 
         // Securing the session
         $stamp = array(
-            'ip' => $_SERVER['REMOTE_ADDR'],
+            'ip' => isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'],
             'agent' => md5($_SERVER['HTTP_USER_AGENT'])
         );
         if (!isset($session['stamp']))
@@ -54,7 +54,7 @@ class session {
             // Destroy session if user agent is different (e.g. after browser update)
             if ($session['stamp']['ip'] === $stamp['ip'])
                 session_destroy();
-            die;
+            die('Change of session stamp detected');
         }
 
         // Load session configuration
