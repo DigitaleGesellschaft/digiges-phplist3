@@ -27,6 +27,8 @@ class updater
     private $database_name;
     private $database_user;
     private $database_password;
+    private $database_port;
+    private $database_socket;
     private $table_prefix;
 
     public function __construct()
@@ -43,6 +45,8 @@ class updater
         $this->database_name = $database_name;
         $this->database_user = $database_user;
         $this->database_password = $database_password;
+        $this->database_port = isset($database_port) ? $database_port : null;
+        $this->database_socket = isset($database_socket) ? $database_socket : null;
         $this->table_prefix = isset($table_prefix) ? $table_prefix : 'phplist_';
     }
 
@@ -83,16 +87,16 @@ class updater
      */
     public function getCurrentVersion()
     {
-        $version = file_get_contents('../admin/init.php');
-        $matches = array();
-        preg_match_all('/define\(\"VERSION\",\"(.*)\"\);/', $version, $matches);
+        $table_name = $this->table_prefix . 'config';
+        $prepStmt = $this->getConnection()->prepare("SELECT value FROM {$table_name} WHERE item=?");
+        $prepStmt->execute(['version']);
+        $result = $prepStmt->fetch(PDO::FETCH_ASSOC);
 
-        if (isset($matches[1][0])) {
-            return $matches[1][0];
+        if ($result === false) {
+            throw new UpdateException('No production version found.');
         }
 
-        throw new UpdateException('No production version found.');
-
+        return $result['value'];
     }
 
     /**
@@ -103,18 +107,25 @@ class updater
     function checkIfThereIsAnUpdate()
     {
         $serverResponse = $this->getResponseFromServer();
-        $version = isset($serverResponse['version']) ? $serverResponse['version'] : '';
 
-        $versionString = isset($serverResponse['versionstring']) ? $serverResponse['versionstring'] : '';
-        if ($version !== '' && $version !== $this->getCurrentVersion() && version_compare($this->getCurrentVersion(), $version)) {
-            $this->availableUpdate = true;
-            $updateMessage = 'Update to ' . htmlentities($versionString) . ' is available.  ';
+        if (isset($serverResponse['version']) && isset($serverResponse['versionstring'])) {
+            $version = $serverResponse['version'];
+            $versionString = $serverResponse['versionstring'];
+
+            if (version_compare($this->getCurrentVersion(), $version) < 0) {
+                $this->availableUpdate = true;
+                $updateMessage = 'Update to ' . htmlentities($versionString) . ' is available.  ';
+
+                if (isset($serverResponse['autoupdater'])
+                    && !($serverResponse['autoupdater'] === 1 || $serverResponse['autoupdater'] === '1')) {
+                    $this->availableUpdate = false;
+                    $updateMessage .= '<br />The automatic updater is disabled for this update.';
+                }
+            } else {
+                $updateMessage = 'phpList is up-to-date.';
+            }
         } else {
-            $updateMessage = 'phpList is up-to-date.';
-        }
-        if ($this->availableUpdate && isset($serverResponse['autoupdater']) && !($serverResponse['autoupdater'] === 1 || $serverResponse['autoupdater'] === '1')) {
-            $this->availableUpdate = false;
-            $updateMessage .= '<br />The automatic updater is disabled for this update.';
+            $updateMessage = 'Unable to identify new version';
         }
 
         return $updateMessage;
@@ -320,8 +331,23 @@ class updater
      */
     function getConnection()
     {
+        static $pdo = null;
+
+        if ($pdo !== null) {
+            return $pdo;
+        }
         $charset = 'utf8mb4';
-        $dsn = "mysql:host=$this->database_host;dbname=$this->database_name;charset=$charset";
+        $dsn = "mysql:dbname=$this->database_name;charset=$charset;";
+
+        if ($this->database_socket !== null) {
+            $dsn .= "socket=$this->database_socket";
+        } else {
+            $dsn .= "host=$this->database_host";
+
+            if ($this->database_port !== null) {
+                $dsn .=";port=$this->database_port";
+            }
+        }
         $options = array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -332,6 +358,7 @@ class updater
         } catch (\PDOException $e) {
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
+
         return $pdo;
     }
 
@@ -407,29 +434,13 @@ class updater
         curl_setopt($ch, CURLOPT_FILE, fopen($zipFile, 'w+'));
         $page = curl_exec($ch);
         if (!$page) {
-            echo "Error :- " . curl_error($ch);
+            throw new \UpdateException('Error: ' . curl_error($ch));
         }
         curl_close($ch);
 
         // extract files
         $this->unZipFiles($zipFile, self::DOWNLOAD_PATH);
 
-    }
-
-    /**
-     * Check the downloaded phpList version. Return false if it's a downgrade.
-     * @throws UpdateException
-     * @return bool
-     */
-    function checkForDowngrade()
-    {
-        $downloadedVersion = file_get_contents(self::DOWNLOAD_PATH.'/phplist/public_html/lists/admin/init.php');
-        preg_match_all('/define\(\"VERSION\",\"(.*)\"\);/', $downloadedVersion, $matches);
-
-        if (isset($matches[1][0]) && version_compare($this->getCurrentVersion(), $matches[1][0])) {
-            return true;
-        }
-        return false;
     }
 
     /**
@@ -598,7 +609,9 @@ class updater
             throw new \UpdateException("Error: Unable to open the Zip File");
         }
         /* Extract Zip File */
-        $zip->extractTo($extractPath);
+        if (!$zip->extractTo($extractPath)) {
+            throw new \UpdateException("Error: Unable to extract the Zip File");
+        }
         $zip->close();
 
     }
@@ -778,8 +791,8 @@ try {
     $update->checkConfig();
     $update->checkphpmodules();
 
-} catch (\UpdateException $e) {
-    throw $e;
+} catch (\Exception $e) {
+    die($e->getMessage());
 }
 
 /**
@@ -788,202 +801,198 @@ try {
  *
  */
 if (isset($_POST['action'])) {
-    set_time_limit(0);
+    try {
+        set_time_limit(0);
 
-    //ensure that $action is integer
+        //ensure that $action is integer
 
-    $action = (int)$_POST['action'];
+        $action = (int)$_POST['action'];
 
-    header('Content-Type: application/json');
-    $writeStep = true;
-    switch ($action) {
-        case 0:
-            $statusJson = $update->currentUpdateStep();
-            echo json_encode(array('status' => $statusJson, 'autocontinue' => true));
-            break;
-        case 1:
-            $currentVersion = $update->getCurrentVersion();
-            $updateMessage = $update->checkIfThereIsAnUpdate();
-            $isThereAnUpdate = $update->availableUpdate();
-            if ($isThereAnUpdate === false) {
-                echo(json_encode(array('continue' => false, 'response' => $updateMessage)));
-            } else {
-                echo(json_encode(array('continue' => true, 'response' => $updateMessage)));
-            }
-            break;
-        case 2:
-            echo(json_encode(array('continue' => true, 'autocontinue' => true, 'response' => 'Starting integrity check')));
-            break;
-        case 3:
-            $unexpectedFiles = $update->checkRequiredFiles();
-            if (count($unexpectedFiles) !== 0) {
-                $elements = "Error: The following files are either not expected and should be removed, or are missing but required and should be put back in place \n";
-                foreach ($unexpectedFiles as $key => $fileName) {
-                    $elements .= $key . "\n";
+        header('Content-Type: application/json');
+        $writeStep = true;
+        switch ($action) {
+            case 0:
+                $statusJson = $update->currentUpdateStep();
+                echo json_encode(array('status' => $statusJson, 'autocontinue' => true));
+                break;
+            case 1:
+                $updateMessage = $update->checkIfThereIsAnUpdate();
+                $isThereAnUpdate = $update->availableUpdate();
+                if ($isThereAnUpdate === false) {
+                    echo(json_encode(array('continue' => false, 'response' => $updateMessage)));
+                } else {
+                    echo(json_encode(array('continue' => true, 'response' => $updateMessage)));
                 }
-                echo(json_encode(array('retry' => true, 'continue' => false, 'response' => $elements)));
-            } else {
-                echo(json_encode(array('continue' => true, 'response' => 'Integrity check successful', 'autocontinue' => true)));
-            }
-            break;
-        case 4:
-            $notWriteableFiles = $update->checkWritePermissions();
-            if (count($notWriteableFiles) !== 0) {
-                $notWriteableElements = "Error: No write permission for the following files: \n";;
-                foreach ($notWriteableFiles as $key => $fileName) {
-                    $notWriteableElements .= $fileName . "\n";
+                break;
+            case 2:
+                echo(json_encode(array('continue' => true, 'autocontinue' => true, 'response' => 'Starting integrity check')));
+                break;
+            case 3:
+                $unexpectedFiles = $update->checkRequiredFiles();
+                if (count($unexpectedFiles) !== 0) {
+                    $elements = "Error: The following files are either not expected and should be removed, or are missing but required and should be put back in place \n";
+                    foreach ($unexpectedFiles as $key => $fileName) {
+                        $elements .= $key . "\n";
+                    }
+                    echo(json_encode(array('retry' => true, 'continue' => false, 'response' => $elements)));
+                } else {
+                    echo(json_encode(array('continue' => true, 'response' => 'Integrity check successful', 'autocontinue' => true)));
                 }
-                echo(json_encode(array('retry' => true, 'continue' => false, 'response' => $notWriteableElements)));
-            } else {
-                echo(json_encode(array('continue' => true, 'response' => 'Write check successful.', 'autocontinue' => true)));
-            }
-            break;
-        case 5:
-            echo(json_encode(array('continue' => true, 'response' => 'Do you want a backup? <form><input type="radio" name="create_backup" value="true">Yes<br><input type="radio" name="create_backup" value="false" checked>No</form>')));
-            break;
-        case 6:
-            $createBackup = $_POST['create_backup'];
-            if ($createBackup === 'true') {
-                echo(json_encode(array('continue' => true, 'response' => 'Choose location where to backup the /lists directory. Please make sure to choose a location outside the web root:<br> <form onsubmit="return false;"><input type="text" id="backuplocation" size="55" name="backup_location" placeholder="/var/backup.zip" /></form>')));
-            } else {
-                echo(json_encode(array('continue' => true, 'response' => '', 'autocontinue' => true)));
-            }
-            break;
-        case 7:
-            $createBackup = $_POST['create_backup'];
-            if ($createBackup === 'true') {
-                $backupLocation = realpath(dirname($_POST['backup_location']));
-                $phplistRootFolder = realpath(__DIR__ . '/../../');
-                if (strpos($backupLocation, $phplistRootFolder) === 0) {
-                    echo(json_encode(array('retry' => true, 'continue' => false, 'response' => 'Error: Please choose a folder outside of your phpList installation.')));
-                    break;
+                break;
+            case 4:
+                $notWriteableFiles = $update->checkWritePermissions();
+                if (count($notWriteableFiles) !== 0) {
+                    $notWriteableElements = "Error: No write permission for the following files: \n";;
+                    foreach ($notWriteableFiles as $key => $fileName) {
+                        $notWriteableElements .= $fileName . "\n";
+                    }
+                    echo(json_encode(array('retry' => true, 'continue' => false, 'response' => $notWriteableElements)));
+                } else {
+                    echo(json_encode(array('continue' => true, 'response' => 'Write check successful.', 'autocontinue' => true)));
                 }
-                if (!preg_match("/^.*\.(zip)$/i", $_POST['backup_location'])) {
-                    echo(json_encode(array('retry' => true, 'continue' => false, 'response' => 'Error: Please add .zip extension.')));
-                    break;
+                break;
+            case 5:
+                echo(json_encode(array('continue' => true, 'response' => 'Do you want a backup? <form><input type="radio" name="create_backup" value="true">Yes<br><input type="radio" name="create_backup" value="false" checked>No</form>')));
+                break;
+            case 6:
+                $createBackup = $_POST['create_backup'];
+                if ($createBackup === 'true') {
+                    echo(json_encode(array('continue' => true, 'response' => 'Choose location where to backup the /lists directory. Please make sure to choose a location outside the web root:<br> <form onsubmit="return false;"><input type="text" id="backuplocation" size="55" name="backup_location" placeholder="/var/backup.zip" /></form>')));
+                } else {
+                    echo(json_encode(array('continue' => true, 'response' => '', 'autocontinue' => true)));
                 }
+                break;
+            case 7:
+                $createBackup = $_POST['create_backup'];
+                if ($createBackup === 'true') {
+                    $backupLocation = realpath(dirname($_POST['backup_location']));
+                    $phplistRootFolder = realpath(__DIR__ . '/../../');
+                    if (strpos($backupLocation, $phplistRootFolder) === 0) {
+                        echo(json_encode(array('retry' => true, 'continue' => false, 'response' => 'Error: Please choose a folder outside of your phpList installation.')));
+                        break;
+                    }
+                    if (!preg_match("/^.*\.(zip)$/i", $_POST['backup_location'])) {
+                        echo(json_encode(array('retry' => true, 'continue' => false, 'response' => 'Error: Please add .zip extension.')));
+                        break;
+                    }
+                    try {
+                        $update->backUpFiles($_POST['backup_location']);
+                        echo(json_encode(array('continue' => true, 'response' => 'Backup has been created')));
+                    } catch (\Exception $e) {
+                        echo(json_encode(array('retry' => true, 'continue' => false, 'response' => $e->getMessage())));
+                        break;
+                    }
+                } else {
+                    echo(json_encode(array('continue' => true, 'response' => 'No back up created', 'autocontinue' => true)));
+                }
+
+                break;
+            case 8:
+                echo(json_encode(array('continue' => true, 'autocontinue' => true, 'response' => 'Download in progress')));
+                break;
+            case 9:
                 try {
-                    $update->backUpFiles($_POST['backup_location']);
-                    echo(json_encode(array('continue' => true, 'response' => 'Backup has been created')));
+                    $update->downloadUpdate();
+                    echo(json_encode(array('continue' => true, 'response' => 'The update has been downloaded!')));
                 } catch (\Exception $e) {
-                    echo(json_encode(array('retry' => true, 'continue' => false, 'response' => $e->getMessage())));
-                    break;
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
                 }
-            } else {
-                echo(json_encode(array('continue' => true, 'response' => 'No back up created', 'autocontinue' => true)));
-            }
+                break;
+            case 10:
+                $on = $update->addMaintenanceMode();
+                if ($on === false) {
+                    echo(json_encode(array('continue' => false, 'response' => 'Cannot set the maintenance mode on!')));
+                } else {
+                    echo(json_encode(array('continue' => true, 'response' => 'Set maintenance mode on', 'autocontinue' => true)));
+                }
+                break;
+            case 11:
+                try {
+                    $update->replacePHPEntryPoints();
+                    echo(json_encode(array('continue' => true, 'response' => 'Replaced entry points', 'autocontinue' => true)));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 12:
+                try {
+                    $update->movePluginsInTempFolder();
+                    echo(json_encode(array('continue' => true, 'response' => 'Backing up the plugins', 'autocontinue' => true)));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 13:
+                try {
+                    $update->deleteFiles();
+                    echo(json_encode(array('continue' => true, 'response' => 'Old files have been deleted!', 'autocontinue' => true)));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 14:
+                try {
+                    $update->moveNewFiles();
+                    echo(json_encode(array('continue' => true, 'response' => 'Moved new files in place!', 'autocontinue' => true)));
 
-            break;
-        case 8:
-            echo(json_encode(array('continue' => true, 'autocontinue' => true, 'response' => 'Download in progress')));
-            break;
-        case 9:
-            try {
-                $update->downloadUpdate();
-                echo(json_encode(array('continue' => true, 'response' => 'The update has been downloaded!')));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 10:
-            if ($update -> checkForDowngrade()) {
-                echo (json_encode(array('continue' => true, 'autocontinue' => true, 'response' => 'Not a downgrade!')));
-            } else {
-                echo(json_encode(array('continue' => false, 'response' => 'Downgrade is not supported.')));
-            }
-            break;
-        case 11:
-            $on = $update->addMaintenanceMode();
-            if ($on === false) {
-                echo(json_encode(array('continue' => false, 'response' => 'Cannot set the maintenance mode on!')));
-            } else {
-                echo(json_encode(array('continue' => true, 'response' => 'Set maintenance mode on', 'autocontinue' => true)));
-            }
-            break;
-        case 12:
-            try {
-                $update->replacePHPEntryPoints();
-                echo(json_encode(array('continue' => true, 'response' => 'Replaced entry points', 'autocontinue' => true)));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 13:
-            try {
-                $update->movePluginsInTempFolder();
-                echo(json_encode(array('continue' => true, 'response' => 'Backing up the plugins', 'autocontinue' => true)));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 14:
-            try {
-                $update->deleteFiles();
-                echo(json_encode(array('continue' => true, 'response' => 'Old files have been deleted!', 'autocontinue' => true)));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 15:
-            try {
-                $update->moveNewFiles();
-                echo(json_encode(array('continue' => true, 'response' => 'Moved new files in place!', 'autocontinue' => true)));
-
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 16:
-            try {
-                $update->movePluginsInPlace();
-                echo(json_encode(array('continue' => true, 'response' => 'Moved plugins in place!', 'autocontinue' => true)));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 17:
-            try {
-                $update->moveEntryPHPpoints();
-                echo(json_encode(array('continue' => true, 'response' => 'Moved new entry points in place!', 'autocontinue' => true)));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 18:
-            try {
-                $update->moveUpdater();
-                echo(json_encode(array('continue' => true, 'response' => 'Moved new entry points in place!', 'autocontinue' => true)));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 19:
-            try {
-                $update->deleteTemporaryFiles();
-                echo(json_encode(array('continue' => true, 'response' => 'Deleted temporary files!', 'autocontinue' => true)));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 20:
-            try {
-                $update->removeMaintenanceMode();
-                echo(json_encode(array('continue' => true, 'response' => 'Removed maintenance mode', 'autocontinue' => true)));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-        case 21:
-            $writeStep = false;
-            try {
-                $update->replaceNewUpdater();
-                $update->deauthUpdaterSession();
-                echo(json_encode(array('continue' => true, 'nextUrl' => '../admin/', 'response' => 'Updated successfully.')));
-            } catch (\Exception $e) {
-                echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
-            }
-            break;
-    };
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 15:
+                try {
+                    $update->movePluginsInPlace();
+                    echo(json_encode(array('continue' => true, 'response' => 'Moved plugins in place!', 'autocontinue' => true)));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 16:
+                try {
+                    $update->moveEntryPHPpoints();
+                    echo(json_encode(array('continue' => true, 'response' => 'Moved new entry points in place!', 'autocontinue' => true)));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 17:
+                try {
+                    $update->moveUpdater();
+                    echo(json_encode(array('continue' => true, 'response' => 'Moved new entry points in place!', 'autocontinue' => true)));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 18:
+                try {
+                    $update->deleteTemporaryFiles();
+                    echo(json_encode(array('continue' => true, 'response' => 'Deleted temporary files!', 'autocontinue' => true)));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 19:
+                try {
+                    $update->removeMaintenanceMode();
+                    echo(json_encode(array('continue' => true, 'response' => 'Removed maintenance mode', 'autocontinue' => true)));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+            case 20:
+                $writeStep = false;
+                try {
+                    $update->replaceNewUpdater();
+                    $update->deauthUpdaterSession();
+                    echo(json_encode(array('continue' => true, 'nextUrl' => '../admin/', 'response' => 'Updated successfully.')));
+                } catch (\Exception $e) {
+                    echo(json_encode(array('continue' => false, 'response' => $e->getMessage())));
+                }
+                break;
+        }
+    } catch (\Exception $e) {
+        echo(json_encode(array('continue' => false, 'response' => 'Error: ' . $e->getMessage())));
+    }
 
     if ($writeStep) {
         try {
@@ -1771,8 +1780,8 @@ if (isset($_POST['action'])) {
     </div><!-- .inner -->
     </div><!-- .outer -->
 
-    <!-- Load jquery-3.3.1.min.js file -->
-    <script type="text/javascript" src="../admin/js/jquery-3.3.1.min.js"></script>
+    <!-- Load jquery-3.6.0.min.js file -->
+    <script type="text/javascript" src="../admin/js/jquery-3.6.0.min.js"></script>
 
     <!-- script for arrow animation -->
     <script type="text/javascript">
@@ -1858,7 +1867,7 @@ if (isset($_POST['action'])) {
                 7: 1,
                 8: 2,
                 9: 2,
-                10: 2,
+                10: 3,
                 11: 3,
                 12: 3,
                 13: 3,
@@ -1869,7 +1878,6 @@ if (isset($_POST['action'])) {
                 18: 3,
                 19: 3,
                 20: 3,
-                21: 3,
             };
 
             let steps = document.querySelectorAll('.step-image');

@@ -733,14 +733,13 @@ $text['signature'] = '';
         }
     }
 
+    $sentAs = '';
     // so what do we actually send?
     switch ($cached[$messageid]['sendformat']) {
         case 'PDF':
             // send a PDF file to users who want html and text to everyone else
             if ($htmlpref) {
-                if (!$isTestMail) {
-                    Sql_Query("update {$GLOBALS['tables']['message']} set aspdf = aspdf + 1 where id = $messageid");
-                }
+                $sentAs = 'aspdf';
                 $pdffile = createPdf($textmessage);
                 if (is_file($pdffile) && filesize($pdffile)) {
                     $fp = fopen($pdffile, 'r');
@@ -768,9 +767,7 @@ $text['signature'] = '';
                     return 0;
                 }
             } else {
-                if (!$isTestMail) {
-                    Sql_Query("update {$GLOBALS['tables']['message']} set astext = astext + 1 where id = $messageid");
-                }
+                $sentAs = 'astext';
                 $mail->add_text($textmessage);
                 if (!addAttachments($messageid, $mail, 'text',$hash)) {
                     return 0;
@@ -780,9 +777,7 @@ $text['signature'] = '';
         case 'text and PDF':
             // send a PDF file to users who want html and text to everyone else
             if ($htmlpref) {
-                if (!$isTestMail) {
-                    Sql_Query("update {$GLOBALS['tables']['message']} set astextandpdf = astextandpdf + 1 where id = $messageid");
-                }
+                $sentAs = 'astextandpdf';
                 $pdffile = createPdf($textmessage);
                 if (is_file($pdffile) && filesize($pdffile)) {
                     $fp = fopen($pdffile, 'r');
@@ -810,9 +805,7 @@ $text['signature'] = '';
                     return 0;
                 }
             } else {
-                if (!$isTestMail) {
-                    Sql_Query("update {$GLOBALS['tables']['message']} set astext = astext + 1 where id = $messageid");
-                }
+                $sentAs = 'astext';
                 $mail->add_text($textmessage);
                 if (!addAttachments($messageid, $mail, 'text',$hash)) {
                     return 0;
@@ -821,9 +814,7 @@ $text['signature'] = '';
             break;
         case 'text':
             // send as text
-            if (!$isTestMail) {
-                Sql_Query("update {$GLOBALS['tables']['message']} set astext = astext + 1 where id = $messageid");
-            }
+            $sentAs = 'astext';
             $mail->add_text($textmessage);
             if (!addAttachments($messageid, $mail, 'text',$hash)) {
                 return 0;
@@ -846,9 +837,7 @@ $text['signature'] = '';
             if (!$handled_by_plugin) {
                 // send one big file to users who want html and text to everyone else
                 if ($htmlpref) {
-                    if (!$isTestMail) {
-                        Sql_Query("update {$GLOBALS['tables']['message']} set astextandhtml = astextandhtml + 1 where id = $messageid");
-                    }
+                    $sentAs = 'astextandhtml';
                     //  dbg("Adding HTML ".$cached[$messageid]["templateid"]);
                     if (WORDWRAP_HTML) {
                         //# wrap it: http://mantis.phplist.com/view.php?id=15528
@@ -862,9 +851,7 @@ $text['signature'] = '';
                         return 0;
                     }
                 } else {
-                    if (!$isTestMail) {
-                        Sql_Query("update {$GLOBALS['tables']['message']} set astext = astext + 1 where id = $messageid");
-                    }
+                    $sentAs = 'astext';
                     $mail->add_text($textmessage);
 //          $mail->setText($textmessage);
 //          $mail->Encoding = TEXTEMAIL_ENCODING;
@@ -914,6 +901,11 @@ $text['signature'] = '';
                 $messageid, $counters['batch_count'], $counters['batch_total'], $email, $destinationemail), 0);
         } else {
             $sendOK = true;
+
+            if (!$isTestMail && $sentAs != '') {
+                Sql_Query("update {$GLOBALS['tables']['message']} set $sentAs = $sentAs + 1 where id = $messageid");
+            }
+
             foreach ($GLOBALS['plugins'] as $pluginname => $plugin) {
                 $plugin->processSendSuccess($messageid, $userdata, $isTestMail);
             }
