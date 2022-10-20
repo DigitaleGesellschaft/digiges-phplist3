@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '889c0a91108c67dc3c0c8213f9729b8249620cf2',
+    'reference' => 'cfe21a33ad98075aca67fd1502e3e607299ccc08',
     'name' => 'bramley/phplist-plugin-common',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '889c0a91108c67dc3c0c8213f9729b8249620cf2',
+      'reference' => 'cfe21a33ad98075aca67fd1502e3e607299ccc08',
     ),
     'chdemko/bitarray' => 
     array (
@@ -52,15 +52,6 @@ private static $installed = array (
       array (
       ),
       'reference' => 'e7627033c8ed5198da16373ac120c759732a6711',
-    ),
-    'container-interop/container-interop' => 
-    array (
-      'pretty_version' => '1.2.0',
-      'version' => '1.2.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '79cbf1341c22ec75643d841642dd5d6acd83bdb8',
     ),
     'jasongrimes/paginator' => 
     array (
@@ -92,21 +83,12 @@ private static $installed = array (
     ),
     'katzgrau/klogger' => 
     array (
-      'pretty_version' => '1.2.1',
-      'version' => '1.2.1.0',
+      'pretty_version' => '1.2.2',
+      'version' => '1.2.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'a4ed373fa8a214aa4ae7aa4f221fe2c6ce862ef1',
-    ),
-    'mouf/picotainer' => 
-    array (
-      'pretty_version' => 'v1.1.0',
-      'version' => '1.1.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '83737d6af8534c35e0d4cd2f0afd1e2e6c0ad7d4',
+      'reference' => '36481c69db9305169a2ceadead25c2acaabd567c',
     ),
     'pelago/emogrifier' => 
     array (
