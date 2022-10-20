@@ -203,15 +203,19 @@ END;
      */
     public function displaySubscriptionChoice($pageData, $userID = 0)
     {
-        if (!empty($pageData['captcha_include']) && $this->captchaEnabled()) {
-            return Securimage::getCaptchaHtml(
-                array(
-                    'input_text' => getConfig('captcha_captcha_prompt'),
-                )
-            );
+        if ($_GET['p'] != 'subscribe') {
+            return '';
         }
 
-        return '';
+        if (empty($pageData['captcha_include']) || !$this->captchaEnabled()) {
+            return '';
+        }
+
+        return Securimage::getCaptchaHtml(
+            array(
+                'input_text' => getConfig('captcha_captcha_prompt'),
+            )
+        );
     }
 
     /**
@@ -224,7 +228,15 @@ END;
      */
     public function validateSubscriptionPage($pageData)
     {
+        if (empty($_POST)) {
+            return '';
+        }
+
         if ($_GET['p'] == 'asubscribe' && !empty($pageData['captcha_not_asubscribe'])) {
+            return '';
+        }
+
+        if ($_GET['p'] == 'preferences') {
             return '';
         }
 
@@ -234,6 +246,10 @@ END;
         $email = $_POST['email'];
 
         if (!empty($pageData['captcha_include']) && $this->captchaEnabled()) {
+            if (empty($_POST['captcha_code'])) {
+                return getConfig('captcha_captcha_prompt');
+            }
+
             if ($r = $this->validateCaptcha($email, $_POST['captcha_code'])) {
                 return $r;
             }

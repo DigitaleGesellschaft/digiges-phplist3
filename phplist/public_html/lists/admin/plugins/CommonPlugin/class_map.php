@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     'CommonPlugin_BaseController' => $base . '/CommonPlugin/BaseController.php',
     'CommonPlugin_Config' => $base . '/CommonPlugin/Config.php',
     'CommonPlugin_Controller' => $base . '/CommonPlugin/Controller.php',
@@ -46,10 +46,16 @@ return array(
     'phpList\plugin\Common\ControllerFactoryBase' => $base . '/Common/ControllerFactoryBase.php',
     'phpList\plugin\Common\DAO' => $base . '/Common/DAO.php',
     'phpList\plugin\Common\DAO\Attribute' => $base . '/Common/DAO/Attribute.php',
+    'phpList\plugin\Common\DAO\AttributeTrait' => $base . '/Common/DAO/AttributeTrait.php',
     'phpList\plugin\Common\DAO\Config' => $base . '/Common/DAO/Config.php',
+    'phpList\plugin\Common\DAO\ConfigTrait' => $base . '/Common/DAO/ConfigTrait.php',
     'phpList\plugin\Common\DAO\Lists' => $base . '/Common/DAO/Lists.php',
+    'phpList\plugin\Common\DAO\ListsTrait' => $base . '/Common/DAO/ListsTrait.php',
     'phpList\plugin\Common\DAO\Message' => $base . '/Common/DAO/Message.php',
+    'phpList\plugin\Common\DAO\MessageTrait' => $base . '/Common/DAO/MessageTrait.php',
+    'phpList\plugin\Common\DAO\TemplateTrait' => $base . '/Common/DAO/TemplateTrait.php',
     'phpList\plugin\Common\DAO\User' => $base . '/Common/DAO/User.php',
+    'phpList\plugin\Common\DAO\UserTrait' => $base . '/Common/DAO/UserTrait.php',
     'phpList\plugin\Common\DB' => $base . '/Common/DB.php',
     'phpList\plugin\Common\DBResultIterator' => $base . '/Common/DBResultIterator.php',
     'phpList\plugin\Common\Exception' => $base . '/Common/Exception.php',
@@ -80,6 +86,7 @@ return array(
     'phpList\plugin\Common\Populator' => $base . '/Common/Populator.php',
     'phpList\plugin\Common\RemoteContext' => $base . '/Common/Context.php',
     'phpList\plugin\Common\StringCallback' => $base . '/Common/StringCallback.php',
+    'phpList\plugin\Common\StringStream' => $base . '/Common/StringStream.php',
     'phpList\plugin\Common\Tabs' => $base . '/Common/Tabs.php',
     'phpList\plugin\Common\Toolbar' => $base . '/Common/Toolbar.php',
     'phpList\plugin\Common\ToolbarButton' => $base . '/Common/Toolbar.php',
@@ -87,4 +94,4 @@ return array(
     'phpList\plugin\Common\View' => $base . '/Common/View.php',
     'phpList\plugin\Common\WebblerListing' => $base . '/Common/WebblerListing.php',
     'phpList\plugin\Common\Widget' => $base . '/Common/Widget.php',
-);
+];

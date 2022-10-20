@@ -27,13 +27,13 @@ class LanguageNegotiator extends AbstractNegotiator
         $as = $acceptLanguage->getSubPart();
         $ps = $priority->getSubPart();
 
-        $baseEqual = !strcasecmp($ab, $pb);
-        $subEqual  = !strcasecmp($as, $ps);
+        $baseEqual = !strcasecmp((string)$ab, (string)$pb);
+        $subEqual  = !strcasecmp((string)$as, (string)$ps);
 
-        if (($ab == '*' || $baseEqual) && ($as === null || $subEqual)) {
+        if (($ab == '*' || $baseEqual) && ($as === null || $subEqual || null === $ps)) {
             $score = 10 * $baseEqual + $subEqual;
 
-            return new Match($acceptLanguage->getQuality() * $priority->getQuality(), $score, $index);
+            return new AcceptMatch($acceptLanguage->getQuality() * $priority->getQuality(), $score, $index);
         }
 
         return null;
