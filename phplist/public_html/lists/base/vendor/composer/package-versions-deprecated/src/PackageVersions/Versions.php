@@ -91,7 +91,7 @@ final class Versions
   'twig/twig' => 'v2.15.3@ab402673db8746cb3a4c46f3869d6253699f614a',
   'willdurand/jsonp-callback-validator' => 'v1.1.0@1a7d388bb521959e612ef50c5c7b1691b097e909',
   'willdurand/negotiation' => '3.1.0@68e9ea0553ef6e2ee8db5c1d98829f111e623ec2',
-  'phplist/base-distribution' => 'v3.6.9@52c5c261a54f03e1eadfcb011f5ae1fe10da0697',
+  'phplist/base-distribution' => 'v3.6.10@f34d65ec3fe1cfce20983ad1148369f65d03150b',
 );
 
     private function __construct()

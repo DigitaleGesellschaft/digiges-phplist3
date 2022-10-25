@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'phplist/base-distribution',
-        'pretty_version' => 'v3.6.9',
-        'version' => '3.6.9.0',
-        'reference' => '52c5c261a54f03e1eadfcb011f5ae1fe10da0697',
+        'pretty_version' => 'v3.6.10',
+        'version' => '3.6.10.0',
+        'reference' => 'f34d65ec3fe1cfce20983ad1148369f65d03150b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -254,9 +254,9 @@
             'dev_requirement' => false,
         ),
         'phplist/base-distribution' => array(
-            'pretty_version' => 'v3.6.9',
-            'version' => '3.6.9.0',
-            'reference' => '52c5c261a54f03e1eadfcb011f5ae1fe10da0697',
+            'pretty_version' => 'v3.6.10',
+            'version' => '3.6.10.0',
+            'reference' => 'f34d65ec3fe1cfce20983ad1148369f65d03150b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
