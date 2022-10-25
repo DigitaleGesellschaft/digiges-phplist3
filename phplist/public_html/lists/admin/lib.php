@@ -1144,7 +1144,7 @@ function fetchStyles($text) {
 function isValidRedirect($url)
 {
     //# we might want to add some more checks here
-    return strpos($url, hostName());
+    return stripos($url, hostName()) || stripos($url,getConfig('website'));
 }
 
 /* check the url_append config and expand the url with it
