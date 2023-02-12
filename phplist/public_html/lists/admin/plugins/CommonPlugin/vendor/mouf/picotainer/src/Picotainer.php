@@ -63,6 +63,7 @@ class Picotainer implements Psr11Container
     /* (non-PHPdoc)
      * @see \Interop\Container\ContainerInterface::has()
      */
+    #[\ReturnTypeWillChange]
     public function has($identifier)
     {
         return isset($this->callbacks[$identifier]) || isset($this->objects[$identifier]);
