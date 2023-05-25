@@ -8,7 +8,7 @@
 define('PHPLISTINIT', true);
 error_reporting(0);
 
-define("VERSION","3.6.12");
+define("VERSION","3.6.13");
 if (!defined('DEVVERSION')) {
     define('DEVVERSION', false);
 }
@@ -564,8 +564,8 @@ if (!defined('MAX_AVATAR_SIZE')) {
     define('MAX_AVATAR_SIZE', 2000);
 }
 if (!defined('DEFAULT_MESSAGEAGE')) {
-    define('DEFAULT_MESSAGEAGE', 604800);
-} //# 7 days in seconds
+    define('DEFAULT_MESSAGEAGE', 691200);
+} //# 8 days in seconds
 if (!defined('ADD_EMAIL_THROTTLE')) {
     define('ADD_EMAIL_THROTTLE', 1);
 } //# seconds between addemail ajax requests
@@ -753,9 +753,13 @@ if (!defined('USE_PHPMAILER6')) {
 }
 if (!defined('HTTP_PROXY_HOST')) {
     define('HTTP_PROXY_HOST', false);
-} 
+}
 if (!defined('HTTP_PROXY_PORT')) {
     define('HTTP_PROXY_PORT', false);
+}
+// interval in milliseconds between asynchronous requests
+if (!defined('ASYNC_REQUEST_INTERVAL')) {
+    define('ASYNC_REQUEST_INTERVAL', 0);
 }
 
 if (!isset($GLOBALS['export_mimetype'])) {
