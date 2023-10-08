@@ -175,11 +175,10 @@ class Updater
         $this->logger->debug(sprintf('peak memory usage %s %s', formatBytes(memory_get_peak_usage()), formatBytes(memory_get_peak_usage(true))));
     }
 
-    public function replaceFiles()
+    public function replaceFiles($listsDir)
     {
-        global $updaterConfig, $pageroot, $configfile;
+        global $updaterConfig, $configfile;
 
-        $listsDir = $_SERVER['DOCUMENT_ROOT'] . $pageroot;
         $backupDir = sprintf('%s/phplist_backup_%s_%s', $this->workDir, VERSION, date('YmdHis'));
 
         // find the "lists" directory within the distribution
@@ -205,13 +204,18 @@ class Updater
         // create set of specific files and directories to be copied from the backup
         $additionalFiles = [];
 
-        if (realpath($configfile) == "$listsDir/config/config.php") {
-            // config file is in the default location
+        if (realpath($configfile) == realpath("$listsDir/config/config.php")) {
+            // config file is in the default location, restore config.php and any additional files
             $additionalFiles[] = 'config/config.php';
+            $additional = array_diff(scandir("$listsDir/config"), scandir("$distListsDir/config"));
+
+            foreach ($additional as $file) {
+                $additionalFiles[] = "config/$file";
+            }
         }
 
         if (PLUGIN_ROOTDIR == 'plugins' || realpath(PLUGIN_ROOTDIR) == realpath('plugins')) {
-            // plugins are in the default location, copy additional files and directories
+            // plugins are in the default location, restore additional files and directories
             $distPlugins = scandir("$distListsDir/admin/plugins");
             $installedPlugins = scandir("$listsDir/admin/plugins");
             $additional = array_diff($installedPlugins, $distPlugins);
@@ -229,7 +233,7 @@ class Updater
         $fs->mkdir($backupDir, 0755);
 
         // backup and move the files and directories in the distribution /lists directory
-        $doNotInstall = isset($updaterConfig['do_not_install']) ? $updaterConfig['do_not_install'] : [];
+        $doNotInstall = $updaterConfig['do_not_install'] ?? [];
 
         foreach (scandir($distListsDir) as $file) {
             if ($file == '.' || $file == '..') {
@@ -281,6 +285,35 @@ class Updater
         // tidy-up
         $fs->remove($this->distributionDir);
         $this->logger->debug('Deleted distribution directory');
+
+        if ($updaterConfig['delete_archive'] ?? true) {
+            $fs->remove($this->distributionArchive);
+            $this->logger->debug('Deleted distribution archive');
+        }
+        // purge old backups
+        if (isset($updaterConfig['keep_backups'])
+            && is_int($updaterConfig['keep_backups'])
+            && $updaterConfig['keep_backups'] > 0) {
+            $keep = $updaterConfig['keep_backups'];
+            $backups = array_filter(
+                scandir($this->workDir),
+                function ($file) {
+                    return preg_match('/^phplist_backup_.+\d{14}$/', $file);
+                }
+            );
+            rsort($backups);
+            $this->logger->debug(print_r($backups, true));
+
+            if (count($backups) > $keep) {
+                foreach (array_slice($backups, $keep) as $backup) {
+                    $backupPath = "$this->workDir/$backup";
+                    $fs->remove($backupPath);
+                    $this->logger->debug("Deleted backup $backupPath");
+                }
+            } else {
+                $this->logger->debug('No backups to delete');
+            }
+        }
         $this->logger->debug(sprintf('peak memory usage %s %s', formatBytes(memory_get_peak_usage()), formatBytes(memory_get_peak_usage(true))));
     }
 

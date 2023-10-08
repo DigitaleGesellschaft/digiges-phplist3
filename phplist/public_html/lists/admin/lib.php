@@ -292,7 +292,7 @@ function loadMessageData($msgid)
 
         //# can't do "ungreedy matching, in case the URL has placeholders, but this can potentially
         //# throw problems
-        if (preg_match('/\[URL:(.*)\]/i', $messagedata['message'], $regs)) {
+        if (!empty($messagedata['message']) && preg_match('/\[URL:(.*)\]/i', $messagedata['message'], $regs)) {
             $messagedata['sendurl'] = $regs[1];
         }
     }
@@ -953,7 +953,9 @@ function getPageLock($force = 0)
                 cl_output($GLOBALS['I18N']->get('Running commandline, quitting. We\'ll find out what to do in the next run.'));
                 exit;
             }
-            output($GLOBALS['I18N']->get('Sleeping for 20 seconds, aborting will quit'), 0);
+            if (function_exists('output')) {
+                output($GLOBALS['I18N']->get('Sleeping for 20 seconds, aborting will quit'), 0);
+            }
             flush();
             $abort = ignore_user_abort(0);
             sleep(20);
@@ -961,9 +963,9 @@ function getPageLock($force = 0)
         ++$waited;
         if ($waited > 10) {
             // we have waited 10 cycles, abort and quit script
-            output($GLOBALS['I18N']->get('We have been waiting too long, I guess the other process is still going ok'),
-                0);
-
+            if (function_exists('output')) {
+                output($GLOBALS['I18N']->get('We have been waiting too long, I guess the other process is still going ok'), 0);
+            }
             return false;
         }
         $running_req = Sql_query('select now() - modified,id from '.$tables['sendprocess']." where page = \"$thispage\" and alive order by started desc");
