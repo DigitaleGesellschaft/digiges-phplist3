@@ -39,6 +39,8 @@ if (!isset($_SESSION['updater_version'])) {
     $_SESSION['updater_version'] = json_decode(fetchUrlDirect('https://download.phplist.org/version.json'));
 }
 $versionToInstall = isset($_GET['force']) ? ($_GET['force'] ?: VERSION) : $_SESSION['updater_version']->version;
+// working directory is "admin"
+$listsDir = dirname(getcwd());
 
 if (isset($_POST['stage'])) {
     try {
@@ -54,7 +56,7 @@ if (isset($_POST['stage'])) {
                 $nextStage = 3;
                 break;
             case 3:
-                $updater->replaceFiles();
+                $updater->replaceFiles($listsDir);
                 $nextStage = 4;
                 break;
         }
@@ -70,7 +72,7 @@ if (isset($_POST['stage'])) {
 
     exit;
 }
-$stage = isset($_GET['stage']) ? $_GET['stage'] : 1;
+$stage = $_GET['stage'] ?? 1;
 
 switch ($stage) {
     case 1:
@@ -79,7 +81,7 @@ switch ($stage) {
             break;
         }
 
-        if (!is_writeable($listsDir = $_SERVER['DOCUMENT_ROOT'] . $pageroot)) {
+        if (!is_writeable($listsDir)) {
             echo '<p>', s('phpList directory %s is not writeable', $listsDir), '</p>';
             break;
         }

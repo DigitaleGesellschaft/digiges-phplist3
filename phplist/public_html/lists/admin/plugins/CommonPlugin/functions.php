@@ -98,3 +98,92 @@ function shortenTextDisplay($text, $max = 30)
 
     return sprintf('<span title="%s">%s</span>', htmlspecialchars($text), $display);
 }
+
+/*
+ * Log a message when the logging threshold is DEBUG.
+ *
+ * @param message $string
+ *
+ * @return array
+ */
+function debug($message)
+{
+    global $log_options, $tmpdir;
+
+    static $logger;
+
+    if (($log_options['threshold'] ?? '') != 'DEBUG') {
+        return;
+    }
+
+    if ($logger === null) {
+        $dir = $log_options['dir'] ?? $tmpdir;
+        $logger = new \Katzgrau\KLogger\Logger($dir, \Psr\Log\LogLevel::DEBUG);
+        $logger->setDateFormat('H:i:s');
+    }
+    $logger->debug($message);
+}
+
+/*
+ * Construct the base URL for a public page, without trailing /.
+ *
+ * @return string
+ */
+function publicBaseUrl()
+{
+    global $public_scheme, $pageroot;
+
+    static $url = null;
+
+    if ($url === null) {
+        if (defined('USER_WWWROOT')) {
+            $url = USER_WWWROOT;
+        } else {
+            $url = sprintf('%s://%s%s', $public_scheme, getConfig('website'), $pageroot);
+        }
+    }
+
+    return $url;
+}
+
+/*
+ * Construct a public URL.
+ *
+ * @param string $page      optional page
+ * @param array  $params    query parameters
+ *
+ * @return string
+ */
+function publicUrl(...$args)
+{
+    $page = '';
+    $params = [];
+
+    if (count($args) == 2) {
+        $page = $args[0];
+        $params = $args[1];
+    } elseif (count($args) == 1) {
+        $params = $args[0];
+    }
+    $url = sprintf('%s/%s?%s', publicBaseUrl(), $page, http_build_query($params));
+
+    return $url;
+}
+
+/*
+ * Construct the base URL for an admin page, without trailing /.
+ *
+ * @return string
+ */
+function adminBaseUrl()
+{
+    global $admin_scheme, $pageroot;
+
+    static $url = null;
+
+    if ($url === null) {
+        $url = sprintf('%s://%s%s/admin', $admin_scheme, getConfig('website'), $pageroot);
+    }
+
+    return $url;
+}

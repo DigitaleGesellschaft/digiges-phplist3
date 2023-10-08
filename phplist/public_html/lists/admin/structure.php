@@ -13,7 +13,7 @@ if (!defined('PHPLISTINIT')) {
 
 //# don't remove spaces
 if (!defined('STRUCTUREVERSION')) {
-    define('STRUCTUREVERSION',"3.6.13");
+    define('STRUCTUREVERSION',"3.6.14");
 }
 
 $DBstructuser = array( // order of tables is essential for smooth upgrade
@@ -291,7 +291,7 @@ $DBstructphplist = array(
         'email'           => array('varchar(255) not null', 'Email'),
         'created'         => array('datetime', 'sys:Time Created'),
         'modified'        => array('timestamp', 'sys:Time modified'),
-        'modifiedby'      => array('varchar(25)', 'sys:Modified by'),
+        'modifiedby'      => array('varchar(66)', 'sys:Modified by'),
         'password'        => array('varchar(255)', 'sys:Password'),
         'passwordchanged' => array('date', 'sys:Last time password was changed'),
         'superuser'       => array('tinyint default 0', 'Is this admin Super Admin?'),
