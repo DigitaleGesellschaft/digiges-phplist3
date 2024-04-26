@@ -1,8 +1,8 @@
 <?php
 /**
- * CommonPlugin for phplist.
+ * Cache plugin for phplist.
  *
- * This file is a part of CommonPlugin.
+ * This file is a part of Cache plugin.
  *
  * @category  phplist
  *

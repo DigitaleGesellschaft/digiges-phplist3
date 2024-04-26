@@ -1,8 +1,8 @@
 <?php
 /**
- * CommonPlugin for phplist.
+ * Cache plugin for phplist.
  *
- * This file is a part of CommonPlugin.
+ * This file is a part of Cache plugin.
  *
  * @category  phplist
  *
@@ -17,11 +17,11 @@ class FileCache
 {
     private $cache;
 
-    public function __construct($name = 'phplist_cache')
+    public function __construct($name = 'phplist_cache', $defaultTTL = 3600)
     {
         global $tmpdir;
 
-        $this->cache = new \Kodus\Cache\FileCache($tmpdir . '/' . $name, 3600);
+        $this->cache = new \Kodus\Cache\FileCache($tmpdir . '/' . $name, $defaultTTL);
     }
 
     public function __call($method, array $parameters)
