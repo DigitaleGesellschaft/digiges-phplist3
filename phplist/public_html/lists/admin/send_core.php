@@ -861,7 +861,7 @@ date('H:i, l j F Y', strtotime($currentTime[0])) . '</span>' . '</div>';
     $maincontent .= '<div id="messagecontent" class="field"><label for="message">'.s('Compose Message').Help('message').'</label> ';
     $forwardcontent .= '<div id="messagecontent" class="field"><label for="forwardmessage">'.s('Compose Message').Help('forwardmessage').'</label> ';
 
-    if (!empty($GLOBALS['editorplugin'])) {
+    if (!empty($GLOBALS['editorplugin']) && !empty($GLOBALS['plugins'][$GLOBALS['editorplugin']])) {
         $maincontent .= '<div>'.$GLOBALS['plugins'][$GLOBALS['editorplugin']]->editor('message',
                 $messagedata['message']).'</div>';
     } else {
